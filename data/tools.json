@@ -1,44 +1,223 @@
 [
-{"slug":"jobber","name":"Jobber","website":"https://www.getjobber.com/","trades":["pool","pest","lawn","window","pressure"],
- "free_trial":"14 days on Grow plan, no credit card","contract":"Monthly no-commitment, 1-year monthly, or annual prepaid options",
- "plans":[
-  {"name":"Core","users":"1","monthly_no_commit":"$49/mo","annual":"$29/mo billed annually (promo $21/mo for 12 months, ends Oct 30, 2026)"},
-  {"name":"Connect","users":"1 (5- and 10-user tiers also listed)","monthly_no_commit":"$139/mo","annual":"$99/mo billed annually"},
-  {"name":"Grow","users":"1 (5/10/15-user tiers also listed)","monthly_no_commit":"$199/mo","annual":"$149/mo billed annually"},
-  {"name":"Plus","users":"5 included","monthly_no_commit":"$499/mo","annual":"$399/mo billed annually"}],
- "extra_user":"$29/mo each","card_fee":"2.9% + 30¢ online; 2.7% + 30¢ Tap to Pay; ACH 1%",
- "routing":"Routing listed in features (plan availability: see vendor table)","quickbooks":"QuickBooks Online and Xero sync (Connect and up)",
- "chemical_tracking":"unknown","online_booking":"Yes","rating":"unknown",
- "sources":["https://www.getjobber.com/pricing/"]},
-{"slug":"housecall-pro","name":"Housecall Pro","website":"https://www.housecallpro.com/","trades":["pool","pest","lawn","window","pressure"],
- "free_trial":"14 days on MAX plan, no credit card","contract":"No long-term contract required",
- "plans":[
-  {"name":"Basic","users":"1","monthly_no_commit":"unknown","annual":"$59/mo billed annually"},
-  {"name":"Essentials","users":"5 included","monthly_no_commit":"unknown","annual":"unknown (not shown on public page)"},
-  {"name":"MAX","users":"8 included","monthly_no_commit":"unknown","annual":"unknown (not shown on public page)"}],
- "extra_user":"$35/mo per additional user (MAX)","card_fee":"From 2.59%; bank payments 1%",
- "routing":"Routes on Essentials; route optimization on MAX","quickbooks":"QuickBooks Online sync (Essentials and up)",
- "chemical_tracking":"unknown","online_booking":"Yes (all plans)","rating":"unknown",
- "sources":["https://www.housecallpro.com/pricing/"]},
-{"slug":"gorilladesk","name":"GorillaDesk","website":"https://gorilladesk.com/","trades":["pest","pool","lawn"],
- "free_trial":"Trial offered (length not stated on pricing page)","contract":"Month-to-month, no contracts, no setup fees; free data migration",
- "plans":[
-  {"name":"Basic","users":"Unlimited users; priced per route","monthly_no_commit":"$49/mo (1 route)","annual":"unknown"},
-  {"name":"Pro","users":"Unlimited users; priced per route","monthly_no_commit":"$99/mo (1 route)","annual":"unknown"},
-  {"name":"Growth","users":"Unlimited users; priced per route","monthly_no_commit":"$149/mo (1 route)","annual":"unknown"}],
- "extra_user":"Users free; extra routes: Basic +$50 (routes 2-3), +$30 (4+); Pro +$50; Growth +$100 (route 2), +$50 (3+)",
- "card_fee":"Via Stripe/Square (their rates)","routing":"Basic routing up to 25 stops; Drive Matrix routing on Pro",
- "quickbooks":"QuickBooks Online sync (Pro and up)","chemical_tracking":"Yes - material tracking & reporting (Basic)","online_booking":"Pro and up","rating":"unknown",
- "sms":"$5/mo SMS subscription + credit packs ($50/1000 msgs)",
- "sources":["https://gorilladesk.com/pricing/"]},
-{"slug":"skimmer","name":"Skimmer","website":"https://www.getskimmer.com/","trades":["pool"],
- "free_trial":"First month free on Scaling Up (promo); 30-day refund guarantee","contract":"Cancel anytime during trial",
- "plans":[
-  {"name":"Getting Started","users":"Unlimited techs & admins","monthly_no_commit":"$1/serviced location/mo, starts at $49/mo","annual":"unknown"},
-  {"name":"Scaling Up","users":"Unlimited techs & admins","monthly_no_commit":"$2/serviced location/mo, starts at $98/mo","annual":"unknown"},
-  {"name":"Enterprise","users":"1000+ pools","monthly_no_commit":"Custom","annual":"Custom"}],
- "extra_user":"Users unlimited; billed per serviced location (unserviced months not billed)","card_fee":"unknown",
- "routing":"Route Builder (all); Route Optimization (Scaling Up)","quickbooks":"unknown",
- "chemical_tracking":"LSI & dosing calculator (Orenda), LaMotte integration on Scaling Up","online_booking":"unknown","rating":"unknown",
- "sources":["https://www.getskimmer.com/pricing"]}
+ {
+  "slug": "jobber",
+  "name": "Jobber",
+  "website": "https://www.getjobber.com/",
+  "trades": [
+   "pool",
+   "pest",
+   "lawn",
+   "window",
+   "pressure"
+  ],
+  "free_trial": "14 days on Grow plan, no credit card",
+  "contract": "Monthly no-commitment, 1-year monthly, or annual prepaid options",
+  "plans": [
+   {
+    "name": "Core",
+    "users": "1",
+    "monthly_no_commit": "$49/mo",
+    "annual": "$29/mo billed annually (promo $21/mo for 12 months, ends Oct 30, 2026)"
+   },
+   {
+    "name": "Connect",
+    "users": "1 (5- and 10-user tiers also listed)",
+    "monthly_no_commit": "$139/mo",
+    "annual": "$99/mo billed annually"
+   },
+   {
+    "name": "Grow",
+    "users": "1 (5/10/15-user tiers also listed)",
+    "monthly_no_commit": "$199/mo",
+    "annual": "$149/mo billed annually"
+   },
+   {
+    "name": "Plus",
+    "users": "5 included",
+    "monthly_no_commit": "$499/mo",
+    "annual": "$399/mo billed annually"
+   }
+  ],
+  "extra_user": "$29/mo each",
+  "card_fee": "2.9% + 30¢ online; 2.7% + 30¢ Tap to Pay; ACH 1%",
+  "routing": "Routing listed in features (plan availability: see vendor table)",
+  "quickbooks": "QuickBooks Online and Xero sync (Connect and up)",
+  "chemical_tracking": "unknown",
+  "online_booking": "Yes",
+  "rating": "unknown",
+  "sources": [
+   "https://www.getjobber.com/pricing/"
+  ],
+  "best_for": "Mixed recurring and one-off jobs across any trade",
+  "starting_price": "$29/mo billed annually (Core, 1 user); $49/mo monthly",
+  "pros": [
+   "14-day trial on Grow, no credit card",
+   "Monthly no-commitment option",
+   "QuickBooks Online and Xero sync (Connect and up)"
+  ],
+  "cons": [
+   "Extra users $29/mo each",
+   "Chemical/material tracking not listed on pricing page"
+  ]
+ },
+ {
+  "slug": "housecall-pro",
+  "name": "Housecall Pro",
+  "website": "https://www.housecallpro.com/",
+  "trades": [
+   "pool",
+   "pest",
+   "lawn",
+   "window",
+   "pressure"
+  ],
+  "free_trial": "14 days on MAX plan, no credit card",
+  "contract": "No long-term contract required",
+  "plans": [
+   {
+    "name": "Basic",
+    "users": "1",
+    "monthly_no_commit": "unknown",
+    "annual": "$59/mo billed annually"
+   },
+   {
+    "name": "Essentials",
+    "users": "5 included",
+    "monthly_no_commit": "unknown",
+    "annual": "unknown (not shown on public page)"
+   },
+   {
+    "name": "MAX",
+    "users": "8 included",
+    "monthly_no_commit": "unknown",
+    "annual": "unknown (not shown on public page)"
+   }
+  ],
+  "extra_user": "$35/mo per additional user (MAX)",
+  "card_fee": "From 2.59%; bank payments 1%",
+  "routing": "Routes on Essentials; route optimization on MAX",
+  "quickbooks": "QuickBooks Online sync (Essentials and up)",
+  "chemical_tracking": "unknown",
+  "online_booking": "Yes (all plans)",
+  "rating": "unknown",
+  "sources": [
+   "https://www.housecallpro.com/pricing/"
+  ],
+  "best_for": "Small teams wanting users included in the plan",
+  "starting_price": "$59/mo billed annually (Basic)",
+  "pros": [
+   "No long-term contract required",
+   "Online booking on all plans",
+   "5 users included on Essentials, 8 on MAX"
+  ],
+  "cons": [
+   "Monthly no-commitment prices not published",
+   "Route optimization only on MAX"
+  ]
+ },
+ {
+  "slug": "gorilladesk",
+  "name": "GorillaDesk",
+  "website": "https://gorilladesk.com/",
+  "trades": [
+   "pest",
+   "pool",
+   "lawn"
+  ],
+  "free_trial": "Trial offered (length not stated on pricing page)",
+  "contract": "Month-to-month, no contracts, no setup fees; free data migration",
+  "plans": [
+   {
+    "name": "Basic",
+    "users": "Unlimited users; priced per route",
+    "monthly_no_commit": "$49/mo (1 route)",
+    "annual": "unknown"
+   },
+   {
+    "name": "Pro",
+    "users": "Unlimited users; priced per route",
+    "monthly_no_commit": "$99/mo (1 route)",
+    "annual": "unknown"
+   },
+   {
+    "name": "Growth",
+    "users": "Unlimited users; priced per route",
+    "monthly_no_commit": "$149/mo (1 route)",
+    "annual": "unknown"
+   }
+  ],
+  "extra_user": "Users free; extra routes: Basic +$50 (routes 2-3), +$30 (4+); Pro +$50; Growth +$100 (route 2), +$50 (3+)",
+  "card_fee": "Via Stripe/Square (their rates)",
+  "routing": "Basic routing up to 25 stops; Drive Matrix routing on Pro",
+  "quickbooks": "QuickBooks Online sync (Pro and up)",
+  "chemical_tracking": "Yes - material tracking & reporting (Basic)",
+  "online_booking": "Pro and up",
+  "rating": "unknown",
+  "sms": "$5/mo SMS subscription + credit packs ($50/1000 msgs)",
+  "sources": [
+   "https://gorilladesk.com/pricing/"
+  ],
+  "best_for": "Pest and pool operators who want unlimited users, priced per route",
+  "starting_price": "$49/mo for 1 route (Basic)",
+  "pros": [
+   "Unlimited users; priced per route",
+   "Material tracking & reporting from Basic",
+   "Month-to-month, no setup fees, free data migration"
+  ],
+  "cons": [
+   "Basic routing capped at 25 stops",
+   "SMS is an extra $5/mo plus credit packs"
+  ]
+ },
+ {
+  "slug": "skimmer",
+  "name": "Skimmer",
+  "website": "https://www.getskimmer.com/",
+  "trades": [
+   "pool"
+  ],
+  "free_trial": "First month free on Scaling Up (promo); 30-day refund guarantee",
+  "contract": "Cancel anytime during trial",
+  "plans": [
+   {
+    "name": "Getting Started",
+    "users": "Unlimited techs & admins",
+    "monthly_no_commit": "$1/serviced location/mo, starts at $49/mo",
+    "annual": "unknown"
+   },
+   {
+    "name": "Scaling Up",
+    "users": "Unlimited techs & admins",
+    "monthly_no_commit": "$2/serviced location/mo, starts at $98/mo",
+    "annual": "unknown"
+   },
+   {
+    "name": "Enterprise",
+    "users": "1000+ pools",
+    "monthly_no_commit": "Custom",
+    "annual": "Custom"
+   }
+  ],
+  "extra_user": "Users unlimited; billed per serviced location (unserviced months not billed)",
+  "card_fee": "unknown",
+  "routing": "Route Builder (all); Route Optimization (Scaling Up)",
+  "quickbooks": "unknown",
+  "chemical_tracking": "LSI & dosing calculator (Orenda), LaMotte integration on Scaling Up",
+  "online_booking": "unknown",
+  "rating": "unknown",
+  "sources": [
+   "https://www.getskimmer.com/pricing"
+  ],
+  "best_for": "Pool route businesses billing by serviced pool",
+  "starting_price": "$49/mo minimum ($1 per serviced location)",
+  "pros": [
+   "Unlimited techs & admins",
+   "Unserviced months not billed",
+   "LSI & dosing calculator, LaMotte integration (Scaling Up)"
+  ],
+  "cons": [
+   "Pool-only",
+   "QuickBooks and card fees not published on pricing page"
+  ]
+ }
 ]
