@@ -52,7 +52,7 @@ def layout(path, title, desc, body, schema=None):
 <header class="top"><div class="wrap hd"><a class="logo" href="/"><svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#0f5e4f"/><path d="M8 11h16M8 16h11M8 21h7" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>{site['name']}</a>
 <nav class="quick" aria-label="Quick"><a class="pill pri" href="/#trades">Best for my trade</a>{cmp_link}</nav></div>
 <nav class="trades wrap" aria-label="Trades">{nav}<a href="/about/">Methodology</a></nav></header>
-<main id="main" class="wrap">{body}</main><footer><div class="wrap"><p><strong>{site['name']}</strong>: {e(site['tagline'])}.</p><p>Last checked: {LC}. Some links may be affiliate links; see our <a href="/about/#disclosure">disclosure</a>. Prices come from vendor pages and can change. <a href="/about/">Methodology</a></p></div></footer></body></html>"""
+<main id="main" class="wrap">{body}</main><footer><div class="wrap"><p><strong>{site['name']}</strong>: {e(site['tagline'])}.</p><p>Last checked: {LC}. Some links may be affiliate links; see our <a href="/about/#disclosure">disclosure</a>. Prices come from vendor pages and can change. <a href="/about/">Methodology</a></p></div></footer><!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "3c9bce2e6c024eb7a1a4ce2438f2f4ff"}}'></script><!-- End Cloudflare Web Analytics --></body></html>"""
 
 def write(path, content):
     f = OUT/path.strip("/")/"index.html" if path != "/" else OUT/"index.html"
