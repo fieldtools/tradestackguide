@@ -1,0 +1,7 @@
+[
+{"slug":"pool-service","key":"pool","name":"Pool Service","intro":"Pool routes live and die on route density, chemical logs and recurring weekly billing. These are the tools we track for pool pros."},
+{"slug":"pest-control","key":"pest","name":"Pest Control","intro":"Pest operators need recurring service schedules, material/chemical use records and device tracking. These are the tools we track for pest pros."},
+{"slug":"lawn-care","key":"lawn","name":"Lawn Care","intro":"Lawn crews need recurring visits, crew scheduling, routing and batch invoicing. These are the tools we track for lawn care businesses."},
+{"slug":"window-cleaning","key":"window","name":"Window Cleaning","intro":"Window cleaners need fast quoting, repeat-visit scheduling and simple invoicing. These are the tools we track for window cleaning businesses."},
+{"slug":"pressure-washing","key":"pressure","name":"Pressure Washing","intro":"Pressure washing businesses need quick estimates, online booking and on-site payments. These are the tools we track for pressure washing pros."}
+]

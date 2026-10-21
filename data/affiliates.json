@@ -1,0 +1,7 @@
+{
+ "_note": "Replace url values with real affiliate links after approval. Pages use these keys via {{aff:KEY}}.",
+ "jobber": {"url":"https://www.getjobber.com/","program":"Jobber Partner Program (PartnerStack) - 20% for 12 months","status":"placeholder"},
+ "housecallpro": {"url":"https://www.housecallpro.com/","program":"Housecall Pro (PartnerStack) - $180/enrollment + $10/lead","status":"placeholder"},
+ "gorilladesk": {"url":"https://gorilladesk.com/","program":"GorillaDesk direct - 20% recurring 12 months","status":"placeholder"},
+ "skimmer": {"url":"https://www.getskimmer.com/","program":"Skimmer referral - $150 per 90-day customer","status":"placeholder"}
+}
