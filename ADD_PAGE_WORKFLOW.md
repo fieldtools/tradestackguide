@@ -1,4 +1,6 @@
 # Nightly add-one-page workflow
+
+Site base URL: https://tradestackguide.com/ (set in data/site.json; build.py also writes dist/CNAME and root robots.txt). Pages deploy automatically on push to main via .github/workflows/pages.yml.
 1. Pick the first `todo` row in BACKLOG.md.
 2. For every tool the page needs that isn't in data/tools.json: fetch the vendor's **public pricing page** and add an entry using the same fields. Use only values stated on the page. Put the URL in `sources` and write `"unknown"` for anything not published. Never invent ratings or prices.
 3. If prices on existing tools changed, update them and bump `last_checked` in data/site.json.

@@ -89,6 +89,7 @@ def build():
         if p.get("faq"): sch.append({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in p["faq"]]})
         write(path, layout(path, p["title"], p["description"], f"<h1>{e(p['h1'])}</h1><p class='note'>Last checked {LC}. Sourced from vendor pricing pages.</p>{render(p['body'])}" + (f"<h2>FAQ</h2>{faq}" if faq else ""), sch))
     (OUT/"sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>{BASE}{u}</loc><lastmod>{LC}</lastmod></url>" for u in urls) + "</urlset>\n")
+    (OUT/"CNAME").write_text(urlparse(BASE).netloc + "\n")
     (OUT/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
     print(f"Built {len(urls)} pages -> {OUT}")
 if __name__ == "__main__": build()
