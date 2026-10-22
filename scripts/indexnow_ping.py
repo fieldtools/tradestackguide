@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """IndexNow ping: diff dist/sitemap.xml vs previously deployed sitemap; submit new/changed URLs.
 Usage: indexnow_ping.py fetch  (save live sitemap to prev file, before deploy)
-       indexnow_ping.py ping   (after deploy). Never fails: always exits 0."""
+       indexnow_ping.py ping   (after deploy); 'all' submits every sitemap URL. Never fails: always exits 0."""
 import json, sys, urllib.request, xml.etree.ElementTree as ET
 from pathlib import Path
 from urllib.parse import urlparse
@@ -16,12 +16,15 @@ def parse(xml):
 def main():
     if sys.argv[1:] == ["fetch"]:
         try:
+            urllib.request.urlopen(f"https://{HOST}/{KEY}.txt", timeout=20).close()  # key not live yet => first run
             with urllib.request.urlopen(f"https://{HOST}/sitemap.xml", timeout=20) as r: PREV.write_bytes(r.read())
             print("saved previous sitemap")
         except Exception as ex: print("no previous sitemap:", ex); PREV.unlink(missing_ok=True)
         return
     new = parse((R/"dist/sitemap.xml").read_text())
-    try: old = parse(PREV.read_text()); first = False
+    try:
+        if sys.argv[1:] == ["all"]: raise ValueError("submit all")
+        old = parse(PREV.read_text()); first = False
     except Exception: old = {}; first = True
     urls = [u for u, lm in new.items() if first or old.get(u) != lm]
     urls = [u for u in urls if urlparse(u).netloc == HOST][:10000]
