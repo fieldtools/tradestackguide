@@ -11,3 +11,4 @@ Log every settings, DNS, workflow or Pages change here before or when it's made.
 - 2026-10-21 [bean] Site created; Pages deploy via GitHub Actions workflow from the first commit (f6c2281); custom domain + HTTPS set.
 - 2026-10-21 [bean] Cloudflare Web Analytics snippet added (b8ac08b).
 - 2026-10-22 [bean] Added ResponsiBid and Squeegee to data/affiliates.json as plain (non-affiliate) links.
+- 2026-10-22 ~13:49 [bean] Contact email jacob@tradestackguide.com on About (#contact) and in footer; footer cross-link to StudioStackGuide (plain link); 12 FAQ entries added (5 per page on 4 pages). FAQPage JSON-LD validated; check_links passed.
