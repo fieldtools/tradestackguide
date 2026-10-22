@@ -13,6 +13,8 @@ Checks:
 ```
 grep -rl "{{" dist && echo "UNRENDERED TOKENS"
 grep -rho "<title>[^<]*" dist | sort | uniq -d
+python3 scripts/check_links.py   # broken internal links
+grep -rL "cloudflareinsights.com/beacon.min.js" dist --include=index.html   # pages missing analytics (should print nothing)
 ```
 Templates (build.py `layout`, `toolcard`, `trustbar`, `table`) render tool cards, the trust bar (last verified date, methodology, disclosure), the sticky header with 'Best for my trade' and 'Compare' (links to the first page with `type: compare`), inline SVG trade icons (`ICONS` keyed by trade `key`; add one for any new trade) and static/favicon.svg. Body HTML in page JSON needs no special classes.
 

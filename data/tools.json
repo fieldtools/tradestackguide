@@ -23,19 +23,19 @@
     "name": "Connect",
     "users": "1 (5- and 10-user tiers also listed)",
     "monthly_no_commit": "$139/mo",
-    "annual": "$99/mo billed annually"
+    "annual": "$99/mo billed annually (promo $70/mo for 12 months, ends Oct 30, 2026)"
    },
    {
     "name": "Grow",
     "users": "1 (5/10/15-user tiers also listed)",
     "monthly_no_commit": "$199/mo",
-    "annual": "$149/mo billed annually"
+    "annual": "$149/mo billed annually (promo $105/mo for 12 months, ends Oct 30, 2026)"
    },
    {
     "name": "Plus",
     "users": "5 included",
     "monthly_no_commit": "$499/mo",
-    "annual": "$399/mo billed annually"
+    "annual": "$399/mo billed annually (promo $280/mo for 12 months, ends Oct 30, 2026)"
    }
   ],
   "extra_user": "$29/mo each",
@@ -46,7 +46,8 @@
   "online_booking": "Yes",
   "rating": "unknown",
   "sources": [
-   "https://www.getjobber.com/pricing/"
+   "https://www.getjobber.com/pricing/",
+   "https://www.getjobber.com/industries/window-cleaning-software/"
   ],
   "best_for": "Mixed recurring and one-off jobs across any trade",
   "starting_price": "$29/mo billed annually (Core, 1 user); $49/mo monthly",
@@ -77,20 +78,20 @@
    {
     "name": "Basic",
     "users": "1",
-    "monthly_no_commit": "unknown",
+    "monthly_no_commit": "$79/mo",
     "annual": "$59/mo billed annually"
    },
    {
     "name": "Essentials",
     "users": "5 included",
-    "monthly_no_commit": "unknown",
-    "annual": "unknown (not shown on public page)"
+    "monthly_no_commit": "$189/mo",
+    "annual": "$149/mo billed annually"
    },
    {
     "name": "MAX",
     "users": "8 included",
-    "monthly_no_commit": "unknown",
-    "annual": "unknown (not shown on public page)"
+    "monthly_no_commit": "$329/mo",
+    "annual": "$299/mo billed annually"
    }
   ],
   "extra_user": "$35/mo per additional user (MAX)",
@@ -101,17 +102,18 @@
   "online_booking": "Yes (all plans)",
   "rating": "unknown",
   "sources": [
-   "https://www.housecallpro.com/pricing/"
+   "https://www.housecallpro.com/pricing/",
+   "https://www.housecallpro.com/industries/window-cleaning-software/"
   ],
   "best_for": "Small teams wanting users included in the plan",
-  "starting_price": "$59/mo billed annually (Basic)",
+  "starting_price": "$59/mo billed annually (Basic, 1 user); $79/mo monthly",
   "pros": [
    "No long-term contract required",
    "Online booking on all plans",
    "5 users included on Essentials, 8 on MAX"
   ],
   "cons": [
-   "Monthly no-commitment prices not published",
+   "Monthly billing costs $20-$40/mo more than annual",
    "Route optimization only on MAX"
   ]
  },
@@ -218,6 +220,59 @@
   "cons": [
    "Pool-only",
    "QuickBooks and card fees not published on pricing page"
+  ]
+ },
+ {
+  "slug": "responsibid",
+  "name": "ResponsiBid",
+  "website": "https://www.responsibid.com/",
+  "trades": [
+   "window",
+   "pressure"
+  ],
+  "free_trial": "Free Startup plan; free demo offered; trial length unknown",
+  "contract": "Cancel anytime, no long-term contracts; one-time setup fee (amount not published); seasonal pause $50/mo for up to 4 months/yr on monthly plans",
+  "plans": [
+   {
+    "name": "Startup",
+    "users": "1 admin user",
+    "monthly_no_commit": "Free",
+    "annual": "unknown"
+   },
+   {
+    "name": "Scaling",
+    "users": "1 admin + unlimited sub-users",
+    "monthly_no_commit": "$179/mo",
+    "annual": "unknown"
+   },
+   {
+    "name": "Pro",
+    "users": "1 admin + unlimited sub-users",
+    "monthly_no_commit": "$229/mo",
+    "annual": "unknown"
+   }
+  ],
+  "extra_user": "1 admin user; unlimited sub-users on Scaling and Pro",
+  "card_fee": "unknown (PayPal deposits listed on Pro)",
+  "routing": "CrewCal scheduling intelligence and customer self-scheduling (Pro); schedules into a connected CRM calendar (Scaling and Pro)",
+  "quickbooks": "unknown (not on pricing page; connects to CRMs such as Jobber and Housecall Pro)",
+  "chemical_tracking": "Not listed (quoting/sales tool)",
+  "online_booking": "Instant quoting on your website (Scaling and Pro); customer self-scheduling (Pro)",
+  "rating": "unknown",
+  "sources": [
+   "https://www.responsibid.com/pricing"
+  ],
+  "best_for": "Window cleaning and exterior cleaning businesses that want instant online quotes on top of a CRM",
+  "starting_price": "Free (Startup); paid plans $179/mo (Scaling) and $229/mo (Pro)",
+  "pros": [
+   "Quoting calculator, service tiers and auto-upsell on every plan, including free Startup",
+   "Connects to Jobber, Housecall Pro, ServiceMonster, Markate and Google Calendar (Scaling and Pro)",
+   "Cancel anytime; $50/mo seasonal pause for up to 4 months a year"
+  ],
+  "cons": [
+   "Quoting/sales tool, not a full CRM: scheduling, invoicing and payments run through a connected CRM",
+   "Setup fee amount not published",
+   "Text follow-up, Zapier and CrewCal only on Pro ($229/mo)"
   ]
  }
 ]
