@@ -12,3 +12,4 @@ Log every settings, DNS, workflow or Pages change here before or when it's made.
 - 2026-10-21 [bean] Cloudflare Web Analytics snippet added (b8ac08b).
 - 2026-10-22 [bean] Added ResponsiBid and Squeegee to data/affiliates.json as plain (non-affiliate) links.
 - 2026-10-22 ~13:49 [bean] Contact email jacob@tradestackguide.com on About (#contact) and in footer; footer cross-link to StudioStackGuide (plain link); 12 FAQ entries added (5 per page on 4 pages). FAQPage JSON-LD validated; check_links passed.
+- 2026-10-22 ~14:30 [bean] Added /job-quote-estimator/ (client-side JS, user inputs only) and /software-buying-checklist/ (printable, mailto:jacob@tradestackguide.com signup); nav links Calculator + Checklist in build.py. check_links passed.
