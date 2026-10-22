@@ -83,6 +83,7 @@ def crumbs(items):
 def build():
     if OUT.exists(): shutil.rmtree(OUT)
     OUT.mkdir(); shutil.copy(R/"static/style.css", OUT/"style.css"); shutil.copy(R/"static/favicon.svg", OUT/"favicon.svg")
+    _k=(R/"static/indexnow-key.txt").read_text().strip(); (OUT/f"{_k}.txt").write_text(_k)
     # home
     cards = "".join(f'<li><a class="card trade" href="/trades/{t["slug"]}/">{icon(t["key"])}<span>{t["name"]} software</span></a></li>' for t in trades)
     arts = "".join(f'<li><a class="card guide" href="/{p["slug"]}/"><span class="tag">{e(p.get("type","guide")).title()}</span>{e(p["h1"])}</a></li>' for p in pages)
