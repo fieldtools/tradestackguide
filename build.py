@@ -34,6 +34,9 @@ IMG = {  # header photos (Pexels license: free commercial use, no attribution re
  "pressure2": ("pressure-washing-steps.webp", 1200, 400, "Worker in hi-vis gear pressure washing stone steps", "Antonio Lorenzana Bermejo", "https://www.pexels.com/photo/14965464/"),
  "window2": ("window-cleaning-facade.webp", 1200, 400, "Window cleaner using a squeegee pole on a glass building front", "Cihat Dede", "https://www.pexels.com/photo/professional-window-cleaner-at-work-outdoors-37440103/"),
  "lawn2": ("lawn-mower-service.webp", 1200, 400, "Gloved worker servicing a lawn mower on the grass", "Gustavo Fring", "https://www.pexels.com/photo/5163424/"),
+ # industrial cleaning (directory pages)
+ "industrial": ("industrial-tank-hydroblasting.webp", 1200, 400, "Overhead view of workers in hard hats hydro blasting the floor of a large industrial tank", "Saruhan Osmanoğlu", "https://www.pexels.com/photo/industrial-workers-cleaning-large-floor-surface-37443412/"),
+ "industrial-card": ("industrial-ppe-spray-card.webp", 480, 320, "Industrial worker in a protective suit and mask spraying with a high-pressure gun on scaffolding", "Caleb Oquendo", "https://www.pexels.com/photo/standing-person-holding-hose-3186687/"),
  "lawn3": ("hedge-trimming.webp", 1200, 400, "Close-up of a gardener trimming a hedge with shears", "Magda Ehlers", "https://www.pexels.com/photo/38936334/"),
 }
 PAGE_IMG = {  # explicit picks for existing pages (slug -> IMG key)
@@ -70,7 +73,7 @@ def pic(key, cls="ph-img", lazy=True):
 def credits_html():
     uses = {}
     for path, _, k in page_targets(): uses.setdefault(k, []).append(path)
-    rows = "".join(f'<tr><td>{e(v[0])}</td><td>{", ".join(e(u) for u in (["Homepage"] if k=="hero" else []) + (["category page"] if k in ICONS else []) + uses.get(k, [])) or "-"}</td><td>{e(v[3])}</td><td>{e(v[4])}</td><td><a href="{e(v[5])}" rel="nofollow noopener">{e(v[5])}</a></td></tr>' for k, v in IMG.items())
+    rows = "".join(f'<tr><td>{e(v[0])}</td><td>{", ".join(e(u) for u in (["Homepage"] if k=="hero" else []) + (["category page"] if k in ICONS else []) + (["/directory/se-iowa-industrial-contractors/"] if k.startswith("industrial") else []) + uses.get(k, [])) or "-"}</td><td>{e(v[3])}</td><td>{e(v[4])}</td><td><a href="{e(v[5])}" rel="nofollow noopener">{e(v[5])}</a></td></tr>' for k, v in IMG.items())
     return f'<div class="tw" tabindex="0" role="region" aria-label="Photo credits table"><table><tr><th>File</th><th>Used on</th><th>Alt text</th><th>Photographer</th><th>Source (Pexels)</th></tr>{rows}</table></div>'
 def icon(key, cls="ic"):
     return f'<svg class="{cls}" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">{ICONS.get(key,"")}</svg>'
@@ -92,7 +95,7 @@ def toolcard(x, full=False):
 def trustbar():
     return f'<p class="trust"><span>✔ Last verified {LC}</span><span>✔ Prices linked to vendor sources</span><span><a href="/about/">✔ Our methodology</a></span><span><a href="/about/#disclosure">Affiliate disclosure</a></span></p>'
 
-def layout(path, title, desc, body, schema=None):
+def layout(path, title, desc, body, schema=None, noindex=False):
     nav = "".join(f'<a href="/trades/{t["slug"]}/">{t["name"]}</a>' for t in trades)
     cmp_ = next((p for p in pages if p.get("type") == "compare"), None)
     cmp_link = f'<a class="pill" href="/{cmp_["slug"]}/">Compare</a>' if cmp_ else ""
@@ -100,11 +103,11 @@ def layout(path, title, desc, body, schema=None):
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{BASE}{path}">
 <meta name="theme-color" content="#0f5e4f"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/style.css">{ld}</head><body><a class="skip" href="#main">Skip to content</a>
+<link rel="stylesheet" href="/style.css">{ROBOTS_NOINDEX if noindex else ""}{ld}</head><body><a class="skip" href="#main">Skip to content</a>
 <header class="top"><div class="wrap hd"><a class="logo" href="/"><svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#0f5e4f"/><path d="M8 11h16M8 16h11M8 21h7" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>{site['name']}</a>
 <nav class="quick" aria-label="Quick"><a class="pill pri" href="/#trades">Best for my trade</a>{cmp_link}</nav></div>
 <nav class="trades wrap" aria-label="Trades">{nav}<a href="/job-quote-estimator/">Calculator</a><a href="/software-buying-checklist/">Checklist</a><a href="/about/">Methodology</a></nav></header>
-<main id="main" class="wrap">{body}</main><footer><div class="wrap"><p><strong>{site['name']}</strong>: {e(site['tagline'])}.</p><p>Last checked: {LC}. Some links may be affiliate links; see our <a href="/about/#disclosure">disclosure</a>. Prices come from vendor pages and can change. <a href="/about/">Methodology</a></p><p class="credits">Photos from <a href="https://www.pexels.com/" rel="nofollow noopener">Pexels</a> (free license). <a href="/about/#photo-credits">Photo credits</a></p><p>Contact: <a href="mailto:jacob@tradestackguide.com">jacob@tradestackguide.com</a></p><p>Run a martial arts school or studio? See <a href="https://studiostackguide.com/">StudioStackGuide</a>.</p></div></footer><!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "3c9bce2e6c024eb7a1a4ce2438f2f4ff"}}'></script><!-- End Cloudflare Web Analytics --></body></html>"""
+<main id="main" class="wrap">{body}</main><footer><div class="wrap"><p><strong>{site['name']}</strong>: {e(site['tagline'])}.</p><p>Last checked: {LC}. Some links may be affiliate links; see our <a href="/about/#disclosure">disclosure</a>. Prices come from vendor pages and can change. <a href="/about/">Methodology</a></p><p class="credits">Photos from <a href="https://www.pexels.com/" rel="nofollow noopener">Pexels</a> (free license). <a href="/about/#photo-credits">Photo credits</a></p><p>Contact: <a href="mailto:jacob@tradestackguide.com">jacob@tradestackguide.com</a></p><p>Local directory: <a href="/directory/se-iowa-industrial-contractors/">SE Iowa industrial contractors</a>.</p><p>Run a martial arts school or studio? See <a href="https://studiostackguide.com/">StudioStackGuide</a>.</p></div></footer><!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "3c9bce2e6c024eb7a1a4ce2438f2f4ff"}}'></script><!-- End Cloudflare Web Analytics --></body></html>"""
 
 def write(path, content):
     f = OUT/path.strip("/")/"index.html" if path != "/" else OUT/"index.html"
@@ -131,6 +134,36 @@ def render(body):
 
 def crumbs(items):
     return {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":i+1,"name":n,"item":BASE+u} for i,(n,u) in enumerate(items)]}
+
+ROBOTS_NOINDEX = '<meta name="robots" content="noindex,nofollow">'
+LISTING_TRADE_IMG = {"industrial": "industrial-card"}  # trade -> stock card photo fallback
+def listing_img(l, trade):
+    """Per-listing photo: l["image"] = IMG key, or {"src","alt","width","height","credit"} supplied by the
+    contractor (with permission). Falls back to the trade-matched stock photo."""
+    im = l.get("image")
+    if isinstance(im, dict) and im.get("src"):
+        cr = f'<figcaption>{e(im["credit"])}</figcaption>' if im.get("credit") else ""
+        return f'<figure class="lc-img"><img src="{e(im["src"])}" width="{int(im["width"])}" height="{int(im["height"])}" alt="{e(im.get("alt",""))}" loading="lazy" decoding="async">{cr}</figure>'
+    key = im if im in IMG else LISTING_TRADE_IMG.get(l.get("trade", trade))
+    return f'<figure class="lc-img">{pic(key, "")}</figure>' if key else ""
+def listing_card(l, trade="industrial"):
+    ul = lambda xs: "<ul>" + "".join(f"<li>{e(x)}</li>" for x in xs) + "</ul>"
+    phones = l["phone"] if isinstance(l["phone"], list) else [l["phone"]]
+    tels = " · ".join(f'<a href="tel:+1{re.sub(r"[^0-9]", "", p)}">{e(p)}</a>' for p in phones)
+    srcs = " ".join(f'<a href="{e(u)}" rel="nofollow">{e(u)}</a>' for u in l["sources"])
+    return (f'<article class="card listing">{listing_img(l, trade)}<h2>{e(l["name"])}</h2><p>{e(l["summary"])}</p><ul class="facts">'
+            f'<li>Location: {e(l["location"])}</li><li>Phone: {tels}</li>'
+            f'<li>Email: <a href="mailto:{e(l["email"])}">{e(l["email"])}</a></li>'
+            f'<li>Website: <a href="{e(l["website"])}" rel="nofollow">{e(l["website"])}</a></li><li>{e(l["hours"])}</li></ul>'
+            f'<h3>Industrial services</h3>{ul(l["services"])}<h3>Licensing and compliance</h3>{ul(l["credentials"])}'
+            f'<p>{e(l["also"])}</p><p class="src">Sources: {srcs} · checked {l["checked"]}</p></article>')
+def build_directory():
+    """Directory pages: indexed, in sitemap, linked from footer."""
+    dd = D/"directory"
+    for f in (sorted(dd.glob("*.json")) if dd.exists() else []):
+        d = json.loads(f.read_text()); path = "/" + d["slug"] + "/"
+        body = f'{pic(d.get("image", "industrial"), lazy=False)}<h1>{e(d["h1"])}</h1><p>{e(d["intro"])}</p>' + "".join(listing_card(l, d.get("trade", "industrial")) for l in d["listings"])
+        write(path, layout(path, d["title"], d["intro"][:155], body))
 
 def build():
     if OUT.exists(): shutil.rmtree(OUT)
@@ -177,6 +210,7 @@ def build():
         sch = [crumbs([("Home","/"),(p["h1"],path)]),{"@context":"https://schema.org","@type":"Article","headline":p["h1"],"dateModified":LC,"author":{"@type":"Organization","name":site["name"]}}]
         if p.get("faq"): sch.append({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in p["faq"]]})
         write(path, layout(path, p["title"], p["description"], f"{pic(PIMG[p['slug']])}<h1>{e(p['h1'])}</h1>{trustbar()}{render(p['body'])}" + (f"<h2>FAQ</h2>{faq}" if faq else ""), sch))
+    build_directory()
     (OUT/"sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>{BASE}{u}</loc><lastmod>{LC}</lastmod></url>" for u in urls) + "</urlset>\n")
     (OUT/"CNAME").write_text(urlparse(BASE).netloc + "\n")
     (OUT/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")

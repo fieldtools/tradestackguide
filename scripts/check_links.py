@@ -6,7 +6,7 @@ D = Path(__file__).resolve().parent.parent / "dist"
 bad = []
 for f in D.rglob("*.html"):
     for u in re.findall(r'(?:href|src)="([^"]+)"', f.read_text()):
-        if u.startswith(("http", "//", "mailto:", "#", "data:")): continue
+        if u.startswith(("http", "//", "mailto:", "tel:", "#", "data:")): continue
         path = u.split("#")[0].split("?")[0]
         if not path.startswith("/"): path = "/" + str(f.parent.relative_to(D)) + "/" + path
         t = D / path.lstrip("/")
