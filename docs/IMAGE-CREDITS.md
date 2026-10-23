@@ -44,3 +44,4 @@ Checked 2026-10-23: each source page was live and marked Free. Images were revie
 | `service-checklist-clipboard.webp` (1200x400) | /software-buying-checklist/ | Worker in a hi-vis vest holding a pen and a printed checklist on a clipboard | RDNE Stock project | https://www.pexels.com/photo/person-in-yellow-reflective-safety-vest-holding-a-pen-and-checklist-of-house-inspection-8293680/ |
 
 Listing cards take an optional `"image"` in `data/directory/*.json`: an `IMG` key, or `{"src","alt","width","height","credit"}` for a contractor-supplied photo (only with written permission). If it's empty, the card uses the trade-matched stock photo (`LISTING_TRADE_IMG` in build.py).
+| `contractor-tablet-quote.webp` (1200x400) | /tools/quoteiq/ | Contractor in a hard hat and hi-vis vest checking a tablet on a job site | Mikael Blomkvist | https://www.pexels.com/photo/an-engineer-using-a-digital-tablet-8961008/ |

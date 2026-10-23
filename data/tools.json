@@ -327,5 +327,74 @@
    "Good/Better/Best sales proposals and service plans only on Ultimate",
    "Zapier and open API only on Ultimate"
   ]
+ },
+ {
+  "slug": "quoteiq",
+  "name": "QuoteIQ",
+  "website": "https://myquoteiq.com/",
+  "trades": [
+   "pressure",
+   "lawn",
+   "window",
+   "pool",
+   "pest"
+  ],
+  "free_trial": "14 days on every plan; credit or debit card required to start",
+  "contract": "No contracts or cancellation fees; monthly or annual billing (annual = pay for 10 months, get 12)",
+  "plans": [
+   {
+    "name": "Essentials",
+    "users": "1",
+    "monthly_no_commit": "$29.99/mo",
+    "annual": "$299.99/yr billed annually"
+   },
+   {
+    "name": "Beginner",
+    "users": "2",
+    "monthly_no_commit": "$99.99/mo",
+    "annual": "$999.99/yr billed annually"
+   },
+   {
+    "name": "Pro",
+    "users": "4",
+    "monthly_no_commit": "$199.99/mo",
+    "annual": "$1,999.99/yr billed annually"
+   },
+   {
+    "name": "Elite",
+    "users": "10",
+    "monthly_no_commit": "$299.99/mo",
+    "annual": "$2,999.99/yr billed annually"
+   },
+   {
+    "name": "Max",
+    "users": "20",
+    "monthly_no_commit": "$699.99/mo",
+    "annual": "$6,999.99/yr billed annually"
+   }
+  ],
+  "extra_user": "$25/mo per additional user on every plan, up to 100",
+  "card_fee": "Payment processing fees are separate from the subscription (rates not listed on the pricing page)",
+  "routing": "Route optimization on Elite and Max",
+  "quickbooks": "QuickBooks integration (Pro and up)",
+  "chemical_tracking": "Chemical tracking (Pro and up)",
+  "online_booking": "Online booking & self-scheduling (Elite and Max)",
+  "rating": "unknown",
+  "sources": [
+   "https://myquoteiq.com/pricing",
+   "https://myquoteiq.com/"
+  ],
+  "best_for": "Owner-operators who want quoting, property measuring and job photos in one app",
+  "starting_price": "$29.99/mo (Essentials, 1 user); $299.99/yr billed annually",
+  "pros": [
+   "14-day free trial on every plan",
+   "No contracts or cancellation fees",
+   "MapMeasure Pro and QuoteIQ Cam from Beginner ($99.99/mo)"
+  ],
+  "cons": [
+   "Credit or debit card required to start the trial",
+   "Route optimization only on Elite ($299.99/mo) and Max",
+   "AI features use monthly IQ Credits; unused credits don't roll over"
+  ]
  }
 ]
