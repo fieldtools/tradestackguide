@@ -20,6 +20,22 @@ ICONS = {  # simple original inline SVG paths (24x24, stroke)
  "window": '<rect x="4" y="3" width="16" height="18" rx="1"/><path d="M12 3v18M4 12h16M15 6l2 2M7 15l2 2"/>',
  "pressure": '<path d="M3 10h8l2 2h3M5 10V7h5v3M16 12l5-3M16 12l5 0M16 12l5 3M6 14v6M3 20h6"/>',
 }
+IMG = {  # header photos (Pexels license: free commercial use, no attribution required); credits in docs/IMAGE-CREDITS.md
+ "hero": ("hero-lawn-care-crew.webp", 1600, 640, "Lawn care worker pushing a mower across a sunlit green lawn", "Magic K", "https://www.pexels.com/photo/man-mowing-lawn-6728933/"),
+ "pressure": ("pressure-washing.webp", 1200, 400, "Worker pressure washing a paved surface, black and white", "Nikita Nikitin", "https://www.pexels.com/photo/man-watering-pavement-12111864/"),
+ "window": ("window-cleaning.webp", 1200, 400, "Gloved hand cleaning a window with a squeegee", "Blissful Place Cleaning company in Perth", "https://www.pexels.com/photo/person-cleaning-window-with-squeegee-and-gloves-31435403/"),
+ "pest": ("pest-control.webp", 1200, 400, "Pest control technician in protective suit fogging a warehouse", "Cristian Aragón", "https://www.pexels.com/photo/professional-fumigation-in-warehouse-setting-32055757/"),
+ "pool": ("pool-service.webp", 1200, 400, "Clean blue residential swimming pool beside a patio", "Ahmet ÇÖTÜR", "https://www.pexels.com/photo/swimming-pool-in-the-yard-of-a-house-19084144/"),
+ "lawn": ("lawn-care.webp", 1200, 400, "Gardener trimming a green hedge with long shears", "el jusuf", "https://www.pexels.com/photo/garden-maintenance-trimming-hedges-in-jakarta-32427439/"),
+}
+def pic(key, cls="ph-img", lazy=True):
+    if key not in IMG: return ""
+    f, w, h, alt, _, _ = IMG[key]
+    att = 'loading="lazy" decoding="async"' if lazy else 'fetchpriority="high" decoding="async"'
+    ss = f' srcset="/img/{f[:-5]}-800.webp 800w, /img/{f} {w}w" sizes="(max-width: 820px) 100vw, 1100px"' if key == "hero" else ""
+    return f'<img class="{cls}" src="/img/{f}"{ss} width="{w}" height="{h}" alt="{e(alt)}" {att}>'
+def credits_html():
+    return "<ul>" + "".join(f'<li>{e(v[3])}: photo by {e(v[4])} on <a href="{e(v[5])}" rel="nofollow noopener">Pexels</a></li>' for v in IMG.values()) + "</ul>"
 def icon(key, cls="ic"):
     return f'<svg class="{cls}" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">{ICONS.get(key,"")}</svg>'
 CHECK = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>'
@@ -52,7 +68,7 @@ def layout(path, title, desc, body, schema=None):
 <header class="top"><div class="wrap hd"><a class="logo" href="/"><svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#0f5e4f"/><path d="M8 11h16M8 16h11M8 21h7" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>{site['name']}</a>
 <nav class="quick" aria-label="Quick"><a class="pill pri" href="/#trades">Best for my trade</a>{cmp_link}</nav></div>
 <nav class="trades wrap" aria-label="Trades">{nav}<a href="/job-quote-estimator/">Calculator</a><a href="/software-buying-checklist/">Checklist</a><a href="/about/">Methodology</a></nav></header>
-<main id="main" class="wrap">{body}</main><footer><div class="wrap"><p><strong>{site['name']}</strong>: {e(site['tagline'])}.</p><p>Last checked: {LC}. Some links may be affiliate links; see our <a href="/about/#disclosure">disclosure</a>. Prices come from vendor pages and can change. <a href="/about/">Methodology</a></p><p>Contact: <a href="mailto:jacob@tradestackguide.com">jacob@tradestackguide.com</a></p><p>Run a martial arts school or studio? See <a href="https://studiostackguide.com/">StudioStackGuide</a>.</p></div></footer><!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "3c9bce2e6c024eb7a1a4ce2438f2f4ff"}}'></script><!-- End Cloudflare Web Analytics --></body></html>"""
+<main id="main" class="wrap">{body}</main><footer><div class="wrap"><p><strong>{site['name']}</strong>: {e(site['tagline'])}.</p><p>Last checked: {LC}. Some links may be affiliate links; see our <a href="/about/#disclosure">disclosure</a>. Prices come from vendor pages and can change. <a href="/about/">Methodology</a></p><p class="credits">Photos from <a href="https://www.pexels.com/" rel="nofollow noopener">Pexels</a> (free license). <a href="/about/#photo-credits">Photo credits</a></p><p>Contact: <a href="mailto:jacob@tradestackguide.com">jacob@tradestackguide.com</a></p><p>Run a martial arts school or studio? See <a href="https://studiostackguide.com/">StudioStackGuide</a>.</p></div></footer><!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "3c9bce2e6c024eb7a1a4ce2438f2f4ff"}}'></script><!-- End Cloudflare Web Analytics --></body></html>"""
 
 def write(path, content):
     f = OUT/path.strip("/")/"index.html" if path != "/" else OUT/"index.html"
@@ -82,7 +98,7 @@ def crumbs(items):
 
 def build():
     if OUT.exists(): shutil.rmtree(OUT)
-    OUT.mkdir(); shutil.copy(R/"static/style.css", OUT/"style.css"); shutil.copy(R/"static/favicon.svg", OUT/"favicon.svg")
+    OUT.mkdir(); shutil.copy(R/"static/style.css", OUT/"style.css"); shutil.copy(R/"static/favicon.svg", OUT/"favicon.svg"); shutil.copytree(R/"static/img", OUT/"img")
     _k=(R/"static/indexnow-key.txt").read_text().strip(); (OUT/f"{_k}.txt").write_text(_k)
     # home
     cards = "".join(f'<li><a class="card trade" href="/trades/{t["slug"]}/">{icon(t["key"])}<span>{t["name"]} software</span></a></li>' for t in trades)
@@ -90,14 +106,14 @@ def build():
     tcards = "".join(toolcard(x) for x in tools.values())
     write("/", layout("/", f"{site['name']}: Software Comparisons for Pool, Pest, Lawn & Cleaning Pros",
         "Sourced, no-fluff comparisons of scheduling, routing and invoicing software for small pool, pest control, lawn care, window cleaning and pressure washing businesses.",
-        f"<section class='hero'><h1>Find the right software for your service business</h1><p class='lead'>{site['tagline']}. Every price links to its source. If a number isn't public, we say unknown.</p><ul class='grid trades-g' id='trades' aria-label='Choose your trade'>{cards}</ul>{trustbar()}</section><h2>Tools we track</h2><div class='grid tools-g'>{tcards}</div><h2>Guides and comparisons</h2><ul class='grid guides-g'>{arts}</ul>",
+        f"<section class='hero'><div class='banner'>{pic('hero','banner-img',lazy=False)}<div class='banner-txt'><h1>Find the right software for your service business</h1><p class='lead'>{site['tagline']}. Every price links to its source. If a number isn't public, we say unknown.</p></div></div><ul class='grid trades-g' id='trades' aria-label='Choose your trade'>{cards}</ul>{trustbar()}</section><h2>Tools we track</h2><div class='grid tools-g'>{tcards}</div><h2>Guides and comparisons</h2><ul class='grid guides-g'>{arts}</ul>",
         [{"@context":"https://schema.org","@type":"WebSite","name":site["name"],"url":BASE+"/"}]))
     # about
     write("/about/", layout("/about/", f"About & Methodology | {site['name']}", "How TradeStackGuide collects pricing and feature data, how often it's checked, and how we make money (affiliate disclosure).",
         f"""<h1>About and methodology</h1><h2>How we collect data</h2><p>We only use information published on each vendor's own public pricing and feature pages. Each tool entry lists its source URLs and a last-checked date (currently {LC}). We don't invent ratings, review scores or prices. Anything a vendor doesn't publish is marked <em>unknown</em>.</p>
 <h2>How often we update</h2><p>We re-check prices on a rolling basis and at least quarterly. Promotions change often, so always confirm on the vendor's site.</p>
 <h2 id="disclosure">Affiliate disclosure</h2><p>Some links on this site are affiliate or referral links. If you sign up through them, we may earn a commission at no extra cost to you. Commissions never affect the data we publish, and we list tools whether or not they have an affiliate program.</p>
-<h2 id="contact">Contact</h2><p>Questions, corrections or pricing updates: email <a href="mailto:jacob@tradestackguide.com">jacob@tradestackguide.com</a>.</p>"""))
+<h2 id="contact">Contact</h2><p>Questions, corrections or pricing updates: email <a href="mailto:jacob@tradestackguide.com">jacob@tradestackguide.com</a>.</p><h2 id="photo-credits">Photo credits</h2><p>Photos are from Pexels under the Pexels license (free for commercial use, attribution not required). We credit the photographers anyway:</p>"""+credits_html()+""""""))
     # trades
     for t in trades:
         ts = [x for x in tools.values() if t["key"] in x["trades"]]
@@ -106,7 +122,7 @@ def build():
         path = f"/trades/{t['slug']}/"
         write(path, layout(path, f"{t['name']} Business Software: Tools, Prices & Comparisons ({LC[:4]})",
             f"{t['name']} software compared: {', '.join(x['name'] for x in ts)}. Published prices, trials and features with sources, last checked {LC}.",
-            f"<div class='ph'>{icon(t['key'],'ic big')}<h1>{t['name']} software</h1></div><p class='lead'>{t['intro']}</p>{trustbar()}<h2>Tools</h2><div class='grid tools-g'>{''.join(toolcard(x) for x in ts)}</div><h2>Side-by-side comparison</h2>{table([x['slug'] for x in ts])}<ul class='sr'>{li}</ul>" + (f"<h2>Guides</h2><ul>{rel}</ul>" if rel else ""),
+            f"{pic(t['key'])}<div class='ph'>{icon(t['key'],'ic big')}<h1>{t['name']} software</h1></div><p class='lead'>{t['intro']}</p>{trustbar()}<h2>Tools</h2><div class='grid tools-g'>{''.join(toolcard(x) for x in ts)}</div><h2>Side-by-side comparison</h2>{table([x['slug'] for x in ts])}<ul class='sr'>{li}</ul>" + (f"<h2>Guides</h2><ul>{rel}</ul>" if rel else ""),
             [crumbs([("Home","/"),(t["name"],path)])]))
     # tools
     for x in tools.values():
