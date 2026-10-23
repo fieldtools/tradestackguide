@@ -33,3 +33,5 @@
 | 30 | best/solo-operator-field-service-app | field service app for one person business | have data |
 | 31 | tools/workiz-pricing | workiz pricing | have data (Workiz shows "Request pricing" as of 2026-10-23) |
 | 32 | best/soft-washing-software | soft washing business software | Jobber, HCP, ResponsiBid |
+| 33 | tools/quoteiq | quoteiq review pricing | affiliate: QuoteIQ 40% lifetime (Rewardful), needs Jacob to sign up |
+| 34 | tools/servicem8 | servicem8 review pricing | affiliate: ServiceM8 80% first 12 months (PartnerStack), needs Jacob to sign up |
