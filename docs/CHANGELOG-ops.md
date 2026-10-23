@@ -24,3 +24,7 @@ Log every settings, DNS, workflow or Pages change here before or when it's made.
 - ~7:07 PM CDT: root TXT `brevo-code:da12bc01b2332e1d08cdfaa65d048b1a` (Brevo domain verification); CNAMEs `brevo1._domainkey` -> b1.tradestackguide-com.dkim.brevo.com and `brevo2._domainkey` -> b2.tradestackguide-com.dkim.brevo.com (DNS only).
 - ~7:38 PM CDT: DMARC set to `v=DMARC1; p=quarantine; sp=quarantine; rua=mailto:rua@dmarc.brevo.com` (was p=reject; returning to reject pending Jacob).
 - Purpose: outreach from jacob@tradestackguide.com sent through the Brevo API.
+
+## 2026-10-23 6:21 AM CDT (Bean, approved by Jacob)
+- SPF: removed include:_spf.google.com -> v=spf1 include:_spf.mx.cloudflare.net ~all
+- DMARC: back to p=reject; sp=reject (rua Brevo kept)
