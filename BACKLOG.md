@@ -2,7 +2,7 @@
 | # | Slug | Target keyword | Needs vendor data |
 |---|---|---|---|
 | 1 | best/window-cleaning-software | window cleaning business software | done (2026-10-22) |
-| 2 | best/pressure-washing-software | pressure washing business software | Jobber, HCP, ResponsiBid, Workiz |
+| 2 | best/pressure-washing-software | pressure washing business software | done (2026-10-23) |
 | 3 | best/lawn-care-software | lawn care business software | Jobber, Service Autopilot, Yardbook, LMN |
 | 4 | alternatives/jobber | jobber alternatives | HCP, Workiz, GorillaDesk, Kickserv |
 | 5 | alternatives/housecall-pro | housecall pro alternatives | Jobber, Workiz, ServiceM8 |
@@ -19,8 +19,8 @@
 | 16 | best/lawn-care-invoicing-app | lawn care invoicing app | Jobber, Yardbook |
 | 17 | best/snow-removal-software | snow removal business software | Jobber, Service Autopilot |
 | 18 | best/house-cleaning-business-software | house cleaning business software | Jobber, ZenMaid, Launch27 |
-| 19 | compare/jobber-vs-workiz | jobber vs workiz | Workiz pricing |
-| 20 | compare/housecall-pro-vs-workiz | housecall pro vs workiz | Workiz pricing |
+| 19 | compare/jobber-vs-workiz | jobber vs workiz | Workiz added 2026-10-23 (prices not published) |
+| 20 | compare/housecall-pro-vs-workiz | housecall pro vs workiz | Workiz added 2026-10-23 (prices not published) |
 | 21 | best/pool-route-optimization | pool route optimization software | Skimmer, Pool Brain |
 | 22 | best/estimating-app-pressure-washing | pressure washing estimating app | have data (ResponsiBid added 2026-10-22) |
 | 23 | best/mosquito-control-software | mosquito control business software | GorillaDesk, FieldRoutes |
@@ -31,3 +31,5 @@
 | 28 | alternatives/gorilladesk | gorilladesk alternatives | FieldRoutes, PestPac, Jobber |
 | 29 | best/quickbooks-field-service-integration | field service software quickbooks integration | have data |
 | 30 | best/solo-operator-field-service-app | field service app for one person business | have data |
+| 31 | tools/workiz-pricing | workiz pricing | have data (Workiz shows "Request pricing" as of 2026-10-23) |
+| 32 | best/soft-washing-software | soft washing business software | Jobber, HCP, ResponsiBid |

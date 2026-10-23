@@ -127,7 +127,7 @@
    "lawn"
   ],
   "free_trial": "Trial offered (length not stated on pricing page)",
-  "contract": "Month-to-month, no contracts, no setup fees; free data migration",
+  "contract": "Month-to-month, no contracts, no setup fees; free data migration; annual prepaid option (price not published); account freeze available for seasonal businesses",
   "plans": [
    {
     "name": "Basic",
@@ -273,6 +273,59 @@
    "Quoting/sales tool, not a full CRM: scheduling, invoicing and payments run through a connected CRM",
    "Setup fee amount not published",
    "Text follow-up, Zapier and CrewCal only on Pro ($229/mo)"
+  ]
+ },
+ {
+  "slug": "workiz",
+  "name": "Workiz",
+  "website": "https://www.workiz.com/",
+  "trades": [
+   "pressure"
+  ],
+  "free_trial": "7 days, no credit card required",
+  "contract": "Monthly or annual billing; annual 'save $400+' per vendor FAQ (exact terms not published)",
+  "plans": [
+   {
+    "name": "Standard",
+    "users": "unknown (vendor says 'Growing teams')",
+    "monthly_no_commit": "Request pricing (not published)",
+    "annual": "Request pricing (not published)"
+   },
+   {
+    "name": "Pro",
+    "users": "unknown (vendor says 'Mid size team')",
+    "monthly_no_commit": "Request pricing (not published)",
+    "annual": "Request pricing (not published)"
+   },
+   {
+    "name": "Ultimate",
+    "users": "unknown (vendor says 'Multi-location larger team & franchises')",
+    "monthly_no_commit": "Request pricing (not published)",
+    "annual": "Request pricing (not published)"
+   }
+  ],
+  "extra_user": "unknown (not published)",
+  "card_fee": "unknown (Workiz Pay online payments, tap to pay and consumer financing on all plans; rates not published; card readers sold separately)",
+  "routing": "Fleet and team location tracking on all plans; Genius Scheduling on Pro and Ultimate",
+  "quickbooks": "QuickBooks Online sync (all plans)",
+  "chemical_tracking": "Inventory management (Ultimate only)",
+  "online_booking": "Online booking with optional checkout (all plans)",
+  "rating": "unknown",
+  "sources": [
+   "https://www.workiz.com/pricing/",
+   "https://www.workiz.com/industries/pressure-washing/"
+  ],
+  "best_for": "Phone-heavy service teams that want calls, texts and jobs in one system",
+  "starting_price": "Not published (Request pricing on Standard, Pro and Ultimate)",
+  "pros": [
+   "7-day free trial, no credit card required",
+   "QuickBooks Online sync, online booking and estimate deposits on all plans",
+   "Integrated phone system listed on all plans"
+  ],
+  "cons": [
+   "No prices published; you must request pricing",
+   "Good/Better/Best sales proposals and service plans only on Ultimate",
+   "Zapier and open API only on Ultimate"
   ]
  }
 ]
