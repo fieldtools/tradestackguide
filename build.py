@@ -8,7 +8,7 @@ tools = {t["slug"]: t for t in json.loads((D/"tools.json").read_text())}
 trades = json.loads((D/"trades.json").read_text())
 pages = [json.loads(p.read_text()) for p in sorted((D/"pages").glob("*.json"))]
 BASE, LC = site["base_url"].rstrip("/"), site["last_checked"]
-from urllib.parse import urlparse
+from urllib.parse import quote, urlparse
 PREFIX = urlparse(BASE).path.rstrip("/")
 e = html.escape
 urls = []
@@ -95,7 +95,7 @@ def toolcard(x, full=False):
             f'<div class="actions">{cta}<a class="btn2" href="/tools/{x["slug"]}/">Pricing details</a></div>'
             f'<p class="src">Source: <a href="{e(x["sources"][0])}" rel="nofollow">vendor pricing page</a> · verified {LC}</p></article>')
 def trustbar():
-    return f'<p class="trust"><span>✔ Last verified {LC}</span><span>✔ Prices linked to vendor sources</span><span><a href="/about/">✔ Our methodology</a></span><span><a href="/about/#disclosure">Affiliate disclosure</a></span></p>'
+    return f'<p class="trust"><span>✔ Last verified {LC}</span><span>✔ Prices linked to vendor sources</span><span><a href="/about/">✔ Our methodology</a></span><span><a href="/disclosure/">Affiliate disclosure</a></span></p><p class="note disc">We may earn a commission if you buy through some links on this site. It doesn&rsquo;t change our rankings. <a href="/disclosure/">Disclosure</a></p>'
 
 def layout(path, title, desc, body, schema=None, noindex=False):
     nav = "".join(f'<a href="/trades/{t["slug"]}/">{t["name"]}</a>' for t in trades)
@@ -109,7 +109,7 @@ def layout(path, title, desc, body, schema=None, noindex=False):
 <header class="top"><div class="wrap hd"><a class="logo" href="/"><svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#0f5e4f"/><path d="M8 11h16M8 16h11M8 21h7" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>{site['name']}</a>
 <nav class="quick" aria-label="Quick"><a class="pill pri" href="/#trades">Best for my trade</a>{cmp_link}</nav></div>
 <nav class="trades wrap" aria-label="Trades">{nav}<a href="/job-quote-estimator/">Calculator</a><a href="/software-buying-checklist/">Checklist</a><a href="/about/">Methodology</a><a href="/directory/se-iowa-industrial-contractors/">SE Iowa Directory</a></nav></header>
-<main id="main" class="wrap">{body}</main><footer><div class="wrap"><p><strong>{site['name']}</strong>: {e(site['tagline'])}.</p><p>Last checked: {LC}. Some links may be affiliate links; see our <a href="/about/#disclosure">disclosure</a>. Prices come from vendor pages and can change. <a href="/about/">Methodology</a></p><p class="credits">Photos from <a href="https://www.pexels.com/" rel="nofollow noopener">Pexels</a> (free license). <a href="/about/#photo-credits">Photo credits</a></p><p>Contact: <a href="mailto:jacob@tradestackguide.com">jacob@tradestackguide.com</a></p><p>Run a martial arts school or studio? See <a href="https://studiostackguide.com/">StudioStackGuide</a>.</p></div></footer><!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "3c9bce2e6c024eb7a1a4ce2438f2f4ff"}}'></script><!-- End Cloudflare Web Analytics --></body></html>"""
+<main id="main" class="wrap">{body}</main><footer><div class="wrap"><p><strong>{site['name']}</strong>: {e(site['tagline'])}.</p><p>Last checked: {LC}. Some links may be affiliate links; see our <a href="/disclosure/">affiliate disclosure</a>. Prices come from vendor pages and can change. <a href="/about/">Methodology</a></p><p class="credits">Photos from <a href="https://www.pexels.com/" rel="nofollow noopener">Pexels</a> (free license). <a href="/about/#photo-credits">Photo credits</a></p><p>Contact: <a href="mailto:jacob@tradestackguide.com">jacob@tradestackguide.com</a></p><p>Run a martial arts school or studio? See <a href="https://studiostackguide.com/">StudioStackGuide</a>.</p></div></footer><!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "3c9bce2e6c024eb7a1a4ce2438f2f4ff"}}'></script><!-- End Cloudflare Web Analytics --></body></html>"""
 
 def write(path, content):
     f = OUT/path.strip("/")/"index.html" if path != "/" else OUT/"index.html"
@@ -165,6 +165,17 @@ def build_directory():
     for f in (sorted(dd.glob("*.json")) if dd.exists() else []):
         d = json.loads(f.read_text()); path = "/" + d["slug"] + "/"
         body = f'{pic(d.get("image", "industrial"), lazy=False)}<h1>{e(d["h1"])}</h1><p>{e(d["intro"])}</p>' + "".join(listing_card(l, d.get("trade", "industrial")) for l in d["listings"])
+        if d.get("get_listed"):
+            sub = "Free SE Iowa directory listing request"
+            tpl = ("Hi Jacob,\n\nPlease add my business to the free SE Iowa industrial contractors directory.\n\n"
+                   "Business name:\nServices:\nTowns served:\nPhone:\nWebsite:\n"
+                   "Permission to use our own work photos on the listing (yes/no):\n\nThanks!")
+            href = "mailto:jacob@tradestackguide.com?subject=" + quote(sub) + "&body=" + quote(tpl)
+            body += (f'<section class="card get-listed" id="get-listed"><h2>Get listed free</h2><p>Run an industrial contracting business in Southeast Iowa? '
+                     f'Request a free listing. Listings cost nothing, and we only publish details you send us or that appear on your own website.</p>'
+                     f'<p>Include your business name, services, towns served, phone, website, and whether we may use your own work photos (yes/no).</p>'
+                     f'<div class="actions"><a class="cta" href="{e(href)}">Request a free listing</a></div>'
+                     f'<p class="note">Opens your email app with a prefilled message to <a href="mailto:jacob@tradestackguide.com">jacob@tradestackguide.com</a>.</p></section>')
         write(path, layout(path, d["title"], d["intro"][:155], body))
 
 def build():
@@ -183,8 +194,14 @@ def build():
     write("/about/", layout("/about/", f"About & Methodology | {site['name']}", "How TradeStackGuide collects pricing and feature data, how often it's checked, and how we make money (affiliate disclosure).",
         f"""<h1>About and methodology</h1><h2>How we collect data</h2><p>We only use information published on each vendor's own public pricing and feature pages. Each tool entry lists its source URLs and a last-checked date (currently {LC}). We don't invent ratings, review scores or prices. Anything a vendor doesn't publish is marked <em>unknown</em>.</p>
 <h2>How often we update</h2><p>We re-check prices on a rolling basis and at least quarterly. Promotions change often, so always confirm on the vendor's site.</p>
-<h2 id="disclosure">Affiliate disclosure</h2><p>Some links on this site are affiliate or referral links. If you sign up through them, we may earn a commission at no extra cost to you. Commissions never affect the data we publish, and we list tools whether or not they have an affiliate program.</p>
+<h2 id="disclosure">Affiliate disclosure</h2><p>Full details: <a href="/disclosure/">Affiliate disclosure</a>. Some links on this site are affiliate or referral links. If you sign up through them, we may earn a commission at no extra cost to you. Commissions never affect the data we publish, and we list tools whether or not they have an affiliate program.</p>
 <h2 id="contact">Contact</h2><p>Questions, corrections or pricing updates: email <a href="mailto:jacob@tradestackguide.com">jacob@tradestackguide.com</a>.</p><h2 id="photo-credits">Photo credits</h2><p>Photos are from Pexels under the Pexels license (free for commercial use, attribution not required). We credit the photographers anyway:</p>"""+credits_html()+""""""))
+    # disclosure
+    write("/disclosure/", layout("/disclosure/", f"Affiliate Disclosure | {site['name']}", "How TradeStackGuide may earn money from links and why it doesn't change our rankings or published data.",
+        f"""<h1>Affiliate disclosure</h1><p class='lead'>We may earn a commission if you buy through some links on this site, at no extra cost to you. It doesn't change our rankings.</p>
+<h2>How it works</h2><p>Some links to software vendors may be affiliate or referral links. If you click one and later sign up or buy, the vendor may pay us a commission. Not every link is an affiliate link, and many tools we cover have no affiliate program with us at all. Links that are affiliate links are marked <code>rel="sponsored"</code> in the page code.</p>
+<h2>What it doesn't change</h2><p>Commissions never affect our rankings, the prices and features we publish, or which tools we include. We list tools whether or not they have an affiliate program, and every price links to the vendor's own source page. See our <a href="/about/">methodology</a>.</p>
+<h2>Questions</h2><p>Email <a href="mailto:jacob@tradestackguide.com">jacob@tradestackguide.com</a>. Last updated {LC}.</p>"""))
     # trades
     for t in trades:
         ts = [x for x in tools.values() if t["key"] in x["trades"]]

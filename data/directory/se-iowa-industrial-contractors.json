@@ -47,5 +47,6 @@
   }
  ],
  "trade": "industrial",
- "image": "industrial"
+ "image": "industrial",
+ "get_listed": true
 }
