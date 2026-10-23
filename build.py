@@ -34,6 +34,9 @@ IMG = {  # header photos (Pexels license: free commercial use, no attribution re
  "pressure2": ("pressure-washing-steps.webp", 1200, 400, "Worker in hi-vis gear pressure washing stone steps", "Antonio Lorenzana Bermejo", "https://www.pexels.com/photo/14965464/"),
  "window2": ("window-cleaning-facade.webp", 1200, 400, "Window cleaner using a squeegee pole on a glass building front", "Cihat Dede", "https://www.pexels.com/photo/professional-window-cleaner-at-work-outdoors-37440103/"),
  "lawn2": ("lawn-mower-service.webp", 1200, 400, "Gloved worker servicing a lawn mower on the grass", "Gustavo Fring", "https://www.pexels.com/photo/5163424/"),
+ # industrial cleaning (directory pages)
+ "industrial": ("industrial-tank-hydroblasting.webp", 1200, 400, "Overhead view of workers in hard hats hydro blasting the floor of a large industrial tank", "Saruhan Osmanoğlu", "https://www.pexels.com/photo/industrial-workers-cleaning-large-floor-surface-37443412/"),
+ "industrial-card": ("industrial-ppe-spray-card.webp", 480, 320, "Industrial worker in a protective suit and mask spraying with a high-pressure gun on scaffolding", "Caleb Oquendo", "https://www.pexels.com/photo/standing-person-holding-hose-3186687/"),
  "lawn3": ("hedge-trimming.webp", 1200, 400, "Close-up of a gardener trimming a hedge with shears", "Magda Ehlers", "https://www.pexels.com/photo/38936334/"),
 }
 PAGE_IMG = {  # explicit picks for existing pages (slug -> IMG key)
@@ -70,7 +73,7 @@ def pic(key, cls="ph-img", lazy=True):
 def credits_html():
     uses = {}
     for path, _, k in page_targets(): uses.setdefault(k, []).append(path)
-    rows = "".join(f'<tr><td>{e(v[0])}</td><td>{", ".join(e(u) for u in (["Homepage"] if k=="hero" else []) + (["category page"] if k in ICONS else []) + uses.get(k, [])) or "-"}</td><td>{e(v[3])}</td><td>{e(v[4])}</td><td><a href="{e(v[5])}" rel="nofollow noopener">{e(v[5])}</a></td></tr>' for k, v in IMG.items())
+    rows = "".join(f'<tr><td>{e(v[0])}</td><td>{", ".join(e(u) for u in (["Homepage"] if k=="hero" else []) + (["category page"] if k in ICONS else []) + (["/directory/se-iowa-industrial-contractors/"] if k.startswith("industrial") else []) + uses.get(k, [])) or "-"}</td><td>{e(v[3])}</td><td>{e(v[4])}</td><td><a href="{e(v[5])}" rel="nofollow noopener">{e(v[5])}</a></td></tr>' for k, v in IMG.items())
     return f'<div class="tw" tabindex="0" role="region" aria-label="Photo credits table"><table><tr><th>File</th><th>Used on</th><th>Alt text</th><th>Photographer</th><th>Source (Pexels)</th></tr>{rows}</table></div>'
 def icon(key, cls="ic"):
     return f'<svg class="{cls}" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">{ICONS.get(key,"")}</svg>'
@@ -133,12 +136,23 @@ def crumbs(items):
     return {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":i+1,"name":n,"item":BASE+u} for i,(n,u) in enumerate(items)]}
 
 ROBOTS_NOINDEX = '<meta name="robots" content="noindex,nofollow">'
-def listing_card(l):
+LISTING_TRADE_IMG = {"industrial": "industrial-card"}  # trade -> stock card photo fallback
+def listing_img(l, trade):
+    """Per-listing photo: l["image"] = IMG key, or {"src","alt","width","height","credit"} supplied by the
+    contractor (with permission). Falls back to the trade-matched stock photo."""
+    im = l.get("image")
+    if isinstance(im, dict) and im.get("src"):
+        cr = f'<figcaption>{e(im["credit"])}</figcaption>' if im.get("credit") else ""
+        return f'<figure class="lc-img"><img src="{e(im["src"])}" width="{int(im["width"])}" height="{int(im["height"])}" alt="{e(im.get("alt",""))}" loading="lazy" decoding="async">{cr}</figure>'
+    key = im if im in IMG else LISTING_TRADE_IMG.get(l.get("trade", trade))
+    return f'<figure class="lc-img">{pic(key, "")}</figure>' if key else ""
+def listing_card(l, trade="industrial"):
     ul = lambda xs: "<ul>" + "".join(f"<li>{e(x)}</li>" for x in xs) + "</ul>"
-    tel = re.sub(r"[^0-9+]", "", l["phone"])
+    phones = l["phone"] if isinstance(l["phone"], list) else [l["phone"]]
+    tels = " · ".join(f'<a href="tel:+1{re.sub(r"[^0-9]", "", p)}">{e(p)}</a>' for p in phones)
     srcs = " ".join(f'<a href="{e(u)}" rel="nofollow">{e(u)}</a>' for u in l["sources"])
-    return (f'<article class="card"><h2>{e(l["name"])}</h2><p>{e(l["summary"])}</p><ul class="facts">'
-            f'<li>Location: {e(l["location"])}</li><li>Phone: <a href="tel:+1{tel}">{e(l["phone"])}</a></li>'
+    return (f'<article class="card listing">{listing_img(l, trade)}<h2>{e(l["name"])}</h2><p>{e(l["summary"])}</p><ul class="facts">'
+            f'<li>Location: {e(l["location"])}</li><li>Phone: {tels}</li>'
             f'<li>Email: <a href="mailto:{e(l["email"])}">{e(l["email"])}</a></li>'
             f'<li>Website: <a href="{e(l["website"])}" rel="nofollow">{e(l["website"])}</a></li><li>{e(l["hours"])}</li></ul>'
             f'<h3>Industrial services</h3>{ul(l["services"])}<h3>Licensing and compliance</h3>{ul(l["credentials"])}'
@@ -148,7 +162,7 @@ def build_directory():
     dd = D/"directory"
     for f in (sorted(dd.glob("*.json")) if dd.exists() else []):
         d = json.loads(f.read_text()); path = "/" + d["slug"] + "/"
-        body = f'<h1>{e(d["h1"])}</h1><p>{e(d["intro"])}</p>' + "".join(listing_card(l) for l in d["listings"])
+        body = f'{pic(d.get("image", "industrial"), lazy=False)}<h1>{e(d["h1"])}</h1><p>{e(d["intro"])}</p>' + "".join(listing_card(l, d.get("trade", "industrial")) for l in d["listings"])
         out = layout(path, d["title"], d["intro"][:155], body, noindex=True)
         fo = OUT/d["slug"]/"index.html"; fo.parent.mkdir(parents=True, exist_ok=True)
         fo.write_text(re.sub(r'(href|src)="/(?!/)', lambda m: f'{m.group(1)}="{PREFIX}/', out))

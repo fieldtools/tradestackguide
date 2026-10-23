@@ -33,3 +33,12 @@ Assigned automatically by `page_img()` in build.py (see docs/PAGE-IMAGES.md). "U
 | `hedge-trimming.webp` (1200x400) | /software-buying-checklist/ | Close-up of a gardener trimming a hedge with shears | Magda Ehlers | https://www.pexels.com/photo/38936334/ |
 
 Checked 2026-10-23: each source page was live and marked Free. Images were reviewed for visible logos/brand names and SFW content.
+
+## Directory pages (unlisted, noindex)
+
+| File | Used on | Alt text | Photographer | Source page |
+|---|---|---|---|---|
+| `industrial-tank-hydroblasting.webp` (1200x400) | /directory/se-iowa-industrial-contractors/ header | Overhead view of workers in hard hats hydro blasting the floor of a large industrial tank | Saruhan Osmanoğlu | https://www.pexels.com/photo/industrial-workers-cleaning-large-floor-surface-37443412/ |
+| `industrial-ppe-spray-card.webp` (480x320) | CCS Keokuk listing card (stock fallback for trade "industrial") | Industrial worker in a protective suit and mask spraying with a high-pressure gun on scaffolding | Caleb Oquendo | https://www.pexels.com/photo/standing-person-holding-hose-3186687/ |
+
+Listing cards take an optional `"image"` in `data/directory/*.json`: an `IMG` key, or `{"src","alt","width","height","credit"}` for a contractor-supplied photo (only with written permission). If it's empty, the card uses the trade-matched stock photo (`LISTING_TRADE_IMG` in build.py).

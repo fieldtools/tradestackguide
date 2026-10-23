@@ -64,3 +64,5 @@ footer{border-top:1px solid var(--line);background:#fff;font-size:.88rem;color:v
 .ph-img{display:block;width:100%;height:auto;aspect-ratio:3/1;object-fit:cover;border-radius:14px;margin:14px 0 4px;background:var(--soft)}
 .credits{font-size:.85em}
 @media(min-width:700px){.hero .banner{margin:-16px -12px 22px;min-height:300px}.banner-txt{padding:36px 32px;max-width:760px}}
+.listing .lc-img{float:right;margin:0 0 1rem 1.25rem;max-width:240px}.listing .lc-img img{width:100%;height:auto;border-radius:8px;display:block}.listing .lc-img figcaption{font-size:.75rem;color:#666}
+@media (max-width:640px){.listing .lc-img{float:none;margin:0 0 1rem;max-width:100%}}
