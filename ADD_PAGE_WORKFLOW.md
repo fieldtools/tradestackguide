@@ -19,3 +19,7 @@ grep -rL "cloudflareinsights.com/beacon.min.js" dist --include=index.html   # pa
 Templates (build.py `layout`, `toolcard`, `trustbar`, `table`) render tool cards, the trust bar (last verified date, methodology, disclosure), the sticky header with 'Best for my trade' and 'Compare' (links to the first page with `type: compare`), inline SVG trade icons (`ICONS` keyed by trade `key`; add one for any new trade) and static/favicon.svg. Body HTML in page JSON needs no special classes.
 
 Affiliate links: edit only data/affiliates.json (`url`, set `status` to `live`). Templates add `rel="sponsored nofollow"` automatically.
+
+
+## Header photo
+New pages get a topical header photo automatically (see docs/PAGE-IMAGES.md). Optionally set `"image": "<IMG key>"` in the page JSON to pick one.

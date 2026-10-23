@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Build TradeStackGuide static site from data/*.json into dist/. No dependencies."""
-import json, re, shutil, html
+import json, re, shutil, html, zlib
 from pathlib import Path
 R = Path(__file__).parent; D = R/"data"; OUT = R/"dist"
 site = json.loads((D/"site.json").read_text()); aff = json.loads((D/"affiliates.json").read_text())
@@ -27,7 +27,40 @@ IMG = {  # header photos (Pexels license: free commercial use, no attribution re
  "pest": ("pest-control.webp", 1200, 400, "Pest control technician in protective suit fogging a warehouse", "Cristian Aragón", "https://www.pexels.com/photo/professional-fumigation-in-warehouse-setting-32055757/"),
  "pool": ("pool-service.webp", 1200, 400, "Clean blue residential swimming pool beside a patio", "Ahmet ÇÖTÜR", "https://www.pexels.com/photo/swimming-pool-in-the-yard-of-a-house-19084144/"),
  "lawn": ("lawn-care.webp", 1200, 400, "Gardener trimming a green hedge with long shears", "el jusuf", "https://www.pexels.com/photo/garden-maintenance-trimming-hedges-in-jakarta-32427439/"),
+ # per-page photos (articles + /tools/ pages); see docs/PAGE-IMAGES.md
+ "pest2": ("pest-fumigation.webp", 1200, 400, "Technician in a white protective suit fogging a plant with a fumigation wand", "Michelangelo Buonarroti", "https://www.pexels.com/photo/4176548/"),
+ "pool2": ("pool-backyard.webp", 1200, 400, "Backyard swimming pool set in a green lawn beside a modern house", "Max Vakhtbovych", "https://www.pexels.com/photo/8134748/"),
+ "pool3": ("pool-dusk.webp", 1200, 400, "Residential pool and lounge chairs in a leafy garden at dusk", "Rachel Claire", "https://www.pexels.com/photo/5864697/"),
+ "pressure2": ("pressure-washing-steps.webp", 1200, 400, "Worker in hi-vis gear pressure washing stone steps", "Antonio Lorenzana Bermejo", "https://www.pexels.com/photo/14965464/"),
+ "window2": ("window-cleaning-facade.webp", 1200, 400, "Window cleaner using a squeegee pole on a glass building front", "Cihat Dede", "https://www.pexels.com/photo/professional-window-cleaner-at-work-outdoors-37440103/"),
+ "lawn2": ("lawn-mower-service.webp", 1200, 400, "Gloved worker servicing a lawn mower on the grass", "Gustavo Fring", "https://www.pexels.com/photo/5163424/"),
+ "lawn3": ("hedge-trimming.webp", 1200, 400, "Close-up of a gardener trimming a hedge with shears", "Magda Ehlers", "https://www.pexels.com/photo/38936334/"),
 }
+PAGE_IMG = {  # explicit picks for existing pages (slug -> IMG key)
+ "best/pest-control-software": "pest2", "best/pool-service-software": "pool2", "best/pressure-washing-software": "pressure2",
+ "best/window-cleaning-software": "window2", "compare/jobber-vs-housecall-pro": "lawn2", "software-buying-checklist": "lawn3",
+ "job-quote-estimator": "window",
+ "tools/jobber": "lawn", "tools/housecall-pro": "pool", "tools/gorilladesk": "pest", "tools/skimmer": "pool3",
+ "tools/responsibid": "window", "tools/workiz": "pressure"}
+TOPIC_WORDS = [("pressure", r"pressure|power.?wash|soft.?wash|exterior clean"), ("window", r"window|gutter|squeegee"),
+ ("pest", r"pest|termite|mosquito|extermin|bug"), ("pool", r"pool|spa\b|hot.?tub|skimmer"), ("lawn", r"lawn|landscap|mow|turf|garden|tree|snow")]
+TOPIC_POOL = {"pressure": ["pressure", "pressure2"], "window": ["window", "window2"], "pest": ["pest", "pest2"],
+ "pool": ["pool", "pool2", "pool3"], "lawn": ["lawn", "lawn2", "lawn3"]}
+DEFAULT_POOL = ["lawn2", "lawn3", "window2", "pressure2"]  # generic field-service fallback
+def page_img(slug, text="", topics=(), explicit=None):
+    """Pick a header photo key for a page. Order: page JSON "image" -> PAGE_IMG -> keyword match on
+    slug/title -> first listed trade/studio type -> DEFAULT_POOL. Pools rotate by a stable slug hash."""
+    if explicit in IMG: return explicit
+    if slug in PAGE_IMG: return PAGE_IMG[slug]
+    hay = f"{slug} {text}".lower(); topic = next((k for k, rx in TOPIC_WORDS if re.search(rx, hay)), None)
+    topic = topic or next((t for t in topics if t in TOPIC_POOL), None)
+    pool = TOPIC_POOL.get(topic, DEFAULT_POOL)
+    return pool[zlib.crc32(slug.encode()) % len(pool)]
+def page_targets():
+    """(path, slug, image key) for every software page; used by the build and the About credits."""
+    out = [(f"/{p['slug']}/", p["slug"], page_img(p["slug"], p.get("h1",""), p.get("trades",[]), p.get("image"))) for p in pages]
+    out += [(f"/tools/{x['slug']}/", "tools/"+x["slug"], page_img("tools/"+x["slug"], x["name"], x.get("trades",[]), x.get("image"))) for x in tools.values()]
+    return out
 def pic(key, cls="ph-img", lazy=True):
     if key not in IMG: return ""
     f, w, h, alt, _, _ = IMG[key]
@@ -35,7 +68,10 @@ def pic(key, cls="ph-img", lazy=True):
     ss = f' srcset="/img/{f[:-5]}-800.webp 800w, /img/{f} {w}w" sizes="(max-width: 820px) 100vw, 1100px"' if key == "hero" else ""
     return f'<img class="{cls}" src="/img/{f}"{ss} width="{w}" height="{h}" alt="{e(alt)}" {att}>'
 def credits_html():
-    return "<ul>" + "".join(f'<li>{e(v[3])}: photo by {e(v[4])} on <a href="{e(v[5])}" rel="nofollow noopener">Pexels</a></li>' for v in IMG.values()) + "</ul>"
+    uses = {}
+    for path, _, k in page_targets(): uses.setdefault(k, []).append(path)
+    rows = "".join(f'<tr><td>{e(v[0])}</td><td>{", ".join(e(u) for u in (["Homepage"] if k=="hero" else []) + (["category page"] if k in ICONS else []) + uses.get(k, [])) or "-"}</td><td>{e(v[3])}</td><td>{e(v[4])}</td><td><a href="{e(v[5])}" rel="nofollow noopener">{e(v[5])}</a></td></tr>' for k, v in IMG.items())
+    return f'<div class="tw" tabindex="0" role="region" aria-label="Photo credits table"><table><tr><th>File</th><th>Used on</th><th>Alt text</th><th>Photographer</th><th>Source (Pexels)</th></tr>{rows}</table></div>'
 def icon(key, cls="ic"):
     return f'<svg class="{cls}" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">{ICONS.get(key,"")}</svg>'
 CHECK = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>'
@@ -124,6 +160,7 @@ def build():
             f"{t['name']} software compared: {', '.join(x['name'] for x in ts)}. Published prices, trials and features with sources, last checked {LC}.",
             f"{pic(t['key'])}<div class='ph'>{icon(t['key'],'ic big')}<h1>{t['name']} software</h1></div><p class='lead'>{t['intro']}</p>{trustbar()}<h2>Tools</h2><div class='grid tools-g'>{''.join(toolcard(x) for x in ts)}</div><h2>Side-by-side comparison</h2>{table([x['slug'] for x in ts])}<ul class='sr'>{li}</ul>" + (f"<h2>Guides</h2><ul>{rel}</ul>" if rel else ""),
             [crumbs([("Home","/"),(t["name"],path)])]))
+    PIMG = {slug: k for _, slug, k in page_targets()}
     # tools
     for x in tools.values():
         path = f"/tools/{x['slug']}/"
@@ -131,7 +168,7 @@ def build():
         key = x["slug"].replace("-","")
         cta = afflink(key, f"Visit {x['name']}") if key in aff else ""
         write(path, layout(path, f"{x['name']} Pricing & Features ({LC[:4]}): Sourced Overview", f"{x['name']} plans, prices, trial and key features from the vendor's public pricing page, last checked {LC}.",
-            f"<h1>{x['name']}: pricing and features</h1>{trustbar()}<div class='summary card'><p class='bf'><span class='lbl'>Best for</span> {e(x.get('best_for','unknown'))}</p><p class='price'><span class='lbl'>Starting price</span> {e(x.get('starting_price','unknown'))}</p>{proscons(x)}<div class='actions'>{cta}</div></div><h2>Plans</h2><div class='tw' tabindex='0' role='region' aria-label='Plans table'><table><tr><th>Plan</th><th>Users</th><th>Monthly</th><th>Annual</th></tr>{plans}</table></div><h2>Key facts</h2><ul class='facts'><li>Trial: {x['free_trial']}</li><li>Contract: {x['contract']}</li><li>Extra users/units: {x['extra_user']}</li><li>Routing: {x['routing']}</li><li>Payments: {x['card_fee']}</li><li>Rating: {x['rating']}</li></ul><p>Sources: "+" ".join(f'<a href="{s}" rel="nofollow">{s}</a>' for s in x['sources'])+"</p>"+(("<h2>Guides featuring "+x['name']+"</h2><ul>"+"".join(f'<li><a href="/{p["slug"]}/">{e(p["h1"])}</a></li>' for p in pages if x['slug'] in p.get('tools',[]))+"</ul>") if any(x['slug'] in p.get('tools',[]) for p in pages) else "")+f"<div class='actions'>{cta}</div>",
+            f"{pic(PIMG['tools/'+x['slug']])}<h1>{x['name']}: pricing and features</h1>{trustbar()}<div class='summary card'><p class='bf'><span class='lbl'>Best for</span> {e(x.get('best_for','unknown'))}</p><p class='price'><span class='lbl'>Starting price</span> {e(x.get('starting_price','unknown'))}</p>{proscons(x)}<div class='actions'>{cta}</div></div><h2>Plans</h2><div class='tw' tabindex='0' role='region' aria-label='Plans table'><table><tr><th>Plan</th><th>Users</th><th>Monthly</th><th>Annual</th></tr>{plans}</table></div><h2>Key facts</h2><ul class='facts'><li>Trial: {x['free_trial']}</li><li>Contract: {x['contract']}</li><li>Extra users/units: {x['extra_user']}</li><li>Routing: {x['routing']}</li><li>Payments: {x['card_fee']}</li><li>Rating: {x['rating']}</li></ul><p>Sources: "+" ".join(f'<a href="{s}" rel="nofollow">{s}</a>' for s in x['sources'])+"</p>"+(("<h2>Guides featuring "+x['name']+"</h2><ul>"+"".join(f'<li><a href="/{p["slug"]}/">{e(p["h1"])}</a></li>' for p in pages if x['slug'] in p.get('tools',[]))+"</ul>") if any(x['slug'] in p.get('tools',[]) for p in pages) else "")+f"<div class='actions'>{cta}</div>",
             [crumbs([("Home","/"),(x["name"],path)]),{"@context":"https://schema.org","@type":"SoftwareApplication","name":x["name"],"applicationCategory":"BusinessApplication","url":x["website"]}]))
     # articles
     for p in pages:
@@ -139,7 +176,7 @@ def build():
         faq = "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q,a in p.get("faq",[]))
         sch = [crumbs([("Home","/"),(p["h1"],path)]),{"@context":"https://schema.org","@type":"Article","headline":p["h1"],"dateModified":LC,"author":{"@type":"Organization","name":site["name"]}}]
         if p.get("faq"): sch.append({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in p["faq"]]})
-        write(path, layout(path, p["title"], p["description"], f"<h1>{e(p['h1'])}</h1>{trustbar()}{render(p['body'])}" + (f"<h2>FAQ</h2>{faq}" if faq else ""), sch))
+        write(path, layout(path, p["title"], p["description"], f"{pic(PIMG[p['slug']])}<h1>{e(p['h1'])}</h1>{trustbar()}{render(p['body'])}" + (f"<h2>FAQ</h2>{faq}" if faq else ""), sch))
     (OUT/"sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>{BASE}{u}</loc><lastmod>{LC}</lastmod></url>" for u in urls) + "</urlset>\n")
     (OUT/"CNAME").write_text(urlparse(BASE).netloc + "\n")
     (OUT/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
