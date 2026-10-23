@@ -38,3 +38,4 @@ Log every settings, DNS, workflow or Pages change here before or when it's made.
 - 2026-10-23 ~09:41 CDT SE Iowa directory intro reworded to match Get Listed section: details come from the contractor's own website or from what they send us (approved by Jacob). build + check_links clean. IndexNow `all` ping after deploy.
 - 2026-10-23 ~09:42 CDT SE Iowa directory intro: 'If we don't have it from them, we leave it out.' (consistency with Get Listed, approved by Jacob). build + check_links clean. IndexNow `all` ping after deploy.
 - 2026-10-23 ~11:10 CDT CCS Keokuk listing: phone now only (319) 313-9226 (their preferred number, per their reply); removed (319) 670-0054. build + check_links clean. IndexNow `all` ping after deploy.
+- 2026-10-23 ~11:50 CDT Added approved QuoteIQ affiliate link (?via=jacob-carman) to data/affiliates.json as key `quoteiq`. No pages mention QuoteIQ yet (only BACKLOG #33), so no page/disclosure changes. build + check_links clean.
