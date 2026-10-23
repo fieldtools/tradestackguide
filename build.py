@@ -107,7 +107,7 @@ def layout(path, title, desc, body, schema=None, noindex=False):
 <header class="top"><div class="wrap hd"><a class="logo" href="/"><svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#0f5e4f"/><path d="M8 11h16M8 16h11M8 21h7" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>{site['name']}</a>
 <nav class="quick" aria-label="Quick"><a class="pill pri" href="/#trades">Best for my trade</a>{cmp_link}</nav></div>
 <nav class="trades wrap" aria-label="Trades">{nav}<a href="/job-quote-estimator/">Calculator</a><a href="/software-buying-checklist/">Checklist</a><a href="/about/">Methodology</a></nav></header>
-<main id="main" class="wrap">{body}</main><footer><div class="wrap"><p><strong>{site['name']}</strong>: {e(site['tagline'])}.</p><p>Last checked: {LC}. Some links may be affiliate links; see our <a href="/about/#disclosure">disclosure</a>. Prices come from vendor pages and can change. <a href="/about/">Methodology</a></p><p class="credits">Photos from <a href="https://www.pexels.com/" rel="nofollow noopener">Pexels</a> (free license). <a href="/about/#photo-credits">Photo credits</a></p><p>Contact: <a href="mailto:jacob@tradestackguide.com">jacob@tradestackguide.com</a></p><p>Run a martial arts school or studio? See <a href="https://studiostackguide.com/">StudioStackGuide</a>.</p></div></footer><!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "3c9bce2e6c024eb7a1a4ce2438f2f4ff"}}'></script><!-- End Cloudflare Web Analytics --></body></html>"""
+<main id="main" class="wrap">{body}</main><footer><div class="wrap"><p><strong>{site['name']}</strong>: {e(site['tagline'])}.</p><p>Last checked: {LC}. Some links may be affiliate links; see our <a href="/about/#disclosure">disclosure</a>. Prices come from vendor pages and can change. <a href="/about/">Methodology</a></p><p class="credits">Photos from <a href="https://www.pexels.com/" rel="nofollow noopener">Pexels</a> (free license). <a href="/about/#photo-credits">Photo credits</a></p><p>Contact: <a href="mailto:jacob@tradestackguide.com">jacob@tradestackguide.com</a></p><p>Local directory: <a href="/directory/se-iowa-industrial-contractors/">SE Iowa industrial contractors</a>.</p><p>Run a martial arts school or studio? See <a href="https://studiostackguide.com/">StudioStackGuide</a>.</p></div></footer><!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "3c9bce2e6c024eb7a1a4ce2438f2f4ff"}}'></script><!-- End Cloudflare Web Analytics --></body></html>"""
 
 def write(path, content):
     f = OUT/path.strip("/")/"index.html" if path != "/" else OUT/"index.html"
@@ -158,14 +158,12 @@ def listing_card(l, trade="industrial"):
             f'<h3>Industrial services</h3>{ul(l["services"])}<h3>Licensing and compliance</h3>{ul(l["credentials"])}'
             f'<p>{e(l["also"])}</p><p class="src">Sources: {srcs} · checked {l["checked"]}</p></article>')
 def build_directory():
-    """Unlisted noindex directory pages: written directly (not via write()), so never in sitemap/nav/homepage."""
+    """Directory pages: indexed, in sitemap, linked from footer."""
     dd = D/"directory"
     for f in (sorted(dd.glob("*.json")) if dd.exists() else []):
         d = json.loads(f.read_text()); path = "/" + d["slug"] + "/"
         body = f'{pic(d.get("image", "industrial"), lazy=False)}<h1>{e(d["h1"])}</h1><p>{e(d["intro"])}</p>' + "".join(listing_card(l, d.get("trade", "industrial")) for l in d["listings"])
-        out = layout(path, d["title"], d["intro"][:155], body, noindex=True)
-        fo = OUT/d["slug"]/"index.html"; fo.parent.mkdir(parents=True, exist_ok=True)
-        fo.write_text(re.sub(r'(href|src)="/(?!/)', lambda m: f'{m.group(1)}="{PREFIX}/', out))
+        write(path, layout(path, d["title"], d["intro"][:155], body))
 
 def build():
     if OUT.exists(): shutil.rmtree(OUT)
