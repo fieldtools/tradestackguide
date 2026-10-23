@@ -40,7 +40,7 @@ def toolcard(x, full=False):
 def trustbar():
     return f'<p class="trust"><span>✔ Last verified {LC}</span><span>✔ Prices linked to vendor sources</span><span><a href="/about/">✔ Our methodology</a></span><span><a href="/about/#disclosure">Affiliate disclosure</a></span></p>'
 
-def layout(path, title, desc, body, schema=None):
+def layout(path, title, desc, body, schema=None, noindex=False):
     nav = "".join(f'<a href="/trades/{t["slug"]}/">{t["name"]}</a>' for t in trades)
     cmp_ = next((p for p in pages if p.get("type") == "compare"), None)
     cmp_link = f'<a class="pill" href="/{cmp_["slug"]}/">Compare</a>' if cmp_ else ""
@@ -48,7 +48,7 @@ def layout(path, title, desc, body, schema=None):
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{BASE}{path}">
 <meta name="theme-color" content="#0f5e4f"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/style.css">{ld}</head><body><a class="skip" href="#main">Skip to content</a>
+<link rel="stylesheet" href="/style.css">{ROBOTS_NOINDEX if noindex else ""}{ld}</head><body><a class="skip" href="#main">Skip to content</a>
 <header class="top"><div class="wrap hd"><a class="logo" href="/"><svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#0f5e4f"/><path d="M8 11h16M8 16h11M8 21h7" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>{site['name']}</a>
 <nav class="quick" aria-label="Quick"><a class="pill pri" href="/#trades">Best for my trade</a>{cmp_link}</nav></div>
 <nav class="trades wrap" aria-label="Trades">{nav}<a href="/job-quote-estimator/">Calculator</a><a href="/software-buying-checklist/">Checklist</a><a href="/about/">Methodology</a></nav></header>
@@ -79,6 +79,27 @@ def render(body):
 
 def crumbs(items):
     return {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":i+1,"name":n,"item":BASE+u} for i,(n,u) in enumerate(items)]}
+
+ROBOTS_NOINDEX = '<meta name="robots" content="noindex,nofollow">'
+def listing_card(l):
+    ul = lambda xs: "<ul>" + "".join(f"<li>{e(x)}</li>" for x in xs) + "</ul>"
+    tel = re.sub(r"[^0-9+]", "", l["phone"])
+    srcs = " ".join(f'<a href="{e(u)}" rel="nofollow">{e(u)}</a>' for u in l["sources"])
+    return (f'<article class="card"><h2>{e(l["name"])}</h2><p>{e(l["summary"])}</p><ul class="facts">'
+            f'<li>Location: {e(l["location"])}</li><li>Phone: <a href="tel:+1{tel}">{e(l["phone"])}</a></li>'
+            f'<li>Email: <a href="mailto:{e(l["email"])}">{e(l["email"])}</a></li>'
+            f'<li>Website: <a href="{e(l["website"])}" rel="nofollow">{e(l["website"])}</a></li><li>{e(l["hours"])}</li></ul>'
+            f'<h3>Industrial services</h3>{ul(l["services"])}<h3>Licensing and compliance</h3>{ul(l["credentials"])}'
+            f'<p>{e(l["also"])}</p><p class="src">Sources: {srcs} · checked {l["checked"]}</p></article>')
+def build_directory():
+    """Unlisted noindex directory pages: written directly (not via write()), so never in sitemap/nav/homepage."""
+    dd = D/"directory"
+    for f in (sorted(dd.glob("*.json")) if dd.exists() else []):
+        d = json.loads(f.read_text()); path = "/" + d["slug"] + "/"
+        body = f'<h1>{e(d["h1"])}</h1><p>{e(d["intro"])}</p>' + "".join(listing_card(l) for l in d["listings"])
+        out = layout(path, d["title"], d["intro"][:155], body, noindex=True)
+        fo = OUT/d["slug"]/"index.html"; fo.parent.mkdir(parents=True, exist_ok=True)
+        fo.write_text(re.sub(r'(href|src)="/(?!/)', lambda m: f'{m.group(1)}="{PREFIX}/', out))
 
 def build():
     if OUT.exists(): shutil.rmtree(OUT)
@@ -124,6 +145,7 @@ def build():
         sch = [crumbs([("Home","/"),(p["h1"],path)]),{"@context":"https://schema.org","@type":"Article","headline":p["h1"],"dateModified":LC,"author":{"@type":"Organization","name":site["name"]}}]
         if p.get("faq"): sch.append({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in p["faq"]]})
         write(path, layout(path, p["title"], p["description"], f"<h1>{e(p['h1'])}</h1>{trustbar()}{render(p['body'])}" + (f"<h2>FAQ</h2>{faq}" if faq else ""), sch))
+    build_directory()
     (OUT/"sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>{BASE}{u}</loc><lastmod>{LC}</lastmod></url>" for u in urls) + "</urlset>\n")
     (OUT/"CNAME").write_text(urlparse(BASE).netloc + "\n")
     (OUT/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
