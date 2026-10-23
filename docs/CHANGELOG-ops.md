@@ -29,3 +29,4 @@ Log every settings, DNS, workflow or Pages change here before or when it's made.
 - SPF: removed include:_spf.google.com -> v=spf1 include:_spf.mx.cloudflare.net ~all
 - DMARC: back to p=reject; sp=reject (rua Brevo kept)
 - 2026-10-23 ~06:40 CDT [bean] IndexNow check: existing key file live (200, body matches); ran `python3 scripts/indexnow_ping.py all` → api.indexnow.org HTTP 200. No new key generated (existing setup already covers this).
+- 2026-10-23 ~08:30 CDT Merged themed-images into main (approved by Jacob): themed Pexels WebP header photos on all software pages incl. new nightly pages, homepage hero banner, photo credits on /about/. build + check_links clean. IndexNow `all` ping after deploy.
