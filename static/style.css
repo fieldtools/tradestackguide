@@ -55,3 +55,12 @@ tr:first-child th{background:var(--soft)}
 footer{border-top:1px solid var(--line);background:#fff;font-size:.88rem;color:var(--mut);padding:18px 0}
 @media(max-width:420px){.logo{font-size:1rem}.pill{padding:6px 9px;font-size:.8rem}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+/* themed images */
+.hero .banner{position:relative;overflow:hidden;border-radius:14px;margin:-8px -6px 18px;min-height:220px;display:flex;align-items:flex-end;background:#1d2b28}
+.banner-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.banner::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,20,18,.35),rgba(8,20,18,.78))}
+.banner-txt{position:relative;z-index:1;padding:22px 18px;color:#fff}
+.banner-txt h1{color:#fff;margin-top:0;text-shadow:0 1px 3px rgba(0,0,0,.5)}.banner-txt .lead{color:#eef4f2;margin-bottom:0}
+.ph-img{display:block;width:100%;height:auto;aspect-ratio:3/1;object-fit:cover;border-radius:14px;margin:14px 0 4px;background:var(--soft)}
+.credits{font-size:.85em}
+@media(min-width:700px){.hero .banner{margin:-16px -12px 22px;min-height:300px}.banner-txt{padding:36px 32px;max-width:760px}}

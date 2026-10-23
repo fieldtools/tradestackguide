@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Build TradeStackGuide static site from data/*.json into dist/. No dependencies."""
-import json, re, shutil, html
+import json, re, shutil, html, zlib
 from pathlib import Path
 R = Path(__file__).parent; D = R/"data"; OUT = R/"dist"
 site = json.loads((D/"site.json").read_text()); aff = json.loads((D/"affiliates.json").read_text())
@@ -20,6 +20,58 @@ ICONS = {  # simple original inline SVG paths (24x24, stroke)
  "window": '<rect x="4" y="3" width="16" height="18" rx="1"/><path d="M12 3v18M4 12h16M15 6l2 2M7 15l2 2"/>',
  "pressure": '<path d="M3 10h8l2 2h3M5 10V7h5v3M16 12l5-3M16 12l5 0M16 12l5 3M6 14v6M3 20h6"/>',
 }
+IMG = {  # header photos (Pexels license: free commercial use, no attribution required); credits in docs/IMAGE-CREDITS.md
+ "hero": ("hero-lawn-care-crew.webp", 1600, 640, "Lawn care worker pushing a mower across a sunlit green lawn", "Magic K", "https://www.pexels.com/photo/man-mowing-lawn-6728933/"),
+ "pressure": ("pressure-washing.webp", 1200, 400, "Worker pressure washing a paved surface, black and white", "Nikita Nikitin", "https://www.pexels.com/photo/man-watering-pavement-12111864/"),
+ "window": ("window-cleaning.webp", 1200, 400, "Gloved hand cleaning a window with a squeegee", "Blissful Place Cleaning company in Perth", "https://www.pexels.com/photo/person-cleaning-window-with-squeegee-and-gloves-31435403/"),
+ "pest": ("pest-control.webp", 1200, 400, "Pest control technician in protective suit fogging a warehouse", "Cristian Aragón", "https://www.pexels.com/photo/professional-fumigation-in-warehouse-setting-32055757/"),
+ "pool": ("pool-service.webp", 1200, 400, "Clean blue residential swimming pool beside a patio", "Ahmet ÇÖTÜR", "https://www.pexels.com/photo/swimming-pool-in-the-yard-of-a-house-19084144/"),
+ "lawn": ("lawn-care.webp", 1200, 400, "Gardener trimming a green hedge with long shears", "el jusuf", "https://www.pexels.com/photo/garden-maintenance-trimming-hedges-in-jakarta-32427439/"),
+ # per-page photos (articles + /tools/ pages); see docs/PAGE-IMAGES.md
+ "pest2": ("pest-fumigation.webp", 1200, 400, "Technician in a white protective suit fogging a plant with a fumigation wand", "Michelangelo Buonarroti", "https://www.pexels.com/photo/4176548/"),
+ "pool2": ("pool-backyard.webp", 1200, 400, "Backyard swimming pool set in a green lawn beside a modern house", "Max Vakhtbovych", "https://www.pexels.com/photo/8134748/"),
+ "pool3": ("pool-dusk.webp", 1200, 400, "Residential pool and lounge chairs in a leafy garden at dusk", "Rachel Claire", "https://www.pexels.com/photo/5864697/"),
+ "pressure2": ("pressure-washing-steps.webp", 1200, 400, "Worker in hi-vis gear pressure washing stone steps", "Antonio Lorenzana Bermejo", "https://www.pexels.com/photo/14965464/"),
+ "window2": ("window-cleaning-facade.webp", 1200, 400, "Window cleaner using a squeegee pole on a glass building front", "Cihat Dede", "https://www.pexels.com/photo/professional-window-cleaner-at-work-outdoors-37440103/"),
+ "lawn2": ("lawn-mower-service.webp", 1200, 400, "Gloved worker servicing a lawn mower on the grass", "Gustavo Fring", "https://www.pexels.com/photo/5163424/"),
+ "lawn3": ("hedge-trimming.webp", 1200, 400, "Close-up of a gardener trimming a hedge with shears", "Magda Ehlers", "https://www.pexels.com/photo/38936334/"),
+}
+PAGE_IMG = {  # explicit picks for existing pages (slug -> IMG key)
+ "best/pest-control-software": "pest2", "best/pool-service-software": "pool2", "best/pressure-washing-software": "pressure2",
+ "best/window-cleaning-software": "window2", "compare/jobber-vs-housecall-pro": "lawn2", "software-buying-checklist": "lawn3",
+ "job-quote-estimator": "window",
+ "tools/jobber": "lawn", "tools/housecall-pro": "pool", "tools/gorilladesk": "pest", "tools/skimmer": "pool3",
+ "tools/responsibid": "window", "tools/workiz": "pressure"}
+TOPIC_WORDS = [("pressure", r"pressure|power.?wash|soft.?wash|exterior clean"), ("window", r"window|gutter|squeegee"),
+ ("pest", r"pest|termite|mosquito|extermin|bug"), ("pool", r"pool|spa\b|hot.?tub|skimmer"), ("lawn", r"lawn|landscap|mow|turf|garden|tree|snow")]
+TOPIC_POOL = {"pressure": ["pressure", "pressure2"], "window": ["window", "window2"], "pest": ["pest", "pest2"],
+ "pool": ["pool", "pool2", "pool3"], "lawn": ["lawn", "lawn2", "lawn3"]}
+DEFAULT_POOL = ["lawn2", "lawn3", "window2", "pressure2"]  # generic field-service fallback
+def page_img(slug, text="", topics=(), explicit=None):
+    """Pick a header photo key for a page. Order: page JSON "image" -> PAGE_IMG -> keyword match on
+    slug/title -> first listed trade/studio type -> DEFAULT_POOL. Pools rotate by a stable slug hash."""
+    if explicit in IMG: return explicit
+    if slug in PAGE_IMG: return PAGE_IMG[slug]
+    hay = f"{slug} {text}".lower(); topic = next((k for k, rx in TOPIC_WORDS if re.search(rx, hay)), None)
+    topic = topic or next((t for t in topics if t in TOPIC_POOL), None)
+    pool = TOPIC_POOL.get(topic, DEFAULT_POOL)
+    return pool[zlib.crc32(slug.encode()) % len(pool)]
+def page_targets():
+    """(path, slug, image key) for every software page; used by the build and the About credits."""
+    out = [(f"/{p['slug']}/", p["slug"], page_img(p["slug"], p.get("h1",""), p.get("trades",[]), p.get("image"))) for p in pages]
+    out += [(f"/tools/{x['slug']}/", "tools/"+x["slug"], page_img("tools/"+x["slug"], x["name"], x.get("trades",[]), x.get("image"))) for x in tools.values()]
+    return out
+def pic(key, cls="ph-img", lazy=True):
+    if key not in IMG: return ""
+    f, w, h, alt, _, _ = IMG[key]
+    att = 'loading="lazy" decoding="async"' if lazy else 'fetchpriority="high" decoding="async"'
+    ss = f' srcset="/img/{f[:-5]}-800.webp 800w, /img/{f} {w}w" sizes="(max-width: 820px) 100vw, 1100px"' if key == "hero" else ""
+    return f'<img class="{cls}" src="/img/{f}"{ss} width="{w}" height="{h}" alt="{e(alt)}" {att}>'
+def credits_html():
+    uses = {}
+    for path, _, k in page_targets(): uses.setdefault(k, []).append(path)
+    rows = "".join(f'<tr><td>{e(v[0])}</td><td>{", ".join(e(u) for u in (["Homepage"] if k=="hero" else []) + (["category page"] if k in ICONS else []) + uses.get(k, [])) or "-"}</td><td>{e(v[3])}</td><td>{e(v[4])}</td><td><a href="{e(v[5])}" rel="nofollow noopener">{e(v[5])}</a></td></tr>' for k, v in IMG.items())
+    return f'<div class="tw" tabindex="0" role="region" aria-label="Photo credits table"><table><tr><th>File</th><th>Used on</th><th>Alt text</th><th>Photographer</th><th>Source (Pexels)</th></tr>{rows}</table></div>'
 def icon(key, cls="ic"):
     return f'<svg class="{cls}" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">{ICONS.get(key,"")}</svg>'
 CHECK = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>'
@@ -52,7 +104,7 @@ def layout(path, title, desc, body, schema=None, noindex=False):
 <header class="top"><div class="wrap hd"><a class="logo" href="/"><svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#0f5e4f"/><path d="M8 11h16M8 16h11M8 21h7" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>{site['name']}</a>
 <nav class="quick" aria-label="Quick"><a class="pill pri" href="/#trades">Best for my trade</a>{cmp_link}</nav></div>
 <nav class="trades wrap" aria-label="Trades">{nav}<a href="/job-quote-estimator/">Calculator</a><a href="/software-buying-checklist/">Checklist</a><a href="/about/">Methodology</a></nav></header>
-<main id="main" class="wrap">{body}</main><footer><div class="wrap"><p><strong>{site['name']}</strong>: {e(site['tagline'])}.</p><p>Last checked: {LC}. Some links may be affiliate links; see our <a href="/about/#disclosure">disclosure</a>. Prices come from vendor pages and can change. <a href="/about/">Methodology</a></p><p>Contact: <a href="mailto:jacob@tradestackguide.com">jacob@tradestackguide.com</a></p><p>Run a martial arts school or studio? See <a href="https://studiostackguide.com/">StudioStackGuide</a>.</p></div></footer><!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "3c9bce2e6c024eb7a1a4ce2438f2f4ff"}}'></script><!-- End Cloudflare Web Analytics --></body></html>"""
+<main id="main" class="wrap">{body}</main><footer><div class="wrap"><p><strong>{site['name']}</strong>: {e(site['tagline'])}.</p><p>Last checked: {LC}. Some links may be affiliate links; see our <a href="/about/#disclosure">disclosure</a>. Prices come from vendor pages and can change. <a href="/about/">Methodology</a></p><p class="credits">Photos from <a href="https://www.pexels.com/" rel="nofollow noopener">Pexels</a> (free license). <a href="/about/#photo-credits">Photo credits</a></p><p>Contact: <a href="mailto:jacob@tradestackguide.com">jacob@tradestackguide.com</a></p><p>Run a martial arts school or studio? See <a href="https://studiostackguide.com/">StudioStackGuide</a>.</p></div></footer><!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "3c9bce2e6c024eb7a1a4ce2438f2f4ff"}}'></script><!-- End Cloudflare Web Analytics --></body></html>"""
 
 def write(path, content):
     f = OUT/path.strip("/")/"index.html" if path != "/" else OUT/"index.html"
@@ -103,7 +155,7 @@ def build_directory():
 
 def build():
     if OUT.exists(): shutil.rmtree(OUT)
-    OUT.mkdir(); shutil.copy(R/"static/style.css", OUT/"style.css"); shutil.copy(R/"static/favicon.svg", OUT/"favicon.svg")
+    OUT.mkdir(); shutil.copy(R/"static/style.css", OUT/"style.css"); shutil.copy(R/"static/favicon.svg", OUT/"favicon.svg"); shutil.copytree(R/"static/img", OUT/"img")
     _k=(R/"static/indexnow-key.txt").read_text().strip(); (OUT/f"{_k}.txt").write_text(_k)
     # home
     cards = "".join(f'<li><a class="card trade" href="/trades/{t["slug"]}/">{icon(t["key"])}<span>{t["name"]} software</span></a></li>' for t in trades)
@@ -111,14 +163,14 @@ def build():
     tcards = "".join(toolcard(x) for x in tools.values())
     write("/", layout("/", f"{site['name']}: Software Comparisons for Pool, Pest, Lawn & Cleaning Pros",
         "Sourced, no-fluff comparisons of scheduling, routing and invoicing software for small pool, pest control, lawn care, window cleaning and pressure washing businesses.",
-        f"<section class='hero'><h1>Find the right software for your service business</h1><p class='lead'>{site['tagline']}. Every price links to its source. If a number isn't public, we say unknown.</p><ul class='grid trades-g' id='trades' aria-label='Choose your trade'>{cards}</ul>{trustbar()}</section><h2>Tools we track</h2><div class='grid tools-g'>{tcards}</div><h2>Guides and comparisons</h2><ul class='grid guides-g'>{arts}</ul>",
+        f"<section class='hero'><div class='banner'>{pic('hero','banner-img',lazy=False)}<div class='banner-txt'><h1>Find the right software for your service business</h1><p class='lead'>{site['tagline']}. Every price links to its source. If a number isn't public, we say unknown.</p></div></div><ul class='grid trades-g' id='trades' aria-label='Choose your trade'>{cards}</ul>{trustbar()}</section><h2>Tools we track</h2><div class='grid tools-g'>{tcards}</div><h2>Guides and comparisons</h2><ul class='grid guides-g'>{arts}</ul>",
         [{"@context":"https://schema.org","@type":"WebSite","name":site["name"],"url":BASE+"/"}]))
     # about
     write("/about/", layout("/about/", f"About & Methodology | {site['name']}", "How TradeStackGuide collects pricing and feature data, how often it's checked, and how we make money (affiliate disclosure).",
         f"""<h1>About and methodology</h1><h2>How we collect data</h2><p>We only use information published on each vendor's own public pricing and feature pages. Each tool entry lists its source URLs and a last-checked date (currently {LC}). We don't invent ratings, review scores or prices. Anything a vendor doesn't publish is marked <em>unknown</em>.</p>
 <h2>How often we update</h2><p>We re-check prices on a rolling basis and at least quarterly. Promotions change often, so always confirm on the vendor's site.</p>
 <h2 id="disclosure">Affiliate disclosure</h2><p>Some links on this site are affiliate or referral links. If you sign up through them, we may earn a commission at no extra cost to you. Commissions never affect the data we publish, and we list tools whether or not they have an affiliate program.</p>
-<h2 id="contact">Contact</h2><p>Questions, corrections or pricing updates: email <a href="mailto:jacob@tradestackguide.com">jacob@tradestackguide.com</a>.</p>"""))
+<h2 id="contact">Contact</h2><p>Questions, corrections or pricing updates: email <a href="mailto:jacob@tradestackguide.com">jacob@tradestackguide.com</a>.</p><h2 id="photo-credits">Photo credits</h2><p>Photos are from Pexels under the Pexels license (free for commercial use, attribution not required). We credit the photographers anyway:</p>"""+credits_html()+""""""))
     # trades
     for t in trades:
         ts = [x for x in tools.values() if t["key"] in x["trades"]]
@@ -127,8 +179,9 @@ def build():
         path = f"/trades/{t['slug']}/"
         write(path, layout(path, f"{t['name']} Business Software: Tools, Prices & Comparisons ({LC[:4]})",
             f"{t['name']} software compared: {', '.join(x['name'] for x in ts)}. Published prices, trials and features with sources, last checked {LC}.",
-            f"<div class='ph'>{icon(t['key'],'ic big')}<h1>{t['name']} software</h1></div><p class='lead'>{t['intro']}</p>{trustbar()}<h2>Tools</h2><div class='grid tools-g'>{''.join(toolcard(x) for x in ts)}</div><h2>Side-by-side comparison</h2>{table([x['slug'] for x in ts])}<ul class='sr'>{li}</ul>" + (f"<h2>Guides</h2><ul>{rel}</ul>" if rel else ""),
+            f"{pic(t['key'])}<div class='ph'>{icon(t['key'],'ic big')}<h1>{t['name']} software</h1></div><p class='lead'>{t['intro']}</p>{trustbar()}<h2>Tools</h2><div class='grid tools-g'>{''.join(toolcard(x) for x in ts)}</div><h2>Side-by-side comparison</h2>{table([x['slug'] for x in ts])}<ul class='sr'>{li}</ul>" + (f"<h2>Guides</h2><ul>{rel}</ul>" if rel else ""),
             [crumbs([("Home","/"),(t["name"],path)])]))
+    PIMG = {slug: k for _, slug, k in page_targets()}
     # tools
     for x in tools.values():
         path = f"/tools/{x['slug']}/"
@@ -136,7 +189,7 @@ def build():
         key = x["slug"].replace("-","")
         cta = afflink(key, f"Visit {x['name']}") if key in aff else ""
         write(path, layout(path, f"{x['name']} Pricing & Features ({LC[:4]}): Sourced Overview", f"{x['name']} plans, prices, trial and key features from the vendor's public pricing page, last checked {LC}.",
-            f"<h1>{x['name']}: pricing and features</h1>{trustbar()}<div class='summary card'><p class='bf'><span class='lbl'>Best for</span> {e(x.get('best_for','unknown'))}</p><p class='price'><span class='lbl'>Starting price</span> {e(x.get('starting_price','unknown'))}</p>{proscons(x)}<div class='actions'>{cta}</div></div><h2>Plans</h2><div class='tw' tabindex='0' role='region' aria-label='Plans table'><table><tr><th>Plan</th><th>Users</th><th>Monthly</th><th>Annual</th></tr>{plans}</table></div><h2>Key facts</h2><ul class='facts'><li>Trial: {x['free_trial']}</li><li>Contract: {x['contract']}</li><li>Extra users/units: {x['extra_user']}</li><li>Routing: {x['routing']}</li><li>Payments: {x['card_fee']}</li><li>Rating: {x['rating']}</li></ul><p>Sources: "+" ".join(f'<a href="{s}" rel="nofollow">{s}</a>' for s in x['sources'])+"</p>"+(("<h2>Guides featuring "+x['name']+"</h2><ul>"+"".join(f'<li><a href="/{p["slug"]}/">{e(p["h1"])}</a></li>' for p in pages if x['slug'] in p.get('tools',[]))+"</ul>") if any(x['slug'] in p.get('tools',[]) for p in pages) else "")+f"<div class='actions'>{cta}</div>",
+            f"{pic(PIMG['tools/'+x['slug']])}<h1>{x['name']}: pricing and features</h1>{trustbar()}<div class='summary card'><p class='bf'><span class='lbl'>Best for</span> {e(x.get('best_for','unknown'))}</p><p class='price'><span class='lbl'>Starting price</span> {e(x.get('starting_price','unknown'))}</p>{proscons(x)}<div class='actions'>{cta}</div></div><h2>Plans</h2><div class='tw' tabindex='0' role='region' aria-label='Plans table'><table><tr><th>Plan</th><th>Users</th><th>Monthly</th><th>Annual</th></tr>{plans}</table></div><h2>Key facts</h2><ul class='facts'><li>Trial: {x['free_trial']}</li><li>Contract: {x['contract']}</li><li>Extra users/units: {x['extra_user']}</li><li>Routing: {x['routing']}</li><li>Payments: {x['card_fee']}</li><li>Rating: {x['rating']}</li></ul><p>Sources: "+" ".join(f'<a href="{s}" rel="nofollow">{s}</a>' for s in x['sources'])+"</p>"+(("<h2>Guides featuring "+x['name']+"</h2><ul>"+"".join(f'<li><a href="/{p["slug"]}/">{e(p["h1"])}</a></li>' for p in pages if x['slug'] in p.get('tools',[]))+"</ul>") if any(x['slug'] in p.get('tools',[]) for p in pages) else "")+f"<div class='actions'>{cta}</div>",
             [crumbs([("Home","/"),(x["name"],path)]),{"@context":"https://schema.org","@type":"SoftwareApplication","name":x["name"],"applicationCategory":"BusinessApplication","url":x["website"]}]))
     # articles
     for p in pages:
@@ -144,7 +197,7 @@ def build():
         faq = "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q,a in p.get("faq",[]))
         sch = [crumbs([("Home","/"),(p["h1"],path)]),{"@context":"https://schema.org","@type":"Article","headline":p["h1"],"dateModified":LC,"author":{"@type":"Organization","name":site["name"]}}]
         if p.get("faq"): sch.append({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in p["faq"]]})
-        write(path, layout(path, p["title"], p["description"], f"<h1>{e(p['h1'])}</h1>{trustbar()}{render(p['body'])}" + (f"<h2>FAQ</h2>{faq}" if faq else ""), sch))
+        write(path, layout(path, p["title"], p["description"], f"{pic(PIMG[p['slug']])}<h1>{e(p['h1'])}</h1>{trustbar()}{render(p['body'])}" + (f"<h2>FAQ</h2>{faq}" if faq else ""), sch))
     build_directory()
     (OUT/"sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>{BASE}{u}</loc><lastmod>{LC}</lastmod></url>" for u in urls) + "</urlset>\n")
     (OUT/"CNAME").write_text(urlparse(BASE).netloc + "\n")
