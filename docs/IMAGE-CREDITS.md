@@ -21,7 +21,6 @@ Assigned automatically by `page_img()` in build.py (see docs/PAGE-IMAGES.md). "U
 |---|---|---|---|---|
 | `pressure-washing.webp` (1200x400) | /tools/workiz/ | Worker pressure washing a paved surface, black and white | Nikita Nikitin | https://www.pexels.com/photo/man-watering-pavement-12111864/ |
 | `window-cleaning.webp` (1200x400) | /tools/responsibid/ | Gloved hand cleaning a window with a squeegee | Blissful Place Cleaning company in Perth | https://www.pexels.com/photo/person-cleaning-window-with-squeegee-and-gloves-31435403/ |
-| `pest-control.webp` (1200x400) | /tools/gorilladesk/ | Pest control technician in protective suit fogging a warehouse | Cristian Aragón | https://www.pexels.com/photo/professional-fumigation-in-warehouse-setting-32055757/ |
 | `pool-service.webp` (1200x400) | /tools/housecall-pro/ | Clean blue residential swimming pool beside a patio | Ahmet ÇÖTÜR | https://www.pexels.com/photo/swimming-pool-in-the-yard-of-a-house-19084144/ |
 | `lawn-care.webp` (1200x400) | /tools/jobber/ | Gardener trimming a green hedge with long shears | el jusuf | https://www.pexels.com/photo/garden-maintenance-trimming-hedges-in-jakarta-32427439/ |
 | `pest-fumigation.webp` (1200x400) | /best/pest-control-software/ | Technician in a white protective suit fogging a plant with a fumigation wand | Michelangelo Buonarroti | https://www.pexels.com/photo/4176548/ |
@@ -45,3 +44,4 @@ Checked 2026-10-23: each source page was live and marked Free. Images were revie
 
 Listing cards take an optional `"image"` in `data/directory/*.json`: an `IMG` key, or `{"src","alt","width","height","credit"}` for a contractor-supplied photo (only with written permission). If it's empty, the card uses the trade-matched stock photo (`LISTING_TRADE_IMG` in build.py).
 | `contractor-tablet-quote.webp` (1200x400) | /tools/quoteiq/ | Contractor in a hard hat and hi-vis vest checking a tablet on a job site | Mikael Blomkvist | https://www.pexels.com/photo/an-engineer-using-a-digital-tablet-8961008/ |
+| `pest-garden-sprayer.webp` (1200x400) | /tools/gorilladesk/ | Worker with a backpack sprayer treating rows of green plants | Dinuka Gunawardana | https://www.pexels.com/photo/man-spraying-plants-in-a-vegetable-garden-using-a-sprayer-17903068/ |

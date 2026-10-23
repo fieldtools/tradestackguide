@@ -39,6 +39,7 @@ IMG = {  # header photos (Pexels license: free commercial use, no attribution re
  "industrial-card": ("industrial-ppe-spray-card.webp", 480, 320, "Industrial worker in a protective suit and mask spraying with a high-pressure gun on scaffolding", "Caleb Oquendo", "https://www.pexels.com/photo/standing-person-holding-hose-3186687/"),
  "lawn3": ("hedge-trimming.webp", 1200, 400, "Close-up of a gardener trimming a hedge with shears", "Magda Ehlers", "https://www.pexels.com/photo/38936334/"),
  "tool-quoteiq": ("contractor-tablet-quote.webp", 1200, 400, "Contractor in a hard hat and hi-vis vest checking a tablet on a job site", "Mikael Blomkvist", "https://www.pexels.com/photo/an-engineer-using-a-digital-tablet-8961008/"),
+ "tool-gorilladesk": ("pest-garden-sprayer.webp", 1200, 400, "Worker with a backpack sprayer treating rows of green plants", "Dinuka Gunawardana", "https://www.pexels.com/photo/man-spraying-plants-in-a-vegetable-garden-using-a-sprayer-17903068/"),
  "calc-quote": ("quote-estimate-notebook.webp", 1200, 400, "Hand writing job notes in a notebook beside garden soil and plants", "Antoni Shkraba", "https://www.pexels.com/photo/a-person-writing-on-a-notebook-7342626/"),
  "checklist-clipboard": ("service-checklist-clipboard.webp", 1200, 400, "Worker in a hi-vis vest holding a pen and a printed checklist on a clipboard", "RDNE Stock project", "https://www.pexels.com/photo/person-in-yellow-reflective-safety-vest-holding-a-pen-and-checklist-of-house-inspection-8293680/"),
 }
@@ -46,7 +47,7 @@ PAGE_IMG = {  # explicit picks for existing pages (slug -> IMG key)
  "best/pest-control-software": "pest2", "best/pool-service-software": "pool2", "best/pressure-washing-software": "pressure2",
  "best/window-cleaning-software": "window2", "compare/jobber-vs-housecall-pro": "lawn2", "software-buying-checklist": "checklist-clipboard",
  "job-quote-estimator": "calc-quote",
- "tools/jobber": "lawn", "tools/housecall-pro": "pool", "tools/gorilladesk": "pest", "tools/skimmer": "pool3",
+ "tools/jobber": "lawn", "tools/housecall-pro": "pool", "tools/gorilladesk": "tool-gorilladesk", "tools/skimmer": "pool3",
  "tools/responsibid": "window", "tools/workiz": "pressure", "tools/quoteiq": "tool-quoteiq"}
 TOPIC_WORDS = [("pressure", r"pressure|power.?wash|soft.?wash|exterior clean"), ("window", r"window|gutter|squeegee"),
  ("pest", r"pest|termite|mosquito|extermin|bug"), ("pool", r"pool|spa\b|hot.?tub|skimmer"), ("lawn", r"lawn|landscap|mow|turf|garden|tree|snow")]
