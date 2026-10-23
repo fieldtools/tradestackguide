@@ -18,3 +18,7 @@ Steps 3-5 choose from a `TOPIC_POOL` list and rotate by a stable hash of the slu
 2. Crop to 1200x400 (3:1) WebP, under 80 KB (`/workspace/sites/research/themed_images_preview/process2.py` shows the Pillow crop/quality loop), save in `static/img/`.
 3. Add an `IMG` entry: (file, 1200, 400, alt text, photographer exactly as shown on Pexels, Pexels source URL), add the key to a `TOPIC_POOL` list (and optionally `PAGE_IMG`).
 4. Add a row to docs/IMAGE-CREDITS.md. The About page credits table is generated from `IMG` automatically (file, pages using it, alt, photographer, source).
+
+## Calculator and checklist pages (2026-10-23)
+
+The calculator and checklist pages each have their own dedicated photo (`calc-*` / `checklist-*` keys in `IMG`, picked via `PAGE_IMG`) that no other page uses. They are deliberately not in any `TOPIC_POOL`, so nightly pages never reuse them. Crop script: `/workspace/sites/research/themed_images_preview/process3.py`.
