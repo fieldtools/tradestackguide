@@ -37,7 +37,22 @@
  },
  "quoteiq": {
   "url": "https://admin-quoteiq.web.app/register?via=jacob-carman",
-  "program": "QuoteIQ (Rewardful) - approved; no site page yet (BACKLOG #33 tools/quoteiq)",
+  "program": "QuoteIQ (Rewardful) - approved, 40% recurring; used on /tools/quoteiq/ and /best/lawn-care-software/",
   "status": "active"
+ },
+ "yardbook": {
+  "url": "https://www.yardbook.com/",
+  "program": "No affiliate program confirmed; plain link",
+  "status": "plain"
+ },
+ "serviceautopilot": {
+  "url": "https://www.serviceautopilot.com/",
+  "program": "No affiliate program confirmed; plain link",
+  "status": "plain"
+ },
+ "lmn": {
+  "url": "https://golmn.com/",
+  "program": "No affiliate program confirmed; plain link",
+  "status": "plain"
  }
 }

@@ -39,7 +39,7 @@
    }
   ],
   "extra_user": "$29/mo each",
-  "card_fee": "2.9% + 30¢ online; 2.7% + 30¢ Tap to Pay; ACH 1%",
+  "card_fee": "2.9% + 30\u00a2 online; 2.7% + 30\u00a2 Tap to Pay; ACH 1%",
   "routing": "Routing listed in features (plan availability: see vendor table)",
   "quickbooks": "QuickBooks Online and Xero sync (Connect and up)",
   "chemical_tracking": "unknown",
@@ -395,6 +395,169 @@
    "Credit or debit card required to start the trial",
    "Route optimization only on Elite ($299.99/mo) and Max",
    "AI features use monthly IQ Credits; unused credits don't roll over"
+  ]
+ },
+ {
+  "slug": "yardbook",
+  "name": "Yardbook",
+  "website": "https://www.yardbook.com/",
+  "trades": [
+   "lawn"
+  ],
+  "free_trial": "Starter plan is free (no trial needed); paid-plan trial length not published",
+  "contract": "Published prices are for annual plans; month-to-month rates differ and aren't published. Fees non-refundable per terms",
+  "plans": [
+   {
+    "name": "Starter",
+    "users": "unknown (Employee Access included)",
+    "monthly_no_commit": "Free",
+    "annual": "Free"
+   },
+   {
+    "name": "Business",
+    "users": "unknown",
+    "monthly_no_commit": "unknown (month-to-month rate not published)",
+    "annual": "$34.99/mo (annual plan)"
+   },
+   {
+    "name": "Enterprise",
+    "users": "unknown",
+    "monthly_no_commit": "unknown (month-to-month rate not published)",
+    "annual": "$49.99/mo (annual plan)"
+   }
+  ],
+  "extra_user": "unknown (no per-user price published)",
+  "card_fee": "Stripe fees plus a 1% Yardbook fee on free/trial accounts; Yardbook fee waived on Business and Enterprise",
+  "routing": "Routing on Starter (free)",
+  "quickbooks": "QuickBooks sync (Enterprise only)",
+  "chemical_tracking": "Chemical tracking listed; multi-step chemical programs on Business and up",
+  "online_booking": "unknown (customized lead capture on Business)",
+  "rating": "unknown",
+  "sources": [
+   "https://www.yardbook.com/pages/pricing",
+   "https://www.yardbook.com/"
+  ],
+  "best_for": "Solo lawn care and landscaping operators who want a free starting plan",
+  "starting_price": "Free (Starter); Business $34.99/mo on an annual plan",
+  "pros": [
+   "Starter plan is free: scheduling, estimates, invoices, routing",
+   "Business plan waives the 1% Yardbook payment fee",
+   "Snow removal and lot measurement on the free plan"
+  ],
+  "cons": [
+   "1% Yardbook fee on online payments on free/trial accounts (plus Stripe fees)",
+   "QuickBooks sync only on Enterprise ($49.99/mo annual)",
+   "Pricing page lists web, desktop and Android app access (no iOS mentioned); month-to-month prices not published"
+  ]
+ },
+ {
+  "slug": "service-autopilot",
+  "name": "Service Autopilot",
+  "website": "https://www.serviceautopilot.com/",
+  "trades": [
+   "lawn"
+  ],
+  "free_trial": "unknown (pricing page offers demos; no trial stated)",
+  "contract": "All published prices are annual subscription rates; downgrades take effect at the end of the contract period",
+  "plans": [
+   {
+    "name": "Startup",
+    "users": "1 business user + 1 mobile license",
+    "monthly_no_commit": "unknown (only annual rates published)",
+    "annual": "$49/mo (annual subscription)"
+   },
+   {
+    "name": "Pro",
+    "users": "1 business user + 2 mobile licenses",
+    "monthly_no_commit": "unknown (only annual rates published)",
+    "annual": "$199/mo (annual subscription)"
+   },
+   {
+    "name": "Pro Plus",
+    "users": "1 business user + 5 mobile licenses",
+    "monthly_no_commit": "unknown (only annual rates published)",
+    "annual": "$499/mo (annual subscription)"
+   },
+   {
+    "name": "Elite",
+    "users": "2 business users + 8 mobile licenses",
+    "monthly_no_commit": "Request pricing",
+    "annual": "Request pricing"
+   }
+  ],
+  "extra_user": "unknown (extra mobile licenses: ask sales)",
+  "card_fee": "Payments integration on all plans; rates not published",
+  "routing": "Route optimization on Pro and up (not Startup); snow dispatch on Pro and up",
+  "quickbooks": "QuickBooks Online two-way sync: included on Elite, call for pricing on Pro and Pro Plus, not on Startup",
+  "chemical_tracking": "Chemical tracking on Pro and up",
+  "online_booking": "Client portal included on Elite; call for pricing on other plans",
+  "rating": "unknown",
+  "sources": [
+   "https://www.serviceautopilot.com/pricing/"
+  ],
+  "best_for": "Established lawn and landscape companies that want automations and route optimization",
+  "starting_price": "$49/mo (Startup, annual subscription rate)",
+  "pros": [
+   "Route optimization, snow dispatch and chemical tracking from Pro ($199/mo)",
+   "Automation workflows on Pro Plus and Elite",
+   "Service Autopilot app included on all plans"
+  ],
+  "cons": [
+   "Only annual subscription rates published",
+   "Startup plan lacks route optimization, job proposals and chemical tracking",
+   "QuickBooks sync is call-for-pricing below Elite"
+  ]
+ },
+ {
+  "slug": "lmn",
+  "name": "LMN",
+  "website": "https://golmn.com/",
+  "trades": [
+   "lawn"
+  ],
+  "free_trial": "unknown (pricing page offers demos; no trial stated)",
+  "contract": "Billed monthly, after a one-time onboarding fee (amount not published)",
+  "plans": [
+   {
+    "name": "Starter",
+    "users": "1 office/crew lead + 5 crew member licenses",
+    "monthly_no_commit": "From $297/mo billed monthly (plus one-time onboarding fee)",
+    "annual": "unknown"
+   },
+   {
+    "name": "Professional",
+    "users": "3 office/crew lead + 15 crew member licenses",
+    "monthly_no_commit": "From $648/mo billed monthly (plus one-time onboarding fee)",
+    "annual": "unknown"
+   },
+   {
+    "name": "Enterprise",
+    "users": "Starts at 100 users",
+    "monthly_no_commit": "Request pricing",
+    "annual": "Request pricing"
+   }
+  ],
+  "extra_user": "Additional licenses available for a fee (price not published)",
+  "card_fee": "LMN Pay (credit card, ACH, debit); rates not published",
+  "routing": "Route optimization in the LMN Crew app",
+  "quickbooks": "QuickBooks Online on Starter; Online and Desktop on Professional and Enterprise",
+  "chemical_tracking": "unknown (material tracking and costing on Professional and up)",
+  "online_booking": "Customer portal: clients approve estimates, submit requests, pay invoices",
+  "rating": "unknown",
+  "sources": [
+   "https://golmn.com/pricing/"
+  ],
+  "best_for": "Landscaping companies with crews that budget and estimate by overhead and labor hours",
+  "starting_price": "From $297/mo (Starter: 1 office + 5 crew licenses), plus onboarding fee",
+  "pros": [
+   "Starter includes 6 licenses (1 office/crew lead + 5 crew)",
+   "Budgeting, estimating, scheduling, crew app and invoicing in one plan",
+   "Offline access in the LMN Crew app"
+  ],
+  "cons": [
+   "Highest published starting price here ($297/mo)",
+   "One-time onboarding fee, amount not published",
+   "Real-time job costing and material tracking need Professional ($648/mo)"
   ]
  }
 ]
