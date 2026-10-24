@@ -1,0 +1,4 @@
+Contact: mailto:jacob@tradestackguide.com
+Expires: 2027-10-24T17:31:00.000Z
+Preferred-Languages: en
+Canonical: https://tradestackguide.com/.well-known/security.txt

@@ -180,6 +180,16 @@ def build_directory():
                      f'<p class="note">Opens your email app with a prefilled message to <a href="mailto:jacob@tradestackguide.com">jacob@tradestackguide.com</a>.</p></section>')
         write(path, layout(path, d["title"], d["intro"][:155], body))
 
+def build_404():
+    """Branded 404 page -> dist/404.html (served by GitHub Pages for missing URLs). Not in sitemap; noindex."""
+    links = "".join(f'<li><a href="/trades/{t["slug"]}/">{t["name"]} software</a></li>' for t in trades)
+    body = (f"<h1>Page not found</h1><p class='lead'>Sorry, we couldn't find that page. It may have moved or never existed.</p>"
+            f"<p><a class='cta' href='/'>Go to the homepage</a></p><h2>Main sections</h2><ul>{links}"
+            f"<li><a href='/about/'>Methodology</a></li><li><a href='/disclosure/'>Affiliate disclosure</a></li></ul>")
+    html = layout("/404.html", f"Page not found | {site['name']}", "The page you were looking for could not be found.", body)
+    html = re.sub(r'<link rel="canonical"[^>]*>', '', html).replace("</head>", '<meta name="robots" content="noindex">' + "</head>", 1)
+    (OUT/"404.html").write_text(re.sub(r'(href|src)="/(?!/)', lambda m: f'{m.group(1)}="{PREFIX}/', html))
+
 def build():
     if OUT.exists(): shutil.rmtree(OUT)
     OUT.mkdir(); shutil.copy(R/"static/style.css", OUT/"style.css"); shutil.copy(R/"static/favicon.svg", OUT/"favicon.svg"); shutil.copytree(R/"static/img", OUT/"img")
@@ -232,6 +242,8 @@ def build():
         if p.get("faq"): sch.append({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in p["faq"]]})
         write(path, layout(path, p["title"], p["description"], f"{pic(PIMG[p['slug']])}<h1>{e(p['h1'])}</h1>{trustbar()}{render(p['body'])}" + (f"<h2>FAQ</h2>{faq}" if faq else ""), sch))
     build_directory()
+    build_404()
+    shutil.copytree(R/"static/.well-known", OUT/".well-known"); (OUT/".nojekyll").write_text("")
     (OUT/"sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>{BASE}{u}</loc><lastmod>{LC}</lastmod></url>" for u in urls) + "</urlset>\n")
     (OUT/"CNAME").write_text(urlparse(BASE).netloc + "\n")
     (OUT/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
