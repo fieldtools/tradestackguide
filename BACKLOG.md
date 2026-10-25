@@ -4,8 +4,8 @@
 | 1 | best/window-cleaning-software | window cleaning business software | done (2026-10-22) |
 | 2 | best/pressure-washing-software | pressure washing business software | done (2026-10-23) |
 | 3 | best/lawn-care-software | lawn care business software | done (2026-10-24) |
-| 4 | alternatives/jobber | jobber alternatives | HCP, Workiz, GorillaDesk, Kickserv |
-| 5 | alternatives/housecall-pro | housecall pro alternatives | Jobber, Workiz, ServiceM8 |
+| 4 | alternatives/jobber | jobber alternatives | done (2026-10-25) |
+| 5 | alternatives/housecall-pro | housecall pro alternatives | Jobber, Workiz, ServiceM8 (Kickserv added 2026-10-25) |
 | 6 | pricing-tracker | field service software pricing | all tools.json |
 | 7 | compare/skimmer-vs-pool-brain | skimmer vs pool brain | Pool Brain pricing |
 | 8 | compare/gorilladesk-vs-jobber | gorilladesk vs jobber | have data |
@@ -39,3 +39,5 @@
 | 36 | compare/quoteiq-vs-jobber | quoteiq vs jobber | have data (QuoteIQ affiliate) |
 | 37 | alternatives/service-autopilot | service autopilot alternatives | have data |
 | 38 | best/lawn-care-chemical-tracking-software | lawn fertilizer application tracking software | have data (Yardbook, QuoteIQ, Service Autopilot) |
+| 39 | compare/kickserv-vs-jobber | kickserv vs jobber | have data (Kickserv added 2026-10-25) |
+| 40 | compare/kickserv-vs-housecall-pro | kickserv vs housecall pro | have data (Kickserv added 2026-10-25) |

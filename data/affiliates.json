@@ -54,5 +54,10 @@
   "url": "https://golmn.com/",
   "program": "No affiliate program confirmed; plain link",
   "status": "plain"
+ },
+ "kickserv": {
+  "url": "https://www.kickserv.com/",
+  "program": "No affiliate program confirmed (Kickserv lists a customer referral program only); plain link",
+  "status": "plain"
  }
 }

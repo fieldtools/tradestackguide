@@ -39,7 +39,7 @@
    }
   ],
   "extra_user": "$29/mo each",
-  "card_fee": "2.9% + 30\u00a2 online; 2.7% + 30\u00a2 Tap to Pay; ACH 1%",
+  "card_fee": "2.9% + 30¢ online; 2.7% + 30¢ Tap to Pay; ACH 1%",
   "routing": "Routing listed in features (plan availability: see vendor table)",
   "quickbooks": "QuickBooks Online and Xero sync (Connect and up)",
   "chemical_tracking": "unknown",
@@ -558,6 +558,59 @@
    "Highest published starting price here ($297/mo)",
    "One-time onboarding fee, amount not published",
    "Real-time job costing and material tracking need Professional ($648/mo)"
+  ]
+ },
+ {
+  "slug": "kickserv",
+  "name": "Kickserv",
+  "website": "https://www.kickserv.com/",
+  "trades": [
+   "lawn"
+  ],
+  "free_trial": "30 days per pricing page (landscaping page says 14 days); no credit card required",
+  "contract": "No contract; cancel any time. Annual prepay saves 20% (annual subscriptions not pro-rated or refundable)",
+  "plans": [
+   {
+    "name": "Start",
+    "users": "5",
+    "monthly_no_commit": "$75/mo",
+    "annual": "$60/mo billed annually"
+   },
+   {
+    "name": "Run",
+    "users": "10",
+    "monthly_no_commit": "$149/mo",
+    "annual": "$119/mo billed annually"
+   },
+   {
+    "name": "Scale",
+    "users": "20",
+    "monthly_no_commit": "$249/mo",
+    "annual": "$199/mo billed annually"
+   }
+  ],
+  "extra_user": "Users included per plan (5 / 10 / 20); every employee added counts as a user; per-user add-on price not published",
+  "card_fee": "Tap to Pay 2.9% + 30¢; other online card payments 3.9% + 30¢ (some Amex 5.2% + 30¢); ACH 1% + 30¢. 5% subscription discount (Kickback) if you process $1,000+/mo (Start), $2,000+ (Run), $3,000+ (Scale)",
+  "routing": "Dispatch mapping, GPS check-ins and automated scheduling on Run and up; route optimization not listed",
+  "quickbooks": "QuickBooks Online on all plans; QuickBooks Desktop $50/mo extra (Run and up)",
+  "chemical_tracking": "unknown (expense tracking on all plans)",
+  "online_booking": "Embeddable contact form (all plans); Customer Center for appointment requests and invoice payment",
+  "rating": "unknown",
+  "sources": [
+   "https://www.kickserv.com/pricing",
+   "https://www.kickserv.com/industries/landscaping-arborist"
+  ],
+  "best_for": "Small teams wanting 5-20 users included at a flat monthly price",
+  "starting_price": "$60/mo billed annually (Start, 5 users); $75/mo monthly",
+  "pros": [
+   "5 users included on the $60-$75/mo Start plan",
+   "No contract; annual prepay saves 20%",
+   "QuickBooks Online on every plan"
+  ],
+  "cons": [
+   "Online card payments outside Tap to Pay cost 3.9% + 30¢",
+   "Dispatch mapping and GPS check-ins only on Run ($119/mo annual) and up",
+   "Route optimization not listed on the pricing page"
   ]
  }
 ]
