@@ -12,7 +12,7 @@
 | 9 | compare/skimmer-vs-gorilladesk | skimmer vs gorilladesk | have data |
 | 10 | free/field-service-software | free field service software | Yardbook, Square Appointments, Invoice Simple |
 | 11 | tools/jobber-pricing | jobber pricing | have data |
-| 12 | tools/housecall-pro-pricing | housecall pro pricing | have data (Essentials/MAX published as of 2026-10-22) |
+| 12 | tools/housecall-pro-pricing | housecall pro pricing (Search Console query "house call pro price", 2026-10-25) | have data (Essentials/MAX published as of 2026-10-22) |
 | 13 | best/pool-chemical-log-app | pool chemical log app | Skimmer, Pool Brain, Pool Office Manager |
 | 14 | best/pest-control-routing-software | pest control routing software | GorillaDesk, FieldRoutes, PestPac |
 | 15 | compare/gorilladesk-vs-fieldroutes | gorilladesk vs fieldroutes | FieldRoutes pricing |
@@ -41,3 +41,6 @@
 | 38 | best/lawn-care-chemical-tracking-software | lawn fertilizer application tracking software | have data (Yardbook, QuoteIQ, Service Autopilot) |
 | 39 | compare/kickserv-vs-jobber | kickserv vs jobber | have data (Kickserv added 2026-10-25) |
 | 40 | compare/kickserv-vs-housecall-pro | kickserv vs housecall pro | have data (Kickserv added 2026-10-25) |
+| 41 | best/free-pool-service-software | best free pool service software (Search Console query, 2026-10-25) | free tiers of Skimmer, Pool Brain, others (verify) |
+| 42 | best/lawn-care-software-cost | lawn care software cost (Search Console query, 2026-10-25) | have data (lawn care page vendors) |
+| 43 | best/small-pest-control-business-software | pest control software for small business (Search Console query, 2026-10-25) | GorillaDesk, PestPac, FieldRoutes, Jobber |
