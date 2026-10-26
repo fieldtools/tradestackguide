@@ -612,5 +612,70 @@
    "Dispatch mapping and GPS check-ins only on Run ($119/mo annual) and up",
    "Route optimization not listed on the pricing page"
   ]
+ },
+ {
+  "slug": "bookingkoala",
+  "name": "BookingKoala",
+  "website": "https://bookingkoala.com/",
+  "trades": [
+   "window",
+   "pool",
+   "lawn"
+  ],
+  "free_trial": "14 days (pricing page FAQ: charged only after the trial ends; switch plans during it); 30 days when signing up through a BookingKoala affiliate link, per bookingkoala.com/30-days/. Card requirement: unknown",
+  "contract": "No contracts or commitments; cancel any time from inside your account. No setup fee. Annual billing: not published",
+  "plans": [
+   {
+    "name": "Starter",
+    "users": "5 providers or 5 GB",
+    "monthly_no_commit": "From $27/mo",
+    "annual": "unknown (not published)"
+   },
+   {
+    "name": "Growing",
+    "users": "15 providers or 15 GB",
+    "monthly_no_commit": "From $57/mo",
+    "annual": "unknown (not published)"
+   },
+   {
+    "name": "Premium",
+    "users": "50 providers or 50 GB; Campaigns 5,000 contacts",
+    "monthly_no_commit": "From $197/mo",
+    "annual": "unknown (not published)"
+   },
+   {
+    "name": "Larger Premium tiers",
+    "users": "From 60 providers or 60 GB, 10,000 contacts",
+    "monthly_no_commit": "$237-$597/mo (pricing calculator)",
+    "annual": "unknown (not published)"
+   }
+  ],
+  "extra_user": "Priced by providers (each team member counts as one) or monthly storage; Premium also by Campaigns contacts. No automatic upgrade: you upgrade manually when you hit a limit",
+  "card_fee": "unknown (Stripe listed among integrations; card and cash/check payments supported; processing rates not published)",
+  "routing": "Calendar map view and GPS clock in/out (Growing and up) listed; route optimization not listed",
+  "quickbooks": "unknown (not listed on pricing page; integrations listed: Zapier, Stripe, Google Analytics)",
+  "chemical_tracking": "unknown",
+  "online_booking": "Yes: customizable booking forms on a BookingKoala website or embedded on your own site, real-time availability",
+  "rating": "unknown",
+  "sources": [
+   "https://bookingkoala.com/pricing/",
+   "https://bookingkoala.com/features/",
+   "https://bookingkoala.com/",
+   "https://bookingkoala.com/30-days/"
+  ],
+  "best_for": "Cleaning and home-service businesses that want customers to book and pay online through their own website",
+  "starting_price": "From $27/mo (Starter, 5 providers or 5 GB)",
+  "pros": [
+   "Website builder and online booking forms included from Starter ($27/mo)",
+   "No contracts or setup fee; cancel any time",
+   "Hiring module (applicant forms, quizzes, contracts) built in"
+  ],
+  "cons": [
+   "Annual pricing and card processing rates not published",
+   "SMS notifications, GPS clock in/out and advanced reports start on Growing ($57/mo)",
+   "QuickBooks integration and route optimization not listed on the pricing page"
+  ],
+  "who_html": "<p>BookingKoala's home page lists the industries it's set up for. Cleaning leads the list: home cleaning, office cleaning, post-construction, carpet cleaning, window cleaning, pool cleaning and gutter cleaning, plus lawn care, car wash, moving, pet grooming, dog walking, salons and other appointment businesses. Its pricing page defines a provider as \"someone that performs the service, which can be a maid, a dog walker, a barber, tutors.\"</p><p>It's built around customers booking online. Every plan includes a website builder with themes, your own domain, customizable booking forms with real-time availability, and customer, provider and admin dashboards. Features we confirmed on its <a href=\"https://bookingkoala.com/features/\" rel=\"nofollow\">features page</a>: pricing by quantity, hours or packages; multi-location pricing and sales tax by zip code; recurring appointments; an accept/decline option so providers confirm jobs; expedited same-day fees; invoicing; email and text campaigns with A/B testing; and a hiring module with applicant forms, auto-graded quizzes and signed contracts. Growing ($57/mo) adds advanced reports, referrals and ratings, gift cards, GPS clock in/out and SMS notifications. Premium ($197/mo) adds Campaigns (5,000 contacts), multi-step forms, daily discounts, multilingual and funnels.</p>",
+  "compare_html": "<p>BookingKoala centers on online booking and your website. The other tools we track center on quoting, dispatch and field work. Here's how the published facts compare (all checked 2026-10-26):</p>{{table:bookingkoala,jobber,housecall-pro,kickserv}}<ul><li><strong><a href=\"/tools/jobber/\">Jobber</a></strong> starts at $29/mo billed annually ($49/mo monthly) for 1 user and lists QuickBooks Online and Xero sync from Connect. BookingKoala Starter is $27/mo and counts up to 5 providers, but it doesn't list QuickBooks.</li><li><strong><a href=\"/tools/housecall-pro/\">Housecall Pro</a></strong> includes online booking from Basic ($59/mo annually, 1 user) and route optimization on MAX. See <a href=\"/tools/housecall-pro-pricing/\">Housecall Pro pricing</a>.</li><li><strong><a href=\"/tools/kickserv/\">Kickserv</a></strong> includes 5 users on Start ($60/mo annually, $75/mo monthly) and QuickBooks Online on every plan.</li><li><strong><a href=\"/tools/responsibid/\">ResponsiBid</a></strong> is a quoting tool, not a CRM, and it's popular with window and exterior cleaners who want instant online quotes.</li></ul><p>Window cleaner? See <a href=\"/best/window-cleaning-software/\">best window cleaning software</a> and <a href=\"/alternatives/jobber/\">Jobber alternatives</a>.</p>"
  }
 ]
