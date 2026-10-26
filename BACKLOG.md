@@ -12,7 +12,7 @@
 | 9 | compare/skimmer-vs-gorilladesk | skimmer vs gorilladesk | have data |
 | 10 | free/field-service-software | free field service software | Yardbook, Square Appointments, Invoice Simple |
 | 11 | tools/jobber-pricing | jobber pricing | have data |
-| 12 | tools/housecall-pro-pricing | housecall pro pricing (Search Console query "house call pro price", 2026-10-25) | have data (Essentials/MAX published as of 2026-10-22) |
+| 12 | tools/housecall-pro-pricing | housecall pro pricing (Search Console query "house call pro price", 2026-10-25) | done (2026-10-26) |
 | 13 | best/pool-chemical-log-app | pool chemical log app | Skimmer, Pool Brain, Pool Office Manager |
 | 14 | best/pest-control-routing-software | pest control routing software | GorillaDesk, FieldRoutes, PestPac |
 | 15 | compare/gorilladesk-vs-fieldroutes | gorilladesk vs fieldroutes | FieldRoutes pricing |
