@@ -677,5 +677,62 @@
   ],
   "who_html": "<p>BookingKoala's home page lists the industries it's set up for. Cleaning leads the list: home cleaning, office cleaning, post-construction, carpet cleaning, window cleaning, pool cleaning and gutter cleaning, plus lawn care, car wash, moving, pet grooming, dog walking, salons and other appointment businesses. Its pricing page defines a provider as \"someone that performs the service, which can be a maid, a dog walker, a barber, tutors.\"</p><p>It's built around customers booking online. Every plan includes a website builder with themes, your own domain, customizable booking forms with real-time availability, and customer, provider and admin dashboards. Features we confirmed on its <a href=\"https://bookingkoala.com/features/\" rel=\"nofollow\">features page</a>: pricing by quantity, hours or packages; multi-location pricing and sales tax by zip code; recurring appointments; an accept/decline option so providers confirm jobs; expedited same-day fees; invoicing; email and text campaigns with A/B testing; and a hiring module with applicant forms, auto-graded quizzes and signed contracts. Growing ($57/mo) adds advanced reports, referrals and ratings, gift cards, GPS clock in/out and SMS notifications. Premium ($197/mo) adds Campaigns (5,000 contacts), multi-step forms, daily discounts, multilingual and funnels.</p>",
   "compare_html": "<p>BookingKoala centers on online booking and your website. The other tools we track center on quoting, dispatch and field work. Here's how the published facts compare (all checked 2026-10-26):</p>{{table:bookingkoala,jobber,housecall-pro,kickserv}}<ul><li><strong><a href=\"/tools/jobber/\">Jobber</a></strong> starts at $29/mo billed annually ($49/mo monthly) for 1 user and lists QuickBooks Online and Xero sync from Connect. BookingKoala Starter is $27/mo and counts up to 5 providers, but it doesn't list QuickBooks.</li><li><strong><a href=\"/tools/housecall-pro/\">Housecall Pro</a></strong> includes online booking from Basic ($59/mo annually, 1 user) and route optimization on MAX. See <a href=\"/tools/housecall-pro-pricing/\">Housecall Pro pricing</a>.</li><li><strong><a href=\"/tools/kickserv/\">Kickserv</a></strong> includes 5 users on Start ($60/mo annually, $75/mo monthly) and QuickBooks Online on every plan.</li><li><strong><a href=\"/tools/responsibid/\">ResponsiBid</a></strong> is a quoting tool, not a CRM, and it's popular with window and exterior cleaners who want instant online quotes.</li></ul><p>Window cleaner? See <a href=\"/best/window-cleaning-software/\">best window cleaning software</a> and <a href=\"/alternatives/jobber/\">Jobber alternatives</a>.</p>"
+ },
+ {
+  "slug": "lawnpro",
+  "name": "LawnPro",
+  "website": "https://www.lawnprosoftware.com/",
+  "trades": [
+   "lawn"
+  ],
+  "free_trial": "Free Solo plan (no credit card); free trial on every paid plan, no credit card (trial length not stated)",
+  "contract": "No long-term contracts; upgrade, downgrade or cancel any time (access runs to end of billing period)",
+  "plans": [
+   {
+    "name": "Solo",
+    "users": "1 user (feature table lists 0 employee logins); up to 25 customers",
+    "monthly_no_commit": "Free",
+    "annual": "Free"
+   },
+   {
+    "name": "Startup",
+    "users": "3 employee logins",
+    "monthly_no_commit": "$39/mo",
+    "annual": "unknown (vendor says annual saves 20%; annual price not listed)"
+   },
+   {
+    "name": "Grow",
+    "users": "7 employee logins",
+    "monthly_no_commit": "$129/mo",
+    "annual": "$99/mo ($1,188/yr) billed annually"
+   },
+   {
+    "name": "Plus",
+    "users": "15 employee logins",
+    "monthly_no_commit": "$249/mo",
+    "annual": "unknown (vendor says annual saves 20%; annual price not listed)"
+   }
+  ],
+  "extra_user": "Employee logins included per plan (0 / 3 / 7 / 15); extra-login price not published",
+  "card_fee": "unknown (card payments on all plans; ACH included from Grow; rates not published)",
+  "routing": "Optimized routes and route analytics included on Grow and Plus (add-on on Solo/Startup, price not published)",
+  "quickbooks": "QuickBooks Sync included on Plus; add-on on Solo, Startup and Grow (price not published)",
+  "chemical_tracking": "Multi-step chemical programs on Grow and Plus",
+  "online_booking": "Work requests (online lead capture) from Startup",
+  "rating": "unknown",
+  "sources": [
+   "https://www.lawnprosoftware.com/pricing"
+  ],
+  "best_for": "Lawn care operators who want a free start and chemical programs on a mid tier",
+  "starting_price": "Free (Solo, 1 user, up to 25 customers); paid from $39/mo",
+  "pros": [
+   "Free Solo plan, no credit card",
+   "Multi-step chemical programs on Grow ($129/mo)",
+   "No long-term contracts"
+  ],
+  "cons": [
+   "Solo capped at 25 customers",
+   "QuickBooks Sync is an add-on below Plus (price not published)"
+  ]
  }
 ]
