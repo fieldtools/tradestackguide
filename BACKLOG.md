@@ -45,3 +45,5 @@
 | 42 | best/lawn-care-software-cost | lawn care software cost (Search Console query, 2026-10-25) | have data (lawn care page vendors) |
 | 43 | best/small-pest-control-business-software | pest control software for small business (Search Console query, 2026-10-25) | GorillaDesk, PestPac, FieldRoutes, Jobber |
 | 44 | tools/bookingkoala | bookingkoala review pricing (booking + CRM for window cleaning / pressure washing / cleaning) | affiliate: BookingKoala 40% for up to 24 months (own signup with password, needs Jacob; scout 2026-10-25) |
+| 45 | tools/skimmer-pricing | skimmer pricing (Search Console query "faircloth skimmer pricing", 2026-10-26) | Skimmer public pricing page |
+| 46 | best/pool-service-scheduling-software | pool service scheduling software (Search Console queries "pool service scheduling software", "pool scheduling software", 2026-10-26) | Skimmer, Pool Brain, Pool Office Manager, Jobber |
