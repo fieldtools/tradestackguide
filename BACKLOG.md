@@ -45,7 +45,7 @@
 | 42 | best/lawn-care-software-cost | lawn care software cost (Search Console query, 2026-10-25) | have data (lawn care page vendors) |
 | 43 | best/small-pest-control-business-software | pest control software for small business (Search Console query, 2026-10-25) | GorillaDesk, PestPac, FieldRoutes, Jobber |
 | 44 | tools/bookingkoala | bookingkoala review pricing (booking + CRM for window cleaning / pressure washing / cleaning) | done (2026-10-26) |
-| 45 | tools/skimmer-pricing | skimmer pricing (Search Console query "faircloth skimmer pricing", 2026-10-26) | Skimmer public pricing page |
+| 45 | tools/skimmer-pricing | skimmer pricing (Search Console query "faircloth skimmer pricing", 2026-10-26) | done (2026-10-30) |
 | 46 | best/pool-service-scheduling-software | pool service scheduling software (Search Console queries "pool service scheduling software", "pool scheduling software", 2026-10-26) | done (2026-10-30) |
 | 47 | tools/synchroteam | synchroteam review pricing (field service scheduling/dispatch for HVAC, plumbing, electrical) | affiliate: Synchroteam 20% recurring via PayPal ($500 threshold), apply-ready per scout 2026-10-26 |
 | 48 | tools/maidily | maidily review pricing (house cleaning business software) | affiliate: Maidily 25% recurring (payouts start at 3 active referrals), password signup, needs Jacob |
