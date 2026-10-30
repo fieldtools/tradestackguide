@@ -70,5 +70,15 @@
   "url": "https://www.synchroteam.com/",
   "program": "Synchroteam Affiliate Program, 20% recurring via PayPal ($500 threshold); form submitted Oct 26, 2026 but no confirmation shown (unconfirmed); affiliate links issued after a reseller contract is signed; plain URL until approved",
   "status": "applied"
+ },
+ "poolbrain": {
+  "url": "https://www.poolbrain.com/",
+  "program": "No public affiliate or referral program (sales partnerships only, per affiliate scout); plain link",
+  "status": "plain"
+ },
+ "poolofficemanager": {
+  "url": "https://www.poolofficemanager.com/",
+  "program": "No referral or affiliate program found (affiliate scout); plain link",
+  "status": "plain"
  }
 }

@@ -59,7 +59,8 @@
   "cons": [
    "Extra users $29/mo each",
    "Chemical/material tracking not listed on pricing page"
-  ]
+  ],
+  "last_verified": "2026-10-27"
  },
  {
   "slug": "housecall-pro",
@@ -169,7 +170,8 @@
   "cons": [
    "Basic routing capped at 25 stops",
    "SMS is an extra $5/mo plus credit packs"
-  ]
+  ],
+  "last_verified": "2026-10-27"
  },
  {
   "slug": "skimmer",
@@ -220,7 +222,8 @@
   "cons": [
    "Pool-only",
    "QuickBooks and card fees not published on pricing page"
-  ]
+  ],
+  "last_verified": "2026-10-27"
  },
  {
   "slug": "responsibid",
@@ -734,5 +737,93 @@
    "Solo capped at 25 customers",
    "QuickBooks Sync is an add-on below Plus (price not published)"
   ]
+ },
+ {
+  "slug": "pool-brain",
+  "name": "Pool Brain",
+  "website": "https://www.poolbrain.com/",
+  "trades": [
+   "pool"
+  ],
+  "free_trial": "Free trial offered (length not stated on pricing page)",
+  "contract": "unknown (pricing page says all features included, free setup, no hidden costs)",
+  "plans": [
+   {
+    "name": "All features (one plan)",
+    "users": "Unlimited office users + $65 per active field tech",
+    "monthly_no_commit": "$50/mo base + $65/mo per active field technician (page example: 5 techs = $375/mo)",
+    "annual": "unknown"
+   }
+  ],
+  "extra_user": "Office users unlimited (included in $50/mo base); $65/mo per active field technician",
+  "card_fee": "unknown",
+  "routing": "One-click route optimization, drag-and-drop scheduling, one-time moves, Unscheduled section, multi-day views and map filters",
+  "quickbooks": "QuickBooks Online 2-way sync (billing also works without QBO)",
+  "chemical_tracking": "Dosing auto-calculated from tech readings; chemical use and cost tracked by customer, body of water, tech and company",
+  "online_booking": "unknown",
+  "rating": "unknown",
+  "sources": [
+   "https://www.poolbrain.com/pricing",
+   "https://www.poolbrain.com/features/"
+  ],
+  "best_for": "Pool companies with field techs who want guided workflows and chemical cost tracking",
+  "starting_price": "$50/mo base + $65/mo per field tech (1 tech = $115/mo by the published formula)",
+  "pros": [
+   "All features included, with free setup",
+   "Unlimited office users in the $50/mo base",
+   "App works without cell signal and syncs later"
+  ],
+  "cons": [
+   "$65/mo per active field tech adds up as you hire",
+   "Trial length, contract terms and card fees not published"
+  ],
+  "last_verified": "2026-10-27"
+ },
+ {
+  "slug": "pool-office-manager",
+  "name": "Pool Office Manager",
+  "website": "https://www.poolofficemanager.com/",
+  "trades": [
+   "pool"
+  ],
+  "free_trial": "30 days, every feature; card entered at signup, nothing charged until day 30",
+  "contract": "Month-to-month, cancel anytime; no setup, onboarding or implementation fees; free data migration",
+  "plans": [
+   {
+    "name": "Single plan (first user)",
+    "users": "1",
+    "monthly_no_commit": "$125/mo",
+    "annual": "unknown"
+   },
+   {
+    "name": "Each additional active user",
+    "users": "+1",
+    "monthly_no_commit": "+$25/mo (2 users $150, 4 users $200, 10 users $350)",
+    "annual": "unknown"
+   }
+  ],
+  "extra_user": "$25/mo per additional active user; deactivate users in the off-season; 12+ users: contact for fleet rate",
+  "card_fee": "Stripe standard rates (card and ACH); QuickBooks Online Payments or Biller Genie with Fortis as alternatives",
+  "routing": "Route optimization; Timeline, Map, Combined and Calendar schedule views; drag-and-drop; recurring appointments; Unassigned queue",
+  "quickbooks": "QuickBooks Online 2-way sync (+$25/mo add-on); page also says it works with QuickBooks Desktop",
+  "chemical_tracking": "Per-visit readings (pH, chlorine, alkalinity, calcium, CYA, salt and more), LSI and dosing suggestions, chemicals-used logging",
+  "online_booking": "unknown",
+  "rating": "unknown",
+  "sms": "Customer texting from $10/mo plus usage (optional)",
+  "sources": [
+   "https://www.poolofficemanager.com/pricing"
+  ],
+  "best_for": "Pool companies that want flat per-user pricing and can switch users off in the off-season",
+  "starting_price": "$125/mo (1 user); +$25/mo per additional user",
+  "pros": [
+   "30-day free trial with every feature",
+   "No per-customer or per-route charges; users can be deactivated off-season",
+   "No setup fees; free data migration"
+  ],
+  "cons": [
+   "Highest one-user price of the pool tools we track ($125/mo)",
+   "QuickBooks sync (+$25/mo) and texting (from $10/mo) are paid add-ons"
+  ],
+  "last_verified": "2026-10-27"
  }
 ]
