@@ -41,7 +41,7 @@
 | 38 | best/lawn-care-chemical-tracking-software | lawn fertilizer application tracking software | have data (Yardbook, QuoteIQ, Service Autopilot) |
 | 39 | compare/kickserv-vs-jobber | kickserv vs jobber | have data (Kickserv added 2026-10-25) |
 | 40 | compare/kickserv-vs-housecall-pro | kickserv vs housecall pro | have data (Kickserv added 2026-10-25) |
-| 41 | best/free-pool-service-software | best free pool service software (Search Console query, 2026-10-25) | free tiers of Skimmer, Pool Brain, others (verify) |
+| 41 | best/free-pool-service-software | best free pool service software (Search Console query, 2026-10-25) | done (2026-10-30) |
 | 42 | best/lawn-care-software-cost | lawn care software cost (Search Console query, 2026-10-25) | done (2026-10-30) |
 | 43 | best/small-pest-control-business-software | pest control software for small business (Search Console query, 2026-10-25) | GorillaDesk, PestPac, FieldRoutes, Jobber |
 | 44 | tools/bookingkoala | bookingkoala review pricing (booking + CRM for window cleaning / pressure washing / cleaning) | done (2026-10-26) |
