@@ -95,5 +95,16 @@
   "url": "https://www.pestpac.com/pricing",
   "program": "No affiliate program confirmed; plain link",
   "status": "plain"
+ },
+ "upbuoy": {
+  "url": "https://www.upbuoy.com/",
+  "program": "UpBuoy Partner Program - 80% of first two months' subscription per qualified referral; applied Oct 31, 2026 via https://www.upbuoy.com/partners#apply (\"I create pool industry content\"); confirmation said reply within 2 business days; plain URL until approved",
+  "status": "applied"
+ },
+ "clockshark": {
+  "url": "https://www.clockshark.com/",
+  "program": "ClockShark Refer a Friend (Referral Factory) - $500 cash per referral that becomes a paying customer (paid after 90 days); link generated Oct 31, 2026; terms don't mention content sites, so plain URL until Jacob reviews",
+  "status": "applied",
+  "note": "Referral link (not yet on site, pending review): https://clockshark-referral.referral-factory.com/uN8CpH4z"
  }
 }

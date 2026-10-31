@@ -51,3 +51,6 @@
 | 48 | tools/maidily | maidily review pricing (house cleaning business software) | affiliate: Maidily 25% recurring (payouts start at 3 active referrals), password signup, needs Jacob |
 | 49 | compare/jobber-core-vs-connect-vs-grow | which jobber plan do i need | have data (Jobber feature-by-plan table verified 2026-10-31) |
 | 50 | tools/gorilladesk-pricing | gorilladesk pricing | have data (per-route prices verified 2026-10-31) |
+| 51 | tools/upbuoy | upbuoy review pricing (pool service software, $3/location, $99/mo min) | affiliate: UpBuoy 80% of first 2 months, applied 2026-10-31 (pending, reply within 2 business days) |
+| 52 | tools/satquote | satquote review pricing (aerial measuring + quoting for lawn/landscape) | affiliate: SatQuote 20% recurring up to 2 years via FirstPromoter (password signup), needs Jacob |
+| 53 | tools/clockshark | clockshark review pricing (crew time tracking + scheduling for field service/construction) | affiliate: ClockShark $500 cash per paying referral, referral link generated 2026-10-31 (in affiliates.json note; not on site until Jacob reviews, terms don't mention content sites) |
