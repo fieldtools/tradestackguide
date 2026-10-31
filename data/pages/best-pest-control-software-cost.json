@@ -1,0 +1,35 @@
+{
+ "slug": "best/pest-control-software-cost",
+ "title": "Pest Control Software Cost 2026: Real Prices Compared",
+ "description": "How much pest control software costs: published prices for GorillaDesk, Jobber and Housecall Pro, yearly cost for solo operators, and which vendors are quote-only.",
+ "h1": "How much does pest control software cost?",
+ "keyword": "pest control software cost",
+ "type": "guide",
+ "tools": [
+  "gorilladesk",
+  "jobber",
+  "housecall-pro"
+ ],
+ "trades": [
+  "pest"
+ ],
+ "body": "<p>Short answer: published prices for pest control software start at $29/mo and run to a few hundred dollars a month for small teams, while the pest-specific enterprise platforms (FieldRoutes, PestPac) don't publish prices at all. Every figure below is the vendor's own list price, re-checked on 2026-10-31 (GorillaDesk, Housecall Pro, FieldRoutes, PestPac; Jobber verified the same day for our <a href=\"/tools/jobber-pricing/\">Jobber pricing</a> page). Prices exclude tax, card processing and add-ons. For features and our picks, see <a href=\"/best/pest-control-software/\">best pest control software</a> and the <a href=\"/trades/pest-control/\">pest control hub</a>.</p>\n<h2>Pest control software prices at a glance</h2>\n<div class=\"tw\" tabindex=\"0\" role=\"region\" aria-label=\"Pest control software prices\"><table><tr><th>Tool</th><th>Cheapest plan</th><th>Next step up</th><th>Billing notes</th></tr>\n<tr><td><a href=\"/tools/gorilladesk/\">GorillaDesk</a></td><td>Basic $49/mo (1 route, unlimited users)</td><td>Pro $99/mo; Growth $149/mo (first route)</td><td>Priced per route, month-to-month; no setup fees; SMS add-on $5/mo plus credit packs</td></tr>\n<tr><td><a href=\"/tools/jobber/\">Jobber</a></td><td>Core $29/mo billed annually ($49 monthly, 1 user)</td><td>Connect $99/mo annually; Grow $149/mo annually</td><td>Extra users $29/mo each</td></tr>\n<tr><td><a href=\"/tools/housecall-pro/\">Housecall Pro</a></td><td>Basic $59/mo billed annually ($79 monthly, 1 user)</td><td>Essentials $149/mo annually (5 users); MAX $299/mo annually (8 users)</td><td>No long-term contract required</td></tr>\n<tr><td>FieldRoutes</td><td>Contact for quote</td><td>Contact for quote</td><td>Pricing page lists plans with \"Request Pricing\" only</td></tr>\n<tr><td>PestPac (WorkWave)</td><td>Contact for quote</td><td>Contact for quote</td><td>Modular packages; pricing page directs you to a consultant</td></tr></table></div>\n<h2>What a solo pest operator pays per year (list prices)</h2><ul>\n<li><strong>Jobber Core:</strong> $348/yr billed annually ($29 &times; 12) or $588/yr monthly ($49 &times; 12). Its pricing page doesn't list chemical or device tracking. {{aff:jobber|See Jobber plans}}</li>\n<li><strong>GorillaDesk Basic:</strong> $588/yr ($49 &times; 12, 1 route), including material tracking and reporting for chemical use records. {{aff:gorilladesk|See GorillaDesk plans}}</li>\n<li><strong>Housecall Pro Basic:</strong> $708/yr billed annually ($59 &times; 12) or $948/yr monthly ($79 &times; 12). {{aff:housecallpro|See Housecall Pro plans}}</li>\n<li><strong>GorillaDesk Pro:</strong> $1,188/yr ($99 &times; 12, 1 route), adding device tracking and barcoding plus QuickBooks Online sync.</li></ul>\n<h2>Cost as you add routes or technicians</h2><p>GorillaDesk charges per route, not per user. Its pricing page lists these monthly totals: 3 routes cost $149 (Basic), $199 (Pro) or $299 (Growth); 5 routes cost $209, $299 or $399. Jobber and Housecall Pro charge by user instead: Jobber adds $29/mo per extra user, while Housecall Pro includes 5 users on Essentials and 8 on MAX ($35/mo per extra user on MAX). For a side-by-side of headcount effects, see <a href=\"/field-service-software-cost-1-vs-5-users/\">field service software cost for 1 vs 5 users</a>.</p>\n<h2>FieldRoutes and PestPac: quote only</h2><p>The two best-known pest-specific platforms don't publish prices. <a href=\"https://www.fieldroutes.com/company/pricing\" rel=\"nofollow\">FieldRoutes' pricing page</a> lists plans with a \"Request Pricing\" button, and <a href=\"https://www.pestpac.com/pricing\" rel=\"nofollow\">PestPac's pricing page</a> asks you to speak with a consultant to build a package. Budget for a sales demo and ask for any onboarding or setup fees in writing.</p>\n<h2>Costs on top of the subscription</h2><ul>\n<li><strong>Card processing:</strong> Jobber lists 2.9% + 30&cent; online; Housecall Pro lists from 2.59%; GorillaDesk uses Stripe or Square at their rates.</li>\n<li><strong>Texting:</strong> GorillaDesk SMS is $5/mo plus message credit packs.</li>\n<li><strong>Data migration:</strong> free at GorillaDesk; not published for the others (unknown).</li></ul>\n<p>Before you sign, run through our <a href=\"/software-buying-checklist/\">buying checklist</a> or compare <a href=\"/compare/jobber-vs-housecall-pro/\">Jobber vs Housecall Pro</a>.</p>\n{{table:gorilladesk,jobber,housecall-pro}}",
+ "faq": [
+  [
+   "How much does pest control software cost per month?",
+   "Published entry prices checked October 31, 2026: Jobber Core $29/mo billed annually ($49 monthly), GorillaDesk Basic $49/mo per route, and Housecall Pro Basic $59/mo billed annually ($79 monthly). FieldRoutes and PestPac are contact for quote."
+  ],
+  [
+   "How much does FieldRoutes cost?",
+   "FieldRoutes doesn't publish prices; its pricing page lists plans with a Request Pricing option, so you need a quote."
+  ],
+  [
+   "How much does PestPac cost?",
+   "PestPac by WorkWave doesn't publish prices; its pricing page says to speak with a consultant to build a package."
+  ],
+  [
+   "What is the cheapest pest control software with chemical tracking?",
+   "Of the vendors with published prices, GorillaDesk Basic ($49/mo for 1 route) lists material tracking and reporting for chemical use records."
+  ]
+ ]
+}
