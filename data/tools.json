@@ -11,36 +11,36 @@
    "pressure"
   ],
   "free_trial": "14 days on Grow plan, no credit card",
-  "contract": "Monthly no-commitment, 1-year monthly, or annual prepaid options",
+  "contract": "Monthly no-commitment, monthly with 1-year commitment, or annual prepaid (non-refundable)",
   "plans": [
    {
     "name": "Core",
     "users": "1",
     "monthly_no_commit": "$49/mo",
-    "annual": "$29/mo billed annually (promo $21/mo for 12 months, ends Oct 30, 2026)"
+    "annual": "$29/mo billed annually ($39/mo monthly with 1-year commitment)"
    },
    {
     "name": "Connect",
-    "users": "1 (5- and 10-user tiers also listed)",
+    "users": "1 (5-user $149, 10-user $229, 15-user $299/mo billed annually)",
     "monthly_no_commit": "$139/mo",
-    "annual": "$99/mo billed annually (promo $70/mo for 12 months, ends Oct 30, 2026)"
+    "annual": "$99/mo billed annually ($119/mo monthly with 1-year commitment)"
    },
    {
     "name": "Grow",
-    "users": "1 (5/10/15-user tiers also listed)",
+    "users": "1 (5-user $229, 10-user $299, 15-user $399/mo billed annually)",
     "monthly_no_commit": "$199/mo",
-    "annual": "$149/mo billed annually (promo $105/mo for 12 months, ends Oct 30, 2026)"
+    "annual": "$149/mo billed annually ($169/mo monthly with 1-year commitment)"
    },
    {
     "name": "Plus",
-    "users": "5 included",
+    "users": "5 included (10-user $449, 15-user $529/mo billed annually)",
     "monthly_no_commit": "$499/mo",
-    "annual": "$399/mo billed annually (promo $280/mo for 12 months, ends Oct 30, 2026)"
+    "annual": "$399/mo billed annually ($439/mo monthly with 1-year commitment)"
    }
   ],
   "extra_user": "$29/mo each",
-  "card_fee": "2.9% + 30\u00a2 online; 2.7% + 30\u00a2 Tap to Pay; ACH 1%",
-  "routing": "Routing listed in features (plan availability: see vendor table)",
+  "card_fee": "2.9% + 30\u00a2 online; 2.7% + 30\u00a2 Tap to Pay; ACH 1%; instant payouts +1%",
+  "routing": "Routing (route optimization) and GPS tracking on Connect and up; not on Core",
   "quickbooks": "QuickBooks Online and Xero sync (Connect and up)",
   "chemical_tracking": "unknown",
   "online_booking": "Yes",
@@ -60,7 +60,7 @@
    "Extra users $29/mo each",
    "Chemical/material tracking not listed on pricing page"
   ],
-  "last_verified": "2026-10-27"
+  "last_verified": "2026-10-31"
  },
  {
   "slug": "housecall-pro",
