@@ -127,8 +127,8 @@
    "pool",
    "lawn"
   ],
-  "free_trial": "Trial offered (length not stated on pricing page)",
-  "contract": "Month-to-month, no contracts, no setup fees; free data migration; annual prepaid option (price not published); account freeze available for seasonal businesses",
+  "free_trial": "14-day free trial, no credit card required",
+  "contract": "Month-to-month, no contracts, no setup fees; free data migration; annual subscription billed for the full year up front (annual price not published); account freeze available for seasonal businesses",
   "plans": [
    {
     "name": "Basic",
@@ -156,7 +156,7 @@
   "chemical_tracking": "Yes - material tracking & reporting (Basic)",
   "online_booking": "Pro and up",
   "rating": "unknown",
-  "sms": "$5/mo SMS subscription + credit packs ($50/1000 msgs)",
+  "sms": "$5/mo SMS subscription + credit packs ($50/1,000, $100/2,500, $200/8,000 msgs; credits never expire)",
   "sources": [
    "https://gorilladesk.com/pricing/"
   ],
@@ -171,7 +171,7 @@
    "Basic routing capped at 25 stops",
    "SMS is an extra $5/mo plus credit packs"
   ],
-  "last_verified": "2026-10-27"
+  "last_verified": "2026-11-01"
  },
  {
   "slug": "skimmer",
