@@ -39,7 +39,7 @@
    }
   ],
   "extra_user": "$29/mo each",
-  "card_fee": "2.9% + 30\u00a2 online; 2.7% + 30\u00a2 Tap to Pay; ACH 1%; instant payouts +1%",
+  "card_fee": "2.9% + 30¢ online; 2.7% + 30¢ Tap to Pay; ACH 1%; instant payouts +1%",
   "routing": "Routing (route optimization) and GPS tracking on Connect and up; not on Core",
   "quickbooks": "QuickBooks Online and Xero sync (Connect and up)",
   "chemical_tracking": "unknown",
@@ -60,7 +60,8 @@
    "Extra users $29/mo each",
    "Chemical/material tracking not listed on pricing page"
   ],
-  "last_verified": "2026-11-02"
+  "last_verified": "2026-11-02",
+  "add_ons": "Marketing Suite $99/mo, Receptionist (AI) $29/mo, Pipeline $49/mo (add-ons on Core, Connect and Grow; listed as Plus features). Reviews add-on price not published (unknown)"
  },
  {
   "slug": "housecall-pro",
@@ -128,25 +129,25 @@
    "lawn"
   ],
   "free_trial": "14-day free trial, no credit card required",
-  "contract": "Month-to-month, no contracts, no setup fees; free data migration; annual subscription billed for the full year up front (annual price not published); account freeze available for seasonal businesses",
+  "contract": "Month-to-month, no contracts, no setup fees; free data migration; annual subscription billed for the full year up front (Yearly toggle: one month free, i.e. 11 x the monthly price); account freeze available for seasonal businesses",
   "plans": [
    {
     "name": "Basic",
     "users": "Unlimited users; priced per route",
     "monthly_no_commit": "$49/mo (1 route)",
-    "annual": "unknown"
+    "annual": "$539/yr for 1 route (11 x monthly; \"one month free\")"
    },
    {
     "name": "Pro",
     "users": "Unlimited users; priced per route",
     "monthly_no_commit": "$99/mo (1 route)",
-    "annual": "unknown"
+    "annual": "$1,089/yr for 1 route (11 x monthly)"
    },
    {
     "name": "Growth",
     "users": "Unlimited users; priced per route",
     "monthly_no_commit": "$149/mo (1 route)",
-    "annual": "unknown"
+    "annual": "$1,639/yr for 1 route (11 x monthly)"
    }
   ],
   "extra_user": "Users free; extra routes: Basic +$50 (routes 2-3), +$30 (4+); Pro +$50; Growth +$100 (route 2), +$50 (3+)",
@@ -223,7 +224,8 @@
    "Pool-only",
    "QuickBooks and card fees not published on pricing page"
   ],
-  "last_verified": "2026-10-30"
+  "last_verified": "2026-11-02",
+  "add_ons": "Service Texts $0.029/message (Getting Started; unlimited on Scaling Up), AI Phone $99/mo, Marketing Suite $150/mo, Bookkeeping from $198/mo"
  },
  {
   "slug": "responsibid",
@@ -397,8 +399,10 @@
   "cons": [
    "Credit or debit card required to start the trial",
    "Route optimization only on Elite ($299.99/mo) and Max",
-   "AI features use monthly IQ Credits; unused credits don't roll over"
-  ]
+   "AI Website Builder is a $34.99/mo add-on except on Max"
+  ],
+  "add_ons": "AI Website Builder $34.99/mo on Essentials, Beginner, Pro and Elite (included on Max); extra storage +100 GB $9.99/mo, +500 GB $34.99/mo, +2 TB $99.99/mo",
+  "last_verified": "2026-11-02"
  },
  {
   "slug": "yardbook",
@@ -593,7 +597,7 @@
    }
   ],
   "extra_user": "Users included per plan (5 / 10 / 20); every employee added counts as a user; per-user add-on price not published",
-  "card_fee": "Tap to Pay 2.9% + 30\u00a2; other online card payments 3.9% + 30\u00a2 (some Amex 5.2% + 30\u00a2); ACH 1% + 30\u00a2. 5% subscription discount (Kickback) if you process $1,000+/mo (Start), $2,000+ (Run), $3,000+ (Scale)",
+  "card_fee": "Tap to Pay 2.9% + 30¢; other online card payments 3.9% + 30¢ (some Amex 5.2% + 30¢); ACH 1% + 30¢. 5% subscription discount (Kickback) if you process $1,000+/mo (Start), $2,000+ (Run), $3,000+ (Scale)",
   "routing": "Dispatch mapping, GPS check-ins and automated scheduling on Run and up; route optimization not listed",
   "quickbooks": "QuickBooks Online on all plans; QuickBooks Desktop $50/mo extra (Run and up)",
   "chemical_tracking": "unknown (expense tracking on all plans)",
@@ -611,7 +615,7 @@
    "QuickBooks Online on every plan"
   ],
   "cons": [
-   "Online card payments outside Tap to Pay cost 3.9% + 30\u00a2",
+   "Online card payments outside Tap to Pay cost 3.9% + 30¢",
    "Dispatch mapping and GPS check-ins only on Run ($119/mo annual) and up",
    "Route optimization not listed on the pricing page"
   ]
