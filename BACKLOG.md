@@ -55,3 +55,5 @@
 | 52 | tools/satquote | satquote review pricing (aerial measuring + quoting for lawn/landscape) | affiliate: SatQuote 20% recurring up to 2 years via FirstPromoter (password signup), needs Jacob |
 | 53 | tools/clockshark | clockshark review pricing (crew time tracking + scheduling for field service/construction) | affiliate: ClockShark $500 cash per paying referral, referral link generated 2026-10-31 (in affiliates.json note; not on site until Jacob reviews, terms don't mention content sites) |
 | 54 | tools/jobtread | jobtread review pricing (construction management for remodelers, pool builders, roofers; $199/mo + $20/user) | affiliate: JobTread referral 10% of first 12 months, paid quarterly (check or Zelle), apply-ready per scout 2026-11-01; only if TSG adds remodeling/pool-building/roofing coverage |
+| 55 | best/pool-service-software-cost | pool service software cost (Search Console query "pool service software cost", 12 impressions, Oct 25-31 2026) | idea |
+| 56 | tools/lmn-pricing | lmn pricing (Search Console query "lmn pricing", 10 impressions, Oct 25-31 2026) | idea; verify LMN public pricing first |
