@@ -8,7 +8,7 @@
 | 5 | alternatives/housecall-pro | housecall pro alternatives | Jobber, Workiz, ServiceM8 (Kickserv added 2026-10-25) |
 | 6 | pricing-tracker | field service software pricing | all tools.json |
 | 7 | compare/skimmer-vs-pool-brain | skimmer vs pool brain | Pool Brain pricing |
-| 8 | compare/gorilladesk-vs-jobber | gorilladesk vs jobber | have data |
+| 8 | compare/gorilladesk-vs-jobber | gorilladesk vs jobber | done (2026-11-02) |
 | 9 | compare/skimmer-vs-gorilladesk | skimmer vs gorilladesk | have data |
 | 10 | free/field-service-software | free field service software | Yardbook, Square Appointments, Invoice Simple |
 | 11 | tools/jobber-pricing | jobber pricing | done (2026-10-31) |
