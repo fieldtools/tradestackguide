@@ -62,3 +62,4 @@
 | 59 | tools/pool-brain-pricing | pool brain pricing | have data ($50+$65 formula verified 2026-11-03) |
 | 60 | best/pool-service-invoicing-software | pool service invoicing software | Skimmer, Pool Office Manager, GorillaDesk |
 | 61 | compare/pool-brain-vs-skimmer | pool brain vs skimmer | have data |
+| 62 | tools/homeworks | homeworks review pricing (home service CRM by Mike Andes / ex-Copilot; Growth $299/mo, Enterprise $499/mo) | affiliate: Homeworks 25% recurring RevShare, applied 2026-11-03 via Google Form; awaiting referral code (2-3 business days); Veem for payouts |
