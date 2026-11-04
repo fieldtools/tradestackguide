@@ -68,3 +68,6 @@
 | 65 | tools/service-autopilot-pricing | service autopilot pricing | have data (verified 2026-11-04) |
 | 66 | compare/yardbook-vs-lmn | yardbook vs lmn | have data (both verified 2026-11-04) |
 | 67 | best/lawn-care-software-for-crews | lawn care software for crews (multi-crew / 10+ staff angle vs solo pages) | LMN, Service Autopilot, Jobber, GorillaDesk |
+| 68 | best/window-cleaning-scheduling-software | window cleaning scheduling software (Search Console query, 1 click/10 impr, Oct 26–Nov 1 2026) | Jobber, Housecall Pro, BookingKoala |
+| 69 | best/window-washing-software | window washing software (Search Console query, 2 clicks/4 impr, Oct 26–Nov 1 2026; synonym angle vs /best/window-cleaning-software/) | Jobber, Housecall Pro, BookingKoala |
+| 70 | best/pool-cleaning-business-software | pool cleaning business software (Search Console query, 2 clicks/2 impr, Oct 26–Nov 1 2026) | Skimmer, Pool Brain, GorillaDesk |
