@@ -56,10 +56,15 @@
 | 53 | tools/clockshark | clockshark review pricing (crew time tracking + scheduling for field service/construction) | affiliate: ClockShark $500 cash per paying referral, referral link generated 2026-10-31 (in affiliates.json note; not on site until Jacob reviews, terms don't mention content sites) |
 | 54 | tools/jobtread | jobtread review pricing (construction management for remodelers, pool builders, roofers; $199/mo + $20/user) | affiliate: JobTread referral 10% of first 12 months, paid quarterly (check or Zelle), apply-ready per scout 2026-11-01; only if TSG adds remodeling/pool-building/roofing coverage |
 | 55 | best/pool-service-software-cost | pool service software cost (Search Console query "pool service software cost", 12 impressions, Oct 25-31 2026) | done (2026-11-03) |
-| 56 | tools/lmn-pricing | lmn pricing (Search Console query "lmn pricing", 10 impressions, Oct 25-31 2026) | idea; verify LMN public pricing first |
+| 56 | tools/lmn-pricing | lmn pricing (Search Console query "lmn pricing", 10 impressions, Oct 25-31 2026) | done (2026-11-04) |
 | 57 | compare/skimmer-vs-pool-office-manager | skimmer vs pool office manager | have data (both verified 2026-11-03) |
 | 58 | best/pool-service-software-for-solo | pool service software for one person (solo tech angle) | have data |
 | 59 | tools/pool-brain-pricing | pool brain pricing | have data ($50+$65 formula verified 2026-11-03) |
 | 60 | best/pool-service-invoicing-software | pool service invoicing software | Skimmer, Pool Office Manager, GorillaDesk |
 | 61 | compare/pool-brain-vs-skimmer | pool brain vs skimmer | have data |
 | 62 | tools/homeworks | homeworks review pricing (home service CRM by Mike Andes / ex-Copilot; Growth $299/mo, Enterprise $499/mo) | affiliate: Homeworks 25% recurring RevShare, applied 2026-11-03 via Google Form; awaiting referral code (2-3 business days); Veem for payouts |
+| 63 | compare/lmn-vs-jobber | lmn vs jobber (landscaping crew + budgeting angle) | have data (LMN verified 2026-11-04) |
+| 64 | best/landscaping-estimating-software | landscaping estimating software | LMN, Jobber, QuoteIQ, Aspire |
+| 65 | tools/service-autopilot-pricing | service autopilot pricing | have data (verified 2026-11-04) |
+| 66 | compare/yardbook-vs-lmn | yardbook vs lmn | have data (both verified 2026-11-04) |
+| 67 | best/lawn-care-software-for-crews | lawn care software for crews (multi-crew / 10+ staff angle vs solo pages) | LMN, Service Autopilot, Jobber, GorillaDesk |

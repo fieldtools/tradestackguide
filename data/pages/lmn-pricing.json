@@ -1,0 +1,52 @@
+{
+ "slug": "tools/lmn-pricing",
+ "title": "LMN Pricing 2026: Plans, Licenses & Real Cost",
+ "description": "LMN costs from $297/mo (Starter) or $648/mo (Professional), billed monthly after onboarding. Licenses, yearly totals vs Jobber/Yardbook, checked Nov 4, 2026.",
+ "h1": "LMN pricing: what Starter and Professional really cost",
+ "keyword": "lmn pricing",
+ "type": "pricing",
+ "tools": [
+  "lmn",
+  "jobber",
+  "service-autopilot",
+  "yardbook"
+ ],
+ "trades": [
+  "lawn"
+ ],
+ "last_verified": "2026-11-04",
+ "sources": [
+  "https://golmn.com/pricing/",
+  "https://granum.com/lmn/pricing/",
+  "https://www.getjobber.com/pricing/",
+  "https://www.serviceautopilot.com/pricing/",
+  "https://www.yardbook.com/pages/pricing"
+ ],
+ "body": "<p>Looking up LMN pricing? Every number below comes from LMN by Granum's own <a href=\"https://golmn.com/pricing/\" rel=\"nofollow\">pricing page</a> (also published at <a href=\"https://granum.com/lmn/pricing/\" rel=\"nofollow\">granum.com/lmn/pricing</a>), checked on 2026-11-04. Prices are in USD, billed monthly, and apply after a one-time onboarding fee. Anything LMN doesn't publish is marked unknown.</p>\n<h2>LMN plans and prices (2026)</h2>\n<div class=\"tw\" tabindex=\"0\" role=\"region\" aria-label=\"LMN plan prices\"><table><tr><th>Plan</th><th>Starting price</th><th>Licenses included</th><th>Built for</th></tr>\n<tr><td>Starter</td><td>From $297/mo</td><td>1 office/crew lead + 5 crew member licenses</td><td>Companies with fewer than 10 employees</td></tr>\n<tr><td>Professional</td><td>From $648/mo</td><td>3 office/crew lead + 15 crew member licenses</td><td>Companies with 10+ employees</td></tr>\n<tr><td>Enterprise</td><td>Request pricing</td><td>Starts at 100 users</td><td>Multi-location companies</td></tr></table></div>\n<p>Both published prices say \"Starting at\" and \"billed monthly\". Every plan notes a one-time onboarding fee; the amount is <em>unknown</em> (not on the pricing page). Additional licenses on every tier are \"available for a fee\" with no rate published (<em>unknown</em>). Annual billing prices are also <em>unknown</em>.</p>\n<h2>What LMN costs per year (list prices)</h2>\n<p>These totals are monthly list price &times; 12. They leave out the onboarding fee, extra licenses, LMN Pay processing and tax:</p>\n<ul><li><strong>Starter:</strong> $297 &times; 12 = <strong>$3,564/yr</strong> for 6 licenses (1 office/crew lead + 5 crew).</li>\n<li><strong>Professional:</strong> $648 &times; 12 = <strong>$7,776/yr</strong> for 18 licenses (3 office/crew lead + 15 crew).</li>\n<li><strong>Enterprise:</strong> unknown (custom quote from 100 users).</li></ul>\n<p>Per included license, Starter works out to $49.50/mo and Professional to $36/mo \u2014 but only if you use every seat. Extra seats are priced separately and unpublished.</p>\n<h2>What each plan includes</h2>\n<p>From the plan cards and comparison table on LMN's pricing page (2026-11-04):</p>\n<ul><li><strong>Starter:</strong> budgeting (1 active budget / overhead recovery), estimating (customizable price lists, material and labor calculators, automated proposals), scheduling, the LMN Crew app (route optimization, punch-ins, offline access, GPS location verification, efficiency scores, job notes, live job and crew maps), invoicing and payments through LMN Pay (credit card, ACH, debit), CRM and customer portal, SMS customer messaging, sales pipeline analytics, basic interactive dashboards, chat support, customer success access, live group training, LMN Online Academy and LMN Launch / onboarding. QuickBooks Online sync.</li>\n<li><strong>Professional adds</strong> (per the plan card): real-time job costing, Zapier integrations, files and photos on documents, and equipment and material costing. The comparison table also lists advanced dashboards, vendor bill management and QuickBooks Online <em>and</em> Desktop.</li>\n<li><strong>Enterprise adds:</strong> an Enterprise Launch Package and multi-location management, starting at 100 users.</li></ul>\n<p>Greenius crew training appears on the pricing page as a related product; a separate add-on price is <em>unknown</em>.</p>\n<h2>Fees on top of the subscription</h2>\n<ul><li><strong>Onboarding:</strong> one-time fee on every plan; amount not published.</li>\n<li><strong>Extra licenses:</strong> available for a fee; rate not published.</li>\n<li><strong>LMN Pay:</strong> credit card, ACH and debit through the customer portal; processing rates not published (<em>unknown</em>).</li>\n<li><strong>Free trial:</strong> none stated. The pricing page offers product demos instead.</li></ul>\n<h2>Is LMN cheaper than Jobber, Service Autopilot or Yardbook?</h2>\n<p>It depends on crew size. LMN's published floor ($297/mo) is much higher than solo and small-crew tools, but Starter already bundles 6 licenses and landscaper-specific budgeting:</p>\n<ul><li><strong>Solo / tiny crew:</strong> Yardbook Starter is free; Yardbook Business is $34.99/mo (checked 2026-11-04). Jobber Core is $29/mo billed annually or $49/mo with no commitment (checked 2026-11-03). Service Autopilot Startup is $49/mo on the published annual rate (checked 2026-11-04). LMN Starter at $297/mo is not aimed at this tier.</li>\n<li><strong>About 5\u20136 people:</strong> LMN Starter ($297/mo, 6 licenses) vs Jobber Connect 5-user ($149/mo billed annually) or Service Autopilot Pro ($199/mo annual rate, 1 business + 2 mobile licenses). Jobber and Service Autopilot cost less on list price; LMN's page stresses overhead-based budgeting and estimating that those plans may not match feature-for-feature.</li>\n<li><strong>10+ with job costing:</strong> LMN Professional ($648/mo, 18 licenses) vs Jobber Grow/Plus team tiers or Service Autopilot Pro Plus ($499/mo annual rate). Compare seat counts carefully \u2014 LMN includes many crew licenses in the base price.</li></ul>\n<p>See <a href=\"/tools/jobber-pricing/\">Jobber pricing</a>, <a href=\"/best/lawn-care-software-cost/\">lawn care software cost</a> and the full write-up in <a href=\"/best/lawn-care-software/\">best lawn care software</a>.</p>\n{{table:lmn,jobber,service-autopilot,yardbook}}\n<p>More context: the <a href=\"/trades/lawn-care/\">lawn care hub</a>, <a href=\"/tools/lmn/\">LMN overview</a> and our <a href=\"/software-buying-checklist/\">software buying checklist</a>. Want a lower starting price with published tiers? See <a href=\"/alternatives/jobber/\">Jobber alternatives</a>.</p>\n<p>{{aff:lmn|See LMN plans}}</p>",
+ "faq": [
+  [
+   "How much does LMN cost per month?",
+   "As of 2026-11-04, LMN's pricing page lists Starter from $297/mo (1 office/crew lead + 5 crew licenses) and Professional from $648/mo (3 office/crew lead + 15 crew licenses), billed monthly after a one-time onboarding fee. Enterprise starts at 100 users with custom pricing."
+  ],
+  [
+   "Does LMN charge per user?",
+   "Plans include a set number of office/crew lead and crew member licenses. Additional licenses are available for a fee, but LMN does not publish the per-license rate on its pricing page."
+  ],
+  [
+   "What is the LMN onboarding fee?",
+   "LMN states every plan is priced after a one-time onboarding fee. The dollar amount is not published on the pricing page (unknown as of 2026-11-04)."
+  ],
+  [
+   "Does LMN have a free trial?",
+   "No free trial is stated on the pricing page. LMN offers product demos instead."
+  ],
+  [
+   "Does LMN include QuickBooks?",
+   "Yes. The comparison table lists QuickBooks Online on Starter, and QuickBooks Online and Desktop on Professional and Enterprise."
+  ],
+  [
+   "How much is LMN per year?",
+   "At list prices, Starter is $3,564/yr ($297 \u00d7 12) and Professional is $7,776/yr ($648 \u00d7 12), before the onboarding fee, extra licenses and payment processing."
+  ]
+ ]
+}

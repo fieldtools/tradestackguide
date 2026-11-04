@@ -1,834 +1,838 @@
 [
- {
-  "slug": "jobber",
-  "name": "Jobber",
-  "website": "https://www.getjobber.com/",
-  "trades": [
-   "pool",
-   "pest",
-   "lawn",
-   "window",
-   "pressure"
-  ],
-  "free_trial": "14 days on Grow plan, no credit card",
-  "contract": "Monthly no-commitment, monthly with 1-year commitment, or annual prepaid (non-refundable)",
-  "plans": [
-   {
-    "name": "Core",
-    "users": "1",
-    "monthly_no_commit": "$49/mo",
-    "annual": "$29/mo billed annually ($39/mo monthly with 1-year commitment)"
-   },
-   {
-    "name": "Connect",
-    "users": "1 (5-user $149, 10-user $229, 15-user $299/mo billed annually)",
-    "monthly_no_commit": "$139/mo",
-    "annual": "$99/mo billed annually ($119/mo monthly with 1-year commitment)"
-   },
-   {
-    "name": "Grow",
-    "users": "1 (5-user $229, 10-user $299, 15-user $399/mo billed annually)",
-    "monthly_no_commit": "$199/mo",
-    "annual": "$149/mo billed annually ($169/mo monthly with 1-year commitment)"
-   },
-   {
-    "name": "Plus",
-    "users": "5 included (10-user $449, 15-user $529/mo billed annually)",
-    "monthly_no_commit": "$499/mo",
-    "annual": "$399/mo billed annually ($439/mo monthly with 1-year commitment)"
-   }
-  ],
-  "extra_user": "$29/mo each",
-  "card_fee": "2.9% + 30\u00a2 online; 2.7% + 30\u00a2 Tap to Pay; ACH 1%; instant payouts +1%",
-  "routing": "Routing (route optimization) and GPS tracking on Connect and up; not on Core",
-  "quickbooks": "QuickBooks Online and Xero sync (Connect and up)",
-  "chemical_tracking": "unknown",
-  "online_booking": "Yes",
-  "rating": "unknown",
-  "sources": [
-   "https://www.getjobber.com/pricing/",
-   "https://www.getjobber.com/industries/window-cleaning-software/"
-  ],
-  "best_for": "Mixed recurring and one-off jobs across any trade",
-  "starting_price": "$29/mo billed annually (Core, 1 user); $49/mo monthly",
-  "pros": [
-   "14-day trial on Grow, no credit card",
-   "Monthly no-commitment option",
-   "QuickBooks Online and Xero sync (Connect and up)"
-  ],
-  "cons": [
-   "Extra users $29/mo each",
-   "Chemical/material tracking not listed on pricing page"
-  ],
-  "last_verified": "2026-11-03",
-  "add_ons": "Marketing Suite $99/mo, Receptionist (AI) $29/mo, Pipeline $49/mo (add-ons on Core, Connect and Grow; listed as Plus features). Reviews add-on price not published (unknown)"
- },
- {
-  "slug": "housecall-pro",
-  "name": "Housecall Pro",
-  "website": "https://www.housecallpro.com/",
-  "trades": [
-   "pool",
-   "pest",
-   "lawn",
-   "window",
-   "pressure"
-  ],
-  "free_trial": "14 days on MAX plan, no credit card",
-  "contract": "No long-term contract required",
-  "plans": [
-   {
-    "name": "Basic",
-    "users": "1",
-    "monthly_no_commit": "$79/mo",
-    "annual": "$59/mo billed annually"
-   },
-   {
-    "name": "Essentials",
-    "users": "5 included",
-    "monthly_no_commit": "$189/mo",
-    "annual": "$149/mo billed annually"
-   },
-   {
-    "name": "MAX",
-    "users": "8 included",
-    "monthly_no_commit": "$329/mo",
-    "annual": "$299/mo billed annually"
-   }
-  ],
-  "extra_user": "$35/mo per additional user (MAX)",
-  "card_fee": "From 2.59%; bank payments 1%",
-  "routing": "Routes on Essentials; route optimization on MAX",
-  "quickbooks": "QuickBooks Online sync (Essentials and up)",
-  "chemical_tracking": "unknown",
-  "online_booking": "Yes (all plans)",
-  "rating": "unknown",
-  "sources": [
-   "https://www.housecallpro.com/pricing/",
-   "https://www.housecallpro.com/industries/window-cleaning-software/"
-  ],
-  "best_for": "Small teams wanting users included in the plan",
-  "starting_price": "$59/mo billed annually (Basic, 1 user); $79/mo monthly",
-  "pros": [
-   "No long-term contract required",
-   "Online booking on all plans",
-   "5 users included on Essentials, 8 on MAX"
-  ],
-  "cons": [
-   "Monthly billing costs $20-$40/mo more than annual",
-   "Route optimization only on MAX"
-  ],
-  "last_verified": "2026-11-03"
- },
- {
-  "slug": "gorilladesk",
-  "name": "GorillaDesk",
-  "website": "https://gorilladesk.com/",
-  "trades": [
-   "pest",
-   "pool",
-   "lawn"
-  ],
-  "free_trial": "14-day free trial, no credit card required",
-  "contract": "Month-to-month, no contracts, no setup fees; free data migration; annual subscription billed for the full year up front (Yearly toggle: one month free, i.e. 11 x the monthly price); account freeze available for seasonal businesses",
-  "plans": [
-   {
-    "name": "Basic",
-    "users": "Unlimited users; priced per route",
-    "monthly_no_commit": "$49/mo (1 route)",
-    "annual": "$539/yr for 1 route (11 x monthly; \"one month free\")"
-   },
-   {
-    "name": "Pro",
-    "users": "Unlimited users; priced per route",
-    "monthly_no_commit": "$99/mo (1 route)",
-    "annual": "$1,089/yr for 1 route (11 x monthly)"
-   },
-   {
-    "name": "Growth",
-    "users": "Unlimited users; priced per route",
-    "monthly_no_commit": "$149/mo (1 route)",
-    "annual": "$1,639/yr for 1 route (11 x monthly)"
-   }
-  ],
-  "extra_user": "Users free; extra routes: Basic +$50 (routes 2-3), +$30 (4+); Pro +$50; Growth +$100 (route 2), +$50 (3+)",
-  "card_fee": "Via Stripe/Square (their rates)",
-  "routing": "Basic routing up to 25 stops; Drive Matrix routing on Pro",
-  "quickbooks": "QuickBooks Online sync (Pro and up)",
-  "chemical_tracking": "Yes - material tracking & reporting (Basic)",
-  "online_booking": "Pro and up",
-  "rating": "unknown",
-  "sms": "$5/mo SMS subscription + credit packs ($50/1,000, $100/2,500, $200/8,000 msgs; credits never expire)",
-  "sources": [
-   "https://gorilladesk.com/pricing/"
-  ],
-  "best_for": "Pest and pool operators who want unlimited users, priced per route",
-  "starting_price": "$49/mo for 1 route (Basic)",
-  "pros": [
-   "Unlimited users; priced per route",
-   "Material tracking & reporting from Basic",
-   "Month-to-month, no setup fees, free data migration"
-  ],
-  "cons": [
-   "Basic routing capped at 25 stops",
-   "SMS is an extra $5/mo plus credit packs"
-  ],
-  "last_verified": "2026-11-03"
- },
- {
-  "slug": "skimmer",
-  "name": "Skimmer",
-  "website": "https://www.getskimmer.com/",
-  "trades": [
-   "pool"
-  ],
-  "free_trial": "First month free on Scaling Up (promo); 30-day refund guarantee",
-  "contract": "Cancel anytime during trial",
-  "plans": [
-   {
-    "name": "Getting Started",
-    "users": "Unlimited techs & admins",
-    "monthly_no_commit": "$1/serviced location/mo, starts at $49/mo",
-    "annual": "unknown"
-   },
-   {
-    "name": "Scaling Up",
-    "users": "Unlimited techs & admins",
-    "monthly_no_commit": "$2/serviced location/mo, starts at $98/mo",
-    "annual": "unknown"
-   },
-   {
-    "name": "Enterprise",
-    "users": "1000+ pools",
-    "monthly_no_commit": "Custom",
-    "annual": "Custom"
-   }
-  ],
-  "extra_user": "Users unlimited; billed per serviced location (unserviced months not billed)",
-  "card_fee": "unknown",
-  "routing": "Route Builder (all); Route Optimization (Scaling Up)",
-  "quickbooks": "unknown",
-  "chemical_tracking": "LSI & dosing calculator (Orenda), LaMotte integration on Scaling Up",
-  "online_booking": "unknown",
-  "rating": "unknown",
-  "sources": [
-   "https://www.getskimmer.com/pricing"
-  ],
-  "best_for": "Pool route businesses billing by serviced pool",
-  "starting_price": "$49/mo minimum ($1 per serviced location)",
-  "pros": [
-   "Unlimited techs & admins",
-   "Unserviced months not billed",
-   "LSI & dosing calculator, LaMotte integration (Scaling Up)"
-  ],
-  "cons": [
-   "Pool-only",
-   "QuickBooks and card fees not published on pricing page"
-  ],
-  "last_verified": "2026-11-03",
-  "add_ons": "Service Texts $0.029/message (Getting Started; unlimited on Scaling Up), AI Phone $99/mo, Marketing Suite $150/mo, Bookkeeping from $198/mo"
- },
- {
-  "slug": "responsibid",
-  "name": "ResponsiBid",
-  "website": "https://www.responsibid.com/",
-  "trades": [
-   "window",
-   "pressure"
-  ],
-  "free_trial": "Free Startup plan; free demo offered; trial length unknown",
-  "contract": "Cancel anytime, no long-term contracts; one-time setup fee (amount not published); seasonal pause $50/mo for up to 4 months/yr on monthly plans",
-  "plans": [
-   {
-    "name": "Startup",
-    "users": "1 admin user",
-    "monthly_no_commit": "Free",
-    "annual": "unknown"
-   },
-   {
-    "name": "Scaling",
-    "users": "1 admin + unlimited sub-users",
-    "monthly_no_commit": "$179/mo",
-    "annual": "unknown"
-   },
-   {
-    "name": "Pro",
-    "users": "1 admin + unlimited sub-users",
-    "monthly_no_commit": "$229/mo",
-    "annual": "unknown"
-   }
-  ],
-  "extra_user": "1 admin user; unlimited sub-users on Scaling and Pro",
-  "card_fee": "unknown (PayPal deposits listed on Pro)",
-  "routing": "CrewCal scheduling intelligence and customer self-scheduling (Pro); schedules into a connected CRM calendar (Scaling and Pro)",
-  "quickbooks": "unknown (not on pricing page; connects to CRMs such as Jobber and Housecall Pro)",
-  "chemical_tracking": "Not listed (quoting/sales tool)",
-  "online_booking": "Instant quoting on your website (Scaling and Pro); customer self-scheduling (Pro)",
-  "rating": "unknown",
-  "sources": [
-   "https://www.responsibid.com/pricing"
-  ],
-  "best_for": "Window cleaning and exterior cleaning businesses that want instant online quotes on top of a CRM",
-  "starting_price": "Free (Startup); paid plans $179/mo (Scaling) and $229/mo (Pro)",
-  "pros": [
-   "Quoting calculator, service tiers and auto-upsell on every plan, including free Startup",
-   "Connects to Jobber, Housecall Pro, ServiceMonster, Markate and Google Calendar (Scaling and Pro)",
-   "Cancel anytime; $50/mo seasonal pause for up to 4 months a year"
-  ],
-  "cons": [
-   "Quoting/sales tool, not a full CRM: scheduling, invoicing and payments run through a connected CRM",
-   "Setup fee amount not published",
-   "Text follow-up, Zapier and CrewCal only on Pro ($229/mo)"
-  ]
- },
- {
-  "slug": "workiz",
-  "name": "Workiz",
-  "website": "https://www.workiz.com/",
-  "trades": [
-   "pressure"
-  ],
-  "free_trial": "7 days, no credit card required",
-  "contract": "Monthly or annual billing; annual 'save $400+' per vendor FAQ (exact terms not published)",
-  "plans": [
-   {
-    "name": "Standard",
-    "users": "unknown (vendor says 'Growing teams')",
-    "monthly_no_commit": "Request pricing (not published)",
-    "annual": "Request pricing (not published)"
-   },
-   {
-    "name": "Pro",
-    "users": "unknown (vendor says 'Mid size team')",
-    "monthly_no_commit": "Request pricing (not published)",
-    "annual": "Request pricing (not published)"
-   },
-   {
-    "name": "Ultimate",
-    "users": "unknown (vendor says 'Multi-location larger team & franchises')",
-    "monthly_no_commit": "Request pricing (not published)",
-    "annual": "Request pricing (not published)"
-   }
-  ],
-  "extra_user": "unknown (not published)",
-  "card_fee": "unknown (Workiz Pay online payments, tap to pay and consumer financing on all plans; rates not published; card readers sold separately)",
-  "routing": "Fleet and team location tracking on all plans; Genius Scheduling on Pro and Ultimate",
-  "quickbooks": "QuickBooks Online sync (all plans)",
-  "chemical_tracking": "Inventory management (Ultimate only)",
-  "online_booking": "Online booking with optional checkout (all plans)",
-  "rating": "unknown",
-  "sources": [
-   "https://www.workiz.com/pricing/",
-   "https://www.workiz.com/industries/pressure-washing/"
-  ],
-  "best_for": "Phone-heavy service teams that want calls, texts and jobs in one system",
-  "starting_price": "Not published (Request pricing on Standard, Pro and Ultimate)",
-  "pros": [
-   "7-day free trial, no credit card required",
-   "QuickBooks Online sync, online booking and estimate deposits on all plans",
-   "Integrated phone system listed on all plans"
-  ],
-  "cons": [
-   "No prices published; you must request pricing",
-   "Good/Better/Best sales proposals and service plans only on Ultimate",
-   "Zapier and open API only on Ultimate"
-  ]
- },
- {
-  "slug": "quoteiq",
-  "name": "QuoteIQ",
-  "website": "https://myquoteiq.com/",
-  "trades": [
-   "pressure",
-   "lawn",
-   "window",
-   "pool",
-   "pest"
-  ],
-  "free_trial": "14 days on every plan; credit or debit card required to start",
-  "contract": "No contracts or cancellation fees; monthly or annual billing (annual = pay for 10 months, get 12)",
-  "plans": [
-   {
-    "name": "Essentials",
-    "users": "1",
-    "monthly_no_commit": "$29.99/mo",
-    "annual": "$299.99/yr billed annually"
-   },
-   {
-    "name": "Beginner",
-    "users": "2",
-    "monthly_no_commit": "$99.99/mo",
-    "annual": "$999.99/yr billed annually"
-   },
-   {
-    "name": "Pro",
-    "users": "4",
-    "monthly_no_commit": "$199.99/mo",
-    "annual": "$1,999.99/yr billed annually"
-   },
-   {
-    "name": "Elite",
-    "users": "10",
-    "monthly_no_commit": "$299.99/mo",
-    "annual": "$2,999.99/yr billed annually"
-   },
-   {
-    "name": "Max",
-    "users": "20",
-    "monthly_no_commit": "$699.99/mo",
-    "annual": "$6,999.99/yr billed annually"
-   }
-  ],
-  "extra_user": "$25/mo per additional user on every plan, up to 100",
-  "card_fee": "Payment processing fees are separate from the subscription (rates not listed on the pricing page)",
-  "routing": "Route optimization on Elite and Max",
-  "quickbooks": "QuickBooks integration (Pro and up)",
-  "chemical_tracking": "Chemical tracking (Pro and up)",
-  "online_booking": "Online booking & self-scheduling (Elite and Max)",
-  "rating": "unknown",
-  "sources": [
-   "https://myquoteiq.com/pricing",
-   "https://myquoteiq.com/"
-  ],
-  "best_for": "Owner-operators who want quoting, property measuring and job photos in one app",
-  "starting_price": "$29.99/mo (Essentials, 1 user); $299.99/yr billed annually",
-  "pros": [
-   "14-day free trial on every plan",
-   "No contracts or cancellation fees",
-   "MapMeasure Pro and QuoteIQ Cam from Beginner ($99.99/mo)"
-  ],
-  "cons": [
-   "Credit or debit card required to start the trial",
-   "Route optimization only on Elite ($299.99/mo) and Max",
-   "AI Website Builder is a $34.99/mo add-on except on Max"
-  ],
-  "add_ons": "AI Website Builder $34.99/mo on Essentials, Beginner, Pro and Elite (included on Max); extra storage +100 GB $9.99/mo, +500 GB $34.99/mo, +2 TB $99.99/mo",
-  "last_verified": "2026-11-02"
- },
- {
-  "slug": "yardbook",
-  "name": "Yardbook",
-  "website": "https://www.yardbook.com/",
-  "trades": [
-   "lawn"
-  ],
-  "free_trial": "Starter plan is free (no trial needed); paid-plan trial length not published",
-  "contract": "Published prices are for annual plans; month-to-month rates differ and aren't published. Fees non-refundable per terms",
-  "plans": [
-   {
-    "name": "Starter",
-    "users": "unknown (Employee Access included)",
-    "monthly_no_commit": "Free",
-    "annual": "Free"
-   },
-   {
-    "name": "Business",
-    "users": "unknown",
-    "monthly_no_commit": "unknown (month-to-month rate not published)",
-    "annual": "$34.99/mo (annual plan)"
-   },
-   {
-    "name": "Enterprise",
-    "users": "unknown",
-    "monthly_no_commit": "unknown (month-to-month rate not published)",
-    "annual": "$49.99/mo (annual plan)"
-   }
-  ],
-  "extra_user": "unknown (no per-user price published)",
-  "card_fee": "Stripe fees plus a 1% Yardbook fee on free/trial accounts; Yardbook fee waived on Business and Enterprise",
-  "routing": "Routing on Starter (free)",
-  "quickbooks": "QuickBooks sync (Enterprise only)",
-  "chemical_tracking": "Chemical tracking listed; multi-step chemical programs on Business and up",
-  "online_booking": "unknown (customized lead capture on Business)",
-  "rating": "unknown",
-  "sources": [
-   "https://www.yardbook.com/pages/pricing",
-   "https://www.yardbook.com/"
-  ],
-  "best_for": "Solo lawn care and landscaping operators who want a free starting plan",
-  "starting_price": "Free (Starter); Business $34.99/mo on an annual plan",
-  "pros": [
-   "Starter plan is free: scheduling, estimates, invoices, routing",
-   "Business plan waives the 1% Yardbook payment fee",
-   "Snow removal and lot measurement on the free plan"
-  ],
-  "cons": [
-   "1% Yardbook fee on online payments on free/trial accounts (plus Stripe fees)",
-   "QuickBooks sync only on Enterprise ($49.99/mo annual)",
-   "Pricing page lists web, desktop and Android app access (no iOS mentioned); month-to-month prices not published"
-  ]
- },
- {
-  "slug": "service-autopilot",
-  "name": "Service Autopilot",
-  "website": "https://www.serviceautopilot.com/",
-  "trades": [
-   "lawn"
-  ],
-  "free_trial": "unknown (pricing page offers demos; no trial stated)",
-  "contract": "All published prices are annual subscription rates; downgrades take effect at the end of the contract period",
-  "plans": [
-   {
-    "name": "Startup",
-    "users": "1 business user + 1 mobile license",
-    "monthly_no_commit": "unknown (only annual rates published)",
-    "annual": "$49/mo (annual subscription)"
-   },
-   {
-    "name": "Pro",
-    "users": "1 business user + 2 mobile licenses",
-    "monthly_no_commit": "unknown (only annual rates published)",
-    "annual": "$199/mo (annual subscription)"
-   },
-   {
-    "name": "Pro Plus",
-    "users": "1 business user + 5 mobile licenses",
-    "monthly_no_commit": "unknown (only annual rates published)",
-    "annual": "$499/mo (annual subscription)"
-   },
-   {
-    "name": "Elite",
-    "users": "2 business users + 8 mobile licenses",
-    "monthly_no_commit": "Request pricing",
-    "annual": "Request pricing"
-   }
-  ],
-  "extra_user": "unknown (extra mobile licenses: ask sales)",
-  "card_fee": "Payments integration on all plans; rates not published",
-  "routing": "Route optimization on Pro and up (not Startup); snow dispatch on Pro and up",
-  "quickbooks": "QuickBooks Online two-way sync: included on Elite, call for pricing on Pro and Pro Plus, not on Startup",
-  "chemical_tracking": "Chemical tracking on Pro and up",
-  "online_booking": "Client portal included on Elite; call for pricing on other plans",
-  "rating": "unknown",
-  "sources": [
-   "https://www.serviceautopilot.com/pricing/"
-  ],
-  "best_for": "Established lawn and landscape companies that want automations and route optimization",
-  "starting_price": "$49/mo (Startup, annual subscription rate)",
-  "pros": [
-   "Route optimization, snow dispatch and chemical tracking from Pro ($199/mo)",
-   "Automation workflows on Pro Plus and Elite",
-   "Service Autopilot app included on all plans"
-  ],
-  "cons": [
-   "Only annual subscription rates published",
-   "Startup plan lacks route optimization, job proposals and chemical tracking",
-   "QuickBooks sync is call-for-pricing below Elite"
-  ]
- },
- {
-  "slug": "lmn",
-  "name": "LMN",
-  "website": "https://golmn.com/",
-  "trades": [
-   "lawn"
-  ],
-  "free_trial": "unknown (pricing page offers demos; no trial stated)",
-  "contract": "Billed monthly, after a one-time onboarding fee (amount not published)",
-  "plans": [
-   {
-    "name": "Starter",
-    "users": "1 office/crew lead + 5 crew member licenses",
-    "monthly_no_commit": "From $297/mo billed monthly (plus one-time onboarding fee)",
-    "annual": "unknown"
-   },
-   {
-    "name": "Professional",
-    "users": "3 office/crew lead + 15 crew member licenses",
-    "monthly_no_commit": "From $648/mo billed monthly (plus one-time onboarding fee)",
-    "annual": "unknown"
-   },
-   {
-    "name": "Enterprise",
-    "users": "Starts at 100 users",
-    "monthly_no_commit": "Request pricing",
-    "annual": "Request pricing"
-   }
-  ],
-  "extra_user": "Additional licenses available for a fee (price not published)",
-  "card_fee": "LMN Pay (credit card, ACH, debit); rates not published",
-  "routing": "Route optimization in the LMN Crew app",
-  "quickbooks": "QuickBooks Online on Starter; Online and Desktop on Professional and Enterprise",
-  "chemical_tracking": "unknown (material tracking and costing on Professional and up)",
-  "online_booking": "Customer portal: clients approve estimates, submit requests, pay invoices",
-  "rating": "unknown",
-  "sources": [
-   "https://golmn.com/pricing/"
-  ],
-  "best_for": "Landscaping companies with crews that budget and estimate by overhead and labor hours",
-  "starting_price": "From $297/mo (Starter: 1 office + 5 crew licenses), plus onboarding fee",
-  "pros": [
-   "Starter includes 6 licenses (1 office/crew lead + 5 crew)",
-   "Budgeting, estimating, scheduling, crew app and invoicing in one plan",
-   "Offline access in the LMN Crew app"
-  ],
-  "cons": [
-   "Highest published starting price here ($297/mo)",
-   "One-time onboarding fee, amount not published",
-   "Real-time job costing and material tracking need Professional ($648/mo)"
-  ]
- },
- {
-  "slug": "kickserv",
-  "name": "Kickserv",
-  "website": "https://www.kickserv.com/",
-  "trades": [
-   "lawn"
-  ],
-  "free_trial": "30 days per pricing page (landscaping page says 14 days); no credit card required",
-  "contract": "No contract; cancel any time. Annual prepay saves 20% (annual subscriptions not pro-rated or refundable)",
-  "plans": [
-   {
-    "name": "Start",
-    "users": "5",
-    "monthly_no_commit": "$75/mo",
-    "annual": "$60/mo billed annually"
-   },
-   {
-    "name": "Run",
-    "users": "10",
-    "monthly_no_commit": "$149/mo",
-    "annual": "$119/mo billed annually"
-   },
-   {
-    "name": "Scale",
-    "users": "20",
-    "monthly_no_commit": "$249/mo",
-    "annual": "$199/mo billed annually"
-   }
-  ],
-  "extra_user": "Users included per plan (5 / 10 / 20); every employee added counts as a user; per-user add-on price not published",
-  "card_fee": "Tap to Pay 2.9% + 30\u00a2; other online card payments 3.9% + 30\u00a2 (some Amex 5.2% + 30\u00a2); ACH 1% + 30\u00a2. 5% subscription discount (Kickback) if you process $1,000+/mo (Start), $2,000+ (Run), $3,000+ (Scale)",
-  "routing": "Dispatch mapping, GPS check-ins and automated scheduling on Run and up; route optimization not listed",
-  "quickbooks": "QuickBooks Online on all plans; QuickBooks Desktop $50/mo extra (Run and up)",
-  "chemical_tracking": "unknown (expense tracking on all plans)",
-  "online_booking": "Embeddable contact form (all plans); Customer Center for appointment requests and invoice payment",
-  "rating": "unknown",
-  "sources": [
-   "https://www.kickserv.com/pricing",
-   "https://www.kickserv.com/industries/landscaping-arborist"
-  ],
-  "best_for": "Small teams wanting 5-20 users included at a flat monthly price",
-  "starting_price": "$60/mo billed annually (Start, 5 users); $75/mo monthly",
-  "pros": [
-   "5 users included on the $60-$75/mo Start plan",
-   "No contract; annual prepay saves 20%",
-   "QuickBooks Online on every plan"
-  ],
-  "cons": [
-   "Online card payments outside Tap to Pay cost 3.9% + 30\u00a2",
-   "Dispatch mapping and GPS check-ins only on Run ($119/mo annual) and up",
-   "Route optimization not listed on the pricing page"
-  ]
- },
- {
-  "slug": "bookingkoala",
-  "name": "BookingKoala",
-  "website": "https://bookingkoala.com/",
-  "trades": [
-   "window",
-   "pool",
-   "lawn"
-  ],
-  "free_trial": "14 days (pricing page FAQ: charged only after the trial ends; switch plans during it); 30 days when signing up through a BookingKoala affiliate link, per bookingkoala.com/30-days/. Card requirement: unknown",
-  "contract": "No contracts or commitments; cancel any time from inside your account. No setup fee. Annual billing: not published",
-  "plans": [
-   {
-    "name": "Starter",
-    "users": "5 providers or 5 GB",
-    "monthly_no_commit": "From $27/mo",
-    "annual": "unknown (not published)"
-   },
-   {
-    "name": "Growing",
-    "users": "15 providers or 15 GB",
-    "monthly_no_commit": "From $57/mo",
-    "annual": "unknown (not published)"
-   },
-   {
-    "name": "Premium",
-    "users": "50 providers or 50 GB; Campaigns 5,000 contacts",
-    "monthly_no_commit": "From $197/mo",
-    "annual": "unknown (not published)"
-   },
-   {
-    "name": "Larger Premium tiers",
-    "users": "From 60 providers or 60 GB, 10,000 contacts",
-    "monthly_no_commit": "$237-$597/mo (pricing calculator)",
-    "annual": "unknown (not published)"
-   }
-  ],
-  "extra_user": "Priced by providers (each team member counts as one) or monthly storage; Premium also by Campaigns contacts. No automatic upgrade: you upgrade manually when you hit a limit",
-  "card_fee": "unknown (Stripe listed among integrations; card and cash/check payments supported; processing rates not published)",
-  "routing": "Calendar map view and GPS clock in/out (Growing and up) listed; route optimization not listed",
-  "quickbooks": "unknown (not listed on pricing page; integrations listed: Zapier, Stripe, Google Analytics)",
-  "chemical_tracking": "unknown",
-  "online_booking": "Yes: customizable booking forms on a BookingKoala website or embedded on your own site, real-time availability",
-  "rating": "unknown",
-  "sources": [
-   "https://bookingkoala.com/pricing/",
-   "https://bookingkoala.com/features/",
-   "https://bookingkoala.com/",
-   "https://bookingkoala.com/30-days/"
-  ],
-  "best_for": "Cleaning and home-service businesses that want customers to book and pay online through their own website",
-  "starting_price": "From $27/mo (Starter, 5 providers or 5 GB)",
-  "pros": [
-   "Website builder and online booking forms included from Starter ($27/mo)",
-   "No contracts or setup fee; cancel any time",
-   "Hiring module (applicant forms, quizzes, contracts) built in"
-  ],
-  "cons": [
-   "Annual pricing and card processing rates not published",
-   "SMS notifications, GPS clock in/out and advanced reports start on Growing ($57/mo)",
-   "QuickBooks integration and route optimization not listed on the pricing page"
-  ],
-  "who_html": "<p>BookingKoala's home page lists the industries it's set up for. Cleaning leads the list: home cleaning, office cleaning, post-construction, carpet cleaning, window cleaning, pool cleaning and gutter cleaning, plus lawn care, car wash, moving, pet grooming, dog walking, salons and other appointment businesses. Its pricing page defines a provider as \"someone that performs the service, which can be a maid, a dog walker, a barber, tutors.\"</p><p>It's built around customers booking online. Every plan includes a website builder with themes, your own domain, customizable booking forms with real-time availability, and customer, provider and admin dashboards. Features we confirmed on its <a href=\"https://bookingkoala.com/features/\" rel=\"nofollow\">features page</a>: pricing by quantity, hours or packages; multi-location pricing and sales tax by zip code; recurring appointments; an accept/decline option so providers confirm jobs; expedited same-day fees; invoicing; email and text campaigns with A/B testing; and a hiring module with applicant forms, auto-graded quizzes and signed contracts. Growing ($57/mo) adds advanced reports, referrals and ratings, gift cards, GPS clock in/out and SMS notifications. Premium ($197/mo) adds Campaigns (5,000 contacts), multi-step forms, daily discounts, multilingual and funnels.</p>",
-  "compare_html": "<p>BookingKoala centers on online booking and your website. The other tools we track center on quoting, dispatch and field work. Here's how the published facts compare (all checked 2026-10-26):</p>{{table:bookingkoala,jobber,housecall-pro,kickserv}}<ul><li><strong><a href=\"/tools/jobber/\">Jobber</a></strong> starts at $29/mo billed annually ($49/mo monthly) for 1 user and lists QuickBooks Online and Xero sync from Connect. BookingKoala Starter is $27/mo and counts up to 5 providers, but it doesn't list QuickBooks.</li><li><strong><a href=\"/tools/housecall-pro/\">Housecall Pro</a></strong> includes online booking from Basic ($59/mo annually, 1 user) and route optimization on MAX. See <a href=\"/tools/housecall-pro-pricing/\">Housecall Pro pricing</a>.</li><li><strong><a href=\"/tools/kickserv/\">Kickserv</a></strong> includes 5 users on Start ($60/mo annually, $75/mo monthly) and QuickBooks Online on every plan.</li><li><strong><a href=\"/tools/responsibid/\">ResponsiBid</a></strong> is a quoting tool, not a CRM, and it's popular with window and exterior cleaners who want instant online quotes.</li></ul><p>Window cleaner? See <a href=\"/best/window-cleaning-software/\">best window cleaning software</a> and <a href=\"/alternatives/jobber/\">Jobber alternatives</a>.</p>"
- },
- {
-  "slug": "lawnpro",
-  "name": "LawnPro",
-  "website": "https://www.lawnprosoftware.com/",
-  "trades": [
-   "lawn"
-  ],
-  "free_trial": "Free Solo plan (no credit card); free trial on every paid plan, no credit card (trial length not stated)",
-  "contract": "No long-term contracts; upgrade, downgrade or cancel any time (access runs to end of billing period)",
-  "plans": [
-   {
-    "name": "Solo",
-    "users": "1 user (feature table lists 0 employee logins); up to 25 customers",
-    "monthly_no_commit": "Free",
-    "annual": "Free"
-   },
-   {
-    "name": "Startup",
-    "users": "3 employee logins",
-    "monthly_no_commit": "$39/mo",
-    "annual": "unknown (vendor says annual saves 20%; annual price not listed)"
-   },
-   {
-    "name": "Grow",
-    "users": "7 employee logins",
-    "monthly_no_commit": "$129/mo",
-    "annual": "$99/mo ($1,188/yr) billed annually"
-   },
-   {
-    "name": "Plus",
-    "users": "15 employee logins",
-    "monthly_no_commit": "$249/mo",
-    "annual": "unknown (vendor says annual saves 20%; annual price not listed)"
-   }
-  ],
-  "extra_user": "Employee logins included per plan (0 / 3 / 7 / 15); extra-login price not published",
-  "card_fee": "unknown (card payments on all plans; ACH included from Grow; rates not published)",
-  "routing": "Optimized routes and route analytics included on Grow and Plus (add-on on Solo/Startup, price not published)",
-  "quickbooks": "QuickBooks Sync included on Plus; add-on on Solo, Startup and Grow (price not published)",
-  "chemical_tracking": "Multi-step chemical programs on Grow and Plus",
-  "online_booking": "Work requests (online lead capture) from Startup",
-  "rating": "unknown",
-  "sources": [
-   "https://www.lawnprosoftware.com/pricing"
-  ],
-  "best_for": "Lawn care operators who want a free start and chemical programs on a mid tier",
-  "starting_price": "Free (Solo, 1 user, up to 25 customers); paid from $39/mo",
-  "pros": [
-   "Free Solo plan, no credit card",
-   "Multi-step chemical programs on Grow ($129/mo)",
-   "No long-term contracts"
-  ],
-  "cons": [
-   "Solo capped at 25 customers",
-   "QuickBooks Sync is an add-on below Plus (price not published)"
-  ]
- },
- {
-  "slug": "pool-brain",
-  "name": "Pool Brain",
-  "website": "https://www.poolbrain.com/",
-  "trades": [
-   "pool"
-  ],
-  "free_trial": "Free trial offered (length not stated on pricing page)",
-  "contract": "unknown (pricing page says all features included, free setup, no hidden costs)",
-  "plans": [
-   {
-    "name": "All features (one plan)",
-    "users": "Unlimited office users + $65 per active field tech",
-    "monthly_no_commit": "$50/mo base + $65/mo per active field technician (page example: 5 techs = $375/mo)",
-    "annual": "unknown"
-   }
-  ],
-  "extra_user": "Office users unlimited (included in $50/mo base); $65/mo per active field technician",
-  "card_fee": "unknown",
-  "routing": "One-click route optimization, drag-and-drop scheduling, one-time moves, Unscheduled section, multi-day views and map filters",
-  "quickbooks": "QuickBooks Online 2-way sync (billing also works without QBO)",
-  "chemical_tracking": "Dosing auto-calculated from tech readings; chemical use and cost tracked by customer, body of water, tech and company",
-  "online_booking": "unknown",
-  "rating": "unknown",
-  "sources": [
-   "https://www.poolbrain.com/pricing",
-   "https://www.poolbrain.com/features/"
-  ],
-  "best_for": "Pool companies with field techs who want guided workflows and chemical cost tracking",
-  "starting_price": "$50/mo base + $65/mo per field tech (1 tech = $115/mo by the published formula)",
-  "pros": [
-   "All features included, with free setup",
-   "Unlimited office users in the $50/mo base",
-   "App works without cell signal and syncs later"
-  ],
-  "cons": [
-   "$65/mo per active field tech adds up as you hire",
-   "Trial length, contract terms and card fees not published"
-  ],
-  "last_verified": "2026-11-03"
- },
- {
-  "slug": "pool-office-manager",
-  "name": "Pool Office Manager",
-  "website": "https://www.poolofficemanager.com/",
-  "trades": [
-   "pool"
-  ],
-  "free_trial": "30 days, every feature; card entered at signup, nothing charged until day 30",
-  "contract": "Month-to-month, cancel anytime; no setup, onboarding or implementation fees; free data migration",
-  "plans": [
-   {
-    "name": "Single plan (first user)",
-    "users": "1",
-    "monthly_no_commit": "$125/mo",
-    "annual": "unknown"
-   },
-   {
-    "name": "Each additional active user",
-    "users": "+1",
-    "monthly_no_commit": "+$25/mo (2 users $150, 4 users $200, 10 users $350)",
-    "annual": "unknown"
-   }
-  ],
-  "extra_user": "$25/mo per additional active user; deactivate users in the off-season; 12+ users: contact for fleet rate",
-  "card_fee": "Stripe standard rates (card and ACH); QuickBooks Online Payments or Biller Genie with Fortis as alternatives",
-  "routing": "Route optimization; Timeline, Map, Combined and Calendar schedule views; drag-and-drop; recurring appointments; Unassigned queue",
-  "quickbooks": "QuickBooks Online 2-way sync (+$25/mo add-on); page also says it works with QuickBooks Desktop",
-  "chemical_tracking": "Per-visit readings (pH, chlorine, alkalinity, calcium, CYA, salt and more), LSI and dosing suggestions, chemicals-used logging",
-  "online_booking": "unknown",
-  "rating": "unknown",
-  "sms": "Customer texting from $10/mo plus usage (optional)",
-  "sources": [
-   "https://www.poolofficemanager.com/pricing"
-  ],
-  "best_for": "Pool companies that want flat per-user pricing and can switch users off in the off-season",
-  "starting_price": "$125/mo (1 user); +$25/mo per additional user",
-  "pros": [
-   "30-day free trial with every feature",
-   "No per-customer or per-route charges; users can be deactivated off-season",
-   "No setup fees; free data migration"
-  ],
-  "cons": [
-   "Highest one-user price of the pool tools we track ($125/mo)",
-   "QuickBooks sync (+$25/mo) and texting (from $10/mo) are paid add-ons"
-  ],
-  "last_verified": "2026-11-03"
- }
+  {
+    "slug": "jobber",
+    "name": "Jobber",
+    "website": "https://www.getjobber.com/",
+    "trades": [
+      "pool",
+      "pest",
+      "lawn",
+      "window",
+      "pressure"
+    ],
+    "free_trial": "14 days on Grow plan, no credit card",
+    "contract": "Monthly no-commitment, monthly with 1-year commitment, or annual prepaid (non-refundable)",
+    "plans": [
+      {
+        "name": "Core",
+        "users": "1",
+        "monthly_no_commit": "$49/mo",
+        "annual": "$29/mo billed annually ($39/mo monthly with 1-year commitment)"
+      },
+      {
+        "name": "Connect",
+        "users": "1 (5-user $149, 10-user $229, 15-user $299/mo billed annually)",
+        "monthly_no_commit": "$139/mo",
+        "annual": "$99/mo billed annually ($119/mo monthly with 1-year commitment)"
+      },
+      {
+        "name": "Grow",
+        "users": "1 (5-user $229, 10-user $299, 15-user $399/mo billed annually)",
+        "monthly_no_commit": "$199/mo",
+        "annual": "$149/mo billed annually ($169/mo monthly with 1-year commitment)"
+      },
+      {
+        "name": "Plus",
+        "users": "5 included (10-user $449, 15-user $529/mo billed annually)",
+        "monthly_no_commit": "$499/mo",
+        "annual": "$399/mo billed annually ($439/mo monthly with 1-year commitment)"
+      }
+    ],
+    "extra_user": "$29/mo each",
+    "card_fee": "2.9% + 30\u00a2 online; 2.7% + 30\u00a2 Tap to Pay; ACH 1%; instant payouts +1%",
+    "routing": "Routing (route optimization) and GPS tracking on Connect and up; not on Core",
+    "quickbooks": "QuickBooks Online and Xero sync (Connect and up)",
+    "chemical_tracking": "unknown",
+    "online_booking": "Yes",
+    "rating": "unknown",
+    "sources": [
+      "https://www.getjobber.com/pricing/",
+      "https://www.getjobber.com/industries/window-cleaning-software/"
+    ],
+    "best_for": "Mixed recurring and one-off jobs across any trade",
+    "starting_price": "$29/mo billed annually (Core, 1 user); $49/mo monthly",
+    "pros": [
+      "14-day trial on Grow, no credit card",
+      "Monthly no-commitment option",
+      "QuickBooks Online and Xero sync (Connect and up)"
+    ],
+    "cons": [
+      "Extra users $29/mo each",
+      "Chemical/material tracking not listed on pricing page"
+    ],
+    "last_verified": "2026-11-03",
+    "add_ons": "Marketing Suite $99/mo, Receptionist (AI) $29/mo, Pipeline $49/mo (add-ons on Core, Connect and Grow; listed as Plus features). Reviews add-on price not published (unknown)"
+  },
+  {
+    "slug": "housecall-pro",
+    "name": "Housecall Pro",
+    "website": "https://www.housecallpro.com/",
+    "trades": [
+      "pool",
+      "pest",
+      "lawn",
+      "window",
+      "pressure"
+    ],
+    "free_trial": "14 days on MAX plan, no credit card",
+    "contract": "No long-term contract required",
+    "plans": [
+      {
+        "name": "Basic",
+        "users": "1",
+        "monthly_no_commit": "$79/mo",
+        "annual": "$59/mo billed annually"
+      },
+      {
+        "name": "Essentials",
+        "users": "5 included",
+        "monthly_no_commit": "$189/mo",
+        "annual": "$149/mo billed annually"
+      },
+      {
+        "name": "MAX",
+        "users": "8 included",
+        "monthly_no_commit": "$329/mo",
+        "annual": "$299/mo billed annually"
+      }
+    ],
+    "extra_user": "$35/mo per additional user (MAX)",
+    "card_fee": "From 2.59%; bank payments 1%",
+    "routing": "Routes on Essentials; route optimization on MAX",
+    "quickbooks": "QuickBooks Online sync (Essentials and up)",
+    "chemical_tracking": "unknown",
+    "online_booking": "Yes (all plans)",
+    "rating": "unknown",
+    "sources": [
+      "https://www.housecallpro.com/pricing/",
+      "https://www.housecallpro.com/industries/window-cleaning-software/"
+    ],
+    "best_for": "Small teams wanting users included in the plan",
+    "starting_price": "$59/mo billed annually (Basic, 1 user); $79/mo monthly",
+    "pros": [
+      "No long-term contract required",
+      "Online booking on all plans",
+      "5 users included on Essentials, 8 on MAX"
+    ],
+    "cons": [
+      "Monthly billing costs $20-$40/mo more than annual",
+      "Route optimization only on MAX"
+    ],
+    "last_verified": "2026-11-03"
+  },
+  {
+    "slug": "gorilladesk",
+    "name": "GorillaDesk",
+    "website": "https://gorilladesk.com/",
+    "trades": [
+      "pest",
+      "pool",
+      "lawn"
+    ],
+    "free_trial": "14-day free trial, no credit card required",
+    "contract": "Month-to-month, no contracts, no setup fees; free data migration; annual subscription billed for the full year up front (Yearly toggle: one month free, i.e. 11 x the monthly price); account freeze available for seasonal businesses",
+    "plans": [
+      {
+        "name": "Basic",
+        "users": "Unlimited users; priced per route",
+        "monthly_no_commit": "$49/mo (1 route)",
+        "annual": "$539/yr for 1 route (11 x monthly; \"one month free\")"
+      },
+      {
+        "name": "Pro",
+        "users": "Unlimited users; priced per route",
+        "monthly_no_commit": "$99/mo (1 route)",
+        "annual": "$1,089/yr for 1 route (11 x monthly)"
+      },
+      {
+        "name": "Growth",
+        "users": "Unlimited users; priced per route",
+        "monthly_no_commit": "$149/mo (1 route)",
+        "annual": "$1,639/yr for 1 route (11 x monthly)"
+      }
+    ],
+    "extra_user": "Users free; extra routes: Basic +$50 (routes 2-3), +$30 (4+); Pro +$50; Growth +$100 (route 2), +$50 (3+)",
+    "card_fee": "Via Stripe/Square (their rates)",
+    "routing": "Basic routing up to 25 stops; Drive Matrix routing on Pro",
+    "quickbooks": "QuickBooks Online sync (Pro and up)",
+    "chemical_tracking": "Yes - material tracking & reporting (Basic)",
+    "online_booking": "Pro and up",
+    "rating": "unknown",
+    "sms": "$5/mo SMS subscription + credit packs ($50/1,000, $100/2,500, $200/8,000 msgs; credits never expire)",
+    "sources": [
+      "https://gorilladesk.com/pricing/"
+    ],
+    "best_for": "Pest and pool operators who want unlimited users, priced per route",
+    "starting_price": "$49/mo for 1 route (Basic)",
+    "pros": [
+      "Unlimited users; priced per route",
+      "Material tracking & reporting from Basic",
+      "Month-to-month, no setup fees, free data migration"
+    ],
+    "cons": [
+      "Basic routing capped at 25 stops",
+      "SMS is an extra $5/mo plus credit packs"
+    ],
+    "last_verified": "2026-11-03"
+  },
+  {
+    "slug": "skimmer",
+    "name": "Skimmer",
+    "website": "https://www.getskimmer.com/",
+    "trades": [
+      "pool"
+    ],
+    "free_trial": "First month free on Scaling Up (promo); 30-day refund guarantee",
+    "contract": "Cancel anytime during trial",
+    "plans": [
+      {
+        "name": "Getting Started",
+        "users": "Unlimited techs & admins",
+        "monthly_no_commit": "$1/serviced location/mo, starts at $49/mo",
+        "annual": "unknown"
+      },
+      {
+        "name": "Scaling Up",
+        "users": "Unlimited techs & admins",
+        "monthly_no_commit": "$2/serviced location/mo, starts at $98/mo",
+        "annual": "unknown"
+      },
+      {
+        "name": "Enterprise",
+        "users": "1000+ pools",
+        "monthly_no_commit": "Custom",
+        "annual": "Custom"
+      }
+    ],
+    "extra_user": "Users unlimited; billed per serviced location (unserviced months not billed)",
+    "card_fee": "unknown",
+    "routing": "Route Builder (all); Route Optimization (Scaling Up)",
+    "quickbooks": "unknown",
+    "chemical_tracking": "LSI & dosing calculator (Orenda), LaMotte integration on Scaling Up",
+    "online_booking": "unknown",
+    "rating": "unknown",
+    "sources": [
+      "https://www.getskimmer.com/pricing"
+    ],
+    "best_for": "Pool route businesses billing by serviced pool",
+    "starting_price": "$49/mo minimum ($1 per serviced location)",
+    "pros": [
+      "Unlimited techs & admins",
+      "Unserviced months not billed",
+      "LSI & dosing calculator, LaMotte integration (Scaling Up)"
+    ],
+    "cons": [
+      "Pool-only",
+      "QuickBooks and card fees not published on pricing page"
+    ],
+    "last_verified": "2026-11-03",
+    "add_ons": "Service Texts $0.029/message (Getting Started; unlimited on Scaling Up), AI Phone $99/mo, Marketing Suite $150/mo, Bookkeeping from $198/mo"
+  },
+  {
+    "slug": "responsibid",
+    "name": "ResponsiBid",
+    "website": "https://www.responsibid.com/",
+    "trades": [
+      "window",
+      "pressure"
+    ],
+    "free_trial": "Free Startup plan; free demo offered; trial length unknown",
+    "contract": "Cancel anytime, no long-term contracts; one-time setup fee (amount not published); seasonal pause $50/mo for up to 4 months/yr on monthly plans",
+    "plans": [
+      {
+        "name": "Startup",
+        "users": "1 admin user",
+        "monthly_no_commit": "Free",
+        "annual": "unknown"
+      },
+      {
+        "name": "Scaling",
+        "users": "1 admin + unlimited sub-users",
+        "monthly_no_commit": "$179/mo",
+        "annual": "unknown"
+      },
+      {
+        "name": "Pro",
+        "users": "1 admin + unlimited sub-users",
+        "monthly_no_commit": "$229/mo",
+        "annual": "unknown"
+      }
+    ],
+    "extra_user": "1 admin user; unlimited sub-users on Scaling and Pro",
+    "card_fee": "unknown (PayPal deposits listed on Pro)",
+    "routing": "CrewCal scheduling intelligence and customer self-scheduling (Pro); schedules into a connected CRM calendar (Scaling and Pro)",
+    "quickbooks": "unknown (not on pricing page; connects to CRMs such as Jobber and Housecall Pro)",
+    "chemical_tracking": "Not listed (quoting/sales tool)",
+    "online_booking": "Instant quoting on your website (Scaling and Pro); customer self-scheduling (Pro)",
+    "rating": "unknown",
+    "sources": [
+      "https://www.responsibid.com/pricing"
+    ],
+    "best_for": "Window cleaning and exterior cleaning businesses that want instant online quotes on top of a CRM",
+    "starting_price": "Free (Startup); paid plans $179/mo (Scaling) and $229/mo (Pro)",
+    "pros": [
+      "Quoting calculator, service tiers and auto-upsell on every plan, including free Startup",
+      "Connects to Jobber, Housecall Pro, ServiceMonster, Markate and Google Calendar (Scaling and Pro)",
+      "Cancel anytime; $50/mo seasonal pause for up to 4 months a year"
+    ],
+    "cons": [
+      "Quoting/sales tool, not a full CRM: scheduling, invoicing and payments run through a connected CRM",
+      "Setup fee amount not published",
+      "Text follow-up, Zapier and CrewCal only on Pro ($229/mo)"
+    ]
+  },
+  {
+    "slug": "workiz",
+    "name": "Workiz",
+    "website": "https://www.workiz.com/",
+    "trades": [
+      "pressure"
+    ],
+    "free_trial": "7 days, no credit card required",
+    "contract": "Monthly or annual billing; annual 'save $400+' per vendor FAQ (exact terms not published)",
+    "plans": [
+      {
+        "name": "Standard",
+        "users": "unknown (vendor says 'Growing teams')",
+        "monthly_no_commit": "Request pricing (not published)",
+        "annual": "Request pricing (not published)"
+      },
+      {
+        "name": "Pro",
+        "users": "unknown (vendor says 'Mid size team')",
+        "monthly_no_commit": "Request pricing (not published)",
+        "annual": "Request pricing (not published)"
+      },
+      {
+        "name": "Ultimate",
+        "users": "unknown (vendor says 'Multi-location larger team & franchises')",
+        "monthly_no_commit": "Request pricing (not published)",
+        "annual": "Request pricing (not published)"
+      }
+    ],
+    "extra_user": "unknown (not published)",
+    "card_fee": "unknown (Workiz Pay online payments, tap to pay and consumer financing on all plans; rates not published; card readers sold separately)",
+    "routing": "Fleet and team location tracking on all plans; Genius Scheduling on Pro and Ultimate",
+    "quickbooks": "QuickBooks Online sync (all plans)",
+    "chemical_tracking": "Inventory management (Ultimate only)",
+    "online_booking": "Online booking with optional checkout (all plans)",
+    "rating": "unknown",
+    "sources": [
+      "https://www.workiz.com/pricing/",
+      "https://www.workiz.com/industries/pressure-washing/"
+    ],
+    "best_for": "Phone-heavy service teams that want calls, texts and jobs in one system",
+    "starting_price": "Not published (Request pricing on Standard, Pro and Ultimate)",
+    "pros": [
+      "7-day free trial, no credit card required",
+      "QuickBooks Online sync, online booking and estimate deposits on all plans",
+      "Integrated phone system listed on all plans"
+    ],
+    "cons": [
+      "No prices published; you must request pricing",
+      "Good/Better/Best sales proposals and service plans only on Ultimate",
+      "Zapier and open API only on Ultimate"
+    ]
+  },
+  {
+    "slug": "quoteiq",
+    "name": "QuoteIQ",
+    "website": "https://myquoteiq.com/",
+    "trades": [
+      "pressure",
+      "lawn",
+      "window",
+      "pool",
+      "pest"
+    ],
+    "free_trial": "14 days on every plan; credit or debit card required to start",
+    "contract": "No contracts or cancellation fees; monthly or annual billing (annual = pay for 10 months, get 12)",
+    "plans": [
+      {
+        "name": "Essentials",
+        "users": "1",
+        "monthly_no_commit": "$29.99/mo",
+        "annual": "$299.99/yr billed annually"
+      },
+      {
+        "name": "Beginner",
+        "users": "2",
+        "monthly_no_commit": "$99.99/mo",
+        "annual": "$999.99/yr billed annually"
+      },
+      {
+        "name": "Pro",
+        "users": "4",
+        "monthly_no_commit": "$199.99/mo",
+        "annual": "$1,999.99/yr billed annually"
+      },
+      {
+        "name": "Elite",
+        "users": "10",
+        "monthly_no_commit": "$299.99/mo",
+        "annual": "$2,999.99/yr billed annually"
+      },
+      {
+        "name": "Max",
+        "users": "20",
+        "monthly_no_commit": "$699.99/mo",
+        "annual": "$6,999.99/yr billed annually"
+      }
+    ],
+    "extra_user": "$25/mo per additional user on every plan, up to 100",
+    "card_fee": "Payment processing fees are separate from the subscription (rates not listed on the pricing page)",
+    "routing": "Route optimization on Elite and Max",
+    "quickbooks": "QuickBooks integration (Pro and up)",
+    "chemical_tracking": "Chemical tracking (Pro and up)",
+    "online_booking": "Online booking & self-scheduling (Elite and Max)",
+    "rating": "unknown",
+    "sources": [
+      "https://myquoteiq.com/pricing",
+      "https://myquoteiq.com/"
+    ],
+    "best_for": "Owner-operators who want quoting, property measuring and job photos in one app",
+    "starting_price": "$29.99/mo (Essentials, 1 user); $299.99/yr billed annually",
+    "pros": [
+      "14-day free trial on every plan",
+      "No contracts or cancellation fees",
+      "MapMeasure Pro and QuoteIQ Cam from Beginner ($99.99/mo)"
+    ],
+    "cons": [
+      "Credit or debit card required to start the trial",
+      "Route optimization only on Elite ($299.99/mo) and Max",
+      "AI Website Builder is a $34.99/mo add-on except on Max"
+    ],
+    "add_ons": "AI Website Builder $34.99/mo on Essentials, Beginner, Pro and Elite (included on Max); extra storage +100 GB $9.99/mo, +500 GB $34.99/mo, +2 TB $99.99/mo",
+    "last_verified": "2026-11-02"
+  },
+  {
+    "slug": "yardbook",
+    "name": "Yardbook",
+    "website": "https://www.yardbook.com/",
+    "trades": [
+      "lawn"
+    ],
+    "free_trial": "Starter plan is free (no trial needed); paid-plan trial length not published",
+    "contract": "Pricing page lists monthly prices; terms describe monthly premium billing and optional Premium Package terms. Fees non-refundable per terms",
+    "plans": [
+      {
+        "name": "Starter",
+        "users": "unknown (Employee Access included)",
+        "monthly_no_commit": "Free",
+        "annual": "Free"
+      },
+      {
+        "name": "Business",
+        "users": "unknown",
+        "monthly_no_commit": "$34.99/mo",
+        "annual": "unknown (pricing page lists $34.99/mo; separate annual rate not shown)"
+      },
+      {
+        "name": "Enterprise",
+        "users": "unknown",
+        "monthly_no_commit": "$49.99/mo",
+        "annual": "unknown (pricing page lists $49.99/mo; separate annual rate not shown)"
+      }
+    ],
+    "extra_user": "unknown (no per-user price published)",
+    "card_fee": "Stripe fees plus a 1% Yardbook fee on free/trial accounts; Yardbook fee waived on Business and Enterprise",
+    "routing": "Routing on Starter (free)",
+    "quickbooks": "QuickBooks sync (Enterprise only)",
+    "chemical_tracking": "Chemical tracking listed; multi-step chemical programs on Business and up",
+    "online_booking": "unknown (customized lead capture on Business)",
+    "rating": "unknown",
+    "sources": [
+      "https://www.yardbook.com/pages/pricing",
+      "https://www.yardbook.com/"
+    ],
+    "best_for": "Solo lawn care and landscaping operators who want a free starting plan",
+    "starting_price": "Free (Starter); Business $34.99/mo",
+    "pros": [
+      "Starter plan is free: scheduling, estimates, invoices, routing",
+      "Business plan waives the 1% Yardbook payment fee",
+      "Snow removal and lot measurement on the free plan"
+    ],
+    "cons": [
+      "1% Yardbook fee on online payments on free/trial accounts (plus Stripe fees)",
+      "QuickBooks sync only on Enterprise ($49.99/mo annual)",
+      "Pricing page lists web, desktop and Android app access (no iOS mentioned); month-to-month prices not published"
+    ],
+    "last_verified": "2026-11-04"
+  },
+  {
+    "slug": "service-autopilot",
+    "name": "Service Autopilot",
+    "website": "https://www.serviceautopilot.com/",
+    "trades": [
+      "lawn"
+    ],
+    "free_trial": "unknown (pricing page offers demos; no trial stated)",
+    "contract": "All published prices are annual subscription rates; downgrades take effect at the end of the contract period",
+    "plans": [
+      {
+        "name": "Startup",
+        "users": "1 business user + 1 mobile license",
+        "monthly_no_commit": "unknown (only annual rates published)",
+        "annual": "$49/mo (annual subscription)"
+      },
+      {
+        "name": "Pro",
+        "users": "1 business user + 2 mobile licenses",
+        "monthly_no_commit": "unknown (only annual rates published)",
+        "annual": "$199/mo (annual subscription)"
+      },
+      {
+        "name": "Pro Plus",
+        "users": "1 business user + 5 mobile licenses",
+        "monthly_no_commit": "unknown (only annual rates published)",
+        "annual": "$499/mo (annual subscription)"
+      },
+      {
+        "name": "Elite",
+        "users": "2 business users + 8 mobile licenses",
+        "monthly_no_commit": "Request pricing",
+        "annual": "Request pricing"
+      }
+    ],
+    "extra_user": "unknown (extra mobile licenses: ask sales)",
+    "card_fee": "Payments integration on all plans; rates not published",
+    "routing": "Route optimization on Pro and up (not Startup); snow dispatch on Pro and up",
+    "quickbooks": "QuickBooks Online two-way sync: included on Elite, call for pricing on Pro and Pro Plus, not on Startup",
+    "chemical_tracking": "Chemical tracking on Pro and up",
+    "online_booking": "Client portal included on Elite; call for pricing on other plans",
+    "rating": "unknown",
+    "sources": [
+      "https://www.serviceautopilot.com/pricing/"
+    ],
+    "best_for": "Established lawn and landscape companies that want automations and route optimization",
+    "starting_price": "$49/mo (Startup, annual subscription rate)",
+    "pros": [
+      "Route optimization, snow dispatch and chemical tracking from Pro ($199/mo)",
+      "Automation workflows on Pro Plus and Elite",
+      "Service Autopilot app included on all plans"
+    ],
+    "cons": [
+      "Only annual subscription rates published",
+      "Startup plan lacks route optimization, job proposals and chemical tracking",
+      "QuickBooks sync is call-for-pricing below Elite"
+    ],
+    "last_verified": "2026-11-04"
+  },
+  {
+    "slug": "lmn",
+    "name": "LMN",
+    "website": "https://golmn.com/",
+    "trades": [
+      "lawn"
+    ],
+    "free_trial": "unknown (pricing page offers demos; no trial stated)",
+    "contract": "Billed monthly, after a one-time onboarding fee (amount not published)",
+    "plans": [
+      {
+        "name": "Starter",
+        "users": "1 office/crew lead + 5 crew member licenses",
+        "monthly_no_commit": "From $297/mo billed monthly (plus one-time onboarding fee)",
+        "annual": "unknown"
+      },
+      {
+        "name": "Professional",
+        "users": "3 office/crew lead + 15 crew member licenses",
+        "monthly_no_commit": "From $648/mo billed monthly (plus one-time onboarding fee)",
+        "annual": "unknown"
+      },
+      {
+        "name": "Enterprise",
+        "users": "Starts at 100 users",
+        "monthly_no_commit": "Request pricing",
+        "annual": "Request pricing"
+      }
+    ],
+    "extra_user": "Additional licenses available for a fee (price not published)",
+    "card_fee": "LMN Pay (credit card, ACH, debit); rates not published",
+    "routing": "Route optimization in the LMN Crew app",
+    "quickbooks": "QuickBooks Online on Starter; Online and Desktop on Professional and Enterprise",
+    "chemical_tracking": "unknown (material tracking and costing on Professional and up)",
+    "online_booking": "Customer portal: clients approve estimates, submit requests, pay invoices",
+    "rating": "unknown",
+    "sources": [
+      "https://golmn.com/pricing/",
+      "https://granum.com/lmn/pricing/"
+    ],
+    "best_for": "Landscaping companies with crews that budget and estimate by overhead and labor hours",
+    "starting_price": "From $297/mo (Starter: 1 office + 5 crew licenses), plus onboarding fee",
+    "pros": [
+      "Starter includes 6 licenses (1 office/crew lead + 5 crew)",
+      "Budgeting, estimating, scheduling, crew app and invoicing in one plan",
+      "Offline access in the LMN Crew app"
+    ],
+    "cons": [
+      "Highest published starting price here ($297/mo)",
+      "One-time onboarding fee, amount not published",
+      "Real-time job costing and material tracking need Professional ($648/mo)"
+    ],
+    "last_verified": "2026-11-04"
+  },
+  {
+    "slug": "kickserv",
+    "name": "Kickserv",
+    "website": "https://www.kickserv.com/",
+    "trades": [
+      "lawn"
+    ],
+    "free_trial": "30 days per pricing page (landscaping page says 14 days); no credit card required",
+    "contract": "No contract; cancel any time. Annual prepay saves 20% (annual subscriptions not pro-rated or refundable)",
+    "plans": [
+      {
+        "name": "Start",
+        "users": "5",
+        "monthly_no_commit": "$75/mo",
+        "annual": "$60/mo billed annually"
+      },
+      {
+        "name": "Run",
+        "users": "10",
+        "monthly_no_commit": "$149/mo",
+        "annual": "$119/mo billed annually"
+      },
+      {
+        "name": "Scale",
+        "users": "20",
+        "monthly_no_commit": "$249/mo",
+        "annual": "$199/mo billed annually"
+      }
+    ],
+    "extra_user": "Users included per plan (5 / 10 / 20); every employee added counts as a user; per-user add-on price not published",
+    "card_fee": "Tap to Pay 2.9% + 30\u00a2; other online card payments 3.9% + 30\u00a2 (some Amex 5.2% + 30\u00a2); ACH 1% + 30\u00a2. 5% subscription discount (Kickback) if you process $1,000+/mo (Start), $2,000+ (Run), $3,000+ (Scale)",
+    "routing": "Dispatch mapping, GPS check-ins and automated scheduling on Run and up; route optimization not listed",
+    "quickbooks": "QuickBooks Online on all plans; QuickBooks Desktop $50/mo extra (Run and up)",
+    "chemical_tracking": "unknown (expense tracking on all plans)",
+    "online_booking": "Embeddable contact form (all plans); Customer Center for appointment requests and invoice payment",
+    "rating": "unknown",
+    "sources": [
+      "https://www.kickserv.com/pricing",
+      "https://www.kickserv.com/industries/landscaping-arborist"
+    ],
+    "best_for": "Small teams wanting 5-20 users included at a flat monthly price",
+    "starting_price": "$60/mo billed annually (Start, 5 users); $75/mo monthly",
+    "pros": [
+      "5 users included on the $60-$75/mo Start plan",
+      "No contract; annual prepay saves 20%",
+      "QuickBooks Online on every plan"
+    ],
+    "cons": [
+      "Online card payments outside Tap to Pay cost 3.9% + 30\u00a2",
+      "Dispatch mapping and GPS check-ins only on Run ($119/mo annual) and up",
+      "Route optimization not listed on the pricing page"
+    ]
+  },
+  {
+    "slug": "bookingkoala",
+    "name": "BookingKoala",
+    "website": "https://bookingkoala.com/",
+    "trades": [
+      "window",
+      "pool",
+      "lawn"
+    ],
+    "free_trial": "14 days (pricing page FAQ: charged only after the trial ends; switch plans during it); 30 days when signing up through a BookingKoala affiliate link, per bookingkoala.com/30-days/. Card requirement: unknown",
+    "contract": "No contracts or commitments; cancel any time from inside your account. No setup fee. Annual billing: not published",
+    "plans": [
+      {
+        "name": "Starter",
+        "users": "5 providers or 5 GB",
+        "monthly_no_commit": "From $27/mo",
+        "annual": "unknown (not published)"
+      },
+      {
+        "name": "Growing",
+        "users": "15 providers or 15 GB",
+        "monthly_no_commit": "From $57/mo",
+        "annual": "unknown (not published)"
+      },
+      {
+        "name": "Premium",
+        "users": "50 providers or 50 GB; Campaigns 5,000 contacts",
+        "monthly_no_commit": "From $197/mo",
+        "annual": "unknown (not published)"
+      },
+      {
+        "name": "Larger Premium tiers",
+        "users": "From 60 providers or 60 GB, 10,000 contacts",
+        "monthly_no_commit": "$237-$597/mo (pricing calculator)",
+        "annual": "unknown (not published)"
+      }
+    ],
+    "extra_user": "Priced by providers (each team member counts as one) or monthly storage; Premium also by Campaigns contacts. No automatic upgrade: you upgrade manually when you hit a limit",
+    "card_fee": "unknown (Stripe listed among integrations; card and cash/check payments supported; processing rates not published)",
+    "routing": "Calendar map view and GPS clock in/out (Growing and up) listed; route optimization not listed",
+    "quickbooks": "unknown (not listed on pricing page; integrations listed: Zapier, Stripe, Google Analytics)",
+    "chemical_tracking": "unknown",
+    "online_booking": "Yes: customizable booking forms on a BookingKoala website or embedded on your own site, real-time availability",
+    "rating": "unknown",
+    "sources": [
+      "https://bookingkoala.com/pricing/",
+      "https://bookingkoala.com/features/",
+      "https://bookingkoala.com/",
+      "https://bookingkoala.com/30-days/"
+    ],
+    "best_for": "Cleaning and home-service businesses that want customers to book and pay online through their own website",
+    "starting_price": "From $27/mo (Starter, 5 providers or 5 GB)",
+    "pros": [
+      "Website builder and online booking forms included from Starter ($27/mo)",
+      "No contracts or setup fee; cancel any time",
+      "Hiring module (applicant forms, quizzes, contracts) built in"
+    ],
+    "cons": [
+      "Annual pricing and card processing rates not published",
+      "SMS notifications, GPS clock in/out and advanced reports start on Growing ($57/mo)",
+      "QuickBooks integration and route optimization not listed on the pricing page"
+    ],
+    "who_html": "<p>BookingKoala's home page lists the industries it's set up for. Cleaning leads the list: home cleaning, office cleaning, post-construction, carpet cleaning, window cleaning, pool cleaning and gutter cleaning, plus lawn care, car wash, moving, pet grooming, dog walking, salons and other appointment businesses. Its pricing page defines a provider as \"someone that performs the service, which can be a maid, a dog walker, a barber, tutors.\"</p><p>It's built around customers booking online. Every plan includes a website builder with themes, your own domain, customizable booking forms with real-time availability, and customer, provider and admin dashboards. Features we confirmed on its <a href=\"https://bookingkoala.com/features/\" rel=\"nofollow\">features page</a>: pricing by quantity, hours or packages; multi-location pricing and sales tax by zip code; recurring appointments; an accept/decline option so providers confirm jobs; expedited same-day fees; invoicing; email and text campaigns with A/B testing; and a hiring module with applicant forms, auto-graded quizzes and signed contracts. Growing ($57/mo) adds advanced reports, referrals and ratings, gift cards, GPS clock in/out and SMS notifications. Premium ($197/mo) adds Campaigns (5,000 contacts), multi-step forms, daily discounts, multilingual and funnels.</p>",
+    "compare_html": "<p>BookingKoala centers on online booking and your website. The other tools we track center on quoting, dispatch and field work. Here's how the published facts compare (all checked 2026-10-26):</p>{{table:bookingkoala,jobber,housecall-pro,kickserv}}<ul><li><strong><a href=\"/tools/jobber/\">Jobber</a></strong> starts at $29/mo billed annually ($49/mo monthly) for 1 user and lists QuickBooks Online and Xero sync from Connect. BookingKoala Starter is $27/mo and counts up to 5 providers, but it doesn't list QuickBooks.</li><li><strong><a href=\"/tools/housecall-pro/\">Housecall Pro</a></strong> includes online booking from Basic ($59/mo annually, 1 user) and route optimization on MAX. See <a href=\"/tools/housecall-pro-pricing/\">Housecall Pro pricing</a>.</li><li><strong><a href=\"/tools/kickserv/\">Kickserv</a></strong> includes 5 users on Start ($60/mo annually, $75/mo monthly) and QuickBooks Online on every plan.</li><li><strong><a href=\"/tools/responsibid/\">ResponsiBid</a></strong> is a quoting tool, not a CRM, and it's popular with window and exterior cleaners who want instant online quotes.</li></ul><p>Window cleaner? See <a href=\"/best/window-cleaning-software/\">best window cleaning software</a> and <a href=\"/alternatives/jobber/\">Jobber alternatives</a>.</p>"
+  },
+  {
+    "slug": "lawnpro",
+    "name": "LawnPro",
+    "website": "https://www.lawnprosoftware.com/",
+    "trades": [
+      "lawn"
+    ],
+    "free_trial": "Free Solo plan (no credit card); free trial on every paid plan, no credit card (trial length not stated)",
+    "contract": "No long-term contracts; upgrade, downgrade or cancel any time (access runs to end of billing period)",
+    "plans": [
+      {
+        "name": "Solo",
+        "users": "1 user (feature table lists 0 employee logins); up to 25 customers",
+        "monthly_no_commit": "Free",
+        "annual": "Free"
+      },
+      {
+        "name": "Startup",
+        "users": "3 employee logins",
+        "monthly_no_commit": "$39/mo",
+        "annual": "unknown (vendor says annual saves 20%; annual price not listed)"
+      },
+      {
+        "name": "Grow",
+        "users": "7 employee logins",
+        "monthly_no_commit": "$129/mo",
+        "annual": "$99/mo ($1,188/yr) billed annually"
+      },
+      {
+        "name": "Plus",
+        "users": "15 employee logins",
+        "monthly_no_commit": "$249/mo",
+        "annual": "unknown (vendor says annual saves 20%; annual price not listed)"
+      }
+    ],
+    "extra_user": "Employee logins included per plan (0 / 3 / 7 / 15); extra-login price not published",
+    "card_fee": "unknown (card payments on all plans; ACH included from Grow; rates not published)",
+    "routing": "Optimized routes and route analytics included on Grow and Plus (add-on on Solo/Startup, price not published)",
+    "quickbooks": "QuickBooks Sync included on Plus; add-on on Solo, Startup and Grow (price not published)",
+    "chemical_tracking": "Multi-step chemical programs on Grow and Plus",
+    "online_booking": "Work requests (online lead capture) from Startup",
+    "rating": "unknown",
+    "sources": [
+      "https://www.lawnprosoftware.com/pricing"
+    ],
+    "best_for": "Lawn care operators who want a free start and chemical programs on a mid tier",
+    "starting_price": "Free (Solo, 1 user, up to 25 customers); paid from $39/mo",
+    "pros": [
+      "Free Solo plan, no credit card",
+      "Multi-step chemical programs on Grow ($129/mo)",
+      "No long-term contracts"
+    ],
+    "cons": [
+      "Solo capped at 25 customers",
+      "QuickBooks Sync is an add-on below Plus (price not published)"
+    ]
+  },
+  {
+    "slug": "pool-brain",
+    "name": "Pool Brain",
+    "website": "https://www.poolbrain.com/",
+    "trades": [
+      "pool"
+    ],
+    "free_trial": "Free trial offered (length not stated on pricing page)",
+    "contract": "unknown (pricing page says all features included, free setup, no hidden costs)",
+    "plans": [
+      {
+        "name": "All features (one plan)",
+        "users": "Unlimited office users + $65 per active field tech",
+        "monthly_no_commit": "$50/mo base + $65/mo per active field technician (page example: 5 techs = $375/mo)",
+        "annual": "unknown"
+      }
+    ],
+    "extra_user": "Office users unlimited (included in $50/mo base); $65/mo per active field technician",
+    "card_fee": "unknown",
+    "routing": "One-click route optimization, drag-and-drop scheduling, one-time moves, Unscheduled section, multi-day views and map filters",
+    "quickbooks": "QuickBooks Online 2-way sync (billing also works without QBO)",
+    "chemical_tracking": "Dosing auto-calculated from tech readings; chemical use and cost tracked by customer, body of water, tech and company",
+    "online_booking": "unknown",
+    "rating": "unknown",
+    "sources": [
+      "https://www.poolbrain.com/pricing",
+      "https://www.poolbrain.com/features/"
+    ],
+    "best_for": "Pool companies with field techs who want guided workflows and chemical cost tracking",
+    "starting_price": "$50/mo base + $65/mo per field tech (1 tech = $115/mo by the published formula)",
+    "pros": [
+      "All features included, with free setup",
+      "Unlimited office users in the $50/mo base",
+      "App works without cell signal and syncs later"
+    ],
+    "cons": [
+      "$65/mo per active field tech adds up as you hire",
+      "Trial length, contract terms and card fees not published"
+    ],
+    "last_verified": "2026-11-03"
+  },
+  {
+    "slug": "pool-office-manager",
+    "name": "Pool Office Manager",
+    "website": "https://www.poolofficemanager.com/",
+    "trades": [
+      "pool"
+    ],
+    "free_trial": "30 days, every feature; card entered at signup, nothing charged until day 30",
+    "contract": "Month-to-month, cancel anytime; no setup, onboarding or implementation fees; free data migration",
+    "plans": [
+      {
+        "name": "Single plan (first user)",
+        "users": "1",
+        "monthly_no_commit": "$125/mo",
+        "annual": "unknown"
+      },
+      {
+        "name": "Each additional active user",
+        "users": "+1",
+        "monthly_no_commit": "+$25/mo (2 users $150, 4 users $200, 10 users $350)",
+        "annual": "unknown"
+      }
+    ],
+    "extra_user": "$25/mo per additional active user; deactivate users in the off-season; 12+ users: contact for fleet rate",
+    "card_fee": "Stripe standard rates (card and ACH); QuickBooks Online Payments or Biller Genie with Fortis as alternatives",
+    "routing": "Route optimization; Timeline, Map, Combined and Calendar schedule views; drag-and-drop; recurring appointments; Unassigned queue",
+    "quickbooks": "QuickBooks Online 2-way sync (+$25/mo add-on); page also says it works with QuickBooks Desktop",
+    "chemical_tracking": "Per-visit readings (pH, chlorine, alkalinity, calcium, CYA, salt and more), LSI and dosing suggestions, chemicals-used logging",
+    "online_booking": "unknown",
+    "rating": "unknown",
+    "sms": "Customer texting from $10/mo plus usage (optional)",
+    "sources": [
+      "https://www.poolofficemanager.com/pricing"
+    ],
+    "best_for": "Pool companies that want flat per-user pricing and can switch users off in the off-season",
+    "starting_price": "$125/mo (1 user); +$25/mo per additional user",
+    "pros": [
+      "30-day free trial with every feature",
+      "No per-customer or per-route charges; users can be deactivated off-season",
+      "No setup fees; free data migration"
+    ],
+    "cons": [
+      "Highest one-user price of the pool tools we track ($125/mo)",
+      "QuickBooks sync (+$25/mo) and texting (from $10/mo) are paid add-ons"
+    ],
+    "last_verified": "2026-11-03"
+  }
 ]
