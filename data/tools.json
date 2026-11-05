@@ -60,7 +60,7 @@
       "Extra users $29/mo each",
       "Chemical/material tracking not listed on pricing page"
     ],
-    "last_verified": "2026-11-03",
+    "last_verified": "2026-11-05",
     "add_ons": "Marketing Suite $99/mo, Receptionist (AI) $29/mo, Pipeline $49/mo (add-ons on Core, Connect and Grow; listed as Plus features). Reviews add-on price not published (unknown)"
   },
   {
@@ -118,7 +118,7 @@
       "Monthly billing costs $20-$40/mo more than annual",
       "Route optimization only on MAX"
     ],
-    "last_verified": "2026-11-03"
+    "last_verified": "2026-11-05"
   },
   {
     "slug": "gorilladesk",
@@ -279,7 +279,8 @@
       "Quoting/sales tool, not a full CRM: scheduling, invoicing and payments run through a connected CRM",
       "Setup fee amount not published",
       "Text follow-up, Zapier and CrewCal only on Pro ($229/mo)"
-    ]
+    ],
+    "last_verified": "2026-11-05"
   },
   {
     "slug": "workiz",
@@ -688,7 +689,8 @@
       "QuickBooks integration and route optimization not listed on the pricing page"
     ],
     "who_html": "<p>BookingKoala's home page lists the industries it's set up for. Cleaning leads the list: home cleaning, office cleaning, post-construction, carpet cleaning, window cleaning, pool cleaning and gutter cleaning, plus lawn care, car wash, moving, pet grooming, dog walking, salons and other appointment businesses. Its pricing page defines a provider as \"someone that performs the service, which can be a maid, a dog walker, a barber, tutors.\"</p><p>It's built around customers booking online. Every plan includes a website builder with themes, your own domain, customizable booking forms with real-time availability, and customer, provider and admin dashboards. Features we confirmed on its <a href=\"https://bookingkoala.com/features/\" rel=\"nofollow\">features page</a>: pricing by quantity, hours or packages; multi-location pricing and sales tax by zip code; recurring appointments; an accept/decline option so providers confirm jobs; expedited same-day fees; invoicing; email and text campaigns with A/B testing; and a hiring module with applicant forms, auto-graded quizzes and signed contracts. Growing ($57/mo) adds advanced reports, referrals and ratings, gift cards, GPS clock in/out and SMS notifications. Premium ($197/mo) adds Campaigns (5,000 contacts), multi-step forms, daily discounts, multilingual and funnels.</p>",
-    "compare_html": "<p>BookingKoala centers on online booking and your website. The other tools we track center on quoting, dispatch and field work. Here's how the published facts compare (all checked 2026-10-26):</p>{{table:bookingkoala,jobber,housecall-pro,kickserv}}<ul><li><strong><a href=\"/tools/jobber/\">Jobber</a></strong> starts at $29/mo billed annually ($49/mo monthly) for 1 user and lists QuickBooks Online and Xero sync from Connect. BookingKoala Starter is $27/mo and counts up to 5 providers, but it doesn't list QuickBooks.</li><li><strong><a href=\"/tools/housecall-pro/\">Housecall Pro</a></strong> includes online booking from Basic ($59/mo annually, 1 user) and route optimization on MAX. See <a href=\"/tools/housecall-pro-pricing/\">Housecall Pro pricing</a>.</li><li><strong><a href=\"/tools/kickserv/\">Kickserv</a></strong> includes 5 users on Start ($60/mo annually, $75/mo monthly) and QuickBooks Online on every plan.</li><li><strong><a href=\"/tools/responsibid/\">ResponsiBid</a></strong> is a quoting tool, not a CRM, and it's popular with window and exterior cleaners who want instant online quotes.</li></ul><p>Window cleaner? See <a href=\"/best/window-cleaning-software/\">best window cleaning software</a> and <a href=\"/alternatives/jobber/\">Jobber alternatives</a>.</p>"
+    "compare_html": "<p>BookingKoala centers on online booking and your website. The other tools we track center on quoting, dispatch and field work. Here's how the published facts compare (all checked 2026-10-26):</p>{{table:bookingkoala,jobber,housecall-pro,kickserv}}<ul><li><strong><a href=\"/tools/jobber/\">Jobber</a></strong> starts at $29/mo billed annually ($49/mo monthly) for 1 user and lists QuickBooks Online and Xero sync from Connect. BookingKoala Starter is $27/mo and counts up to 5 providers, but it doesn't list QuickBooks.</li><li><strong><a href=\"/tools/housecall-pro/\">Housecall Pro</a></strong> includes online booking from Basic ($59/mo annually, 1 user) and route optimization on MAX. See <a href=\"/tools/housecall-pro-pricing/\">Housecall Pro pricing</a>.</li><li><strong><a href=\"/tools/kickserv/\">Kickserv</a></strong> includes 5 users on Start ($60/mo annually, $75/mo monthly) and QuickBooks Online on every plan.</li><li><strong><a href=\"/tools/responsibid/\">ResponsiBid</a></strong> is a quoting tool, not a CRM, and it's popular with window and exterior cleaners who want instant online quotes.</li></ul><p>Window cleaner? See <a href=\"/best/window-cleaning-software/\">best window cleaning software</a> and <a href=\"/alternatives/jobber/\">Jobber alternatives</a>.</p>",
+    "last_verified": "2026-11-05"
   },
   {
     "slug": "lawnpro",
