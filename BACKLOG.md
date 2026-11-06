@@ -70,7 +70,7 @@
 | 67 | best/lawn-care-software-for-crews | lawn care software for crews (multi-crew / 10+ staff angle vs solo pages) | LMN, Service Autopilot, Jobber, GorillaDesk |
 | 68 | best/window-cleaning-scheduling-software | window cleaning scheduling software (Search Console query, 1 click/10 impr, Oct 26–Nov 1 2026) | Jobber, Housecall Pro, BookingKoala |
 | 69 | best/window-washing-software | window washing software (Search Console query, 2 clicks/4 impr, Oct 26–Nov 1 2026; synonym angle vs /best/window-cleaning-software/) | done (2026-11-05) |
-| 70 | best/pool-cleaning-business-software | pool cleaning business software (Search Console query, 2 clicks/2 impr, Oct 26–Nov 1 2026) | Skimmer, Pool Brain, GorillaDesk |
+| 70 | best/pool-cleaning-business-software | pool cleaning business software (Search Console query, 2 clicks/2 impr, Oct 26–Nov 1 2026) | done (2026-11-06) |
 | 71 | best/window-cleaner-software | window cleaner software (Search Console query, 2 clicks/5 impr, Oct 27–Nov 2 2026; synonym vs window cleaning) | Jobber, Housecall Pro, BookingKoala |
 | 72 | best/window-cleaning-crm | window cleaning crm (Search Console query, 2 clicks/4 impr, Oct 27–Nov 2 2026) | Jobber, Housecall Pro, BookingKoala |
 | 73 | best/pool-service-company-software | pool service company software (Search Console query, 2 clicks/4 impr, Oct 27–Nov 2 2026; synonym vs pool service software) | Skimmer, Pool Brain, GorillaDesk |
