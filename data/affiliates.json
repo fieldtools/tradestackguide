@@ -109,8 +109,9 @@
  },
  "homeworks": {
   "url": "https://www.home.works/",
-  "program": "Homeworks RevShare - 25% recurring on Growth/Enterprise via promo code; Google Form submitted Nov 3, 2026; review 2-3 business days; quarterly Veem; plain URL until approved",
-  "status": "applied"
+  "program": "Homeworks RevShare - 25% recurring on Growth/Enterprise; approved Nov 6, 2026; promo code JACOBCARMAN (first month free for referred customers at checkout; code works on monthly and annual); quarterly Veem for non-members",
+  "status": "active",
+  "note": "Promo code JACOBCARMAN (entered at checkout, not a tracked URL). Partner resources: https://home.works/revshare/partner-resources . Participant agreement: https://docs.google.com/document/d/1JUl-wi_WjBmKsgQ2O3qzPUxympQeoi2QlM0hSiPGeI0/edit . No tools/homeworks page yet (BACKLOG #62); keep CTA off site until that page ships with the code disclosed."
  },
  "servicefusion": {
   "url": "https://www.servicefusion.com/",

@@ -62,7 +62,7 @@
 | 59 | tools/pool-brain-pricing | pool brain pricing | have data ($50+$65 formula verified 2026-11-03) |
 | 60 | best/pool-service-invoicing-software | pool service invoicing software | Skimmer, Pool Office Manager, GorillaDesk |
 | 61 | compare/pool-brain-vs-skimmer | pool brain vs skimmer | have data |
-| 62 | tools/homeworks | homeworks review pricing (home service CRM by Mike Andes / ex-Copilot; Growth $299/mo, Enterprise $499/mo) | affiliate: Homeworks 25% recurring RevShare, applied 2026-11-03 via Google Form; awaiting referral code (2-3 business days); Veem for payouts |
+| 62 | tools/homeworks | homeworks review pricing (home service CRM by Mike Andes / ex-Copilot; Growth $299/mo, Enterprise $499/mo) | affiliate: Homeworks 25% recurring RevShare approved 2026-11-06; promo code JACOBCARMAN (checkout); Veem quarterly; page not built yet |
 | 63 | compare/lmn-vs-jobber | lmn vs jobber (landscaping crew + budgeting angle) | have data (LMN verified 2026-11-04) |
 | 64 | best/landscaping-estimating-software | landscaping estimating software | LMN, Jobber, QuoteIQ, Aspire |
 | 65 | tools/service-autopilot-pricing | service autopilot pricing | have data (verified 2026-11-04) |
