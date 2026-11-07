@@ -39,7 +39,7 @@
       }
     ],
     "extra_user": "$29/mo each",
-    "card_fee": "2.9% + 30\u00a2 online; 2.7% + 30\u00a2 Tap to Pay; ACH 1%; instant payouts +1%",
+    "card_fee": "2.9% + 30¢ online; 2.7% + 30¢ Tap to Pay; ACH 1%; instant payouts +1%",
     "routing": "Routing (route optimization) and GPS tracking on Connect and up; not on Core",
     "quickbooks": "QuickBooks Online and Xero sync (Connect and up)",
     "chemical_tracking": "unknown",
@@ -60,7 +60,7 @@
       "Extra users $29/mo each",
       "Chemical/material tracking not listed on pricing page"
     ],
-    "last_verified": "2026-11-05",
+    "last_verified": "2026-11-07",
     "add_ons": "Marketing Suite $99/mo, Receptionist (AI) $29/mo, Pipeline $49/mo (add-ons on Core, Connect and Grow; listed as Plus features). Reviews add-on price not published (unknown)"
   },
   {
@@ -118,7 +118,7 @@
       "Monthly billing costs $20-$40/mo more than annual",
       "Route optimization only on MAX"
     ],
-    "last_verified": "2026-11-05"
+    "last_verified": "2026-11-07"
   },
   {
     "slug": "gorilladesk",
@@ -333,7 +333,8 @@
       "No prices published; you must request pricing",
       "Good/Better/Best sales proposals and service plans only on Ultimate",
       "Zapier and open API only on Ultimate"
-    ]
+    ],
+    "last_verified": "2026-11-07"
   },
   {
     "slug": "quoteiq",
@@ -603,7 +604,7 @@
       }
     ],
     "extra_user": "Users included per plan (5 / 10 / 20); every employee added counts as a user; per-user add-on price not published",
-    "card_fee": "Tap to Pay 2.9% + 30\u00a2; other online card payments 3.9% + 30\u00a2 (some Amex 5.2% + 30\u00a2); ACH 1% + 30\u00a2. 5% subscription discount (Kickback) if you process $1,000+/mo (Start), $2,000+ (Run), $3,000+ (Scale)",
+    "card_fee": "Tap to Pay 2.9% + 30¢; other online card payments 3.9% + 30¢ (some Amex 5.2% + 30¢); ACH 1% + 30¢. 5% subscription discount (Kickback) if you process $1,000+/mo (Start), $2,000+ (Run), $3,000+ (Scale)",
     "routing": "Dispatch mapping, GPS check-ins and automated scheduling on Run and up; route optimization not listed",
     "quickbooks": "QuickBooks Online on all plans; QuickBooks Desktop $50/mo extra (Run and up)",
     "chemical_tracking": "unknown (expense tracking on all plans)",
@@ -621,10 +622,82 @@
       "QuickBooks Online on every plan"
     ],
     "cons": [
-      "Online card payments outside Tap to Pay cost 3.9% + 30\u00a2",
+      "Online card payments outside Tap to Pay cost 3.9% + 30¢",
       "Dispatch mapping and GPS check-ins only on Run ($119/mo annual) and up",
       "Route optimization not listed on the pricing page"
-    ]
+    ],
+    "last_verified": "2026-11-07"
+  },
+  {
+    "slug": "servicem8",
+    "name": "ServiceM8",
+    "website": "https://www.servicem8.com/",
+    "trades": [
+      "pressure",
+      "window",
+      "lawn",
+      "pool",
+      "pest"
+    ],
+    "free_trial": "14 days, no credit card required",
+    "contract": "No lock-ins; upgrade or downgrade anytime (pro-rata credit toward new plan)",
+    "plans": [
+      {
+        "name": "Free",
+        "users": "1",
+        "monthly_no_commit": "$0/mo",
+        "annual": "$0/mo (30 jobs/mo)"
+      },
+      {
+        "name": "Starter",
+        "users": "Unlimited",
+        "monthly_no_commit": "$29/mo",
+        "annual": "$29/mo (50 jobs/mo; no annual discount listed)"
+      },
+      {
+        "name": "Growing",
+        "users": "Unlimited",
+        "monthly_no_commit": "$79/mo",
+        "annual": "$79/mo (150 jobs/mo; no annual discount listed)"
+      },
+      {
+        "name": "Premium",
+        "users": "Unlimited",
+        "monthly_no_commit": "$149/mo",
+        "annual": "$149/mo (500 jobs/mo; no annual discount listed)"
+      },
+      {
+        "name": "Premium Plus",
+        "users": "Unlimited",
+        "monthly_no_commit": "$349/mo",
+        "annual": "$349/mo (1500+ jobs/mo; no annual discount listed)"
+      }
+    ],
+    "extra_user": "Unlimited users on paid plans (Free limited to 1 user); priced by monthly job credits, not per user",
+    "card_fee": "ServiceM8 Pay (US): 3.05% + 30¢ standard domestic; 4.60% + 30¢ international (help center, listed as current as of Sep 2024). Phone add-on from $19/mo.",
+    "routing": "Dispatch map and Auto Routing listed on pricing page; minimum plan for Auto Routing not clearly stated",
+    "quickbooks": "QuickBooks Online, Xero and MYOB sync (listed under essentials / all plans)",
+    "chemical_tracking": "unknown (Asset Management listed as Growing+ add-on; chemical/material tracking not listed)",
+    "online_booking": "Yes (all plans)",
+    "rating": "unknown",
+    "sources": [
+      "https://www.servicem8.com/pricing",
+      "https://support.servicem8.com/help-center/servicem8-add-ons/servicem8-pay/servicem8-pay-card-processing-fees-payout-speed"
+    ],
+    "best_for": "Trades and service contractors who want unlimited users priced by monthly job volume",
+    "starting_price": "$0/mo (Free, 1 user, 30 jobs); paid from $29/mo (Starter, unlimited users, 50 jobs)",
+    "pros": [
+      "Free plan for solo operators (30 jobs/mo)",
+      "Unlimited users on every paid plan",
+      "14-day trial, no credit card; no lock-in contracts"
+    ],
+    "cons": [
+      "Paid plans are capped by monthly job credits (50 / 150 / 500 / 1500+)",
+      "US card fees 3.05% + 30¢ via ServiceM8 Pay (higher than some FSM peers)",
+      "No annual billing discount listed on the pricing page"
+    ],
+    "add_ons": "ServiceM8 Phone from $19/mo (unlimited users). Forms Store (purchased forms on any plan; custom form builder Growing+). AI Smart Helper and other plan-gated add-ons on pricing page.",
+    "last_verified": "2026-11-07"
   },
   {
     "slug": "bookingkoala",

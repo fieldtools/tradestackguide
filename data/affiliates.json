@@ -1,122 +1,127 @@
 {
- "_note": "Replace url values with real affiliate links after approval. Pages use these keys via {{aff:KEY}}.",
- "jobber": {
-  "url": "https://www.getjobber.com/",
-  "program": "Jobber Partner Program (PartnerStack) - 20% for 12 months",
-  "status": "placeholder"
- },
- "housecallpro": {
-  "url": "https://www.housecallpro.com/",
-  "program": "Housecall Pro (PartnerStack) - $180/enrollment + $10/lead",
-  "status": "placeholder"
- },
- "gorilladesk": {
-  "url": "https://gorilladesk.com/",
-  "program": "GorillaDesk (FirstPromoter) - application pending; plain link until approved",
-  "status": "pending"
- },
- "skimmer": {
-  "url": "https://www.getskimmer.com/",
-  "program": "Skimmer referral - $150 per 90-day customer",
-  "status": "placeholder"
- },
- "responsibid": {
-  "url": "https://www.responsibid.com/",
-  "program": "No affiliate program confirmed; plain link",
-  "status": "plain"
- },
- "squeegee": {
-  "url": "https://squeeg.ee/pricing",
-  "program": "No affiliate program confirmed; plain link",
-  "status": "plain"
- },
- "workiz": {
-  "url": "https://www.workiz.com/",
-  "program": "No affiliate program confirmed; plain link",
-  "status": "plain"
- },
- "quoteiq": {
-  "url": "https://admin-quoteiq.web.app/register?via=jacob-carman",
-  "program": "QuoteIQ (Rewardful) - approved, 40% recurring; used on /tools/quoteiq/ and /best/lawn-care-software/",
-  "status": "active"
- },
- "yardbook": {
-  "url": "https://www.yardbook.com/",
-  "program": "No affiliate program confirmed; plain link",
-  "status": "plain"
- },
- "serviceautopilot": {
-  "url": "https://www.serviceautopilot.com/",
-  "program": "No affiliate program confirmed; plain link",
-  "status": "plain"
- },
- "lmn": {
-  "url": "https://golmn.com/",
-  "program": "No affiliate program confirmed; plain link",
-  "status": "plain"
- },
- "kickserv": {
-  "url": "https://www.kickserv.com/",
-  "program": "No affiliate program confirmed (Kickserv lists a customer referral program only); plain link",
-  "status": "plain"
- },
- "bookingkoala": {
-  "url": "https://bookingkoala.com/30-days/?aff=jacob_C_SEH",
-  "program": "BookingKoala affiliate, joined 2026-10-26",
-  "status": "affiliate",
-  "note": "BookingKoala affiliate, joined 2026-10-26"
- },
- "synchroteam": {
-  "url": "https://www.synchroteam.com/",
-  "program": "Synchroteam Affiliate Program, 20% recurring via PayPal ($500 threshold); form submitted Oct 26, 2026 but no confirmation shown (unconfirmed); affiliate links issued after a reseller contract is signed; plain URL until approved",
-  "status": "applied"
- },
- "poolbrain": {
-  "url": "https://www.poolbrain.com/",
-  "program": "No public affiliate or referral program (sales partnerships only, per affiliate scout); plain link",
-  "status": "plain"
- },
- "poolofficemanager": {
-  "url": "https://www.poolofficemanager.com/",
-  "program": "No referral or affiliate program found (affiliate scout); plain link",
-  "status": "plain"
- },
- "lawnpro": {
-  "url": "https://www.lawnprosoftware.com/pricing",
-  "program": "No affiliate program confirmed; plain link",
-  "status": "plain"
- },
- "fieldroutes": {
-  "url": "https://www.fieldroutes.com/company/pricing",
-  "program": "No affiliate program confirmed; plain link",
-  "status": "plain"
- },
- "pestpac": {
-  "url": "https://www.pestpac.com/pricing",
-  "program": "No affiliate program confirmed; plain link",
-  "status": "plain"
- },
- "upbuoy": {
-  "url": "https://www.upbuoy.com/",
-  "program": "UpBuoy Partner Program - 80% of first two months' subscription per qualified referral; applied Oct 31, 2026 via https://www.upbuoy.com/partners#apply (\"I create pool industry content\"); confirmation said reply within 2 business days; plain URL until approved",
-  "status": "applied"
- },
- "clockshark": {
-  "url": "https://www.clockshark.com/",
-  "program": "ClockShark Refer a Friend (Referral Factory) - $500 cash per referral that becomes a paying customer (paid after 90 days); link generated Oct 31, 2026; terms don't mention content sites, so plain URL until Jacob reviews",
-  "status": "applied",
-  "note": "Referral link (not yet on site, pending review): https://clockshark-referral.referral-factory.com/uN8CpH4z"
- },
- "homeworks": {
-  "url": "https://www.home.works/",
-  "program": "Homeworks RevShare - 25% recurring on Growth/Enterprise; approved Nov 6, 2026; promo code JACOBCARMAN (first month free for referred customers at checkout; code works on monthly and annual); quarterly Veem for non-members",
-  "status": "active",
-  "note": "Promo code JACOBCARMAN (entered at checkout, not a tracked URL). Partner resources: https://home.works/revshare/partner-resources . Participant agreement: https://docs.google.com/document/d/1JUl-wi_WjBmKsgQ2O3qzPUxympQeoi2QlM0hSiPGeI0/edit . No tools/homeworks page yet (BACKLOG #62); keep CTA off site until that page ships with the code disclosed."
- },
- "servicefusion": {
-  "url": "https://www.servicefusion.com/",
-  "program": "Service Fusion Dealer Referral Program (Referral Rock) - $500 per qualified business that becomes a customer, awarded after its first monthly renewal; open to non-customers; joined Nov 5, 2026; plain URL until Jacob reviews",
-  "status": "applied",
-  "note": "Referral link (not on site yet): https://referrals.servicefusion.com/l/1JACOBCARMA90/ ; dashboard https://referrals.servicefusion.com/v2/4 ; terms https://referrals.servicefusion.com/v2/4/terms . Payout details not entered. A customer-program account (v2/2, $500 Tango e-gift card) was also created by mistake on the same email; ignore it."
- }
+  "_note": "Replace url values with real affiliate links after approval. Pages use these keys via {{aff:KEY}}.",
+  "jobber": {
+    "url": "https://www.getjobber.com/",
+    "program": "Jobber Partner Program (PartnerStack) - 20% for 12 months",
+    "status": "placeholder"
+  },
+  "housecallpro": {
+    "url": "https://www.housecallpro.com/",
+    "program": "Housecall Pro (PartnerStack) - $180/enrollment + $10/lead",
+    "status": "placeholder"
+  },
+  "gorilladesk": {
+    "url": "https://gorilladesk.com/",
+    "program": "GorillaDesk (FirstPromoter) - application pending; plain link until approved",
+    "status": "pending"
+  },
+  "skimmer": {
+    "url": "https://www.getskimmer.com/",
+    "program": "Skimmer referral - $150 per 90-day customer",
+    "status": "placeholder"
+  },
+  "responsibid": {
+    "url": "https://www.responsibid.com/",
+    "program": "No affiliate program confirmed; plain link",
+    "status": "plain"
+  },
+  "squeegee": {
+    "url": "https://squeeg.ee/pricing",
+    "program": "No affiliate program confirmed; plain link",
+    "status": "plain"
+  },
+  "workiz": {
+    "url": "https://www.workiz.com/",
+    "program": "No affiliate program confirmed; plain link",
+    "status": "plain"
+  },
+  "quoteiq": {
+    "url": "https://admin-quoteiq.web.app/register?via=jacob-carman",
+    "program": "QuoteIQ (Rewardful) - approved, 40% recurring; used on /tools/quoteiq/ and /best/lawn-care-software/",
+    "status": "active"
+  },
+  "yardbook": {
+    "url": "https://www.yardbook.com/",
+    "program": "No affiliate program confirmed; plain link",
+    "status": "plain"
+  },
+  "serviceautopilot": {
+    "url": "https://www.serviceautopilot.com/",
+    "program": "No affiliate program confirmed; plain link",
+    "status": "plain"
+  },
+  "lmn": {
+    "url": "https://golmn.com/",
+    "program": "No affiliate program confirmed; plain link",
+    "status": "plain"
+  },
+  "kickserv": {
+    "url": "https://www.kickserv.com/",
+    "program": "No affiliate program confirmed (Kickserv lists a customer referral program only); plain link",
+    "status": "plain"
+  },
+  "bookingkoala": {
+    "url": "https://bookingkoala.com/30-days/?aff=jacob_C_SEH",
+    "program": "BookingKoala affiliate, joined 2026-10-26",
+    "status": "affiliate",
+    "note": "BookingKoala affiliate, joined 2026-10-26"
+  },
+  "synchroteam": {
+    "url": "https://www.synchroteam.com/",
+    "program": "Synchroteam Affiliate Program, 20% recurring via PayPal ($500 threshold); form submitted Oct 26, 2026 but no confirmation shown (unconfirmed); affiliate links issued after a reseller contract is signed; plain URL until approved",
+    "status": "applied"
+  },
+  "poolbrain": {
+    "url": "https://www.poolbrain.com/",
+    "program": "No public affiliate or referral program (sales partnerships only, per affiliate scout); plain link",
+    "status": "plain"
+  },
+  "poolofficemanager": {
+    "url": "https://www.poolofficemanager.com/",
+    "program": "No referral or affiliate program found (affiliate scout); plain link",
+    "status": "plain"
+  },
+  "lawnpro": {
+    "url": "https://www.lawnprosoftware.com/pricing",
+    "program": "No affiliate program confirmed; plain link",
+    "status": "plain"
+  },
+  "fieldroutes": {
+    "url": "https://www.fieldroutes.com/company/pricing",
+    "program": "No affiliate program confirmed; plain link",
+    "status": "plain"
+  },
+  "pestpac": {
+    "url": "https://www.pestpac.com/pricing",
+    "program": "No affiliate program confirmed; plain link",
+    "status": "plain"
+  },
+  "upbuoy": {
+    "url": "https://www.upbuoy.com/",
+    "program": "UpBuoy Partner Program - 80% of first two months' subscription per qualified referral; applied Oct 31, 2026 via https://www.upbuoy.com/partners#apply (\"I create pool industry content\"); confirmation said reply within 2 business days; plain URL until approved",
+    "status": "applied"
+  },
+  "clockshark": {
+    "url": "https://www.clockshark.com/",
+    "program": "ClockShark Refer a Friend (Referral Factory) - $500 cash per referral that becomes a paying customer (paid after 90 days); link generated Oct 31, 2026; terms don't mention content sites, so plain URL until Jacob reviews",
+    "status": "applied",
+    "note": "Referral link (not yet on site, pending review): https://clockshark-referral.referral-factory.com/uN8CpH4z"
+  },
+  "homeworks": {
+    "url": "https://www.home.works/",
+    "program": "Homeworks RevShare - 25% recurring on Growth/Enterprise; approved Nov 6, 2026; promo code JACOBCARMAN (first month free for referred customers at checkout; code works on monthly and annual); quarterly Veem for non-members",
+    "status": "active",
+    "note": "Promo code JACOBCARMAN (entered at checkout, not a tracked URL). Partner resources: https://home.works/revshare/partner-resources . Participant agreement: https://docs.google.com/document/d/1JUl-wi_WjBmKsgQ2O3qzPUxympQeoi2QlM0hSiPGeI0/edit . No tools/homeworks page yet (BACKLOG #62); keep CTA off site until that page ships with the code disclosed."
+  },
+  "servicefusion": {
+    "url": "https://www.servicefusion.com/",
+    "program": "Service Fusion Dealer Referral Program (Referral Rock) - $500 per qualified business that becomes a customer, awarded after its first monthly renewal; open to non-customers; joined Nov 5, 2026; plain URL until Jacob reviews",
+    "status": "applied",
+    "note": "Referral link (not on site yet): https://referrals.servicefusion.com/l/1JACOBCARMA90/ ; dashboard https://referrals.servicefusion.com/v2/4 ; terms https://referrals.servicefusion.com/v2/4/terms . Payout details not entered. A customer-program account (v2/2, $500 Tango e-gift card) was also created by mistake on the same email; ignore it."
+  },
+  "servicem8": {
+    "url": "https://www.servicem8.com/",
+    "program": "ServiceM8 PartnerStack — 80% of first 12 months (per backlog); needs Jacob to sign up; plain vendor URL until approved",
+    "status": "placeholder"
+  }
 }

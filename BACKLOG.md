@@ -5,7 +5,7 @@
 | 2 | best/pressure-washing-software | pressure washing business software | done (2026-10-23) |
 | 3 | best/lawn-care-software | lawn care business software | done (2026-10-24) |
 | 4 | alternatives/jobber | jobber alternatives | done (2026-10-25) |
-| 5 | alternatives/housecall-pro | housecall pro alternatives | Jobber, Workiz, ServiceM8 (Kickserv added 2026-10-25) |
+| 5 | alternatives/housecall-pro | housecall pro alternatives | done (2026-11-07) |
 | 6 | pricing-tracker | field service software pricing | all tools.json |
 | 7 | compare/skimmer-vs-pool-brain | skimmer vs pool brain | Pool Brain pricing |
 | 8 | compare/gorilladesk-vs-jobber | gorilladesk vs jobber | done (2026-11-02) |
