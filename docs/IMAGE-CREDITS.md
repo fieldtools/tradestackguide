@@ -31,7 +31,10 @@ Assigned automatically by `page_img()` in build.py (see docs/PAGE-IMAGES.md). "U
 | `lawn-mower-service.webp` (1200x400) | /compare/jobber-vs-housecall-pro/ | Gloved worker servicing a lawn mower on the grass | Gustavo Fring | https://www.pexels.com/photo/5163424/ |
 | `hedge-trimming.webp` (1200x400) | topic pool (lawn); was /software-buying-checklist/ until 2026-10-23 | Close-up of a gardener trimming a hedge with shears | Magda Ehlers | https://www.pexels.com/photo/38936334/ |
 
-Checked 2026-10-23: each source page was live and marked Free. Images were reviewed for visible logos/brand names and SFW content.
+| `hvac-technician.webp` (1200x400) | /tools/service-fusion/ | Technician inspecting an outdoor air-conditioning unit with a flashlight | Kathleen Austin Kuhn | https://www.pexels.com/photo/technician-inspecting-outdoor-hvac-unit-32497161/ |
+| `construction-field-crew.webp` (1200x400) | /tools/clockshark/ | Construction workers in hard hats and safety vests working with rebar on a job site | This Viktọ | https://www.pexels.com/photo/men-working-on-a-construction-site-while-wearing-hard-hats-10202856/ |
+
+Checked 2026-10-23: each source page was live and marked Free. HVAC and crew photos added 2026-11-07 (source pages live and marked Free; HVAC crop excludes the unit brand badge). Images were reviewed for visible logos/brand names and SFW content.
 
 ## Directory pages (unlisted, noindex)
 
