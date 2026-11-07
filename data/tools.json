@@ -39,7 +39,7 @@
       }
     ],
     "extra_user": "$29/mo each",
-    "card_fee": "2.9% + 30¢ online; 2.7% + 30¢ Tap to Pay; ACH 1%; instant payouts +1%",
+    "card_fee": "2.9% + 30\u00a2 online; 2.7% + 30\u00a2 Tap to Pay; ACH 1%; instant payouts +1%",
     "routing": "Routing (route optimization) and GPS tracking on Connect and up; not on Core",
     "quickbooks": "QuickBooks Online and Xero sync (Connect and up)",
     "chemical_tracking": "unknown",
@@ -604,7 +604,7 @@
       }
     ],
     "extra_user": "Users included per plan (5 / 10 / 20); every employee added counts as a user; per-user add-on price not published",
-    "card_fee": "Tap to Pay 2.9% + 30¢; other online card payments 3.9% + 30¢ (some Amex 5.2% + 30¢); ACH 1% + 30¢. 5% subscription discount (Kickback) if you process $1,000+/mo (Start), $2,000+ (Run), $3,000+ (Scale)",
+    "card_fee": "Tap to Pay 2.9% + 30\u00a2; other online card payments 3.9% + 30\u00a2 (some Amex 5.2% + 30\u00a2); ACH 1% + 30\u00a2. 5% subscription discount (Kickback) if you process $1,000+/mo (Start), $2,000+ (Run), $3,000+ (Scale)",
     "routing": "Dispatch mapping, GPS check-ins and automated scheduling on Run and up; route optimization not listed",
     "quickbooks": "QuickBooks Online on all plans; QuickBooks Desktop $50/mo extra (Run and up)",
     "chemical_tracking": "unknown (expense tracking on all plans)",
@@ -622,7 +622,7 @@
       "QuickBooks Online on every plan"
     ],
     "cons": [
-      "Online card payments outside Tap to Pay cost 3.9% + 30¢",
+      "Online card payments outside Tap to Pay cost 3.9% + 30\u00a2",
       "Dispatch mapping and GPS check-ins only on Run ($119/mo annual) and up",
       "Route optimization not listed on the pricing page"
     ],
@@ -674,7 +674,7 @@
       }
     ],
     "extra_user": "Unlimited users on paid plans (Free limited to 1 user); priced by monthly job credits, not per user",
-    "card_fee": "ServiceM8 Pay (US): 3.05% + 30¢ standard domestic; 4.60% + 30¢ international (help center, listed as current as of Sep 2024). Phone add-on from $19/mo.",
+    "card_fee": "ServiceM8 Pay (US): 3.05% + 30\u00a2 standard domestic; 4.60% + 30\u00a2 international (help center, listed as current as of Sep 2024). Phone add-on from $19/mo.",
     "routing": "Dispatch map and Auto Routing listed on pricing page; minimum plan for Auto Routing not clearly stated",
     "quickbooks": "QuickBooks Online, Xero and MYOB sync (listed under essentials / all plans)",
     "chemical_tracking": "unknown (Asset Management listed as Growing+ add-on; chemical/material tracking not listed)",
@@ -693,7 +693,7 @@
     ],
     "cons": [
       "Paid plans are capped by monthly job credits (50 / 150 / 500 / 1500+)",
-      "US card fees 3.05% + 30¢ via ServiceM8 Pay (higher than some FSM peers)",
+      "US card fees 3.05% + 30\u00a2 via ServiceM8 Pay (higher than some FSM peers)",
       "No annual billing discount listed on the pricing page"
     ],
     "add_ons": "ServiceM8 Phone from $19/mo (unlimited users). Forms Store (purchased forms on any plan; custom form builder Growing+). AI Smart Helper and other plan-gated add-ons on pricing page.",
@@ -909,5 +909,64 @@
       "QuickBooks sync (+$25/mo) and texting (from $10/mo) are paid add-ons"
     ],
     "last_verified": "2026-11-03"
+  },
+  {
+    "slug": "homeworks",
+    "name": "Homeworks",
+    "website": "https://www.home.works/",
+    "trades": [
+      "lawn",
+      "pressure",
+      "window"
+    ],
+    "free_trial": "Solo plan is Free Forever; paid plans include White Glove implementation (5-day implementation calls, setup help, and importing support). Separate free-trial length for Growth/Enterprise not published",
+    "contract": "No contracts; monthly or annual billing. Growth guarantee: if your business has not grown at least 10% after your first year on Homeworks, they say they will refund your money",
+    "plans": [
+      {
+        "name": "Solo",
+        "users": "1",
+        "monthly_no_commit": "$0/mo (Free Forever)",
+        "annual": "$0/mo (Free Forever)"
+      },
+      {
+        "name": "Growth",
+        "users": "up to 10",
+        "monthly_no_commit": "$299/mo",
+        "annual": "$219/mo billed annually (save $960/yr vs monthly)"
+      },
+      {
+        "name": "Enterprise",
+        "users": "up to 20",
+        "monthly_no_commit": "$499/mo",
+        "annual": "$379/mo billed annually (save $1,440/yr vs monthly)"
+      }
+    ],
+    "extra_user": "Add more seats for $15/month per user (pricing page)",
+    "card_fee": "Stripe card processing on the pricing page: Solo and Growth 3.9% + 30\u00a2; Enterprise 2.9% + 30\u00a2 (applies to card payments processed through Stripe). ACH: reduced ACH processing fees, capped at $5 (shown on the pricing comparison).",
+    "routing": "Scheduling and dispatch, quick dispatch, saved routes, and offline-capable field tools listed on paid plans; dedicated route-optimization product name not published",
+    "quickbooks": "unknown (not listed on the public pricing page)",
+    "chemical_tracking": "Chemical application and inventory tracking listed on the pricing feature comparison",
+    "online_booking": "Website lead capture / embed to generate leads; customer portal for estimates, invoices, and payments listed in partner and marketing materials",
+    "rating": "unknown",
+    "add_ons": "SMS: 3\u00a2 per segment (Enterprise includes 1,000 SMS segments/mo). Homeworks Connect: 30-day trial on Growth; included on Enterprise",
+    "sources": [
+      "https://home.works/pricing",
+      "https://www.home.works/",
+      "https://home.works/revshare/partner-resources"
+    ],
+    "best_for": "Growing home-service teams (lawn, cleaning, and similar trades) that want CRM, scheduling, and billing in one system and can use Growth or Enterprise",
+    "starting_price": "Free (Solo); Growth $299/mo or $219/mo billed annually",
+    "pros": [
+      "Solo plan is Free Forever",
+      "No contracts; annual Growth/Enterprise discount published on the pricing page",
+      "White Glove implementation included on Growth and Enterprise"
+    ],
+    "cons": [
+      "Growth starts at $299/mo ($219/mo annual), which the vendor says is a poor fit below ~$250K revenue",
+      "QuickBooks sync not listed on the public pricing page (unknown)",
+      "Newer platform with fewer long-term public reviews, per the vendor's own FAQ"
+    ],
+    "who_html": "<p>Homeworks is home-service CRM and operations software (Mike Andes / formerly related to Copilot CRM). Every price below comes from <a href=\"https://home.works/pricing\" rel=\"nofollow\">home.works/pricing</a>, checked 2026-11-07. All prices USD; subscriptions exclude sales tax where applicable.</p><p><strong>Reader promo:</strong> enter code <code>JACOBCARMAN</code> at Homeworks checkout for your first month free (works on monthly and annual Growth/Enterprise per the RevShare partner program). We may earn 25% recurring commission if you stay on a paid plan. There is no separate tracked referral URL.</p><p><a class=\"cta\" href=\"https://www.home.works/\" rel=\"sponsored nofollow noopener\" target=\"_blank\">Try Homeworks with code JACOBCARMAN</a></p>",
+    "last_verified": "2026-11-07"
   }
 ]
