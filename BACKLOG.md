@@ -76,3 +76,4 @@
 | 73 | best/pool-service-company-software | pool service company software (Search Console query, 2 clicks/4 impr, Oct 27–Nov 2 2026; synonym vs pool service software) | Skimmer, Pool Brain, GorillaDesk |
 | 74 | tools/service-fusion | service fusion review pricing (HVAC/plumbing/electrical FSM) | done (2026-11-07); affiliate: Service Fusion dealer referral $500 per customer, joined 2026-11-05 (affiliate scout); needs pricing data |
 | 75 | best/pool-route-software | best pool route software (Search Console query, 2 clicks/4 impr, Oct 29–Nov 4 2026; synonym/near #21) | Skimmer, Pool Brain |
+| 76 | tools/mrtask | mrtask review pricing (field service for HVAC, plumbing, electrical, cleaning, pressure washing, landscaping; formerly Field Complete) | affiliate: Mr Task 30% of subscription payments for 12 months (40% after 10+ active referrals) via Rewardful, needs Jacob (password); scout 2026-11-08 |
