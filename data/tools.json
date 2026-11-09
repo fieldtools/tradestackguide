@@ -226,7 +226,7 @@
    "QuickBooks and card fees not published on pricing page"
   ],
   "last_verified": "2026-11-09",
-  "add_ons": "Service Texts $0.029/message (Getting Started; unlimited on Scaling Up), AI Phone $99/mo, Marketing Suite $150/mo, Bookkeeping from $198/mo"
+  "add_ons": "Service Texts $0.029/message (Getting Started; included on Scaling Up and Enterprise), AI Phone $99/mo, Marketing Suite $150/mo, Bookkeeping from $198/mo (all three on every plan), CRM Integrations $49/mo and Google Calendar $25/mo (Getting Started and Scaling Up; included on Enterprise)"
  },
  {
   "slug": "responsibid",
@@ -1109,6 +1109,48 @@
   "cons": [
    "$3 per location is more per pool than Skimmer's $2 Scaling Up rate",
    "Route optimization not on the free plan"
+  ],
+  "last_verified": "2026-11-09"
+ },
+ {
+  "slug": "paythepoolman",
+  "name": "Paythepoolman",
+  "website": "https://www.paythepoolman.com/",
+  "trades": [
+   "pool"
+  ],
+  "free_trial": "30-day free trial; cancel anytime (homepage). Homepage banner on 2026-11-09 also showed a promo code for 80% off for 3 months; new pool companies can call to ask about a base-plan discount",
+  "contract": "No contract, no activation fee (pricing section)",
+  "plans": [
+   {
+    "name": "One plan",
+    "users": "$15/mo per technician account; adding customers never raises the bill",
+    "monthly_no_commit": "$50/mo base + $15/mo per tech (vendor example: 3 techs = $95/mo)",
+    "annual": "unknown"
+   }
+  ],
+  "extra_user": "$50/mo base + $15/mo per technician; no per-pool charge (pricing section)",
+  "add_ons": "Pool Junction branded customer app $25/mo (whole company); integrated payroll $12/employee/mo plus a one-time sign-up fee (amount not published); text credits sold in packs, one credit per text (pack prices not published); optional $1.50 convenience fee per card payment, paid by your customer, off by default",
+  "card_fee": "unknown (card processing rates not published; card payments on every plan; ACH, Apple Pay and Google Pay need the Pool Junction add-on; optional $1.50 customer-paid convenience fee)",
+  "routing": "One-click route optimization, drag-and-drop routes, live GPS trail per tech with no hardware (homepage); included in the base plan",
+  "quickbooks": "QuickBooks sync built into invoicing (homepage)",
+  "chemical_tracking": "Chemical cost per dose and profit per pool in financial records; Orenda and LaMotte SpinTouch listed (homepage)",
+  "online_booking": "unknown (lead requests and pipeline listed; online booking not described)",
+  "rating": "unknown",
+  "sources": [
+   "https://www.paythepoolman.com/"
+  ],
+  "best_for": "Pool companies adding techs that want a low per-tech price",
+  "starting_price": "$50/mo base + $15/mo per tech (1 tech = $65/mo by the published formula)",
+  "pros": [
+   "$15/mo per extra tech, no per-pool charge",
+   "Route optimization and GPS tracking in the base plan",
+   "No contract or activation fee; 30-day trial"
+  ],
+  "cons": [
+   "Card processing rates not published",
+   "ACH and Apple/Google Pay need the $25/mo customer app add-on",
+   "Payroll sign-up fee and text credit prices not published"
   ],
   "last_verified": "2026-11-09"
  }

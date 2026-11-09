@@ -123,5 +123,15 @@
   "url": "https://www.servicem8.com/",
   "program": "ServiceM8 PartnerStack — 80% of first 12 months (per backlog); needs Jacob to sign up; plain vendor URL until approved",
   "status": "placeholder"
+ },
+ "paythepoolman": {
+  "url": "https://www.paythepoolman.com/",
+  "program": "No affiliate program checked or joined; plain link",
+  "status": "plain"
+ },
+ "pool360": {
+  "url": "https://portal.pool360.com/edgehome/serviceedge",
+  "program": "POOLCORP's POOL360 PoolService; no affiliate program checked; plain link",
+  "status": "plain"
  }
 }
