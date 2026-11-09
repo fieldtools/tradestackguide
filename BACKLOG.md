@@ -21,7 +21,7 @@
 | 18 | best/house-cleaning-business-software | house cleaning business software | Jobber, ZenMaid, Launch27 |
 | 19 | compare/jobber-vs-workiz | jobber vs workiz | Workiz added 2026-10-23 (prices not published) |
 | 20 | compare/housecall-pro-vs-workiz | housecall pro vs workiz | Workiz added 2026-10-23 (prices not published) |
-| 21 | best/pool-route-optimization | pool route optimization software (also SC "best pool route software", 2 clicks/4 impr Oct 29–Nov 4 2026) | Skimmer, Pool Brain |
+| 21 | best/pool-route-optimization | pool route optimization software (also SC "best pool route software", 2 clicks/4 impr Oct 29–Nov 4 2026) | done (2026-11-09, covered by best/pool-route-software) |
 | 22 | best/estimating-app-pressure-washing | pressure washing estimating app | have data (ResponsiBid added 2026-10-22) |
 | 23 | best/mosquito-control-software | mosquito control business software | GorillaDesk, FieldRoutes |
 | 24 | best/landscaping-business-software | landscaping business software | Aspire (LMN added 2026-10-24) |
@@ -75,5 +75,7 @@
 | 72 | best/window-cleaning-crm | window cleaning crm (Search Console query, 2 clicks/4 impr, Oct 27–Nov 2 2026) | done (2026-11-08) |
 | 73 | best/pool-service-company-software | pool service company software (Search Console query, 2 clicks/4 impr, Oct 27–Nov 2 2026; synonym vs pool service software) | Skimmer, Pool Brain, GorillaDesk |
 | 74 | tools/service-fusion | service fusion review pricing (HVAC/plumbing/electrical FSM) | done (2026-11-07); affiliate: Service Fusion dealer referral $500 per customer, joined 2026-11-05 (affiliate scout); needs pricing data |
-| 75 | best/pool-route-software | best pool route software (Search Console query, 2 clicks/4 impr, Oct 29–Nov 4 2026; synonym/near #21) | Skimmer, Pool Brain |
+| 75 | best/pool-route-software | best pool route software (Search Console query, 2 clicks/4 impr, Oct 29–Nov 4 2026; synonym/near #21) | done (2026-11-09); UpBuoy added to tools.json |
 | 76 | tools/mrtask | mrtask review pricing (field service for HVAC, plumbing, electrical, cleaning, pressure washing, landscaping; formerly Field Complete) | affiliate: Mr Task 30% of subscription payments for 12 months (40% after 10+ active referrals) via Rewardful, needs Jacob (password); scout 2026-11-08 |
+| 77 | compare/skimmer-vs-upbuoy | skimmer vs upbuoy (both per-location pool pricing: $2 vs $3/location) | have data (both verified 2026-11-09) |
+| 78 | tools/upbuoy-pricing | upbuoy pricing (free Essential up to 3 locations; Professional $3/location, $99 min) | have data (verified 2026-11-09); affiliate applied 2026-10-31 |

@@ -173,7 +173,7 @@
    "Basic routing capped at 25 stops",
    "SMS is an extra $5/mo plus credit packs"
   ],
-  "last_verified": "2026-11-06"
+  "last_verified": "2026-11-09"
  },
  {
   "slug": "skimmer",
@@ -225,7 +225,7 @@
    "Pool-only",
    "QuickBooks and card fees not published on pricing page"
   ],
-  "last_verified": "2026-11-06",
+  "last_verified": "2026-11-09",
   "add_ons": "Service Texts $0.029/message (Getting Started; unlimited on Scaling Up), AI Phone $99/mo, Marketing Suite $150/mo, Bookkeeping from $198/mo"
  },
  {
@@ -861,7 +861,7 @@
    "$65/mo per active field tech adds up as you hire",
    "Trial length, contract terms and card fees not published"
   ],
-  "last_verified": "2026-11-06"
+  "last_verified": "2026-11-09"
  },
  {
   "slug": "pool-office-manager",
@@ -908,7 +908,7 @@
    "Highest one-user price of the pool tools we track ($125/mo)",
    "QuickBooks sync (+$25/mo) and texting (from $10/mo) are paid add-ons"
   ],
-  "last_verified": "2026-11-03"
+  "last_verified": "2026-11-09"
  },
  {
   "slug": "homeworks",
@@ -1064,5 +1064,52 @@
   ],
   "who_html": "<p>ClockShark is crew time tracking and scheduling software for field service and construction teams. It does not replace a quoting/invoicing tool; it pairs with one. Details come from <a href=\"https://www.clockshark.com/pricing\" rel=\"nofollow\">clockshark.com/pricing</a>, checked 2026-11-07. See how full field service suites price crews in <a href=\"/field-service-software-cost-1-vs-5-users/\">1 vs 5 user costs</a> and run through the <a href=\"/software-buying-checklist/\">software buying checklist</a> before signing a multi-year term.</p><p><strong>Disclosure:</strong> we may earn a referral fee if you become a ClockShark customer through our link.</p>",
   "last_verified": "2026-11-07"
+ },
+ {
+  "slug": "upbuoy",
+  "name": "UpBuoy",
+  "website": "https://www.upbuoy.com/",
+  "trades": [
+   "pool"
+  ],
+  "free_trial": "Free Essential plan (up to 3 locations); 30-day money-back guarantee on paid plans; homepage says no credit card required to start",
+  "contract": "No long-term contracts; month-to-month or annual, cancel anytime without fees; plan changes take effect next billing cycle",
+  "plans": [
+   {
+    "name": "Essential",
+    "users": "unknown (mobile app for technicians included)",
+    "monthly_no_commit": "Free (up to 3 locations)",
+    "annual": "Free"
+   },
+   {
+    "name": "Professional",
+    "users": "unknown (priced per serviced location)",
+    "monthly_no_commit": "$3/serviced location/mo, minimum $99/mo",
+    "annual": "unknown (annual plans offered; price not published)"
+   }
+  ],
+  "extra_user": "Priced per serviced location (a unique address worked that month; multiple visits count once); per-user fees not published",
+  "card_fee": "unknown (payment portal with card, ACH and AutoPay; processing rates not published)",
+  "routing": "Basic scheduling & routing on Essential (free); route optimization and visual schedule calendar on Professional",
+  "quickbooks": "Two-way QuickBooks sync (homepage); plan not stated",
+  "chemical_tracking": "Service reports with LSI calculator and smart dosing (homepage)",
+  "online_booking": "unknown (customer portal lets customers request services, per homepage)",
+  "rating": "unknown",
+  "sources": [
+   "https://www.upbuoy.com/pricing",
+   "https://www.upbuoy.com/"
+  ],
+  "best_for": "Pool route businesses that want per-pool pricing with a free plan to test on up to 3 locations",
+  "starting_price": "Free (Essential, up to 3 locations); Professional $3/location/mo, $99/mo minimum",
+  "pros": [
+   "Free Essential plan for up to 3 locations",
+   "Route optimization on Professional",
+   "30-day money-back guarantee; no long-term contracts"
+  ],
+  "cons": [
+   "$3 per location is more per pool than Skimmer's $2 Scaling Up rate",
+   "Route optimization not on the free plan"
+  ],
+  "last_verified": "2026-11-09"
  }
 ]
