@@ -79,3 +79,5 @@
 | 76 | tools/mrtask | mrtask review pricing (field service for HVAC, plumbing, electrical, cleaning, pressure washing, landscaping; formerly Field Complete) | affiliate: Mr Task 30% of subscription payments for 12 months (40% after 10+ active referrals) via Rewardful, needs Jacob (password); scout 2026-11-08 |
 | 77 | compare/skimmer-vs-upbuoy | skimmer vs upbuoy (both per-location pool pricing: $2 vs $3/location) | have data (both verified 2026-11-09) |
 | 78 | tools/upbuoy-pricing | upbuoy pricing (free Essential up to 3 locations; Professional $3/location, $99 min) | have data (verified 2026-11-09); affiliate applied 2026-10-31 |
+| 79 | tools/handoff | handoff ai review pricing (AI estimating, proposals and CRM for remodelers, handymen and trade contractors) | affiliate: Handoff 20% recurring for up to 12 months via Trackdesk, needs Jacob (account); scout 2026-11-09; moderate fit |
+| 80 | tools/patriot-payroll | patriot software payroll review pricing for small trade businesses (low priority, adjacent) | affiliate: Patriot Software $150 per new customer via Impact, needs Jacob (Impact account); scout 2026-11-09 |
