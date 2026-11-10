@@ -207,12 +207,14 @@
   "extra_user": "Users unlimited; billed per serviced location (unserviced months not billed)",
   "card_fee": "unknown",
   "routing": "Route Builder (all); Route Optimization (Scaling Up)",
-  "quickbooks": "unknown",
+  "quickbooks": "QuickBooks Online sync (listed on pricing page; homepage says real-time sync)",
   "chemical_tracking": "LSI & dosing calculator (Orenda), LaMotte integration on Scaling Up",
   "online_booking": "unknown",
   "rating": "unknown",
   "sources": [
-   "https://www.getskimmer.com/pricing"
+   "https://www.getskimmer.com/pricing",
+   "https://www.getskimmer.com/",
+   "https://www.getskimmer.com/features"
   ],
   "best_for": "Pool route businesses billing by serviced pool",
   "starting_price": "$49/mo minimum ($1 per serviced location)",
@@ -223,9 +225,9 @@
   ],
   "cons": [
    "Pool-only",
-   "QuickBooks and card fees not published on pricing page"
+   "Card processing rate and annual pricing not published"
   ],
-  "last_verified": "2026-11-09",
+  "last_verified": "2026-11-10",
   "add_ons": "Service Texts $0.029/message (Getting Started; included on Scaling Up and Enterprise), AI Phone $99/mo, Marketing Suite $150/mo, Bookkeeping from $198/mo (all three on every plan), CRM Integrations $49/mo and Google Calendar $25/mo (Getting Started and Scaling Up; included on Enterprise)"
  },
  {
@@ -861,7 +863,7 @@
    "$65/mo per active field tech adds up as you hire",
    "Trial length, contract terms and card fees not published"
   ],
-  "last_verified": "2026-11-09"
+  "last_verified": "2026-11-10"
  },
  {
   "slug": "pool-office-manager",

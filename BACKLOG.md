@@ -7,7 +7,7 @@
 | 4 | alternatives/jobber | jobber alternatives | done (2026-10-25) |
 | 5 | alternatives/housecall-pro | housecall pro alternatives | done (2026-11-07) |
 | 6 | pricing-tracker | field service software pricing | all tools.json |
-| 7 | compare/skimmer-vs-pool-brain | skimmer vs pool brain | Pool Brain pricing |
+| 7 | compare/skimmer-vs-pool-brain | skimmer vs pool brain | done (2026-11-10) |
 | 8 | compare/gorilladesk-vs-jobber | gorilladesk vs jobber | done (2026-11-02) |
 | 9 | compare/skimmer-vs-gorilladesk | skimmer vs gorilladesk | have data |
 | 10 | free/field-service-software | free field service software | Yardbook, Square Appointments, Invoice Simple |
@@ -61,7 +61,7 @@
 | 58 | best/pool-service-software-for-solo | pool service software for one person (solo tech angle) | have data |
 | 59 | tools/pool-brain-pricing | pool brain pricing | have data ($50+$65 formula verified 2026-11-03) |
 | 60 | best/pool-service-invoicing-software | pool service invoicing software | Skimmer, Pool Office Manager, GorillaDesk |
-| 61 | compare/pool-brain-vs-skimmer | pool brain vs skimmer | have data |
+| 61 | compare/pool-brain-vs-skimmer | pool brain vs skimmer | done (2026-11-10, covered by compare/skimmer-vs-pool-brain) |
 | 62 | tools/homeworks | homeworks review pricing (home service CRM by Mike Andes / ex-Copilot; Growth $299/mo, Enterprise $499/mo) | done (2026-11-07); affiliate active, promo JACOBCARMAN disclosed on /tools/homeworks/ |
 | 63 | compare/lmn-vs-jobber | lmn vs jobber (landscaping crew + budgeting angle) | have data (LMN verified 2026-11-04) |
 | 64 | best/landscaping-estimating-software | landscaping estimating software | LMN, Jobber, QuoteIQ, Aspire |
@@ -81,3 +81,4 @@
 | 78 | tools/upbuoy-pricing | upbuoy pricing (free Essential up to 3 locations; Professional $3/location, $99 min) | have data (verified 2026-11-09); affiliate applied 2026-10-31 |
 | 79 | tools/handoff | handoff ai review pricing (AI estimating, proposals and CRM for remodelers, handymen and trade contractors) | affiliate: Handoff 20% recurring for up to 12 months via Trackdesk, needs Jacob (account); scout 2026-11-09; moderate fit |
 | 80 | tools/patriot-payroll | patriot software payroll review pricing for small trade businesses (low priority, adjacent) | affiliate: Patriot Software $150 per new customer via Impact, needs Jacob (Impact account); scout 2026-11-09 |
+| 81 | compare/pool-brain-vs-pool-office-manager | pool brain vs pool office manager (per-tech vs per-user pool pricing) | have data (both verified 2026-11-09/10) |
