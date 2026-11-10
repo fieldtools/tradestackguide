@@ -214,7 +214,7 @@
   "sources": [
    "https://www.getskimmer.com/pricing",
    "https://www.getskimmer.com/",
-   "https://www.getskimmer.com/features"
+   "https://www.getskimmer.com/product/backoffice"
   ],
   "best_for": "Pool route businesses billing by serviced pool",
   "starting_price": "$49/mo minimum ($1 per serviced location)",
@@ -321,7 +321,7 @@
   "online_booking": "Online booking with optional checkout (all plans)",
   "rating": "unknown",
   "sources": [
-   "https://www.workiz.com/pricing/",
+   "https://www.workiz.com/pricing-plans/",
    "https://www.workiz.com/industries/pressure-washing/"
   ],
   "best_for": "Phone-heavy service teams that want calls, texts and jobs in one system",
@@ -525,7 +525,7 @@
  {
   "slug": "lmn",
   "name": "LMN",
-  "website": "https://golmn.com/",
+  "website": "https://granum.com/lmn/",
   "trades": [
    "lawn"
   ],
@@ -559,7 +559,6 @@
   "online_booking": "Customer portal: clients approve estimates, submit requests, pay invoices",
   "rating": "unknown",
   "sources": [
-   "https://golmn.com/pricing/",
    "https://granum.com/lmn/pricing/"
   ],
   "best_for": "Landscaping companies with crews that budget and estimate by overhead and labor hours",
@@ -822,7 +821,8 @@
   "cons": [
    "Solo capped at 25 customers",
    "QuickBooks Sync is an add-on below Plus (price not published)"
-  ]
+  ],
+  "last_verified": "2026-10-30"
  },
  {
   "slug": "pool-brain",
