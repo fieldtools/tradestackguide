@@ -524,7 +524,7 @@
  },
  {
   "slug": "lmn",
-  "name": "LMN",
+  "name": "LMN by Granum",
   "website": "https://granum.com/lmn/",
   "trades": [
    "lawn"
@@ -786,7 +786,7 @@
     "name": "Startup",
     "users": "3 employee logins",
     "monthly_no_commit": "$39/mo",
-    "annual": "unknown (vendor says annual saves 20%; annual price not listed)"
+    "annual": "$29/mo ($348/yr) billed annually"
    },
    {
     "name": "Grow",
@@ -798,7 +798,7 @@
     "name": "Plus",
     "users": "15 employee logins",
     "monthly_no_commit": "$249/mo",
-    "annual": "unknown (vendor says annual saves 20%; annual price not listed)"
+    "annual": "$199/mo ($2,388/yr) billed annually"
    }
   ],
   "extra_user": "Employee logins included per plan (0 / 3 / 7 / 15); extra-login price not published",
@@ -822,7 +822,8 @@
    "Solo capped at 25 customers",
    "QuickBooks Sync is an add-on below Plus (price not published)"
   ],
-  "last_verified": "2026-10-30"
+  "last_verified": "2026-11-10",
+  "add_ons": "Text messaging: included on Plus; $25/mo add-on on other plans (first 1,000 texts/mo included, then $0.03 per text)"
  },
  {
   "slug": "pool-brain",
