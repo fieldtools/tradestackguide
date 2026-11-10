@@ -1,0 +1,39 @@
+{
+ "slug": "compare/yardbook-vs-jobber",
+ "title": "Yardbook vs Jobber (2026): Free Plan vs Paid, Real Prices",
+ "description": "Yardbook vs Jobber for lawn care: Yardbook's free plan and 1% payment fee vs Jobber's per-user plans, routing, QuickBooks and trials, from vendor pages.",
+ "h1": "Yardbook vs Jobber for lawn care and landscaping",
+ "keyword": "yardbook vs jobber",
+ "type": "compare",
+ "tools": [
+  "yardbook",
+  "jobber"
+ ],
+ "trades": [
+  "lawn"
+ ],
+ "last_verified": "2026-11-04",
+ "sources": [
+  "https://www.yardbook.com/pages/pricing",
+  "https://www.getjobber.com/pricing/"
+ ],
+ "body": "<p>Yardbook and Jobber come up together when a lawn care or landscaping operator picks a first system. <strong>Yardbook</strong> has a free Starter plan with scheduling, estimates, invoices and routing, and charges a 1% Yardbook fee on online payments until you upgrade. <strong>Jobber</strong> has no free plan, but it publishes a per-user price ladder, and we track it across all five trades we cover. Numbers come from <a href=\"https://www.yardbook.com/pages/pricing\" rel=\"nofollow\">Yardbook pricing</a> (checked 2026-11-04) and <a href=\"https://www.getjobber.com/pricing/\" rel=\"nofollow\">Jobber pricing</a> (checked 2026-11-08). Anything a vendor doesn't publish is marked <em>unknown</em>.</p>\n{{table:yardbook,jobber}}\n<h2>Plans and prices</h2>\n<ul><li><strong>Yardbook:</strong> Starter is free and includes scheduling, estimates, invoices, routing, snow removal and lot measurement. Business is $34.99/mo and waives the 1% Yardbook payment fee. Enterprise is $49.99/mo and adds QuickBooks sync. On free and trial accounts, online payments carry Stripe's fees plus a 1% Yardbook fee. Yardbook doesn't publish a per-user price or a separate annual rate. Its pricing page lists web, desktop and Android app access and doesn't mention iOS.</li>\n<li><strong>Jobber:</strong> Core is $29/mo billed annually, $39/mo on a 1-year commitment, or $49/mo with no commitment, for 1 user. Connect is $99/$119/$139 and Grow $149/$169/$199 for 1 user (annual / 1-year monthly / no commitment), with 5-, 10- and 15-user tiers. Extra users are $29/mo each. Card payments are 2.9% + 30¢ online. The 14-day trial runs on Grow and needs no credit card.</li></ul>\n<h2>Where the features sit</h2>\n<div class=\"tw\" tabindex=\"0\" role=\"region\" aria-label=\"Yardbook vs Jobber features by plan\"><table><tr><th>Feature</th><th>Yardbook</th><th>Jobber</th></tr>\n<tr><td>Routing</td><td>On Starter (free)</td><td>Connect and up ($99/mo billed annually); not on Core</td></tr>\n<tr><td>QuickBooks</td><td>Enterprise only ($49.99/mo)</td><td>QuickBooks Online and Xero sync on Connect and up</td></tr>\n<tr><td>Chemical tracking</td><td>Listed; multi-step chemical programs on Business and up</td><td>unknown (not listed on the pricing page)</td></tr>\n<tr><td>Online booking</td><td>unknown (customized lead capture on Business)</td><td>Yes</td></tr>\n<tr><td>Payment fees</td><td>Stripe fees + 1% Yardbook fee on free/trial accounts; Yardbook fee waived on Business and Enterprise</td><td>2.9% + 30¢ online; 2.7% + 30¢ Tap to Pay; ACH 1%</td></tr></table></div>\n<h2>When Yardbook's 1% fee costs more than upgrading</h2>\n<p>On the free plan, Yardbook takes 1% of online payments on top of Stripe's fees. Business costs $34.99/mo and removes that 1%. So once you take more than about $3,499 a month in online payments, Business costs less than the 1% fee (1% of $3,499 is $34.99). This is simple arithmetic from the published prices, before Stripe's own fees. At $5,000/mo of online payments, the Yardbook fee alone would be $50/mo on Starter.</p>\n<h2>What a solo operator pays</h2>\n<ul><li><strong>Cheapest start:</strong> Yardbook Starter, $0/mo plus the 1% fee on online payments, with routing included.</li>\n<li><strong>Routing plus QuickBooks:</strong> Yardbook Enterprise is $49.99/mo. Jobber Connect is $99/mo billed annually or $139/mo with no commitment.</li>\n<li><strong>Jobber's lowest price:</strong> Core is $29/mo billed annually ($49/mo no commitment), but it doesn't include routing.</li></ul>\n<h2>Which should you pick?</h2>\n<ul><li><strong>Solo lawn or landscaping operator on a tight budget:</strong> Yardbook. The free plan covers scheduling, invoices and routing.</li>\n<li><strong>You run iPhones in the field:</strong> Yardbook's pricing page doesn't mention an iOS app, so confirm with Yardbook before you commit.</li>\n<li><strong>Several trades, or you plan to add crew:</strong> Jobber. Its per-user ladder and 5-user tiers are published. {{aff:jobber|See Jobber plans}}</li></ul>\n<p>More detail: <a href=\"/tools/yardbook/\">Yardbook pricing and features</a> · <a href=\"/tools/jobber-pricing/\">Jobber pricing breakdown</a> · <a href=\"/best/lawn-care-software/\">best lawn care software</a> · <a href=\"/best/lawn-care-software-cost/\">lawn care software cost</a> · <a href=\"/alternatives/jobber/\">Jobber alternatives</a></p>",
+ "faq": [
+  [
+   "Is Yardbook really free?",
+   "Yardbook's Starter plan is free, but online payments on free and trial accounts carry a 1% Yardbook fee plus Stripe's fees. Business ($34.99/mo) and Enterprise ($49.99/mo) waive the Yardbook fee (yardbook.com/pages/pricing, checked 2026-11-04)."
+  ],
+  [
+   "Is Yardbook cheaper than Jobber?",
+   "On list price, yes. Yardbook starts free and its top plan is $49.99/mo. Jobber Core is $29/mo billed annually or $49/mo with no commitment, and routing starts on Connect at $99/mo billed annually."
+  ],
+  [
+   "Does Yardbook sync with QuickBooks?",
+   "Yes, on the Enterprise plan ($49.99/mo). Jobber syncs with QuickBooks Online and Xero on Connect and up."
+  ],
+  [
+   "Does Yardbook have an iPhone app?",
+   "Yardbook's pricing page lists web, desktop and Android app access and doesn't mention iOS, so we can't confirm an iPhone app."
+  ]
+ ]
+}
