@@ -135,10 +135,10 @@
     "status": "plain"
   },
   "arbostar": {
-    "url": "https://arbostar.com/",
-    "program": "ArboStar Referral Program - US$300-$2,000 one-time per tree care company that becomes a customer (by first-year contract value) plus US$2,000 bonus after 5; bank transfer in USD for non-customers; applied Nov 11, 2026 (referrer signup confirmed on page); plain URL until reviewed",
-    "status": "applied",
-    "note": "Referral link shown on thank-you page https://arbostar.com/thank-you-referrer//760177c5db and sent by email to j.carman991@gmail.com (not captured). Terms https://arbostar.com/terms . No tool page yet (BACKLOG #87)."
+    "url": "https://arbostar.com/referral/760177c5db",
+    "program": "ArboStar Referral Program - US$300-$2,000 one-time per tree care company that becomes a customer (by first-year contract value) plus US$2,000 bonus after 5; bank transfer in USD for non-customers; applied Nov 11, 2026 (referrer signup confirmed on page); approved Nov 11, 2026 (welcome email with referral link)",
+    "status": "live",
+    "note": "Referral link confirmed by ArboStar welcome email Nov 11, 2026. Terms https://arbostar.com/terms . No tool page yet (BACKLOG #87)."
   },
   "knowify": {
     "url": "https://knowify.com/",
