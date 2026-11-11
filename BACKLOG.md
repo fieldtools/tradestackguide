@@ -27,7 +27,7 @@
 | 24 | best/landscaping-business-software | landscaping business software | Aspire (LMN added 2026-10-24) |
 | 25 | best/gutter-cleaning-software | gutter cleaning business software | Jobber, HCP |
 | 26 | best/irrigation-business-software | irrigation business software | GorillaDesk, Jobber |
-| 27 | alternatives/skimmer | skimmer alternatives | Pool Brain, GorillaDesk |
+| 27 | alternatives/skimmer | skimmer alternatives | done (2026-11-10, published with site audit batch) |
 | 28 | alternatives/gorilladesk | gorilladesk alternatives | FieldRoutes, PestPac, Jobber |
 | 29 | best/quickbooks-field-service-integration | field service software quickbooks integration | have data |
 | 30 | best/solo-operator-field-service-app | field service app for one person business | have data |
@@ -35,8 +35,8 @@
 | 32 | best/soft-washing-software | soft washing business software | Jobber, HCP, ResponsiBid |
 | 33 | tools/quoteiq | quoteiq review pricing | done (2026-10-23) |
 | 34 | tools/servicem8 | servicem8 review pricing | affiliate: ServiceM8 80% first 12 months (PartnerStack), needs Jacob to sign up |
-| 35 | compare/yardbook-vs-jobber | yardbook vs jobber | have data |
-| 36 | compare/quoteiq-vs-jobber | quoteiq vs jobber | have data (QuoteIQ affiliate) |
+| 35 | compare/yardbook-vs-jobber | yardbook vs jobber | done (2026-11-10, published with site audit batch) |
+| 36 | compare/quoteiq-vs-jobber | quoteiq vs jobber | done (2026-11-10, published with site audit batch) |
 | 37 | alternatives/service-autopilot | service autopilot alternatives | have data |
 | 38 | best/lawn-care-chemical-tracking-software | lawn fertilizer application tracking software | have data (Yardbook, QuoteIQ, Service Autopilot) |
 | 39 | compare/kickserv-vs-jobber | kickserv vs jobber | have data (Kickserv added 2026-10-25) |
@@ -68,7 +68,7 @@
 | 65 | tools/service-autopilot-pricing | service autopilot pricing | have data (verified 2026-11-04) |
 | 66 | compare/yardbook-vs-lmn | yardbook vs lmn | have data (both verified 2026-11-04) |
 | 67 | best/lawn-care-software-for-crews | lawn care software for crews (multi-crew / 10+ staff angle vs solo pages) | LMN, Service Autopilot, Jobber, GorillaDesk |
-| 68 | best/window-cleaning-scheduling-software | window cleaning scheduling software (Search Console query, 1 click/10 impr, Oct 26–Nov 1 2026) | Jobber, Housecall Pro, BookingKoala |
+| 68 | best/window-cleaning-scheduling-software | window cleaning scheduling software (Search Console query, 1 click/10 impr, Oct 26–Nov 1 2026) | done (2026-11-11); Squeegee added to tools.json |
 | 69 | best/window-washing-software | window washing software (Search Console query, 2 clicks/4 impr, Oct 26–Nov 1 2026; synonym angle vs /best/window-cleaning-software/) | done (2026-11-05) |
 | 70 | best/pool-cleaning-business-software | pool cleaning business software (Search Console query, 2 clicks/2 impr, Oct 26–Nov 1 2026) | done (2026-11-06) |
 | 71 | best/window-cleaner-software | window cleaner software (Search Console query, 2 clicks/5 impr, Oct 27–Nov 2 2026; synonym vs window cleaning) | Jobber, Housecall Pro, BookingKoala |
@@ -82,3 +82,8 @@
 | 79 | tools/handoff | handoff ai review pricing (AI estimating, proposals and CRM for remodelers, handymen and trade contractors) | affiliate: Handoff 20% recurring for up to 12 months via Trackdesk, needs Jacob (account); scout 2026-11-09; moderate fit |
 | 80 | tools/patriot-payroll | patriot software payroll review pricing for small trade businesses (low priority, adjacent) | affiliate: Patriot Software $150 per new customer via Impact, needs Jacob (Impact account); scout 2026-11-09 |
 | 81 | compare/pool-brain-vs-pool-office-manager | pool brain vs pool office manager (per-tech vs per-user pool pricing) | have data (both verified 2026-11-09/10) |
+| 82 | best/pool-business-software | pool business software (Search Console query, 1 click/8 impr, Nov 2–8 2026; possibly expand /best/pool-service-software/ instead of a new page) | idea |
+| 83 | expand best/pest-control-software | pest control software (Search Console, 1 click/35 impr; page has 3 clicks/214 impr Nov 2–8 2026, low CTR: refresh title/meta and content) | idea |
+| 84 | tools/squeegee-pricing | squeegee pricing (window cleaning rounds app; GBP per-user plans Core/Advanced/Ultimate/Infinite) | have data (verified 2026-11-11); USD pricing not published |
+| 85 | compare/squeegee-vs-jobber | squeegee vs jobber (rounds-based vs CRM-based window cleaning scheduling) | have data (both verified 2026-11-11) |
+| 86 | best/gutter-cleaning-scheduling-software | gutter cleaning scheduling software (seasonal spring/fall recurring visits) | Jobber, Housecall Pro, QuoteIQ |
