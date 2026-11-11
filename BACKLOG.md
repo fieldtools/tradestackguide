@@ -87,3 +87,5 @@
 | 84 | tools/squeegee-pricing | squeegee pricing (window cleaning rounds app; GBP per-user plans Core/Advanced/Ultimate/Infinite) | have data (verified 2026-11-11); USD pricing not published |
 | 85 | compare/squeegee-vs-jobber | squeegee vs jobber (rounds-based vs CRM-based window cleaning scheduling) | have data (both verified 2026-11-11) |
 | 86 | best/gutter-cleaning-scheduling-software | gutter cleaning scheduling software (seasonal spring/fall recurring visits) | Jobber, Housecall Pro, QuoteIQ |
+| 87 | tools/arbostar | arbostar (tree care business software: estimates, crew scheduling, CRM; from US$149/mo; referral program applied 2026-11-11) | idea |
+| 88 | tools/knowify | knowify (job management for trade contractors: bids, job costing, AIA billing, QuickBooks sync; Service Pro add-on $99-$199/mo; affiliate applied 2026-11-11) | idea |
