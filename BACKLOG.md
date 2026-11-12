@@ -14,8 +14,8 @@
 | 11 | tools/jobber-pricing | jobber pricing | done (2026-10-31) |
 | 12 | tools/housecall-pro-pricing | housecall pro pricing (Search Console query "house call pro price", 2026-10-25) | done (2026-10-26) |
 | 13 | best/pool-chemical-log-app | pool chemical log app | Skimmer, Pool Brain, Pool Office Manager |
-| 14 | best/pest-control-routing-software | pest control routing software | GorillaDesk, FieldRoutes, PestPac |
-| 15 | compare/gorilladesk-vs-fieldroutes | gorilladesk vs fieldroutes | FieldRoutes pricing |
+| 14 | best/pest-control-routing-software | pest control routing software | done (2026-11-12); FieldRoutes and PestPac added to tools.json (quote only) |
+| 15 | compare/gorilladesk-vs-fieldroutes | gorilladesk vs fieldroutes | have data (FieldRoutes added 2026-11-12: quote only, priced by active customers) |
 | 16 | best/lawn-care-invoicing-app | lawn care invoicing app | have data (Yardbook, QuoteIQ, Jobber added/verified 2026-10-24) |
 | 17 | best/snow-removal-software | snow removal business software | have data (Service Autopilot, Yardbook added 2026-10-24) |
 | 18 | best/house-cleaning-business-software | house cleaning business software | Jobber, ZenMaid, Launch27 |
@@ -89,3 +89,5 @@
 | 86 | best/gutter-cleaning-scheduling-software | gutter cleaning scheduling software (seasonal spring/fall recurring visits) | Jobber, Housecall Pro, QuoteIQ |
 | 87 | tools/arbostar | arbostar (tree care business software: estimates, crew scheduling, CRM; from US$149/mo; referral program applied 2026-11-11) | idea |
 | 88 | tools/knowify | knowify (job management for trade contractors: bids, job costing, AIA billing, QuickBooks sync; Service Pro add-on $99-$199/mo; affiliate applied 2026-11-11) | idea |
+| 89 | compare/fieldroutes-vs-pestpac | fieldroutes vs pestpac (both quote-only pest platforms; routing, termite/IPM, packages) | have data (both added 2026-11-12) |
+| 90 | best/termite-inspection-software | termite inspection software (PestPac termite inspections/renewals, FieldRoutes Sentricon) | GorillaDesk device tracking; PestPac, FieldRoutes verified 2026-11-12 |

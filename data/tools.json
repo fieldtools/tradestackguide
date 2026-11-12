@@ -151,9 +151,9 @@
     "annual": "$1,639/yr for 1 route (11 x monthly)"
    }
   ],
-  "extra_user": "Users free; extra routes: Basic +$50 (routes 2-3), +$30 (4+); Pro +$50; Growth +$100 (route 2), +$50 (3+)",
+  "extra_user": "Users free; extra routes: Basic +$50 (routes 2-3), +$30 (4+); Pro +$50; Growth +$100 (route 2), +$50 (routes 3-4), 5 routes $499/mo total, then +$50 each",
   "card_fee": "Via Stripe/Square (their rates)",
-  "routing": "Basic routing up to 25 stops; Drive Matrix routing on Pro",
+  "routing": "Basic routing up to 25 stops; Drive Matrix routing on Pro; Growth adds drive time on schedules, Best Available Time and Job Magnet",
   "quickbooks": "QuickBooks Online sync (Pro and up)",
   "chemical_tracking": "Yes - material tracking & reporting (Basic)",
   "online_booking": "Pro and up",
@@ -173,7 +173,7 @@
    "Basic routing capped at 25 stops",
    "SMS is an extra $5/mo plus credit packs"
   ],
-  "last_verified": "2026-11-09"
+  "last_verified": "2026-11-12"
  },
  {
   "slug": "skimmer",
@@ -1219,5 +1219,108 @@
    "Core, Advanced and Ultimate capped at 10 users"
   ],
   "last_verified": "2026-11-11"
+ },
+ {
+  "slug": "fieldroutes",
+  "name": "FieldRoutes",
+  "website": "https://www.fieldroutes.com/",
+  "trades": [
+   "pest",
+   "lawn"
+  ],
+  "free_trial": "No free trial (pricing page FAQ); free demo instead",
+  "contract": "unknown (not published)",
+  "plans": [
+   {
+    "name": "Growth",
+    "users": "unknown (\"Ideal for Small Businesses\")",
+    "monthly_no_commit": "Quote only (price not published)",
+    "annual": "Not published"
+   },
+   {
+    "name": "Corporate",
+    "users": "unknown (\"Perfect for Scaling\")",
+    "monthly_no_commit": "Quote only (price not published)",
+    "annual": "Not published"
+   }
+  ],
+  "extra_user": "Monthly subscription is based on the number of active customers (pricing page FAQ); per-user and per-customer rates not published",
+  "card_fee": "unknown (online credit card processing and a customer payment portal are listed; rates not published)",
+  "routing": "Route Optimization listed in both Growth and Corporate packages; Intelligent Routing can organize routes by technician skillset (e.g. termite inspections)",
+  "quickbooks": "Integrations with accounting platforms like QuickBooks listed in the pricing FAQ; package not specified",
+  "chemical_tracking": "unknown (not listed on the pricing page)",
+  "online_booking": "unknown (not listed on the pricing page)",
+  "rating": "unknown",
+  "sms": "Automated communication and reminders listed in both packages; texting prices not published",
+  "sources": [
+   "https://www.fieldroutes.com/company/pricing",
+   "https://www.fieldroutes.com/operations-suite/field-service-routing"
+  ],
+  "best_for": "Pest and lawn companies that want pest-specific route optimization and are fine buying through a sales demo",
+  "starting_price": "Not published (quote only; priced by number of active customers)",
+  "pros": [
+   "Route Optimization listed in both packages",
+   "Routes can be organized by technician skillset, e.g. termite inspections",
+   "Lead management, customer payment portal and Sentricon listed in both packages"
+  ],
+  "cons": [
+   "No published prices; quote through a demo",
+   "No free trial (demo only)"
+  ],
+  "last_verified": "2026-11-12"
+ },
+ {
+  "slug": "pestpac",
+  "name": "PestPac",
+  "website": "https://www.pestpac.com/",
+  "trades": [
+   "pest"
+  ],
+  "free_trial": "unknown (not listed; pricing page directs you to a consultant)",
+  "contract": "unknown (not published)",
+  "plans": [
+   {
+    "name": "Small Business",
+    "users": "unknown",
+    "monthly_no_commit": "Quote only (price not published)",
+    "annual": "Not published"
+   },
+   {
+    "name": "Professional",
+    "users": "unknown",
+    "monthly_no_commit": "Quote only (price not published)",
+    "annual": "Not published"
+   },
+   {
+    "name": "Enterprise",
+    "users": "unknown (multi-branch)",
+    "monthly_no_commit": "Quote only (price not published)",
+    "annual": "Not published"
+   }
+  ],
+  "extra_user": "Modular packages built with a consultant; RouteOp pricing is based on team size and features (routing page FAQ); per-user rates not published",
+  "card_fee": "unknown (Payments and In-Field Payment modules listed; rates not published)",
+  "routing": "Basic Scheduling and Routing on Small Business; Smart Scheduling and Route Optimization on Professional and Enterprise; RouteOp (route optimization, Best Fit, Visual Route Manager) quoted separately by team size",
+  "quickbooks": "unknown (Basic Accounting / Advanced Accounting with General Ledger Export listed; QuickBooks not named on the pricing page)",
+  "chemical_tracking": "Inventory Management module lists chemical tracking and material usage; package not specified",
+  "online_booking": "unknown (eCommerce listed on Professional and Enterprise)",
+  "rating": "unknown",
+  "sms": "Customer notifications and communications listed (Professional and up); texting prices not published",
+  "sources": [
+   "https://www.pestpac.com/pricing",
+   "https://www.pestpac.com/features/pest-control-routing-software"
+  ],
+  "best_for": "Multi-tech pest companies (termite, IPM, multi-unit, multi-branch) that want automated monthly route planning and will buy through a consultant",
+  "starting_price": "Not published (quote only; modular packages via a consultant)",
+  "pros": [
+   "Route Optimization on Professional and Enterprise packages",
+   "RouteOp respects technician skills, work hours and customer time windows",
+   "Termite inspection, IPM and multi-unit support listed"
+  ],
+  "cons": [
+   "No published prices; quote through a consultant",
+   "Small Business package lists only basic scheduling and routing"
+  ],
+  "last_verified": "2026-11-12"
  }
 ]
