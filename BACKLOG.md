@@ -91,3 +91,5 @@
 | 88 | tools/knowify | knowify (job management for trade contractors: bids, job costing, AIA billing, QuickBooks sync; Service Pro add-on $99-$199/mo; affiliate applied 2026-11-11) | idea |
 | 89 | compare/fieldroutes-vs-pestpac | fieldroutes vs pestpac (both quote-only pest platforms; routing, termite/IPM, packages) | have data (both added 2026-11-12) |
 | 90 | best/termite-inspection-software | termite inspection software (PestPac termite inspections/renewals, FieldRoutes Sentricon) | GorillaDesk device tracking; PestPac, FieldRoutes verified 2026-11-12 |
+| 91 | alternatives/pestbuddy | pestbuddy alternatives (Search Console query, 0 clicks/18 impr, Nov 4–10 2026) | idea; needs PestBuddy public pricing/features |
+| 92 | best/pool-maintenance-software | pool maintenance software / pool management software (Search Console queries, 17 + 15 impr, Nov 4–10 2026; maybe expand /best/pool-service-software/ instead) | idea |
