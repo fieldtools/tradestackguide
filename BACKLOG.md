@@ -13,7 +13,7 @@
 | 10 | free/field-service-software | free field service software | Yardbook, Square Appointments, Invoice Simple |
 | 11 | tools/jobber-pricing | jobber pricing | done (2026-10-31) |
 | 12 | tools/housecall-pro-pricing | housecall pro pricing (Search Console query "house call pro price", 2026-10-25) | done (2026-10-26) |
-| 13 | best/pool-chemical-log-app | pool chemical log app | Skimmer, Pool Brain, Pool Office Manager |
+| 13 | best/pool-chemical-log-app | pool chemical log app | have data (Skimmer, Pool Brain, POM chemistry features verified 2026-11-13; partly covered by best/pool-maintenance-software, build only as a narrower chem-log angle) |
 | 14 | best/pest-control-routing-software | pest control routing software | done (2026-11-12); FieldRoutes and PestPac added to tools.json (quote only) |
 | 15 | compare/gorilladesk-vs-fieldroutes | gorilladesk vs fieldroutes | have data (FieldRoutes added 2026-11-12: quote only, priced by active customers) |
 | 16 | best/lawn-care-invoicing-app | lawn care invoicing app | have data (Yardbook, QuoteIQ, Jobber added/verified 2026-10-24) |
@@ -91,5 +91,7 @@
 | 88 | tools/knowify | knowify (job management for trade contractors: bids, job costing, AIA billing, QuickBooks sync; Service Pro add-on $99-$199/mo; affiliate applied 2026-11-11) | idea |
 | 89 | compare/fieldroutes-vs-pestpac | fieldroutes vs pestpac (both quote-only pest platforms; routing, termite/IPM, packages) | have data (both added 2026-11-12) |
 | 90 | best/termite-inspection-software | termite inspection software (PestPac termite inspections/renewals, FieldRoutes Sentricon) | GorillaDesk device tracking; PestPac, FieldRoutes verified 2026-11-12 |
-| 91 | alternatives/pestbuddy | pestbuddy alternatives (Search Console query, 0 clicks/18 impr, Nov 4–10 2026) | idea; needs PestBuddy public pricing/features |
-| 92 | best/pool-maintenance-software | pool maintenance software / pool management software (Search Console queries, 17 + 15 impr, Nov 4–10 2026; maybe expand /best/pool-service-software/ instead) | idea |
+| 91 | alternatives/pestbuddy | pestbuddy alternatives (Search Console query, 0 clicks/18 impr, Nov 4–10 2026) | skipped (2026-11-13): no verifiable PestBuddy software found; pestbuddy.com is a parked domain and PestBuddy (pestbuddy.co.uk) is a UK DIY pest-products store, so an alternatives page can't be sourced |
+| 92 | best/pool-maintenance-software | pool maintenance software / pool management software (Search Console queries, 17 + 15 impr, Nov 4–10 2026) | done (2026-11-13; maintenance-record angle: readings, dosing, checklists, photos, service reports) |
+| 93 | best/pool-service-report-app | pool service report app (customer service emails/photos after each stop; Skimmer, Pool Brain, POM, UpBuoy) | have data (verified 2026-11-13) |
+| 94 | best/pool-equipment-tracking-software | pool equipment tracking software (equipment per body of water, filter/salt cell clean schedules; Pool Brain, POM, Paythepoolman) | have data (verified 2026-11-13) |

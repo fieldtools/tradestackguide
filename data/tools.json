@@ -173,7 +173,7 @@
    "Basic routing capped at 25 stops",
    "SMS is an extra $5/mo plus credit packs"
   ],
-  "last_verified": "2026-11-12"
+  "last_verified": "2026-11-13"
  },
  {
   "slug": "skimmer",
@@ -227,7 +227,7 @@
    "Pool-only",
    "Card processing rate and annual pricing not published"
   ],
-  "last_verified": "2026-11-10",
+  "last_verified": "2026-11-13",
   "add_ons": "Service Texts $0.029/message (Getting Started; included on Scaling Up and Enterprise), AI Phone $99/mo, Marketing Suite $150/mo, Bookkeeping from $198/mo (all three on every plan), CRM Integrations $49/mo and Google Calendar $25/mo (Getting Started and Scaling Up; included on Enterprise)"
  },
  {
@@ -864,7 +864,7 @@
    "$65/mo per active field tech adds up as you hire",
    "Trial length, contract terms and card fees not published"
   ],
-  "last_verified": "2026-11-10"
+  "last_verified": "2026-11-13"
  },
  {
   "slug": "pool-office-manager",
@@ -911,7 +911,8 @@
    "Highest one-user price of the pool tools we track ($125/mo)",
    "QuickBooks sync (+$25/mo) and texting (from $10/mo) are paid add-ons"
   ],
-  "last_verified": "2026-11-09"
+  "last_verified": "2026-11-13",
+  "add_ons": "QuickBooks Online sync +$25/mo; customer texting from $10/mo plus usage; video storage +$25/mo (roughly 1,000-2,000 short videos)"
  },
  {
   "slug": "homeworks",
@@ -1113,7 +1114,7 @@
    "$3 per location is more per pool than Skimmer's $2 Scaling Up rate",
    "Route optimization not on the free plan"
   ],
-  "last_verified": "2026-11-09"
+  "last_verified": "2026-11-13"
  },
  {
   "slug": "paythepoolman",
@@ -1122,7 +1123,7 @@
   "trades": [
    "pool"
   ],
-  "free_trial": "30-day free trial; cancel anytime (homepage). Homepage banner on 2026-11-09 also showed a promo code for 80% off for 3 months; new pool companies can call to ask about a base-plan discount",
+  "free_trial": "30-day free trial; cancel anytime (homepage). Homepage banner on 2026-11-13 showed promo code BIG80NOW for 80% off for 3 months; new pool companies can call to ask about a base-plan discount",
   "contract": "No contract, no activation fee (pricing section)",
   "plans": [
    {
@@ -1155,7 +1156,7 @@
    "ACH and Apple/Google Pay need the $25/mo customer app add-on",
    "Payroll sign-up fee and text credit prices not published"
   ],
-  "last_verified": "2026-11-09"
+  "last_verified": "2026-11-13"
  },
  {
   "slug": "squeegee",
