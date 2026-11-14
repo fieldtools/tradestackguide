@@ -158,7 +158,21 @@ def table(slugs):
     b = "".join("<tr><th>"+n+"</th>"+"".join(f"<td>{f(t)}</td>" for t in ts)+"</tr>" for n, f in rows)
     return f'<div class="tw" tabindex="0" role="region" aria-label="Comparison table (scroll sideways)"><table class="cmp">{h}{b}</table></div><p class="hint">Swipe sideways to see every tool →</p><p class="note">Prices as published (monthly no-commitment / annual where shown). "unknown" = not published. Checked {LC}.</p>'
 
+TRADE_LBL = {t["key"]: t["name"] for t in trades}
+def pricing_tracker():
+    """Every tool in tools.json, one row each, straight from the data (so the tracker never drifts from tool pages)."""
+    rows = ""
+    for x in sorted(tools.values(), key=lambda y: y["name"].lower()):
+        tr = ", ".join(TRADE_LBL.get(k, k) for k in x.get("trades", [])) or "Other trades"
+        rows += (f'<tr><td><a href="/tools/{x["slug"]}/">{e(x["name"])}</a></td><td>{e(tr)}</td><td>{e(x.get("starting_price","unknown"))}</td>'
+                 f'<td>{e(x.get("extra_user","unknown"))}</td><td>{e(x.get("free_trial","unknown"))}</td><td>{e(x.get("card_fee","unknown"))}</td>'
+                 f'<td>{x.get("last_verified") or LC}</td><td><a href="{e(x["sources"][0])}" rel="nofollow">vendor page</a></td></tr>')
+    return ('<div class="tw" tabindex="0" role="region" aria-label="Field service software pricing tracker (scroll sideways)"><table class="cmp">'
+            '<tr><th>Tool</th><th>Trades covered here</th><th>Starting price (as published)</th><th>Users / billing unit</th><th>Free plan or trial</th><th>Payment fees</th><th>Verified</th><th>Source</th></tr>'
+            f'{rows}</table></div><p class="hint">Swipe sideways to see every column →</p><p class="note">{len(tools)} tools. "unknown" = the vendor doesn&rsquo;t publish it. Prices exclude tax, add-ons and card processing unless stated.</p>')
+
 def render(body):
+    body = body.replace("{{pricing_tracker}}", pricing_tracker())
     body = re.sub(r"\{\{table:([^}]+)\}\}", lambda m: table(m.group(1).split(",")), body)
     return re.sub(r"\{\{aff:([a-z0-9-]+)\|([^}]+)\}\}", lambda m: afflink(m.group(1), m.group(2)), body)
 

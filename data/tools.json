@@ -282,7 +282,7 @@
    "Setup fee amount not published",
    "Text follow-up, Zapier and CrewCal only on Pro ($229/mo)"
   ],
-  "last_verified": "2026-11-05"
+  "last_verified": "2026-11-14"
  },
  {
   "slug": "workiz",
@@ -336,7 +336,7 @@
    "Good/Better/Best sales proposals and service plans only on Ultimate",
    "Zapier and open API only on Ultimate"
   ],
-  "last_verified": "2026-11-07"
+  "last_verified": "2026-11-14"
  },
  {
   "slug": "quoteiq",
@@ -461,7 +461,7 @@
    "QuickBooks sync only on Enterprise ($49.99/mo annual)",
    "Pricing page lists web, desktop and Android app access (no iOS mentioned); month-to-month prices not published"
   ],
-  "last_verified": "2026-11-04"
+  "last_verified": "2026-11-14"
  },
  {
   "slug": "service-autopilot",
@@ -477,19 +477,19 @@
     "name": "Startup",
     "users": "1 business user + 1 mobile license",
     "monthly_no_commit": "unknown (only annual rates published)",
-    "annual": "$49/mo (annual subscription)"
+    "annual": "$49/mo (annual subscription) + sign up fee (amount not published)"
    },
    {
     "name": "Pro",
     "users": "1 business user + 2 mobile licenses",
     "monthly_no_commit": "unknown (only annual rates published)",
-    "annual": "$199/mo (annual subscription)"
+    "annual": "$199/mo (annual subscription) + sign up fee (amount not published)"
    },
    {
     "name": "Pro Plus",
     "users": "1 business user + 5 mobile licenses",
     "monthly_no_commit": "unknown (only annual rates published)",
-    "annual": "$499/mo (annual subscription)"
+    "annual": "$499/mo (annual subscription) + sign up fee (amount not published)"
    },
    {
     "name": "Elite",
@@ -520,7 +520,7 @@
    "Startup plan lacks route optimization, job proposals and chemical tracking",
    "QuickBooks sync is call-for-pricing below Elite"
   ],
-  "last_verified": "2026-11-04"
+  "last_verified": "2026-11-14"
  },
  {
   "slug": "lmn",
@@ -573,7 +573,7 @@
    "One-time onboarding fee, amount not published",
    "Real-time job costing and material tracking need Professional ($648/mo)"
   ],
-  "last_verified": "2026-11-04"
+  "last_verified": "2026-11-14"
  },
  {
   "slug": "kickserv",
@@ -627,7 +627,7 @@
    "Dispatch mapping and GPS check-ins only on Run ($119/mo annual) and up",
    "Route optimization not listed on the pricing page"
   ],
-  "last_verified": "2026-11-07"
+  "last_verified": "2026-11-14"
  },
  {
   "slug": "servicem8",
@@ -698,7 +698,7 @@
    "No annual billing discount listed on the pricing page"
   ],
   "add_ons": "ServiceM8 Phone from $19/mo (unlimited users). Forms Store (purchased forms on any plan; custom form builder Growing+). AI Smart Helper and other plan-gated add-ons on pricing page.",
-  "last_verified": "2026-11-07"
+  "last_verified": "2026-11-14"
  },
  {
   "slug": "bookingkoala",
@@ -822,7 +822,7 @@
    "Solo capped at 25 customers",
    "QuickBooks Sync is an add-on below Plus (price not published)"
   ],
-  "last_verified": "2026-11-10",
+  "last_verified": "2026-11-14",
   "add_ons": "Text messaging: included on Plus; $25/mo add-on on other plans (first 1,000 texts/mo included, then $0.03 per text)"
  },
  {
@@ -971,7 +971,7 @@
    "Newer platform with fewer long-term public reviews, per the vendor's own FAQ"
   ],
   "who_html": "<p>Homeworks is home-service CRM and operations software (Mike Andes / formerly related to Copilot CRM). Every price below comes from <a href=\"https://home.works/pricing\" rel=\"nofollow\">home.works/pricing</a>, checked 2026-11-07. All prices USD; subscriptions exclude sales tax where applicable.</p><p><strong>Reader promo:</strong> enter code <code>JACOBCARMAN</code> at Homeworks checkout for your first month free (works on monthly and annual Growth/Enterprise per the RevShare partner program). We may earn 25% recurring commission if you stay on a paid plan. There is no separate tracked referral URL.</p><p><a class=\"cta\" href=\"https://www.home.works/\" rel=\"sponsored nofollow noopener\" target=\"_blank\">Try Homeworks with code JACOBCARMAN</a></p>",
-  "last_verified": "2026-11-07"
+  "last_verified": "2026-11-14"
  },
  {
   "slug": "service-fusion",
@@ -984,20 +984,20 @@
    {
     "name": "Starter",
     "users": "Unlimited",
-    "monthly_no_commit": "$245/mo",
-    "annual": "$208/mo billed annually (one annual payment)"
+    "monthly_no_commit": "$259/mo",
+    "annual": "$220/mo billed annually (one annual payment)"
    },
    {
     "name": "Plus",
     "users": "Unlimited",
-    "monthly_no_commit": "$382/mo",
-    "annual": "$325/mo billed annually (one annual payment)"
+    "monthly_no_commit": "$399/mo",
+    "annual": "$339/mo billed annually (one annual payment)"
    },
    {
     "name": "Pro",
     "users": "Unlimited",
-    "monthly_no_commit": "$627/mo",
-    "annual": "$533/mo billed annually (one annual payment)"
+    "monthly_no_commit": "$649/mo",
+    "annual": "$552/mo billed annually (one annual payment)"
    }
   ],
   "extra_user": "Unlimited users on every plan; price does not change with headcount (pricing page FAQ)",
@@ -1010,19 +1010,19 @@
    "https://www.servicefusion.com/pricing"
   ],
   "best_for": "HVAC, plumbing and electrical contractors that want unlimited users at a flat monthly price",
-  "starting_price": "$245/mo (Starter) or $208/mo billed annually",
+  "starting_price": "$259/mo (Starter) or $220/mo billed annually",
   "pros": [
    "Unlimited users on every plan",
    "Month-to-month; 15% off with annual billing",
    "QuickBooks Online and Desktop integration on all plans"
   ],
   "cons": [
-   "Starts at $245/mo month-to-month",
+   "Starts at $259/mo month-to-month",
    "GPS Fleet Tracking and ServiceCall.ai are paid add-ons (prices unpublished)",
    "Customer web portal and eSign only included on Pro"
   ],
-  "who_html": "<p>Service Fusion is field service management software aimed at HVAC, plumbing and electrical contractors. Every price here comes from <a href=\"https://www.servicefusion.com/pricing\" rel=\"nofollow\">servicefusion.com/pricing</a>, checked 2026-11-07. Because Service Fusion charges a flat price for unlimited users, compare it with per-user tools in our <a href=\"/field-service-software-cost-1-vs-5-users/\">1 vs 5 user cost breakdown</a>, see other options in <a href=\"/alternatives/housecall-pro/\">Housecall Pro alternatives</a>, and use the <a href=\"/software-buying-checklist/\">software buying checklist</a> before a demo.</p><p><strong>Disclosure:</strong> we may earn a referral fee if you become a Service Fusion customer through our link.</p>",
-  "last_verified": "2026-11-07"
+  "who_html": "<p>Service Fusion is field service management software aimed at HVAC, plumbing and electrical contractors. Every price here comes from <a href=\"https://www.servicefusion.com/pricing\" rel=\"nofollow\">servicefusion.com/pricing</a>, checked 2026-11-14. Because Service Fusion charges a flat price for unlimited users, compare it with per-user tools in our <a href=\"/field-service-software-cost-1-vs-5-users/\">1 vs 5 user cost breakdown</a>, see other options in <a href=\"/alternatives/housecall-pro/\">Housecall Pro alternatives</a>, and use the <a href=\"/software-buying-checklist/\">software buying checklist</a> before a demo.</p><p><strong>Disclosure:</strong> we may earn a referral fee if you become a Service Fusion customer through our link.</p>",
+  "last_verified": "2026-11-14"
  },
  {
   "slug": "clockshark",
@@ -1035,14 +1035,14 @@
    {
     "name": "Standard",
     "users": "Per active user",
-    "monthly_no_commit": "unknown (price not shown in the page's published HTML)",
-    "annual": "unknown"
+    "monthly_no_commit": "$42/mo + $9.50/mo per active user (USD)",
+    "annual": "unknown (no separate annual rate shown)"
    },
    {
     "name": "Pro",
     "users": "Per active user",
-    "monthly_no_commit": "unknown (price not shown in the page's published HTML)",
-    "annual": "unknown"
+    "monthly_no_commit": "$63/mo + $11.50/mo per active user (USD)",
+    "annual": "unknown (no separate annual rate shown)"
    }
   ],
   "extra_user": "Priced per active user; invoices pro-rated for days a user was active (pricing page FAQ). Billed in US dollars",
@@ -1055,7 +1055,7 @@
    "https://www.clockshark.com/pricing"
   ],
   "best_for": "Field crews that need GPS time tracking and drag-and-drop scheduling",
-  "starting_price": "unknown (per-user price not published in the page HTML)",
+  "starting_price": "$42/mo + $9.50/mo per active user (Standard)",
   "pros": [
    "GPS time tracking, geofencing and drag-and-drop scheduling on Standard",
    "14-day trial with all Pro features",
@@ -1063,11 +1063,11 @@
   ],
   "cons": [
    "Three-year contract term applies to all plans",
-   "Per-user dollar prices not visible in the published page (unknown)",
-   "PTO and mileage tracking only on Pro"
+   "PTO and mileage tracking only on Pro",
+   "Per-user fee on top of a base price ($9.50 Standard, $11.50 Pro)"
   ],
-  "who_html": "<p>ClockShark is crew time tracking and scheduling software for field service and construction teams. It does not replace a quoting/invoicing tool; it pairs with one. Details come from <a href=\"https://www.clockshark.com/pricing\" rel=\"nofollow\">clockshark.com/pricing</a>, checked 2026-11-07. See how full field service suites price crews in <a href=\"/field-service-software-cost-1-vs-5-users/\">1 vs 5 user costs</a> and run through the <a href=\"/software-buying-checklist/\">software buying checklist</a> before signing a multi-year term.</p><p><strong>Disclosure:</strong> we may earn a referral fee if you become a ClockShark customer through our link.</p>",
-  "last_verified": "2026-11-07"
+  "who_html": "<p>ClockShark is crew time tracking and scheduling software for field service and construction teams. It does not replace a quoting/invoicing tool; it pairs with one. Details come from <a href=\"https://www.clockshark.com/pricing\" rel=\"nofollow\">clockshark.com/pricing</a>, checked 2026-11-14. See how full field service suites price crews in <a href=\"/field-service-software-cost-1-vs-5-users/\">1 vs 5 user costs</a> and run through the <a href=\"/software-buying-checklist/\">software buying checklist</a> before signing a multi-year term.</p><p><strong>Disclosure:</strong> we may earn a referral fee if you become a ClockShark customer through our link.</p>",
+  "last_verified": "2026-11-14"
  },
  {
   "slug": "upbuoy",

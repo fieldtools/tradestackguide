@@ -6,7 +6,7 @@
 | 3 | best/lawn-care-software | lawn care business software | done (2026-10-24) |
 | 4 | alternatives/jobber | jobber alternatives | done (2026-10-25) |
 | 5 | alternatives/housecall-pro | housecall pro alternatives | done (2026-11-07) |
-| 6 | pricing-tracker | field service software pricing | all tools.json |
+| 6 | pricing-tracker | field service software pricing | done (2026-11-14, published as /field-service-software-pricing/; table auto-built from tools.json via {{pricing_tracker}}) |
 | 7 | compare/skimmer-vs-pool-brain | skimmer vs pool brain | done (2026-11-10) |
 | 8 | compare/gorilladesk-vs-jobber | gorilladesk vs jobber | done (2026-11-02) |
 | 9 | compare/skimmer-vs-gorilladesk | skimmer vs gorilladesk | have data |
@@ -95,3 +95,5 @@
 | 92 | best/pool-maintenance-software | pool maintenance software / pool management software (Search Console queries, 17 + 15 impr, Nov 4–10 2026) | done (2026-11-13; maintenance-record angle: readings, dosing, checklists, photos, service reports) |
 | 93 | best/pool-service-report-app | pool service report app (customer service emails/photos after each stop; Skimmer, Pool Brain, POM, UpBuoy) | have data (verified 2026-11-13) |
 | 94 | best/pool-equipment-tracking-software | pool equipment tracking software (equipment per body of water, filter/salt cell clean schedules; Pool Brain, POM, Paythepoolman) | have data (verified 2026-11-13) |
+| 95 | tools/clockshark-pricing | clockshark pricing (Standard $42/mo + $9.50/user, Pro $63/mo + $11.50/user, 3-year term; verified 2026-11-14) | have data |
+| 96 | compare/service-fusion-vs-housecall-pro | service fusion vs housecall pro (unlimited users flat price vs per-user; SF raised prices 2026-11-14) | have data |
