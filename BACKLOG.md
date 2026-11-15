@@ -9,7 +9,7 @@
 | 6 | pricing-tracker | field service software pricing | done (2026-11-14, published as /field-service-software-pricing/; table auto-built from tools.json via {{pricing_tracker}}) |
 | 7 | compare/skimmer-vs-pool-brain | skimmer vs pool brain | done (2026-11-10) |
 | 8 | compare/gorilladesk-vs-jobber | gorilladesk vs jobber | done (2026-11-02) |
-| 9 | compare/skimmer-vs-gorilladesk | skimmer vs gorilladesk | have data |
+| 9 | compare/skimmer-vs-gorilladesk | skimmer vs gorilladesk | done (2026-11-15; Skimmer and GorillaDesk prices re-verified, unchanged) |
 | 10 | free/field-service-software | free field service software | Yardbook, Square Appointments, Invoice Simple |
 | 11 | tools/jobber-pricing | jobber pricing | done (2026-10-31) |
 | 12 | tools/housecall-pro-pricing | housecall pro pricing (Search Console query "house call pro price", 2026-10-25) | done (2026-10-26) |
@@ -43,7 +43,7 @@
 | 40 | compare/kickserv-vs-housecall-pro | kickserv vs housecall pro | have data (Kickserv added 2026-10-25) |
 | 41 | best/free-pool-service-software | best free pool service software (Search Console query, 2026-10-25) | done (2026-10-30) |
 | 42 | best/lawn-care-software-cost | lawn care software cost (Search Console query, 2026-10-25) | done (2026-10-30) |
-| 43 | best/small-pest-control-business-software | pest control software for small business (Search Console query, 2026-10-25) | GorillaDesk, PestPac, FieldRoutes, Jobber  (note 2026-10-31: /best/pest-control-software/ already targets this exact keyword; build only as a distinct angle, e.g. adding FieldRoutes/PestPac, or expand that page instead) |
+| 43 | best/small-pest-control-business-software | pest control software for small business (Search Console query, 2026-10-25) | GorillaDesk, PestPac, FieldRoutes, Jobber (Search Console again Nov 7–13 2026: 20 impr; also "best pest control software" 21 impr) (note 2026-10-31: /best/pest-control-software/ already targets this exact keyword; build only as a distinct angle, e.g. adding FieldRoutes/PestPac, or expand that page instead) |
 | 44 | tools/bookingkoala | bookingkoala review pricing (booking + CRM for window cleaning / pressure washing / cleaning) | done (2026-10-26) |
 | 45 | tools/skimmer-pricing | skimmer pricing (Search Console query "faircloth skimmer pricing", 2026-10-26) | done (2026-10-30) |
 | 46 | best/pool-service-scheduling-software | pool service scheduling software (Search Console queries "pool service scheduling software", "pool scheduling software", 2026-10-26) | done (2026-10-30) |
@@ -82,7 +82,7 @@
 | 79 | tools/handoff | handoff ai review pricing (AI estimating, proposals and CRM for remodelers, handymen and trade contractors) | affiliate: Handoff 20% recurring for up to 12 months via Trackdesk, needs Jacob (account); scout 2026-11-09; moderate fit |
 | 80 | tools/patriot-payroll | patriot software payroll review pricing for small trade businesses (low priority, adjacent) | affiliate: Patriot Software $150 per new customer via Impact, needs Jacob (Impact account); scout 2026-11-09 |
 | 81 | compare/pool-brain-vs-pool-office-manager | pool brain vs pool office manager (per-tech vs per-user pool pricing) | have data (both verified 2026-11-09/10) |
-| 82 | best/pool-business-software | pool business software (Search Console query, 1 click/8 impr, Nov 2–8 2026; possibly expand /best/pool-service-software/ instead of a new page) | idea |
+| 82 | best/pool-business-software | pool business software (Search Console query, 1 click/8 impr, Nov 2–8 2026; related "pool software" 18 impr Nov 7–13; possibly expand /best/pool-service-software/ instead of a new page) | idea |
 | 83 | expand best/pest-control-software | pest control software (Search Console, 1 click/35 impr; page has 3 clicks/214 impr Nov 2–8 2026, low CTR: refresh title/meta and content) | idea |
 | 84 | tools/squeegee-pricing | squeegee pricing (window cleaning rounds app; GBP per-user plans Core/Advanced/Ultimate/Infinite) | have data (verified 2026-11-11); USD pricing not published |
 | 85 | compare/squeegee-vs-jobber | squeegee vs jobber (rounds-based vs CRM-based window cleaning scheduling) | have data (both verified 2026-11-11) |
@@ -97,3 +97,5 @@
 | 94 | best/pool-equipment-tracking-software | pool equipment tracking software (equipment per body of water, filter/salt cell clean schedules; Pool Brain, POM, Paythepoolman) | have data (verified 2026-11-13) |
 | 95 | tools/clockshark-pricing | clockshark pricing (Standard $42/mo + $9.50/user, Pro $63/mo + $11.50/user, 3-year term; verified 2026-11-14) | have data |
 | 96 | compare/service-fusion-vs-housecall-pro | service fusion vs housecall pro (unlimited users flat price vs per-user; SF raised prices 2026-11-14) | have data |
+| 97 | compare/gorilladesk-vs-pool-brain | gorilladesk vs pool brain (per-route $49-$149 vs $50 + $65 per tech; both unlimited office users) | have data (GorillaDesk verified 2026-11-15, Pool Brain 2026-11-10) |
+| 98 | best/pool-and-pest-control-software | software for pool + pest (multi-trade route businesses; GorillaDesk covers pest/pool/lawn, Jobber, Housecall Pro) | have data |
