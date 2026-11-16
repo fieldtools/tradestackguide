@@ -145,5 +145,15 @@
     "program": "Knowify affiliate program - one-time check equal to one month of the referral's revenue after they stay 3 months; applied Nov 11, 2026, a rep will contact to qualify; plain URL until approved",
     "status": "applied",
     "note": "Source https://knowify.com/affiliate-program/ . No tool page yet (BACKLOG #88)."
+  },
+  "square": {
+    "url": "https://squareup.com/us/en/appointments/pricing",
+    "program": "No affiliate program confirmed; plain link",
+    "status": "plain"
+  },
+  "invoicesimple": {
+    "url": "https://www.invoicesimple.com/pricing",
+    "program": "No affiliate program confirmed; plain link",
+    "status": "plain"
   }
 }

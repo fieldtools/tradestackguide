@@ -10,7 +10,7 @@
 | 7 | compare/skimmer-vs-pool-brain | skimmer vs pool brain | done (2026-11-10) |
 | 8 | compare/gorilladesk-vs-jobber | gorilladesk vs jobber | done (2026-11-02) |
 | 9 | compare/skimmer-vs-gorilladesk | skimmer vs gorilladesk | done (2026-11-15; Skimmer and GorillaDesk prices re-verified, unchanged) |
-| 10 | free/field-service-software | free field service software | Yardbook, Square Appointments, Invoice Simple |
+| 10 | free/field-service-software | free field service software | done (2026-11-16, published as /best/free-field-service-software/; 7 $0 plans: ServiceM8, Yardbook, LawnPro, Homeworks, UpBuoy, ResponsiBid, Square Free; Invoice Simple has no free plan, 14-day trial; Square and Invoice Simple linked as plain, not in tools.json) |
 | 11 | tools/jobber-pricing | jobber pricing | done (2026-10-31) |
 | 12 | tools/housecall-pro-pricing | housecall pro pricing (Search Console query "house call pro price", 2026-10-25) | done (2026-10-26) |
 | 13 | best/pool-chemical-log-app | pool chemical log app | have data (Skimmer, Pool Brain, POM chemistry features verified 2026-11-13; partly covered by best/pool-maintenance-software, build only as a narrower chem-log angle) |
@@ -91,7 +91,7 @@
 | 88 | tools/knowify | knowify (job management for trade contractors: bids, job costing, AIA billing, QuickBooks sync; Service Pro add-on $99-$199/mo; affiliate applied 2026-11-11) | idea |
 | 89 | compare/fieldroutes-vs-pestpac | fieldroutes vs pestpac (both quote-only pest platforms; routing, termite/IPM, packages) | have data (both added 2026-11-12) |
 | 90 | best/termite-inspection-software | termite inspection software (PestPac termite inspections/renewals, FieldRoutes Sentricon) | GorillaDesk device tracking; PestPac, FieldRoutes verified 2026-11-12 |
-| 91 | alternatives/pestbuddy | pestbuddy alternatives (Search Console query, 0 clicks/18 impr, Nov 4–10 2026) | skipped (2026-11-13): no verifiable PestBuddy software found; pestbuddy.com is a parked domain and PestBuddy (pestbuddy.co.uk) is a UK DIY pest-products store, so an alternatives page can't be sourced |
+| 91 | alternatives/pestbuddy | pestbuddy alternatives (Search Console query, 0 clicks/18 impr, Nov 4–10 2026; still 15 impr in the 7 days to Nov 16) | skipped (2026-11-13): no verifiable PestBuddy software found; pestbuddy.com is a parked domain and PestBuddy (pestbuddy.co.uk) is a UK DIY pest-products store, so an alternatives page can't be sourced |
 | 92 | best/pool-maintenance-software | pool maintenance software / pool management software (Search Console queries, 17 + 15 impr, Nov 4–10 2026) | done (2026-11-13; maintenance-record angle: readings, dosing, checklists, photos, service reports) |
 | 93 | best/pool-service-report-app | pool service report app (customer service emails/photos after each stop; Skimmer, Pool Brain, POM, UpBuoy) | have data (verified 2026-11-13) |
 | 94 | best/pool-equipment-tracking-software | pool equipment tracking software (equipment per body of water, filter/salt cell clean schedules; Pool Brain, POM, Paythepoolman) | have data (verified 2026-11-13) |
@@ -99,3 +99,6 @@
 | 96 | compare/service-fusion-vs-housecall-pro | service fusion vs housecall pro (unlimited users flat price vs per-user; SF raised prices 2026-11-14) | have data |
 | 97 | compare/gorilladesk-vs-pool-brain | gorilladesk vs pool brain (per-route $49-$149 vs $50 + $65 per tech; both unlimited office users) | have data (GorillaDesk verified 2026-11-15, Pool Brain 2026-11-10) |
 | 98 | best/pool-and-pest-control-software | software for pool + pest (multi-trade route businesses; GorillaDesk covers pest/pool/lawn, Jobber, Housecall Pro) | have data |
+| 99 | best/window-cleaning-business-apps | window cleaning business apps (Search Console, 16 impr, 7 days to Nov 16 2026; mobile-app angle: iOS/Android availability, offline use, on-site quoting/payments for Jobber, HCP, Squeegee, ResponsiBid, BookingKoala) | have data (check app-store availability on vendor pages) |
+| 100 | expand best/pool-service-software | swimming pool service software / pool cleaning software / pool software (Search Console 16 / 15 / 18 impr, 7 days to Nov 16 2026; synonyms of existing pages, so add the terms to title/meta/H2s of /best/pool-service-software/ and /best/pool-cleaning-business-software/ rather than new pages) | idea |
+| 101 | compare/servicem8-vs-jobber | servicem8 vs jobber (free 30-job plan and job-credit pricing vs per-user pricing) | have data (ServiceM8 verified 2026-11-16, Jobber 2026-11-11) |
