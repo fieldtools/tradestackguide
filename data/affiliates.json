@@ -155,5 +155,23 @@
     "url": "https://www.invoicesimple.com/pricing",
     "program": "No affiliate program confirmed; plain link",
     "status": "plain"
+  },
+  "workcase": {
+    "url": "https://workcase.co/",
+    "program": "Workcase affiliate program - 20% recurring monthly while the referral stays subscribed; applied Nov 16, 2026 (contact-style form), they review and send a referral link; plain URL until approved",
+    "status": "applied",
+    "note": "Source https://workcase.co/become-an-affiliate/ . No tool page yet (BACKLOG #102)."
+  },
+  "roofrabbit": {
+    "url": "https://www.roofrabbit.ai/",
+    "program": "Roof Rabbit (Sales Rabbit) partner program - 15% of each payment for the first 12 months, paid via Cello once W-9 and payout method are in the portal; applied Nov 16, 2026, reply expected within 2 business days; plain URL until approved",
+    "status": "applied",
+    "note": "Source https://www.roofrabbit.ai/partners . Roofing not covered yet (BACKLOG #103)."
+  },
+  "fieldpost": {
+    "url": "https://www.fieldposthq.com/",
+    "program": "Fieldpost affiliate program - 30% recurring, no cap, 90-day cookie, PayPal/bank payouts; applied Nov 16, 2026, reply expected within 48 hours; plain URL until approved",
+    "status": "applied",
+    "note": "Source https://www.fieldposthq.com/affiliate . Jobsite photo documentation app; no tool page yet (BACKLOG #104)."
   }
 }
