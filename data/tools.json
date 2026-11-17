@@ -47,7 +47,9 @@
   "rating": "unknown",
   "sources": [
    "https://www.getjobber.com/pricing/",
-   "https://www.getjobber.com/industries/window-cleaning-software/"
+   "https://www.getjobber.com/industries/window-cleaning-software/",
+   "https://www.getjobber.com/features/mobile-app/",
+   "https://productupdates.getjobber.com/134787-keep-working-in-jobber-even-without-internet"
   ],
   "best_for": "Mixed recurring and one-off jobs across any trade",
   "starting_price": "$29/mo billed annually (Core, 1 user); $49/mo monthly",
@@ -60,7 +62,7 @@
    "Extra users $29/mo each",
    "Chemical/material tracking not listed on pricing page"
   ],
-  "last_verified": "2026-11-11",
+  "last_verified": "2026-11-17",
   "add_ons": "Marketing Suite $99/mo, Receptionist (AI) $29/mo, Pipeline $49/mo (add-ons on Core, Connect and Grow; listed as Plus features). Reviews add-on price not published (unknown)"
  },
  {
@@ -105,7 +107,8 @@
   "rating": "unknown",
   "sources": [
    "https://www.housecallpro.com/pricing/",
-   "https://www.housecallpro.com/industries/window-cleaning-software/"
+   "https://www.housecallpro.com/industries/window-cleaning-software/",
+   "https://www.housecallpro.com/features/mobile-app/"
   ],
   "best_for": "Small teams wanting users included in the plan",
   "starting_price": "$59/mo billed annually (Basic, 1 user); $79/mo monthly",
@@ -118,7 +121,7 @@
    "Monthly billing costs $20-$40/mo more than annual",
    "Route optimization only on MAX"
   ],
-  "last_verified": "2026-11-11"
+  "last_verified": "2026-11-17"
  },
  {
   "slug": "gorilladesk",
@@ -268,7 +271,8 @@
   "online_booking": "Instant quoting on your website (Scaling and Pro); customer self-scheduling (Pro)",
   "rating": "unknown",
   "sources": [
-   "https://www.responsibid.com/pricing"
+   "https://www.responsibid.com/pricing",
+   "https://docs.symphosize.com/?article=using-responsibid-on-your-phone-like-an-app"
   ],
   "best_for": "Window cleaning and exterior cleaning businesses that want instant online quotes on top of a CRM",
   "starting_price": "Free (Startup); paid plans $179/mo (Scaling) and $229/mo (Pro)",
@@ -282,7 +286,7 @@
    "Setup fee amount not published",
    "Text follow-up, Zapier and CrewCal only on Pro ($229/mo)"
   ],
-  "last_verified": "2026-11-16"
+  "last_verified": "2026-11-17"
  },
  {
   "slug": "workiz",
@@ -748,7 +752,8 @@
    "https://bookingkoala.com/pricing/",
    "https://bookingkoala.com/features/",
    "https://bookingkoala.com/",
-   "https://bookingkoala.com/30-days/"
+   "https://bookingkoala.com/30-days/",
+   "https://apps.apple.com/us/app/bookingkoala-for-providers/id1446530801"
   ],
   "best_for": "Cleaning and home-service businesses that want customers to book and pay online through their own website",
   "starting_price": "From $27/mo (Starter, 5 providers or 5 GB)",
@@ -764,7 +769,7 @@
   ],
   "who_html": "<p>BookingKoala's home page lists the industries it's set up for. Cleaning leads the list: home cleaning, office cleaning, post-construction, carpet cleaning, window cleaning, pool cleaning and gutter cleaning, plus lawn care, car wash, moving, pet grooming, dog walking, salons and other appointment businesses. Its pricing page defines a provider as \"someone that performs the service, which can be a maid, a dog walker, a barber, tutors.\"</p><p>It's built around customers booking online. Every plan includes a website builder with themes, your own domain, customizable booking forms with real-time availability, and customer, provider and admin dashboards. Features we confirmed on its <a href=\"https://bookingkoala.com/features/\" rel=\"nofollow\">features page</a>: pricing by quantity, hours or packages; multi-location pricing and sales tax by zip code; recurring appointments; an accept/decline option so providers confirm jobs; expedited same-day fees; invoicing; email and text campaigns with A/B testing; and a hiring module with applicant forms, auto-graded quizzes and signed contracts. Growing ($57/mo) adds advanced reports, referrals and ratings, gift cards, GPS clock in/out and SMS notifications. Premium ($197/mo) adds Campaigns (5,000 contacts), multi-step forms, daily discounts, multilingual and funnels.</p>",
   "compare_html": "<p>BookingKoala centers on online booking and your website. The other tools we track center on quoting, dispatch and field work. Here's how the published facts compare (all checked 2026-10-26):</p>{{table:bookingkoala,jobber,housecall-pro,kickserv}}<ul><li><strong><a href=\"/tools/jobber/\">Jobber</a></strong> starts at $29/mo billed annually ($49/mo monthly) for 1 user and lists QuickBooks Online and Xero sync from Connect. BookingKoala Starter is $27/mo and counts up to 5 providers, but it doesn't list QuickBooks.</li><li><strong><a href=\"/tools/housecall-pro/\">Housecall Pro</a></strong> includes online booking from Basic ($59/mo annually, 1 user) and route optimization on MAX. See <a href=\"/tools/housecall-pro-pricing/\">Housecall Pro pricing</a>.</li><li><strong><a href=\"/tools/kickserv/\">Kickserv</a></strong> includes 5 users on Start ($60/mo annually, $75/mo monthly) and QuickBooks Online on every plan.</li><li><strong><a href=\"/tools/responsibid/\">ResponsiBid</a></strong> is a quoting tool, not a CRM, and it's popular with window and exterior cleaners who want instant online quotes.</li></ul><p>Window cleaner? See <a href=\"/best/window-cleaning-software/\">best window cleaning software</a>, <a href=\"/best/window-cleaning-crm/\">best window cleaning CRM</a>, <a href=\"/best/window-cleaning-scheduling-software/\">window cleaning scheduling software</a> and <a href=\"/alternatives/jobber/\">Jobber alternatives</a>.</p>",
-  "last_verified": "2026-11-11"
+  "last_verified": "2026-11-17"
  },
  {
   "slug": "lawnpro",
@@ -1205,7 +1210,8 @@
    "https://squeeg.ee/which-plan",
    "https://squeeg.ee/features/scheduling",
    "https://squeeg.ee/features/payments",
-   "https://squeeg.ee/"
+   "https://squeeg.ee/",
+   "https://play.google.com/store/apps/details?id=com.squeegee"
   ],
   "best_for": "UK-style window cleaning rounds: recurring jobs grouped by area and frequency, invoiced on completion",
   "starting_price": "£19/mo per user + VAT (Core); £190/yr per user + VAT billed yearly. USD pricing not published",
@@ -1219,7 +1225,7 @@
    "Map/visual planner only on Ultimate (£33/mo per user + VAT)",
    "Core, Advanced and Ultimate capped at 10 users"
   ],
-  "last_verified": "2026-11-11"
+  "last_verified": "2026-11-17"
  },
  {
   "slug": "fieldroutes",
