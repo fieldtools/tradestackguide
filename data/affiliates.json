@@ -173,5 +173,15 @@
     "program": "Fieldpost affiliate program - 30% recurring, no cap, 90-day cookie, PayPal/bank payouts; applied Nov 16, 2026, reply expected within 48 hours; plain URL until approved",
     "status": "applied",
     "note": "Source https://www.fieldposthq.com/affiliate . Jobsite photo documentation app; no tool page yet (BACKLOG #104)."
+  },
+  "plowdesk": {
+    "url": "https://www.plowdesk.com/",
+    "program": "No affiliate program confirmed; plain link",
+    "status": "plain"
+  },
+  "yetisoftware": {
+    "url": "https://yetisoftware.com/pricing",
+    "program": "No affiliate program confirmed; plain link",
+    "status": "plain"
   }
 }

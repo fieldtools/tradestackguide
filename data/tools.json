@@ -49,7 +49,8 @@
    "https://www.getjobber.com/pricing/",
    "https://www.getjobber.com/industries/window-cleaning-software/",
    "https://www.getjobber.com/features/mobile-app/",
-   "https://productupdates.getjobber.com/134787-keep-working-in-jobber-even-without-internet"
+   "https://productupdates.getjobber.com/134787-keep-working-in-jobber-even-without-internet",
+   "https://help.getjobber.com/en/articles/snow-removal-workflow-or-how-to-schedule-new-visits-for-multiple-jobs/"
   ],
   "best_for": "Mixed recurring and one-off jobs across any trade",
   "starting_price": "$29/mo billed annually (Core, 1 user); $49/mo monthly",
@@ -62,7 +63,7 @@
    "Extra users $29/mo each",
    "Chemical/material tracking not listed on pricing page"
   ],
-  "last_verified": "2026-11-18",
+  "last_verified": "2026-11-19",
   "add_ons": "Marketing Suite $99/mo, Receptionist (AI) $29/mo, Pipeline $49/mo (add-ons on Core, Connect and Grow; listed as Plus features). Reviews add-on price not published (unknown)"
  },
  {
@@ -108,7 +109,8 @@
   "sources": [
    "https://www.housecallpro.com/pricing/",
    "https://www.housecallpro.com/industries/window-cleaning-software/",
-   "https://www.housecallpro.com/features/mobile-app/"
+   "https://www.housecallpro.com/features/mobile-app/",
+   "https://www.housecallpro.com/industries/snow-removal-software/"
   ],
   "best_for": "Small teams wanting users included in the plan",
   "starting_price": "$59/mo billed annually (Basic, 1 user); $79/mo monthly",
@@ -121,7 +123,7 @@
    "Monthly billing costs $20-$40/mo more than annual",
    "Route optimization only on MAX"
   ],
-  "last_verified": "2026-11-17"
+  "last_verified": "2026-11-19"
  },
  {
   "slug": "gorilladesk",
@@ -451,7 +453,9 @@
   "rating": "unknown",
   "sources": [
    "https://www.yardbook.com/pages/pricing",
-   "https://www.yardbook.com/"
+   "https://www.yardbook.com/",
+   "https://www.yardbook.com/pages/features",
+   "https://support.yardbook.com/950-snow-removal/"
   ],
   "best_for": "Solo lawn care and landscaping operators who want a free starting plan",
   "starting_price": "Free (Starter); Business $34.99/mo",
@@ -465,7 +469,7 @@
    "QuickBooks sync only on Enterprise ($49.99/mo annual)",
    "Pricing page lists web, desktop and Android app access (no iOS mentioned); month-to-month prices not published"
   ],
-  "last_verified": "2026-11-16"
+  "last_verified": "2026-11-19"
  },
  {
   "slug": "service-autopilot",
@@ -510,7 +514,9 @@
   "online_booking": "Client portal included on Elite; call for pricing on other plans",
   "rating": "unknown",
   "sources": [
-   "https://www.serviceautopilot.com/pricing/"
+   "https://www.serviceautopilot.com/pricing/",
+   "https://www.serviceautopilot.com/industries/snow-removal/",
+   "https://support.serviceautopilot.com/s/article/Add-an-On-Demand-Job-1730407283670"
   ],
   "best_for": "Established lawn and landscape companies that want automations and route optimization",
   "starting_price": "$49/mo (Startup, annual subscription rate)",
@@ -524,7 +530,7 @@
    "Startup plan lacks route optimization, job proposals and chemical tracking",
    "QuickBooks sync is call-for-pricing below Elite"
   ],
-  "last_verified": "2026-11-14"
+  "last_verified": "2026-11-19"
  },
  {
   "slug": "lmn",
@@ -1329,5 +1335,129 @@
    "Small Business package lists only basic scheduling and routing"
   ],
   "last_verified": "2026-11-12"
+ },
+ {
+  "slug": "plowdesk",
+  "name": "Plowdesk",
+  "website": "https://www.plowdesk.com/",
+  "trades": [],
+  "free_trial": "Free Operator plan (ongoing, not a trial; no credit card)",
+  "contract": "Contractor billed monthly; discounts for prepaid subscriptions (amount not published)",
+  "plans": [
+   {
+    "name": "Operator",
+    "users": "Unlimited users and customers; up to 3 storm routes",
+    "monthly_no_commit": "Free",
+    "annual": "Free"
+   },
+   {
+    "name": "Contractor",
+    "users": "Unlimited users and customers; unlimited storm routes for residential customers (commercial terms may differ)",
+    "monthly_no_commit": "$95/mo",
+    "annual": "unknown (prepaid discounts available, amount not published)"
+   }
+  ],
+  "extra_user": "No per-user charge (unlimited users on both plans); plans differ by storm-route limit",
+  "card_fee": "unknown (payment integrations on Contractor; Venmo payment tracking on Operator; rates not published)",
+  "routing": "Storm route templates, chosen stop order, optional route optimization, shared routes for multiple drivers",
+  "quickbooks": "No sync: customer import from a QuickBooks Online Excel export and manual CSV invoice export to QuickBooks Online (no payment sync, no QuickBooks Desktop)",
+  "chemical_tracking": "Material charges on quotes and invoices (salt/ice melt usage tracking not described)",
+  "online_booking": "unknown (customer portal being tested this season, per FAQ)",
+  "rating": "unknown",
+  "sources": [
+   "https://www.plowdesk.com/#pricing",
+   "https://www.plowdesk.com/faq"
+  ],
+  "best_for": "Owner-operators and residential snow crews who want a free start and no per-driver fees",
+  "starting_price": "Free (Operator, up to 3 storm routes); Contractor $95/mo",
+  "pros": [
+   "Free Operator plan with unlimited users and customers",
+   "Quotes for seasonal, per-push, per-inch, hourly and material pricing",
+   "Offline mode in the iPhone/iPad and Android apps"
+  ],
+  "cons": [
+   "Free plan capped at 3 storm routes",
+   "QuickBooks Online is a manual CSV export, not a sync",
+   "Unlimited routes on Contractor apply to residential service only"
+  ],
+  "last_verified": "2026-11-19",
+  "image": "crew"
+ },
+ {
+  "slug": "yeti-software",
+  "name": "Yeti Software",
+  "website": "https://yetisoftware.com/",
+  "trades": [],
+  "free_trial": "No free plan or trial listed; 60-day money-back guarantee",
+  "contract": "Monthly or annual billing (annual saves 30%)",
+  "plans": [
+   {
+    "name": "High Performance, 1-25 sites",
+    "users": "Unlimited users and clients",
+    "monthly_no_commit": "$95/mo",
+    "annual": "$66.50/mo ($798/yr) billed annually"
+   },
+   {
+    "name": "High Performance, 26-50 sites",
+    "users": "Unlimited users and clients",
+    "monthly_no_commit": "$245/mo",
+    "annual": "$171.50/mo ($2,058/yr) billed annually"
+   },
+   {
+    "name": "High Performance, 51-100 sites",
+    "users": "Unlimited users and clients",
+    "monthly_no_commit": "$395/mo",
+    "annual": "$276.50/mo billed annually"
+   },
+   {
+    "name": "High Performance, 101-200 sites",
+    "users": "Unlimited users and clients",
+    "monthly_no_commit": "$495/mo",
+    "annual": "$346.50/mo billed annually"
+   },
+   {
+    "name": "High Performance, 201-300 sites",
+    "users": "Unlimited users and clients",
+    "monthly_no_commit": "$645/mo",
+    "annual": "$451.50/mo billed annually"
+   },
+   {
+    "name": "High Performance, 301-400 sites",
+    "users": "Unlimited users and clients",
+    "monthly_no_commit": "$795/mo",
+    "annual": "$556.50/mo billed annually"
+   },
+   {
+    "name": "High Performance, 401-500 sites",
+    "users": "Unlimited users and clients",
+    "monthly_no_commit": "$945/mo",
+    "annual": "$661.50/mo billed annually"
+   }
+  ],
+  "extra_user": "No per-user charge (unlimited users); priced by number of sites managed",
+  "card_fee": "unknown (payment confirmation listed; processing rates not published)",
+  "routing": "Multi-crew snow plow routing built once and reused all season; live dispatch hub; GPS crew tracking with geofences",
+  "quickbooks": "QuickBooks Online integration (sends invoicing data to generate invoices)",
+  "chemical_tracking": "Tracks consumables and subcontractor payables (per platform page)",
+  "online_booking": "unknown",
+  "rating": "unknown",
+  "sources": [
+   "https://yetisoftware.com/pricing",
+   "https://yetisoftware.com/platform"
+  ],
+  "best_for": "Snow-only contractors managing many sites, crews and subcontractors",
+  "starting_price": "$66.50/mo billed annually ($798/yr) or $95/mo monthly, for 1-25 sites",
+  "pros": [
+   "Unlimited users and clients on every site band",
+   "Subcontractor management and GPS/photo proof of service",
+   "QuickBooks Online integration included"
+  ],
+  "cons": [
+   "No free plan or trial listed (60-day money-back guarantee instead)",
+   "Site 26 moves you from $95 to $245/mo (monthly)",
+   "Weather reporting is an add-on with no published price"
+  ],
+  "last_verified": "2026-11-19",
+  "image": "crew"
  }
 ]

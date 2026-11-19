@@ -17,7 +17,7 @@
 | 14 | best/pest-control-routing-software | pest control routing software | done (2026-11-12); FieldRoutes and PestPac added to tools.json (quote only) |
 | 15 | compare/gorilladesk-vs-fieldroutes | gorilladesk vs fieldroutes | have data (FieldRoutes added 2026-11-12: quote only, priced by active customers) |
 | 16 | best/lawn-care-invoicing-app | lawn care invoicing app | have data (Yardbook, QuoteIQ, Jobber added/verified 2026-10-24) |
-| 17 | best/snow-removal-software | snow removal business software | have data (Service Autopilot, Yardbook added 2026-10-24) |
+| 17 | best/snow-removal-software | snow removal business software | done (2026-11-19; Plowdesk and Yeti Software added to tools.json; Service Autopilot, Yardbook, Jobber, Housecall Pro re-verified, prices unchanged) |
 | 18 | best/house-cleaning-business-software | house cleaning business software | Jobber, ZenMaid, Launch27 |
 | 19 | compare/jobber-vs-workiz | jobber vs workiz | Workiz added 2026-10-23 (prices not published) |
 | 20 | compare/housecall-pro-vs-workiz | housecall pro vs workiz | Workiz added 2026-10-23 (prices not published) |
@@ -109,3 +109,5 @@
 | 106 | best/tap-to-pay-field-service-apps | tap to pay field service app (card-present rates: Jobber Tap to Pay 2.7% + 30¢, HCP, Squeegee via Square, QuoteIQ) | partly have data (Jobber verified 2026-11-17) |
 | 107 | compare/servicem8-vs-housecall-pro | servicem8 vs housecall pro (unlimited users priced by jobs vs 1/5/8 users per plan) | have data (ServiceM8 verified 2026-11-18, HCP 2026-11-17) |
 | 108 | tools/servicem8-pricing | servicem8 pricing (job credits 30/50/150/500/1,500+, 7-day overage grace, ServiceM8 Pay fees by country) | have data (verified 2026-11-18) |
+| 109 | compare/plowdesk-vs-yeti | plowdesk vs yeti (snow-only apps: free/$95 flat with route limits vs $95-$945/mo by site band, both unlimited users) | have data (both verified 2026-11-19) |
+| 110 | best/commercial-snow-removal-software | commercial snow removal software (subcontractor management, SLAs, slip-and-fall proof of service, per-event/per-inch billing; Yeti, Service Autopilot, Plowdesk commercial terms) | have data (verified 2026-11-19) |
