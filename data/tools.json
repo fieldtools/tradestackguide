@@ -165,7 +165,8 @@
   "rating": "unknown",
   "sms": "$5/mo SMS subscription + credit packs ($50/1,000, $100/2,500, $200/8,000 msgs; credits never expire)",
   "sources": [
-   "https://gorilladesk.com/pricing/"
+   "https://gorilladesk.com/pricing/",
+   "https://gorilladesk.com/industries/pest-control-software/"
   ],
   "best_for": "Pest and pool operators who want unlimited users, priced per route",
   "starting_price": "$49/mo for 1 route (Basic)",
@@ -178,7 +179,7 @@
    "Basic routing capped at 25 stops",
    "SMS is an extra $5/mo plus credit packs"
   ],
-  "last_verified": "2026-11-15"
+  "last_verified": "2026-11-20"
  },
  {
   "slug": "skimmer",
@@ -1258,29 +1259,32 @@
    }
   ],
   "extra_user": "Monthly subscription is based on the number of active customers (pricing page FAQ); per-user and per-customer rates not published",
-  "card_fee": "unknown (online credit card processing and a customer payment portal are listed; rates not published)",
+  "card_fee": "unknown (FieldRoutes Payments, customer payment portal and AutoPay listed; rates not published)",
   "routing": "Route Optimization listed in both Growth and Corporate packages; Intelligent Routing can organize routes by technician skillset (e.g. termite inspections)",
-  "quickbooks": "Integrations with accounting platforms like QuickBooks listed in the pricing FAQ; package not specified",
-  "chemical_tracking": "unknown (not listed on the pricing page)",
+  "quickbooks": "QuickBooks Online Integration listed on the pest control page; package not specified",
+  "chemical_tracking": "Inventory management for pesticides and chemicals listed in the pest control page FAQ; package not specified",
   "online_booking": "unknown (not listed on the pricing page)",
   "rating": "unknown",
   "sms": "Automated communication and reminders listed in both packages; texting prices not published",
   "sources": [
    "https://www.fieldroutes.com/company/pricing",
-   "https://www.fieldroutes.com/operations-suite/field-service-routing"
+   "https://www.fieldroutes.com/operations-suite/field-service-routing",
+   "https://www.fieldroutes.com/solutions/pest-control-software",
+   "https://www.fieldroutes.com/operations-suite/payments",
+   "https://www.fieldroutes.com/operations-suite/fieldroutes-mobile-app"
   ],
   "best_for": "Pest and lawn companies that want pest-specific route optimization and are fine buying through a sales demo",
   "starting_price": "Not published (quote only; priced by number of active customers)",
   "pros": [
    "Route Optimization listed in both packages",
    "Routes can be organized by technician skillset, e.g. termite inspections",
-   "Lead management, customer payment portal and Sentricon listed in both packages"
+   "Sentricon, WDO inspection tracking (NPMA-33) and California Branch 3 WDO reporting listed"
   ],
   "cons": [
    "No published prices; quote through a demo",
    "No free trial (demo only)"
   ],
-  "last_verified": "2026-11-12"
+  "last_verified": "2026-11-20"
  },
  {
   "slug": "pestpac",

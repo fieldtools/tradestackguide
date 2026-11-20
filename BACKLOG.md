@@ -15,7 +15,7 @@
 | 12 | tools/housecall-pro-pricing | housecall pro pricing (Search Console query "house call pro price", 2026-10-25) | done (2026-10-26) |
 | 13 | best/pool-chemical-log-app | pool chemical log app | have data (Skimmer, Pool Brain, POM chemistry features verified 2026-11-13; partly covered by best/pool-maintenance-software, build only as a narrower chem-log angle) |
 | 14 | best/pest-control-routing-software | pest control routing software | done (2026-11-12); FieldRoutes and PestPac added to tools.json (quote only) |
-| 15 | compare/gorilladesk-vs-fieldroutes | gorilladesk vs fieldroutes | have data (FieldRoutes added 2026-11-12: quote only, priced by active customers) |
+| 15 | compare/gorilladesk-vs-fieldroutes | gorilladesk vs fieldroutes | done (2026-11-20; GorillaDesk prices re-verified, unchanged; FieldRoutes still quote only by active customers; FieldRoutes QuickBooks Online, payments, Sentricon/WDO/NPMA-33 details added to tools.json) |
 | 16 | best/lawn-care-invoicing-app | lawn care invoicing app | have data (Yardbook, QuoteIQ, Jobber added/verified 2026-10-24) |
 | 17 | best/snow-removal-software | snow removal business software | done (2026-11-19; Plowdesk and Yeti Software added to tools.json; Service Autopilot, Yardbook, Jobber, Housecall Pro re-verified, prices unchanged) |
 | 18 | best/house-cleaning-business-software | house cleaning business software | Jobber, ZenMaid, Launch27 |
@@ -111,3 +111,5 @@
 | 108 | tools/servicem8-pricing | servicem8 pricing (job credits 30/50/150/500/1,500+, 7-day overage grace, ServiceM8 Pay fees by country) | have data (verified 2026-11-18) |
 | 109 | compare/plowdesk-vs-yeti | plowdesk vs yeti (snow-only apps: free/$95 flat with route limits vs $95-$945/mo by site band, both unlimited users) | have data (both verified 2026-11-19) |
 | 110 | best/commercial-snow-removal-software | commercial snow removal software (subcontractor management, SLAs, slip-and-fall proof of service, per-event/per-inch billing; Yeti, Service Autopilot, Plowdesk commercial terms) | have data (verified 2026-11-19) |
+| 111 | best/wdo-termite-inspection-report-software | WDO / NPMA-33 termite inspection report software (FieldRoutes NPMA-33 + California Branch 3 WDO reporting, PestPac termite inspections, GorillaDesk diagramming/devices) | partly have data (FieldRoutes verified 2026-11-20; overlaps #90, merge or pick one angle) |
+| 112 | best/door-to-door-pest-control-sales-app | door to door pest control sales app (FieldRoutes mobile sales/D2D, GorillaDesk Growth sales pipeline, check PestPac and dedicated D2D apps like SalesRabbit) | partly have data (FieldRoutes and GorillaDesk verified 2026-11-20) |
