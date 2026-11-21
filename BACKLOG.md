@@ -24,7 +24,7 @@
 | 21 | best/pool-route-optimization | pool route optimization software (also SC "best pool route software", 2 clicks/4 impr Oct 29–Nov 4 2026) | done (2026-11-09, covered by best/pool-route-software) |
 | 22 | best/estimating-app-pressure-washing | pressure washing estimating app | have data (ResponsiBid added 2026-10-22) |
 | 23 | best/mosquito-control-software | mosquito control business software | GorillaDesk, FieldRoutes |
-| 24 | best/landscaping-business-software | landscaping business software | Aspire (LMN added 2026-10-24) |
+| 24 | best/landscaping-business-software | landscaping business software (Search Console, 24 impr, Nov 13-19 2026) | done (2026-11-21; Aspire added to tools.json (quote only, unlimited users, revenue tiers); LMN, Service Autopilot, Jobber, Kickserv, Yardbook re-verified, prices unchanged) |
 | 25 | best/gutter-cleaning-software | gutter cleaning business software | Jobber, HCP |
 | 26 | best/irrigation-business-software | irrigation business software | GorillaDesk, Jobber |
 | 27 | alternatives/skimmer | skimmer alternatives | done (2026-11-10, published with site audit batch) |
@@ -113,3 +113,6 @@
 | 110 | best/commercial-snow-removal-software | commercial snow removal software (subcontractor management, SLAs, slip-and-fall proof of service, per-event/per-inch billing; Yeti, Service Autopilot, Plowdesk commercial terms) | have data (verified 2026-11-19) |
 | 111 | best/wdo-termite-inspection-report-software | WDO / NPMA-33 termite inspection report software (FieldRoutes NPMA-33 + California Branch 3 WDO reporting, PestPac termite inspections, GorillaDesk diagramming/devices) | partly have data (FieldRoutes verified 2026-11-20; overlaps #90, merge or pick one angle) |
 | 112 | best/door-to-door-pest-control-sales-app | door to door pest control sales app (FieldRoutes mobile sales/D2D, GorillaDesk Growth sales pipeline, check PestPac and dedicated D2D apps like SalesRabbit) | partly have data (FieldRoutes and GorillaDesk verified 2026-11-20) |
+| 113 | expand best/pool-maintenance-software | swimming pool maintenance software (Search Console, 25 impr, Nov 13-19 2026; synonym of pool maintenance software 41 impr, so add the term to title/meta/H2 of /best/pool-maintenance-software/ rather than a new page) | idea |
+| 114 | compare/lmn-vs-aspire | lmn vs aspire (published $297/$648 license bundles vs quote-only unlimited-user license by revenue tier) | have data (both verified 2026-11-21) |
+| 115 | tools/aspire-crew-control | aspire crew control review pricing (Aspire's lighter product for small to medium landscape businesses) | idea (verify pricing; not reviewed 2026-11-21) |

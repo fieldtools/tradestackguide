@@ -63,7 +63,7 @@
    "Extra users $29/mo each",
    "Chemical/material tracking not listed on pricing page"
   ],
-  "last_verified": "2026-11-19",
+  "last_verified": "2026-11-21",
   "add_ons": "Marketing Suite $99/mo, Receptionist (AI) $29/mo, Pipeline $49/mo (add-ons on Core, Connect and Grow; listed as Plus features). Reviews add-on price not published (unknown)"
  },
  {
@@ -123,7 +123,7 @@
    "Monthly billing costs $20-$40/mo more than annual",
    "Route optimization only on MAX"
   ],
-  "last_verified": "2026-11-19"
+  "last_verified": "2026-11-21"
  },
  {
   "slug": "gorilladesk",
@@ -179,7 +179,7 @@
    "Basic routing capped at 25 stops",
    "SMS is an extra $5/mo plus credit packs"
   ],
-  "last_verified": "2026-11-20"
+  "last_verified": "2026-11-21"
  },
  {
   "slug": "skimmer",
@@ -414,7 +414,7 @@
    "AI Website Builder is a $34.99/mo add-on except on Max"
   ],
   "add_ons": "AI Website Builder $34.99/mo on Essentials, Beginner, Pro and Elite (included on Max); extra storage +100 GB $9.99/mo, +500 GB $34.99/mo, +2 TB $99.99/mo",
-  "last_verified": "2026-11-11"
+  "last_verified": "2026-11-21"
  },
  {
   "slug": "yardbook",
@@ -470,7 +470,7 @@
    "QuickBooks sync only on Enterprise ($49.99/mo annual)",
    "Pricing page lists web, desktop and Android app access (no iOS mentioned); month-to-month prices not published"
   ],
-  "last_verified": "2026-11-19"
+  "last_verified": "2026-11-21"
  },
  {
   "slug": "service-autopilot",
@@ -531,7 +531,7 @@
    "Startup plan lacks route optimization, job proposals and chemical tracking",
    "QuickBooks sync is call-for-pricing below Elite"
   ],
-  "last_verified": "2026-11-19"
+  "last_verified": "2026-11-21"
  },
  {
   "slug": "lmn",
@@ -584,7 +584,7 @@
    "One-time onboarding fee, amount not published",
    "Real-time job costing and material tracking need Professional ($648/mo)"
   ],
-  "last_verified": "2026-11-14"
+  "last_verified": "2026-11-21"
  },
  {
   "slug": "kickserv",
@@ -638,7 +638,7 @@
    "Dispatch mapping and GPS check-ins only on Run ($119/mo annual) and up",
    "Route optimization not listed on the pricing page"
   ],
-  "last_verified": "2026-11-14"
+  "last_verified": "2026-11-21"
  },
  {
   "slug": "servicem8",
@@ -1284,7 +1284,7 @@
    "No published prices; quote through a demo",
    "No free trial (demo only)"
   ],
-  "last_verified": "2026-11-20"
+  "last_verified": "2026-11-21"
  },
  {
   "slug": "pestpac",
@@ -1338,7 +1338,7 @@
    "No published prices; quote through a consultant",
    "Small Business package lists only basic scheduling and routing"
   ],
-  "last_verified": "2026-11-12"
+  "last_verified": "2026-11-21"
  },
  {
   "slug": "plowdesk",
@@ -1463,5 +1463,62 @@
   ],
   "last_verified": "2026-11-19",
   "image": "crew"
+ },
+ {
+  "slug": "aspire",
+  "name": "Aspire",
+  "website": "https://www.youraspire.com/",
+  "trades": [
+   "lawn"
+  ],
+  "free_trial": "No free trial listed; Aspire offers demos and quotes",
+  "contract": "Contracted term with price protection and an SLA (FAQ); term length not published",
+  "plans": [
+   {
+    "name": "Growth",
+    "users": "Unlimited users (for landscape companies with $1M-$3M annual revenue)",
+    "monthly_no_commit": "Quote only (price not published)",
+    "annual": "Not published"
+   },
+   {
+    "name": "Corporate",
+    "users": "Unlimited users ($3M-$15M annual revenue)",
+    "monthly_no_commit": "Quote only (price not published)",
+    "annual": "Not published"
+   },
+   {
+    "name": "Enterprise",
+    "users": "Unlimited users (over $15M annual revenue)",
+    "monthly_no_commit": "Quote only (price not published)",
+    "annual": "Not published"
+   }
+  ],
+  "extra_user": "No per-user fees: a single license fee billed monthly with unlimited users; price based on company size, complexity and solution (tiers by annual revenue)",
+  "card_fee": "unknown (payments through Clover Connect; Aspire says it doesn't charge for the payment feature, only Clover Connect's processing fee, rate not published)",
+  "routing": "unknown (scheduling and work tickets listed; route optimization not listed on the plans page)",
+  "quickbooks": "QuickBooks and Acumatica integrations; Aspire keeps invoices and A/R and sends deposits and purchase receipts to QuickBooks (FAQ)",
+  "chemical_tracking": "unknown (time and material tracking and inventory management listed)",
+  "online_booking": "unknown (customer portal for proposals, requests and invoice payment)",
+  "rating": "unknown",
+  "sms": "unknown",
+  "add_ons": "Electronic payment services, payroll services and GPS fleet management are quoted separately from the software",
+  "sources": [
+   "https://www.youraspire.com/aspire-plans",
+   "https://www.youraspire.com/faqs",
+   "https://www.youraspire.com/industries/landscape-business-software/invoicing"
+  ],
+  "best_for": "Landscape companies with $1M+ in annual revenue that want estimating, job costing and purchasing in one system with unlimited users",
+  "starting_price": "Not published (quote only; tiers by annual revenue, unlimited users)",
+  "pros": [
+   "Unlimited users on one monthly license fee",
+   "Implementation, training and support included in the monthly fee",
+   "Job costing, estimating, purchasing and an offline-capable mobile app listed"
+  ],
+  "cons": [
+   "No published prices; quote through a demo",
+   "Plans are aimed at companies with $1M+ annual revenue",
+   "Payments, payroll and GPS fleet management quoted separately"
+  ],
+  "last_verified": "2026-11-21"
  }
 ]
