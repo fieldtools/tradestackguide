@@ -41,7 +41,7 @@
   "extra_user": "$29/mo each",
   "card_fee": "2.9% + 30¢ online; 2.7% + 30¢ Tap to Pay; ACH 1%; instant payouts +1%",
   "routing": "Routing (route optimization) and GPS tracking on Connect and up; not on Core",
-  "quickbooks": "QuickBooks Online and Xero sync (Connect and up)",
+  "quickbooks": "QuickBooks Online only, from Connect up; one-way sync Jobber to QBO (clients, products/services, invoices, payments, timesheets); no QuickBooks Desktop sync",
   "chemical_tracking": "unknown",
   "online_booking": "Yes",
   "rating": "unknown",
@@ -50,7 +50,8 @@
    "https://www.getjobber.com/industries/window-cleaning-software/",
    "https://www.getjobber.com/features/mobile-app/",
    "https://productupdates.getjobber.com/134787-keep-working-in-jobber-even-without-internet",
-   "https://help.getjobber.com/en/articles/snow-removal-workflow-or-how-to-schedule-new-visits-for-multiple-jobs/"
+   "https://help.getjobber.com/en/articles/snow-removal-workflow-or-how-to-schedule-new-visits-for-multiple-jobs/",
+   "https://help.getjobber.com/en/articles/quickbooks-integration-faqs-new-quickbooks-integration/"
   ],
   "best_for": "Mixed recurring and one-off jobs across any trade",
   "starting_price": "$29/mo billed annually (Core, 1 user); $49/mo monthly",
@@ -63,7 +64,7 @@
    "Extra users $29/mo each",
    "Chemical/material tracking not listed on pricing page"
   ],
-  "last_verified": "2026-11-21",
+  "last_verified": "2026-11-22",
   "add_ons": "Marketing Suite $99/mo, Receptionist (AI) $29/mo, Pipeline $49/mo (add-ons on Core, Connect and Grow; listed as Plus features). Reviews add-on price not published (unknown)"
  },
  {
@@ -102,7 +103,7 @@
   "extra_user": "$35/mo per additional user (MAX)",
   "card_fee": "From 2.59%; bank payments 1%",
   "routing": "Routes on Essentials; route optimization on MAX",
-  "quickbooks": "QuickBooks Online sync (Essentials and up)",
+  "quickbooks": "QuickBooks Online sync listed from Essentials up (pricing page); Housecall Pro's QuickBooks page says it also integrates with QuickBooks Desktop (plan not stated) and pushes invoices, customers, line items and payments",
   "chemical_tracking": "unknown",
   "online_booking": "Yes (all plans)",
   "rating": "unknown",
@@ -110,7 +111,8 @@
    "https://www.housecallpro.com/pricing/",
    "https://www.housecallpro.com/industries/window-cleaning-software/",
    "https://www.housecallpro.com/features/mobile-app/",
-   "https://www.housecallpro.com/industries/snow-removal-software/"
+   "https://www.housecallpro.com/industries/snow-removal-software/",
+   "https://www.housecallpro.com/features/quickbooks/"
   ],
   "best_for": "Small teams wanting users included in the plan",
   "starting_price": "$59/mo billed annually (Basic, 1 user); $79/mo monthly",
@@ -123,7 +125,7 @@
    "Monthly billing costs $20-$40/mo more than annual",
    "Route optimization only on MAX"
   ],
-  "last_verified": "2026-11-21"
+  "last_verified": "2026-11-22"
  },
  {
   "slug": "gorilladesk",
@@ -159,14 +161,15 @@
   "extra_user": "Users free; extra routes: Basic +$50 (routes 2-3), +$30 (4+); Pro +$50; Growth +$100 (route 2), +$50 (routes 3-4), 5 routes $499/mo total, then +$50 each",
   "card_fee": "Via Stripe/Square (their rates)",
   "routing": "Basic routing up to 25 stops; Drive Matrix routing on Pro; Growth adds drive time on schedules, Best Available Time and Job Magnet",
-  "quickbooks": "QuickBooks Online sync (Pro and up)",
+  "quickbooks": "QuickBooks Online sync (Pro and up); one-way push of customers, invoices and payments, with optional tax, discount, Stripe fee and credit sync; QuickBooks Desktop not supported",
   "chemical_tracking": "Yes - material tracking & reporting (Basic)",
   "online_booking": "Pro and up",
   "rating": "unknown",
   "sms": "$5/mo SMS subscription + credit packs ($50/1,000, $100/2,500, $200/8,000 msgs; credits never expire)",
   "sources": [
    "https://gorilladesk.com/pricing/",
-   "https://gorilladesk.com/industries/pest-control-software/"
+   "https://gorilladesk.com/industries/pest-control-software/",
+   "https://intercom.help/gorilladesk/en/articles/11420810-sync-to-quickbooks-online"
   ],
   "best_for": "Pest and pool operators who want unlimited users, priced per route",
   "starting_price": "$49/mo for 1 route (Basic)",
@@ -179,7 +182,7 @@
    "Basic routing capped at 25 stops",
    "SMS is an extra $5/mo plus credit packs"
   ],
-  "last_verified": "2026-11-21"
+  "last_verified": "2026-11-22"
  },
  {
   "slug": "skimmer",
@@ -323,13 +326,14 @@
   "extra_user": "unknown (not published)",
   "card_fee": "unknown (Workiz Pay online payments, tap to pay and consumer financing on all plans; rates not published; card readers sold separately)",
   "routing": "Fleet and team location tracking on all plans; Genius Scheduling on Pro and Ultimate",
-  "quickbooks": "QuickBooks Online sync (all plans)",
+  "quickbooks": "QuickBooks Online sync on all plans (pricing page); Workiz's QuickBooks page says Online and Desktop, syncing invoices, Workiz Pay payments, taxes, expense-card transactions and customers, automatically or manually",
   "chemical_tracking": "Inventory management (Ultimate only)",
   "online_booking": "Online booking with optional checkout (all plans)",
   "rating": "unknown",
   "sources": [
    "https://www.workiz.com/pricing-plans/",
-   "https://www.workiz.com/industries/pressure-washing/"
+   "https://www.workiz.com/industries/pressure-washing/",
+   "https://www.workiz.com/integrations/quickbooks/"
   ],
   "best_for": "Phone-heavy service teams that want calls, texts and jobs in one system",
   "starting_price": "Not published (Request pricing on Standard, Pro and Ultimate)",
@@ -343,7 +347,7 @@
    "Good/Better/Best sales proposals and service plans only on Ultimate",
    "Zapier and open API only on Ultimate"
   ],
-  "last_verified": "2026-11-14"
+  "last_verified": "2026-11-22"
  },
  {
   "slug": "quoteiq",
@@ -414,7 +418,7 @@
    "AI Website Builder is a $34.99/mo add-on except on Max"
   ],
   "add_ons": "AI Website Builder $34.99/mo on Essentials, Beginner, Pro and Elite (included on Max); extra storage +100 GB $9.99/mo, +500 GB $34.99/mo, +2 TB $99.99/mo",
-  "last_verified": "2026-11-21"
+  "last_verified": "2026-11-22"
  },
  {
   "slug": "yardbook",
@@ -618,13 +622,14 @@
   "extra_user": "Users included per plan (5 / 10 / 20); every employee added counts as a user; per-user add-on price not published",
   "card_fee": "Tap to Pay 2.9% + 30¢; other online card payments 3.9% + 30¢ (some Amex 5.2% + 30¢); ACH 1% + 30¢. 5% subscription discount (Kickback) if you process $1,000+/mo (Start), $2,000+ (Run), $3,000+ (Scale)",
   "routing": "Dispatch mapping, GPS check-ins and automated scheduling on Run and up; route optimization not listed",
-  "quickbooks": "QuickBooks Online on all plans; QuickBooks Desktop $50/mo extra (Run and up)",
+  "quickbooks": "Two-way sync of invoices, payments, customers and items. QuickBooks Online on all plans; QuickBooks Desktop $50/mo extra (Run and up)",
   "chemical_tracking": "unknown (expense tracking on all plans)",
   "online_booking": "Embeddable contact form (all plans); Customer Center for appointment requests and invoice payment",
   "rating": "unknown",
   "sources": [
    "https://www.kickserv.com/pricing",
-   "https://www.kickserv.com/industries/landscaping-arborist"
+   "https://www.kickserv.com/industries/landscaping-arborist",
+   "https://www.kickserv.com/integrations/quickbooks-online"
   ],
   "best_for": "Small teams wanting 5-20 users included at a flat monthly price",
   "starting_price": "$60/mo billed annually (Start, 5 users); $75/mo monthly",
@@ -638,7 +643,7 @@
    "Dispatch mapping and GPS check-ins only on Run ($119/mo annual) and up",
    "Route optimization not listed on the pricing page"
   ],
-  "last_verified": "2026-11-21"
+  "last_verified": "2026-11-22"
  },
  {
   "slug": "servicem8",
@@ -688,13 +693,14 @@
   "extra_user": "Unlimited users on paid plans (Free limited to 1 user); priced by monthly job credits, not per user",
   "card_fee": "ServiceM8 Pay (US): 3.05% + 30¢ standard domestic; 4.60% + 30¢ international (help center, listed as current as of Sep 2024). Phone add-on from $19/mo.",
   "routing": "Dispatch map and Auto Routing listed on pricing page; minimum plan for Auto Routing not clearly stated",
-  "quickbooks": "QuickBooks Online, Xero and MYOB sync (listed under essentials / all plans)",
+  "quickbooks": "QuickBooks Online, Xero and MYOB on all plans; invoices go to QBO when approved, payments sync both ways, clients/materials sync both ways once linked; QuickBooks Desktop not listed",
   "chemical_tracking": "unknown (Asset Management listed as Growing+ add-on; chemical/material tracking not listed)",
   "online_booking": "Yes (all plans)",
   "rating": "unknown",
   "sources": [
    "https://www.servicem8.com/pricing",
-   "https://support.servicem8.com/help-center/servicem8-add-ons/servicem8-pay/servicem8-pay-card-processing-fees-payout-speed"
+   "https://support.servicem8.com/help-center/servicem8-add-ons/servicem8-pay/servicem8-pay-card-processing-fees-payout-speed",
+   "https://support.servicem8.com/help-center/servicem8-add-ons/quickbooks/how-the-sync-with-quickbooks-online-works"
   ],
   "best_for": "Trades and service contractors who want unlimited users priced by monthly job volume",
   "starting_price": "$0/mo (Free, 1 user, 30 jobs); paid from $29/mo (Starter, unlimited users, 50 jobs)",
@@ -709,7 +715,7 @@
    "No annual billing discount listed on the pricing page"
   ],
   "add_ons": "ServiceM8 Phone from $19/mo (unlimited users). Forms Store (purchased forms on any plan; custom form builder Growing+). AI Smart Helper and other plan-gated add-ons on pricing page.",
-  "last_verified": "2026-11-18"
+  "last_verified": "2026-11-22"
  },
  {
   "slug": "bookingkoala",
@@ -1015,11 +1021,12 @@
   "extra_user": "Unlimited users on every plan; price does not change with headcount (pricing page FAQ)",
   "card_fee": "Service Fusion Payments powered by PaySimple; processing rates not published on the pricing page (unknown)",
   "routing": "Scheduling & dispatching on all plans; GPS Fleet Tracking is an add-on (pricing page)",
-  "quickbooks": "Yes: QuickBooks Online and Desktop (pricing page FAQ)",
+  "quickbooks": "QuickBooks Online and Desktop on all plans (pricing page FAQ); Desktop needs Service Fusion's Windows-only integrator installed on the QuickBooks computer",
   "rating": "unknown",
   "add_ons": "Starter add-ons: job photo uploads, inventory, job costing, custom documents, eSign, customer web portal, progressive/recurring billing, ServiceCall.ai, GPS Fleet Tracking. Pro add-ons: ServiceCall.ai and GPS Fleet Tracking. Add-on prices not published",
   "sources": [
-   "https://www.servicefusion.com/pricing"
+   "https://www.servicefusion.com/pricing",
+   "https://servicefusion.zendesk.com/hc/en-us/articles/360001111652-QuickBooks-Desktop-Setup-Instructions"
   ],
   "best_for": "HVAC, plumbing and electrical contractors that want unlimited users at a flat monthly price",
   "starting_price": "$259/mo (Starter) or $220/mo billed annually",
@@ -1034,7 +1041,8 @@
    "Customer web portal and eSign only included on Pro"
   ],
   "who_html": "<p>Service Fusion is field service management software aimed at HVAC, plumbing and electrical contractors. Every price here comes from <a href=\"https://www.servicefusion.com/pricing\" rel=\"nofollow\">servicefusion.com/pricing</a>, checked 2026-11-14. Because Service Fusion charges a flat price for unlimited users, compare it with per-user tools in our <a href=\"/field-service-software-cost-1-vs-5-users/\">1 vs 5 user cost breakdown</a>, see other options in <a href=\"/alternatives/housecall-pro/\">Housecall Pro alternatives</a>, and use the <a href=\"/software-buying-checklist/\">software buying checklist</a> before a demo.</p><p><strong>Disclosure:</strong> we may earn a referral fee if you become a Service Fusion customer through our link.</p>",
-  "last_verified": "2026-11-14"
+  "last_verified": "2026-11-22",
+  "chemical_tracking": "Inventory management on Plus and Pro (add-on on Starter); chemical tracking not listed"
  },
  {
   "slug": "clockshark",

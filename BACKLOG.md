@@ -29,7 +29,7 @@
 | 26 | best/irrigation-business-software | irrigation business software | GorillaDesk, Jobber |
 | 27 | alternatives/skimmer | skimmer alternatives | done (2026-11-10, published with site audit batch) |
 | 28 | alternatives/gorilladesk | gorilladesk alternatives | FieldRoutes, PestPac, Jobber |
-| 29 | best/quickbooks-field-service-integration | field service software quickbooks integration | have data |
+| 29 | best/quickbooks-field-service-integration | field service software quickbooks integration | done (2026-11-22, published as /best/field-service-software-with-quickbooks/; 8 tools: Jobber, Housecall Pro, ServiceM8, Kickserv, Service Fusion, Workiz, GorillaDesk, QuoteIQ; QuickBooks version/plan/sync direction from vendor help pages; all 8 prices re-verified, unchanged) |
 | 30 | best/solo-operator-field-service-app | field service app for one person business | have data |
 | 31 | tools/workiz-pricing | workiz pricing | have data (Workiz shows "Request pricing" as of 2026-10-23) |
 | 32 | best/soft-washing-software | soft washing business software | Jobber, HCP, ResponsiBid |
@@ -116,3 +116,6 @@
 | 113 | expand best/pool-maintenance-software | swimming pool maintenance software (Search Console, 25 impr, Nov 13-19 2026; synonym of pool maintenance software 41 impr, so add the term to title/meta/H2 of /best/pool-maintenance-software/ rather than a new page) | idea |
 | 114 | compare/lmn-vs-aspire | lmn vs aspire (published $297/$648 license bundles vs quote-only unlimited-user license by revenue tier) | have data (both verified 2026-11-21) |
 | 115 | tools/aspire-crew-control | aspire crew control review pricing (Aspire's lighter product for small to medium landscape businesses) | idea (verify pricing; not reviewed 2026-11-21) |
+| 116 | best/quickbooks-desktop-field-service-software | field service software for QuickBooks Desktop (Kickserv +$50/mo Run+, Service Fusion Windows plugin, HCP and Workiz per their QB pages, LMN Professional, Pool Office Manager; Jobber/GorillaDesk don't support it) | partly have data (verified 2026-11-22; confirm HCP/Workiz Desktop plan requirements) |
+| 117 | best/field-service-software-xero | field service software with Xero integration (ServiceM8 all plans, Jobber Connect+, Kickserv per changelog; check HCP, Workiz, GorillaDesk) | partly have data (ServiceM8, Jobber verified 2026-11-22) |
+| 118 | compare/kickserv-vs-servicem8 | kickserv vs servicem8 (5-20 users included vs unlimited users priced by jobs; both two-way QuickBooks Online) | have data (both verified 2026-11-22) |
