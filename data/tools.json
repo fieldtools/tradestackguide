@@ -3,13 +3,7 @@
   "slug": "jobber",
   "name": "Jobber",
   "website": "https://www.getjobber.com/",
-  "trades": [
-   "pool",
-   "pest",
-   "lawn",
-   "window",
-   "pressure"
-  ],
+  "trades": ["pool", "pest", "lawn", "window", "pressure", "cleaning"],
   "free_trial": "14 days on Grow plan, no credit card",
   "contract": "Monthly no-commitment, monthly with 1-year commitment, or annual prepaid (non-refundable)",
   "plans": [
@@ -71,13 +65,7 @@
   "slug": "housecall-pro",
   "name": "Housecall Pro",
   "website": "https://www.housecallpro.com/",
-  "trades": [
-   "pool",
-   "pest",
-   "lawn",
-   "window",
-   "pressure"
-  ],
+  "trades": ["pool", "pest", "lawn", "window", "pressure", "cleaning"],
   "free_trial": "14 days on MAX plan, no credit card",
   "contract": "No long-term contract required",
   "plans": [
@@ -721,11 +709,7 @@
   "slug": "bookingkoala",
   "name": "BookingKoala",
   "website": "https://bookingkoala.com/",
-  "trades": [
-   "window",
-   "pool",
-   "lawn"
-  ],
+  "trades": ["window", "pool", "lawn", "cleaning"],
   "free_trial": "14 days (pricing page FAQ: charged only after the trial ends; switch plans during it); 30 days when signing up through a BookingKoala affiliate link, per bookingkoala.com/30-days/. Card requirement: unknown",
   "contract": "No contracts or commitments; cancel any time from inside your account. No setup fee. Annual billing: not published",
   "plans": [
@@ -1533,7 +1517,7 @@
   "slug": "zenmaid",
   "name": "ZenMaid",
   "website": "https://www.zenmaid.com/",
-  "trades": [],
+  "trades": ["cleaning"],
   "free_trial": "14 days on every plan (pricing page FAQ: no hidden fees). Card requirement: unknown",
   "contract": "Month to month, no signature; cancel anytime from account settings (plan stays active to the end of the billing period). Annual plans available on request (price not published)",
   "plans": [
@@ -1581,13 +1565,13 @@
    "Native QuickBooks integration still marked coming soon"
   ],
   "last_verified": "2026-11-23",
-  "image": "window"
+  "image": "cleaning"
  },
  {
   "slug": "launch27",
   "name": "Launch27",
   "website": "https://www.launch27.com/",
-  "trades": [],
+  "trades": ["cleaning"],
   "free_trial": "14 days (\"14-Day Risk-Free Trial\" on the pricing page). Card requirement: unknown",
   "contract": "Monthly or annual (annual saves 15%); cancellation terms not published on the pricing page",
   "plans": [
@@ -1634,13 +1618,13 @@
    "Card processing rates not published"
   ],
   "last_verified": "2026-11-23",
-  "image": "window"
+  "image": "cleaning"
  },
  {
   "slug": "maidily",
   "name": "Maidily",
   "website": "https://www.maidily.com/",
-  "trades": [],
+  "trades": ["cleaning"],
   "free_trial": "Free plan forever (up to 10 jobs/month, no credit card); every paid plan has a free trial (length not published)",
   "contract": "No contracts or cancellation fees; monthly or annual (Start $290/yr, Grow $490/yr, Scale $990/yr; about 17% off)",
   "plans": [
@@ -1693,6 +1677,6 @@
    "Dedicated SMS number +$10/mo (needed for two-way messaging)"
   ],
   "last_verified": "2026-11-23",
-  "image": "window"
+  "image": "cleaning"
  }
 ]

@@ -8,6 +8,7 @@ Files live in `static/img/` (WebP, resized/cropped from the Pexels originals). H
 |---|---|---|---|---|
 | `hero-lawn-care-crew.webp` (1600x640) | Homepage hero | Lawn care worker pushing a mower across a sunlit green lawn | Magic K | https://www.pexels.com/photo/man-mowing-lawn-6728933/ |
 | `pressure-washing.webp` (1200x400) | Category page (pressure) | Worker pressure washing a paved surface, black and white | Nikita Nikitin | https://www.pexels.com/photo/man-watering-pavement-12111864/ |
+| `house-cleaning.webp` (1200x400) | Category page (cleaning) | Person wiping a kitchen counter with a cloth and holding a spray bottle | RDNE Stock project | https://www.pexels.com/photo/a-woman-wiping-a-kitchen-counter-5591852/ |
 | `window-cleaning.webp` (1200x400) | Category page (window) | Gloved hand cleaning a window with a squeegee | Blissful Place Cleaning company in Perth | https://www.pexels.com/photo/person-cleaning-window-with-squeegee-and-gloves-31435403/ |
 | `pest-control.webp` (1200x400) | Category page (pest) | Pest control technician in protective suit fogging a warehouse | Cristian Aragón | https://www.pexels.com/photo/professional-fumigation-in-warehouse-setting-32055757/ |
 | `pool-service.webp` (1200x400) | Category page (pool) | Clean blue residential swimming pool beside a patio | Ahmet ÇÖTÜR | https://www.pexels.com/photo/swimming-pool-in-the-yard-of-a-house-19084144/ |

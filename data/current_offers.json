@@ -1,0 +1,33 @@
+{
+  "_note": "Dated promo notes rendered by build.py. An offer is omitted on or after remove_on (plan: take these down Dec 1, 2026). Every figure must come from source_url. Jobber prints an end date; Housecall Pro's pricing page did not print one as of last_verified.",
+  "offers": [
+    {
+      "id": "jobber-2026-11",
+      "tool_slugs": [
+        "jobber"
+      ],
+      "headline": "Current offer, ends Nov 30, 2026",
+      "body_html": "<p><strong>Current offer, ends Nov 30, 2026.</strong> On Jobber&rsquo;s pricing page (checked Nov 23, 2026), the annual billing toggle shows &ldquo;Save up to 50%. Offer ends Nov 30.&rdquo; The page&rsquo;s terms say the offer is for new customers only, on Core, Connect, Grow, and Plus, and you must subscribe before November 30, 2026 at 11:59 p.m. PT. The discount depends on how you pay. Examples from that page for Core (1 user): $30/mo for 3 months, then $49/mo, with no commitment; or $21/mo for 12 months, then $29/mo, billed annually. Confirm the current offer on <a href=\"https://www.getjobber.com/pricing/\" rel=\"nofollow noopener\">Jobber&rsquo;s pricing page</a> before you sign up. We&rsquo;ll remove this note on Dec 1, 2026.</p>",
+      "source_url": "https://www.getjobber.com/pricing/",
+      "source_label": "Jobber pricing page",
+      "ends_on": "2026-11-30",
+      "ends_on_printed": true,
+      "remove_on": "2026-12-01",
+      "last_verified": "2026-11-23"
+    },
+    {
+      "id": "housecall-pro-bf-2026-11",
+      "tool_slugs": [
+        "housecall-pro"
+      ],
+      "headline": "Current offer (Black Friday)",
+      "body_html": "<p><strong>Current offer (Black Friday).</strong> Housecall Pro&rsquo;s pricing page (checked Nov 23, 2026) shows a banner: &ldquo;Black Friday: 50% off your first 3 months.&rdquo; The plan cards show promo prices on monthly billing of Basic $39.50/mo (from $79), Essentials $94.50/mo (from $189), and Max $164.50/mo (from $329), each labeled &ldquo;50% off for 3 months.&rdquo; Housecall Pro does not print an end date on that page, so confirm the offer is still available on <a href=\"https://www.housecallpro.com/pricing/\" rel=\"nofollow noopener\">Housecall Pro&rsquo;s pricing page</a> before you sign up. We&rsquo;ll remove this note on Dec 1, 2026, or sooner if the offer comes down.</p>",
+      "source_url": "https://www.housecallpro.com/pricing/",
+      "source_label": "Housecall Pro pricing page",
+      "ends_on": null,
+      "ends_on_printed": false,
+      "remove_on": "2026-12-01",
+      "last_verified": "2026-11-23"
+    }
+  ]
+}

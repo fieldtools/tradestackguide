@@ -6,6 +6,7 @@ R = Path(__file__).parent; D = R/"data"; OUT = R/"dist"
 site = json.loads((D/"site.json").read_text()); aff = json.loads((D/"affiliates.json").read_text())
 tools = {t["slug"]: t for t in json.loads((D/"tools.json").read_text())}
 trades = json.loads((D/"trades.json").read_text())
+current_offers = json.loads((D/"current_offers.json").read_text()).get("offers", [])
 PAGE_FILES = sorted((D/"pages").glob("*.json"))
 pages = [json.loads(p.read_text()) for p in PAGE_FILES]
 BASE, LC = site["base_url"].rstrip("/"), site["last_checked"]
@@ -43,10 +44,12 @@ ICONS = {  # simple original inline SVG paths (24x24, stroke)
  "lawn": '<path d="M2 21h20M5 21c0-4-1-7-3-9M8 21c0-6 1-10 4-13M12 21c0-5 0-9-2-12M16 21c0-6 2-10 5-12M19 21c0-3 1-6 3-7"/>',
  "window": '<rect x="4" y="3" width="16" height="18" rx="1"/><path d="M12 3v18M4 12h16M15 6l2 2M7 15l2 2"/>',
  "pressure": '<path d="M3 10h8l2 2h3M5 10V7h5v3M16 12l5-3M16 12l5 0M16 12l5 3M6 14v6M3 20h6"/>',
+ "cleaning": '<path d="M6 9h12l-1.5 11H7.5L6 9z"/><path d="M9 9V6.5A3 3 0 0 1 15 6.5V9"/><path d="M4 9h16"/>',
 }
 IMG = {  # header photos (Pexels license: free commercial use, no attribution required); credits in docs/IMAGE-CREDITS.md
  "hero": ("hero-lawn-care-crew.webp", 1600, 640, "Lawn care worker pushing a mower across a sunlit green lawn", "Magic K", "https://www.pexels.com/photo/man-mowing-lawn-6728933/"),
  "pressure": ("pressure-washing.webp", 1200, 400, "Worker pressure washing a paved surface, black and white", "Nikita Nikitin", "https://www.pexels.com/photo/man-watering-pavement-12111864/"),
+ "cleaning": ("house-cleaning.webp", 1200, 400, "Person wiping a kitchen counter with a cloth and holding a spray bottle", "RDNE Stock project", "https://www.pexels.com/photo/a-woman-wiping-a-kitchen-counter-5591852/"),
  "window": ("window-cleaning.webp", 1200, 400, "Gloved hand cleaning a window with a squeegee", "Blissful Place Cleaning company in Perth", "https://www.pexels.com/photo/person-cleaning-window-with-squeegee-and-gloves-31435403/"),
  "pest": ("pest-control.webp", 1200, 400, "Pest control technician in protective suit fogging a warehouse", "Cristian Aragón", "https://www.pexels.com/photo/professional-fumigation-in-warehouse-setting-32055757/"),
  "pool": ("pool-service.webp", 1200, 400, "Clean blue residential swimming pool beside a patio", "Ahmet ÇÖTÜR", "https://www.pexels.com/photo/swimming-pool-in-the-yard-of-a-house-19084144/"),
@@ -76,9 +79,10 @@ PAGE_IMG = {  # explicit picks for existing pages (slug -> IMG key)
  "tools/jobber": "lawn", "tools/housecall-pro": "pool", "tools/gorilladesk": "tool-gorilladesk", "tools/skimmer": "pool3",
  "tools/responsibid": "window", "tools/workiz": "pressure", "tools/quoteiq": "tool-quoteiq", "tools/bookingkoala": "window", "tools/service-fusion": "hvac", "tools/clockshark": "crew"}
 TOPIC_WORDS = [("pressure", r"pressure|power.?wash|soft.?wash|exterior clean"), ("window", r"window|gutter|squeegee"),
- ("pest", r"pest|termite|mosquito|extermin|bug"), ("pool", r"pool|spa\b|hot.?tub|skimmer"), ("lawn", r"lawn|landscap|mow|turf|garden|tree|snow")]
+ ("pest", r"pest|termite|mosquito|extermin|bug"), ("pool", r"pool|spa\b|hot.?tub|skimmer"), ("lawn", r"lawn|landscap|mow|turf|garden|tree|snow"),
+ ("cleaning", r"house.?clean|maid service|\bmaids?\b|residential clean")]
 TOPIC_POOL = {"pressure": ["pressure", "pressure2"], "window": ["window", "window2"], "pest": ["pest", "pest2"],
- "pool": ["pool", "pool2", "pool3"], "lawn": ["lawn", "lawn2", "lawn3"]}
+ "pool": ["pool", "pool2", "pool3"], "lawn": ["lawn", "lawn2", "lawn3"], "cleaning": ["cleaning"]}
 DEFAULT_POOL = ["lawn2", "lawn3", "window2", "pressure2"]  # generic field-service fallback
 def page_img(slug, text="", topics=(), explicit=None):
     """Pick a header photo key for a page. Order: page JSON "image" -> PAGE_IMG -> keyword match on
@@ -124,6 +128,21 @@ def toolcard(x, full=False):
             f'<p class="src">Source: <a href="{e(x["sources"][0])}" rel="nofollow">vendor pricing page</a> · verified {x.get("last_verified") or LC}</p></article>')
 def trustbar(d=None):
     return f'<p class="trust"><span>✔ Last verified {d or LC}</span><span>✔ Prices linked to vendor sources</span><span><a href="/about/">✔ Our methodology</a></span><span><a href="/disclosure/">Affiliate disclosure</a></span></p><p class="note disc">We may earn a commission if you buy through some links on this site. It doesn&rsquo;t change our rankings. <a href="/disclosure/">Disclosure</a></p>'
+def current_offers_html(tool_slugs):
+    """Dated vendor promo notes. Omitted on or after each offer's remove_on. Never invent figures."""
+    slugs = set(tool_slugs or [])
+    blocks = []
+    for o in current_offers:
+        if o.get("remove_on") and TODAY >= o["remove_on"]:
+            continue
+        if slugs.isdisjoint(o.get("tool_slugs") or []):
+            continue
+        blocks.append(f'<section>{o["body_html"]}<p class="src">Source: <a href="{e(o["source_url"])}" rel="nofollow noopener">{e(o.get("source_label") or o["source_url"])}</a> · verified {o.get("last_verified") or LC}</p></section>')
+    if not blocks:
+        return ""
+    title = "Current offers" if len(blocks) > 1 else "Current offer"
+    return f'<aside class="current-offers" aria-label="{title}"><h2>{title}</h2>{"".join(blocks)}</aside>'
+
 
 def layout(path, title, desc, body, schema=None, noindex=False):
     nav = "".join(f'<a href="/trades/{t["slug"]}/">{t["name"]}</a>' for t in trades)
@@ -302,7 +321,7 @@ def build():
     arts = "".join(f'<li><a class="card guide" href="/{p["slug"]}/"><span class="tag">{e(p.get("type","guide")).title()}</span>{e(p["h1"])}</a></li>' for p in pages)
     tcards = "".join(toolcard(x) for x in tools.values())
     write("/", layout("/", f"{site['name']}: Pool, Pest, Lawn & Cleaning Software",
-        "Sourced comparisons of scheduling, routing and invoicing software for small pool, pest control, lawn care, window cleaning and pressure washing businesses.",
+        "Sourced comparisons of scheduling, routing and invoicing software for small pool, pest control, lawn care, window cleaning, pressure washing and house cleaning businesses.",
         f"<section class='hero'><div class='banner'>{pic('hero','banner-img',lazy=False)}<div class='banner-txt'><h1>Find the right software for your service business</h1><p class='lead'>{site['tagline']}. Every price links to its source. If a number isn't public, we say unknown.</p></div></div><ul class='grid trades-g' id='trades' aria-label='Choose your trade'>{cards}</ul>{trustbar()}</section><h2>Tools we track</h2><div class='grid tools-g'>{tcards}</div><h2>Guides and comparisons</h2><ul class='grid guides-g'>{arts}</ul>",
         [{"@context":"https://schema.org","@type":"WebSite","name":site["name"],"url":BASE+"/"}]))
     # about
@@ -326,7 +345,7 @@ def build():
         lm(path, gitdate(D/"trades.json"), *[x.get("last_verified") for x in ts])
         write(path, layout(path, (t["seo_title"].replace("{n}", str(len(ts))) if t.get("seo_title") else fit_title(f"{t['name']} Business Software: Tools, Prices & Comparisons ({LC[:4]})", f"{t['name']} Business Software: {len(ts)} Tools Compared ({LC[:4]})")),
             (t["seo_description"].replace("{n}", str(len(ts))) if t.get("seo_description") else None) or fit_desc(f"{t['name']} software compared: ", [x['name'] for x in ts], f"Sourced prices and trials, checked {LC}."),
-            f"{pic(t['key'])}<div class='ph'>{icon(t['key'],'ic big')}<h1>{t['name']} software</h1></div><p class='lead'>{t['intro']}</p>{trustbar()}<h2>Tools</h2><div class='grid tools-g'>{''.join(toolcard(x) for x in ts)}</div><h2>Side-by-side comparison</h2>{table([x['slug'] for x in ts])}<ul class='sr'>{li}</ul>" + (f"<h2>Guides</h2><ul>{rel}</ul>" if rel else "") + SIGNUP,
+            f"{pic(t['key'])}<div class='ph'>{icon(t['key'],'ic big')}<h1>{t['name']} software</h1></div><p class='lead'>{t['intro']}</p>{trustbar()}{current_offers_html([x['slug'] for x in ts])}<h2>Tools</h2><div class='grid tools-g'>{''.join(toolcard(x) for x in ts)}</div><h2>Side-by-side comparison</h2>{table([x['slug'] for x in ts])}<ul class='sr'>{li}</ul>" + (f"<h2>Guides</h2><ul>{rel}</ul>" if rel else "") + SIGNUP,
             [crumbs([("Home","/"),(t["name"],path)])]))
     PIMG = {slug: k for _, slug, k in page_targets()}
     # tools
@@ -336,7 +355,7 @@ def build():
         key = x["slug"].replace("-","")
         cta = afflink(key, f"Visit {x['name']}") if key in aff else ""
         write(path, layout(path, tool_title(x), f"{x['name']} plans, prices, trial and key features from the vendor's public pricing page, last checked {LC}.",
-            f"{pic(PIMG['tools/'+x['slug']])}<h1>{x['name']}: pricing and features</h1>{trustbar(x.get('last_verified'))}<div class='summary card'><p class='bf'><span class='lbl'>Best for</span> {e(x.get('best_for','unknown'))}</p><p class='price'><span class='lbl'>Starting price</span> {e(x.get('starting_price','unknown'))}</p>{proscons(x)}<div class='actions'>{cta}</div></div><h2>Plans</h2><div class='tw' tabindex='0' role='region' aria-label='Plans table'><table><tr><th>Plan</th><th>Users</th><th>Monthly</th><th>Annual</th></tr>{plans}</table></div>"+(f"<h2>Who it's for</h2>{x['who_html']}" if x.get('who_html') else "")+(f"<h2>How it compares</h2>{render(x['compare_html'])}" if x.get('compare_html') else "")+f"<h2>Key facts</h2><ul class='facts'><li>Trial: {x['free_trial']}</li><li>Contract: {x['contract']}</li><li>Extra users/units: {x['extra_user']}</li>"+(f"<li>Add-ons: {e(x['add_ons'])}</li>" if x.get('add_ons') else "")+f"<li>Routing: {x['routing']}</li><li>Payments: {x['card_fee']}</li><li>Rating: {x['rating']}</li></ul><p>Sources: "+" ".join(f'<a href="{s}" rel="nofollow">{s}</a>' for s in x['sources'])+"</p>"+(("<h2>Guides featuring "+x['name']+"</h2><ul>"+"".join(f'<li><a href="/{p["slug"]}/">{e(p["h1"])}</a></li>' for p in pages if x['slug'] in p.get('tools',[]))+"</ul>") if any(x['slug'] in p.get('tools',[]) for p in pages) else "")+similar(x)+f"<div class='actions'>{cta}</div>"+SIGNUP,
+            f"{pic(PIMG['tools/'+x['slug']])}<h1>{x['name']}: pricing and features</h1>{trustbar(x.get('last_verified'))}{current_offers_html([x['slug']])}<div class='summary card'><p class='bf'><span class='lbl'>Best for</span> {e(x.get('best_for','unknown'))}</p><p class='price'><span class='lbl'>Starting price</span> {e(x.get('starting_price','unknown'))}</p>{proscons(x)}<div class='actions'>{cta}</div></div><h2>Plans</h2><div class='tw' tabindex='0' role='region' aria-label='Plans table'><table><tr><th>Plan</th><th>Users</th><th>Monthly</th><th>Annual</th></tr>{plans}</table></div>"+(f"<h2>Who it's for</h2>{x['who_html']}" if x.get('who_html') else "")+(f"<h2>How it compares</h2>{render(x['compare_html'])}" if x.get('compare_html') else "")+f"<h2>Key facts</h2><ul class='facts'><li>Trial: {x['free_trial']}</li><li>Contract: {x['contract']}</li><li>Extra users/units: {x['extra_user']}</li>"+(f"<li>Add-ons: {e(x['add_ons'])}</li>" if x.get('add_ons') else "")+f"<li>Routing: {x['routing']}</li><li>Payments: {x['card_fee']}</li><li>Rating: {x['rating']}</li></ul><p>Sources: "+" ".join(f'<a href="{s}" rel="nofollow">{s}</a>' for s in x['sources'])+"</p>"+(("<h2>Guides featuring "+x['name']+"</h2><ul>"+"".join(f'<li><a href="/{p["slug"]}/">{e(p["h1"])}</a></li>' for p in pages if x['slug'] in p.get('tools',[]))+"</ul>") if any(x['slug'] in p.get('tools',[]) for p in pages) else "")+similar(x)+f"<div class='actions'>{cta}</div>"+SIGNUP,
             [crumbs([("Home","/"),(x["name"],path)]),{**{"@context":"https://schema.org","@type":"SoftwareApplication","name":x["name"],"applicationCategory":"BusinessApplication","url":x["website"]}, **({"offers": offer(x)} if offer(x) else {})}]))
     # articles
     for pf, p in zip(PAGE_FILES, pages):
@@ -344,7 +363,7 @@ def build():
         faq = "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q,a in p.get("faq",[]))
         sch = [crumbs([("Home","/"),(p["h1"],path)]),{"@context":"https://schema.org","@type":"Article","headline":p["h1"],"dateModified":p.get("last_verified",LC),"datePublished":first_commit(pf) or TODAY,"image":f"{BASE}/img/{IMG.get(PIMG[p['slug']], IMG['hero'])[0]}","author":{"@type":"Organization","name":site["name"]},"publisher":{"@type":"Organization","name":site["name"],"url":BASE+"/"}}]
         if p.get("faq"): sch.append({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in p["faq"]]})
-        write(path, layout(path, p["title"], p["description"], f"{pic(PIMG[p['slug']])}<h1>{e(p['h1'])}</h1>{trustbar(p.get('last_verified'))}{render(p['body'])}" + related(p) + (f"<h2>FAQ</h2>{faq}" if faq else "") + ("" if "buttondown" in json.dumps(p) else SIGNUP), sch))
+        write(path, layout(path, p["title"], p["description"], f"{pic(PIMG[p['slug']])}<h1>{e(p['h1'])}</h1>{trustbar(p.get('last_verified'))}{current_offers_html(p.get('tools') or [])}{render(p['body'])}" + related(p) + (f"<h2>FAQ</h2>{faq}" if faq else "") + ("" if "buttondown" in json.dumps(p) else SIGNUP), sch))
     build_directory()
     build_404()
     shutil.copytree(R/"static/.well-known", OUT/".well-known"); (OUT/".nojekyll").write_text("")
