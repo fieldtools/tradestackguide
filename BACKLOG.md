@@ -18,7 +18,7 @@
 | 15 | compare/gorilladesk-vs-fieldroutes | gorilladesk vs fieldroutes | done (2026-11-20; GorillaDesk prices re-verified, unchanged; FieldRoutes still quote only by active customers; FieldRoutes QuickBooks Online, payments, Sentricon/WDO/NPMA-33 details added to tools.json) |
 | 16 | best/lawn-care-invoicing-app | lawn care invoicing app | have data (Yardbook, QuoteIQ, Jobber added/verified 2026-10-24) |
 | 17 | best/snow-removal-software | snow removal business software | done (2026-11-19; Plowdesk and Yeti Software added to tools.json; Service Autopilot, Yardbook, Jobber, Housecall Pro re-verified, prices unchanged) |
-| 18 | best/house-cleaning-business-software | house cleaning business software | Jobber, ZenMaid, Launch27 |
+| 18 | best/house-cleaning-business-software | house cleaning business software | done (2026-11-23; ZenMaid, Launch27 and Maidily added to tools.json and affiliates.json (plain); BookingKoala, Jobber, Housecall Pro re-verified, prices unchanged; ZenMaid native QuickBooks still "coming soon") |
 | 19 | compare/jobber-vs-workiz | jobber vs workiz | Workiz added 2026-10-23 (prices not published) |
 | 20 | compare/housecall-pro-vs-workiz | housecall pro vs workiz | Workiz added 2026-10-23 (prices not published) |
 | 21 | best/pool-route-optimization | pool route optimization software (also SC "best pool route software", 2 clicks/4 impr Oct 29–Nov 4 2026) | done (2026-11-09, covered by best/pool-route-software) |
@@ -119,3 +119,7 @@
 | 116 | best/quickbooks-desktop-field-service-software | field service software for QuickBooks Desktop (Kickserv +$50/mo Run+, Service Fusion Windows plugin, HCP and Workiz per their QB pages, LMN Professional, Pool Office Manager; Jobber/GorillaDesk don't support it) | partly have data (verified 2026-11-22; confirm HCP/Workiz Desktop plan requirements) |
 | 117 | best/field-service-software-xero | field service software with Xero integration (ServiceM8 all plans, Jobber Connect+, Kickserv per changelog; check HCP, Workiz, GorillaDesk) | partly have data (ServiceM8, Jobber verified 2026-11-22) |
 | 118 | compare/kickserv-vs-servicem8 | kickserv vs servicem8 (5-20 users included vs unlimited users priced by jobs; both two-way QuickBooks Online) | have data (both verified 2026-11-22) |
+| 119 | tools/zenmaid-pricing | zenmaid pricing ($19/$39/$49 + $4/$14/$24 per extra cleaner or office manager, Starter 40-appointment cap, SMS bundles from $14/125) | have data (verified 2026-11-23) |
+| 120 | compare/zenmaid-vs-launch27 | zenmaid vs launch27 (per-cleaner pricing vs flat $75-$299 with unlimited users; both 14-day trials) | have data (both verified 2026-11-23) |
+| 121 | compare/maidily-vs-zenmaid | maidily vs zenmaid (per-job pricing with unlimited users vs per-cleaner pricing) | have data (both verified 2026-11-23) |
+| 122 | best/commercial-cleaning-janitorial-software | janitorial / commercial cleaning software (Jobber and HCP cleaning pages cover commercial; check Swept, Janitorial Manager, CleanGuru) | idea (verify pricing) |

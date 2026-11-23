@@ -188,5 +188,20 @@
     "url": "https://www.youraspire.com/",
     "program": "No affiliate program confirmed; plain link",
     "status": "plain"
+  },
+  "zenmaid": {
+    "url": "https://www.zenmaid.com/",
+    "program": "No affiliate program confirmed; plain link",
+    "status": "plain"
+  },
+  "launch27": {
+    "url": "https://www.launch27.com/",
+    "program": "No affiliate program confirmed; plain link",
+    "status": "plain"
+  },
+  "maidily": {
+    "url": "https://www.maidily.com/",
+    "program": "Maidily affiliate 25% recurring (payouts from 3 active referrals), password signup needs Jacob (backlog #48); plain link until joined",
+    "status": "plain"
   }
 }

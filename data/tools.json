@@ -64,7 +64,7 @@
    "Extra users $29/mo each",
    "Chemical/material tracking not listed on pricing page"
   ],
-  "last_verified": "2026-11-22",
+  "last_verified": "2026-11-23",
   "add_ons": "Marketing Suite $99/mo, Receptionist (AI) $29/mo, Pipeline $49/mo (add-ons on Core, Connect and Grow; listed as Plus features). Reviews add-on price not published (unknown)"
  },
  {
@@ -125,7 +125,7 @@
    "Monthly billing costs $20-$40/mo more than annual",
    "Route optimization only on MAX"
   ],
-  "last_verified": "2026-11-22"
+  "last_verified": "2026-11-23"
  },
  {
   "slug": "gorilladesk",
@@ -782,7 +782,7 @@
   ],
   "who_html": "<p>BookingKoala's home page lists the industries it's set up for. Cleaning leads the list: home cleaning, office cleaning, post-construction, carpet cleaning, window cleaning, pool cleaning and gutter cleaning, plus lawn care, car wash, moving, pet grooming, dog walking, salons and other appointment businesses. Its pricing page defines a provider as \"someone that performs the service, which can be a maid, a dog walker, a barber, tutors.\"</p><p>It's built around customers booking online. Every plan includes a website builder with themes, your own domain, customizable booking forms with real-time availability, and customer, provider and admin dashboards. Features we confirmed on its <a href=\"https://bookingkoala.com/features/\" rel=\"nofollow\">features page</a>: pricing by quantity, hours or packages; multi-location pricing and sales tax by zip code; recurring appointments; an accept/decline option so providers confirm jobs; expedited same-day fees; invoicing; email and text campaigns with A/B testing; and a hiring module with applicant forms, auto-graded quizzes and signed contracts. Growing ($57/mo) adds advanced reports, referrals and ratings, gift cards, GPS clock in/out and SMS notifications. Premium ($197/mo) adds Campaigns (5,000 contacts), multi-step forms, daily discounts, multilingual and funnels.</p>",
   "compare_html": "<p>BookingKoala centers on online booking and your website. The other tools we track center on quoting, dispatch and field work. Here's how the published facts compare (all checked 2026-10-26):</p>{{table:bookingkoala,jobber,housecall-pro,kickserv}}<ul><li><strong><a href=\"/tools/jobber/\">Jobber</a></strong> starts at $29/mo billed annually ($49/mo monthly) for 1 user and lists QuickBooks Online and Xero sync from Connect. BookingKoala Starter is $27/mo and counts up to 5 providers, but it doesn't list QuickBooks.</li><li><strong><a href=\"/tools/housecall-pro/\">Housecall Pro</a></strong> includes online booking from Basic ($59/mo annually, 1 user) and route optimization on MAX. See <a href=\"/tools/housecall-pro-pricing/\">Housecall Pro pricing</a>.</li><li><strong><a href=\"/tools/kickserv/\">Kickserv</a></strong> includes 5 users on Start ($60/mo annually, $75/mo monthly) and QuickBooks Online on every plan.</li><li><strong><a href=\"/tools/responsibid/\">ResponsiBid</a></strong> is a quoting tool, not a CRM, and it's popular with window and exterior cleaners who want instant online quotes.</li></ul><p>Window cleaner? See <a href=\"/best/window-cleaning-software/\">best window cleaning software</a>, <a href=\"/best/window-cleaning-crm/\">best window cleaning CRM</a>, <a href=\"/best/window-cleaning-scheduling-software/\">window cleaning scheduling software</a> and <a href=\"/alternatives/jobber/\">Jobber alternatives</a>.</p>",
-  "last_verified": "2026-11-17"
+  "last_verified": "2026-11-23"
  },
  {
   "slug": "lawnpro",
@@ -1528,5 +1528,171 @@
    "Payments, payroll and GPS fleet management quoted separately"
   ],
   "last_verified": "2026-11-21"
+ },
+ {
+  "slug": "zenmaid",
+  "name": "ZenMaid",
+  "website": "https://www.zenmaid.com/",
+  "trades": [],
+  "free_trial": "14 days on every plan (pricing page FAQ: no hidden fees). Card requirement: unknown",
+  "contract": "Month to month, no signature; cancel anytime from account settings (plan stays active to the end of the billing period). Annual plans available on request (price not published)",
+  "plans": [
+   {
+    "name": "Starter",
+    "users": "Owner included; +$4/mo per additional cleaner or office manager; up to 40 appointments/month",
+    "monthly_no_commit": "$19/mo",
+    "annual": "unknown (on request)"
+   },
+   {
+    "name": "Pro",
+    "users": "Owner included; +$14/mo per additional cleaner or office manager; unlimited appointments",
+    "monthly_no_commit": "$39/mo",
+    "annual": "unknown (on request)"
+   },
+   {
+    "name": "Pro Max",
+    "users": "Owner included; +$24/mo per additional cleaner or office manager; unlimited appointments",
+    "monthly_no_commit": "$49/mo",
+    "annual": "unknown (on request)"
+   }
+  ],
+  "extra_user": "Only the owner is in the base price; every other active profile (employee or contractor cleaner, office manager) costs $4 (Starter), $14 (Pro) or $24 (Pro Max) per month. SMS billed separately: bundles from $14 for 125 messages",
+  "card_fee": "unknown (online payments through Stripe and Square on all plans; processor rates not published by ZenMaid)",
+  "routing": "Calendar, dispatch and map views on all plans; cleaner GPS tracking in the mobile app from Pro; route optimization not listed",
+  "quickbooks": "Native QuickBooks integration listed on Pro but marked \"Coming soon\" on the pricing page (checked 2026-11-23); QuickBooks Online via Zapier needs Pro Max plus a paid Zapier plan (QuickBooks Online is a Premium Zapier app)",
+  "chemical_tracking": "unknown (digital appointment checklists on Pro and up; supply tracking not listed)",
+  "online_booking": "Booking forms for your website from Pro (ZenMaid branding); your own branding on Pro Max",
+  "rating": "unknown",
+  "sources": [
+   "https://www.zenmaid.com/pricing",
+   "https://zenmaid.com/answers/en/articles/2423512-how-much-does-zenmaid-cost",
+   "https://zenmaid.com/answers/en/articles/2200398-how-to-create-integrations-automations"
+  ],
+  "best_for": "Residential maid services that want low-cost cleaner scheduling and can live without a QuickBooks sync",
+  "starting_price": "$19/mo (Starter, owner only, up to 40 appointments/month); +$4/mo per extra team member",
+  "pros": [
+   "Starter from $19/mo with Stripe and Square payments and invoicing",
+   "Free contact and calendar import by ZenMaid's team",
+   "Month to month, cancel anytime"
+  ],
+  "cons": [
+   "Every cleaner and office manager adds $4-$24/mo",
+   "Starter capped at 40 appointments a month; SMS billed extra",
+   "Native QuickBooks integration still marked coming soon"
+  ],
+  "last_verified": "2026-11-23",
+  "image": "window"
+ },
+ {
+  "slug": "launch27",
+  "name": "Launch27",
+  "website": "https://www.launch27.com/",
+  "trades": [],
+  "free_trial": "14 days (\"14-Day Risk-Free Trial\" on the pricing page). Card requirement: unknown",
+  "contract": "Monthly or annual (annual saves 15%); cancellation terms not published on the pricing page",
+  "plans": [
+   {
+    "name": "Base",
+    "users": "Unlimited users and bookings",
+    "monthly_no_commit": "$75/mo",
+    "annual": "$765/yr (15% off, about $63.75/mo)"
+   },
+   {
+    "name": "Pro",
+    "users": "Unlimited users and bookings",
+    "monthly_no_commit": "$150/mo",
+    "annual": "$1,530/yr (15% off, $127.50/mo)"
+   },
+   {
+    "name": "Plus",
+    "users": "Unlimited users and bookings; mobile apps for cleaners and office staff",
+    "monthly_no_commit": "$299/mo",
+    "annual": "$3,049.80/yr (15% off, about $254.15/mo)"
+   }
+  ],
+  "extra_user": "No per-user charge: unlimited users and bookings on every plan",
+  "card_fee": "unknown (Fullsteam integration listed on Base; automatic card pre-authorization and charging on Plus; rates not published)",
+  "routing": "Bookings on a map with Google Maps and Street View from Pro; route optimization not listed",
+  "quickbooks": "QuickBooks integration on Pro and Plus (version and sync direction not stated)",
+  "chemical_tracking": "unknown",
+  "online_booking": "Yes: booking form on all plans (Launch27 branding on Base, unbranded premium form from Pro); WordPress, Squarespace, Wix and Facebook embeds",
+  "rating": "unknown",
+  "sources": [
+   "https://www.launch27.com/pricing/",
+   "https://www.launch27.com/"
+  ],
+  "best_for": "Maid services that sell through a website booking form and have many cleaners (unlimited users)",
+  "starting_price": "$75/mo (Base); $765/yr billed annually",
+  "pros": [
+   "Unlimited users and bookings on every plan",
+   "Customer-facing booking form with bedroom/bathroom, hourly or square-foot pricing",
+   "Payroll manager with revenue split and commission reports from Base"
+  ],
+  "cons": [
+   "Cleaner and admin mobile apps only on Plus ($299/mo)",
+   "Text reminders and QuickBooks start at Pro ($150/mo)",
+   "Card processing rates not published"
+  ],
+  "last_verified": "2026-11-23",
+  "image": "window"
+ },
+ {
+  "slug": "maidily",
+  "name": "Maidily",
+  "website": "https://www.maidily.com/",
+  "trades": [],
+  "free_trial": "Free plan forever (up to 10 jobs/month, no credit card); every paid plan has a free trial (length not published)",
+  "contract": "No contracts or cancellation fees; monthly or annual (Start $290/yr, Grow $490/yr, Scale $990/yr; about 17% off)",
+  "plans": [
+   {
+    "name": "Free",
+    "users": "Unlimited users; up to 10 jobs/month",
+    "monthly_no_commit": "$0",
+    "annual": "$0"
+   },
+   {
+    "name": "Start",
+    "users": "Unlimited users; 50 jobs/month included, +$3/mo per 50 extra jobs",
+    "monthly_no_commit": "$29/mo",
+    "annual": "$290/yr"
+   },
+   {
+    "name": "Grow",
+    "users": "Unlimited users; 150 jobs/month included, +$8/mo per 50 extra jobs",
+    "monthly_no_commit": "$49/mo",
+    "annual": "$490/yr"
+   },
+   {
+    "name": "Scale",
+    "users": "Unlimited users; 250 jobs/month included, +$14/mo per 50 extra jobs",
+    "monthly_no_commit": "$99/mo",
+    "annual": "$990/yr"
+   }
+  ],
+  "extra_user": "No per-user charge (unlimited team members); priced by jobs per month, each recurring cleaning counts as a separate job",
+  "card_fee": "unknown (online payments through Stripe or Square on all plans; rates set by the processor)",
+  "routing": "Team location tracking on Scale; route optimization not listed",
+  "quickbooks": "QuickBooks integration on Grow and Scale (version and sync direction not stated)",
+  "chemical_tracking": "unknown",
+  "online_booking": "Quote request forms on Free; hosted booking form and website from Start; branded booking form and customer portal from Grow",
+  "rating": "unknown",
+  "sources": [
+   "https://www.maidily.com/pricing",
+   "https://www.maidily.com/"
+  ],
+  "best_for": "Cleaning businesses with many part-time or contract cleaners that want to pay by job volume, not by seat",
+  "starting_price": "Free (up to 10 jobs/month); Start $29/mo with 50 jobs",
+  "pros": [
+   "Free plan and unlimited users on every plan",
+   "Extra jobs in packs of 50 ($3-$14/mo)",
+   "Website with built-in booking form included from Start"
+  ],
+  "cons": [
+   "Each recurring visit counts as a job toward the monthly limit",
+   "QuickBooks integration starts at Grow ($49/mo)",
+   "Dedicated SMS number +$10/mo (needed for two-way messaging)"
+  ],
+  "last_verified": "2026-11-23",
+  "image": "window"
  }
 ]
