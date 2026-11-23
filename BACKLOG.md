@@ -123,3 +123,4 @@
 | 120 | compare/zenmaid-vs-launch27 | zenmaid vs launch27 (per-cleaner pricing vs flat $75-$299 with unlimited users; both 14-day trials) | have data (both verified 2026-11-23) |
 | 121 | compare/maidily-vs-zenmaid | maidily vs zenmaid (per-job pricing with unlimited users vs per-cleaner pricing) | have data (both verified 2026-11-23) |
 | 122 | best/commercial-cleaning-janitorial-software | janitorial / commercial cleaning software (Jobber and HCP cleaning pages cover commercial; check Swept, Janitorial Manager, CleanGuru) | idea (verify pricing) |
+| 123 | tools/gem-state-crm | Gem State CRM review (roofing CRM, $250/mo up to 10 users + $25/extra user; affiliate applied Nov 23) | idea (verify pricing) |

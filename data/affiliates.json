@@ -203,5 +203,11 @@
     "url": "https://www.maidily.com/",
     "program": "Maidily affiliate 25% recurring (payouts from 3 active referrals), password signup needs Jacob (backlog #48); plain link until joined",
     "status": "plain"
+  },
+  "gemstatecrm": {
+    "url": "https://gemstatecrm.com/",
+    "program": "Gem State CRM affiliate program - 30% recurring of each referred roofing company's subscription, 30-day hold, paid monthly via Stripe/PayPal at $50 minimum; applied Nov 23, 2026, review usually within a business day; plain URL until approved",
+    "status": "applied",
+    "note": "Source https://gemstatecrm.com/affiliates . Roofing CRM; no tool page yet (BACKLOG #123)."
   }
 }
