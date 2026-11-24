@@ -1,4 +1,34 @@
 # Page backlog (next 30). Status: todo unless marked otherwise
+
+## Priority queue: keyword plan 2026-11-24 (work these first, top to bottom)
+Source: Search Console, Aug 24 to Nov 23 2026 (research/keyword_coverage_2026-11-24.md). Ranked by impressions in each uncovered cluster. Rows marked "promoted existing row" point to an item further down; build that item and mark both rows done. Each page must target its own intent, use only vendor-sourced facts, and must not be a near-duplicate or doorway page (no per-city or synonym pages). Approved by Jacob 2026-11-24 ("Add the new page ideas to the nightly queue").
+
+| Priority | # | Slug | Target queries (GSC impressions) | Distinct intent | Don't duplicate | Status |
+|---|---|---|---|---|---|---|
+| P1 | 125 | best/pressure-washing-scheduling-invoicing-software | pressure washing job management software 15, pressure washing scheduling software 14, pressure washing invoicing software 12, scheduling app 2, billing software 1 (cluster 46 impr, avg pos 84.7; all land on /best/pressure-washing-software/) | Job management after the sale: recurring/seasonal scheduling, rain-delay rescheduling, invoicing, deposits | Don't duplicate /best/pressure-washing-software/ (general picks) or #22 (estimating). If vendor facts don't differ materially, add H2s to /best/pressure-washing-software/ instead of a new page | todo |
+| P2 | 126 | best/window-cleaning-invoicing-software | window cleaning invoicing software 15, window cleaning quote software 9, window cleaning accounting software 8, window cleaning invoicing app 6, billing software 3, estimating software 3 (44 impr, pos 54-82) | Invoices, quotes and accounting sync for window cleaners | Don't duplicate /best/window-cleaning-crm/ (customer records) or /best/field-service-software-with-quickbooks/ (cross-trade QuickBooks) | todo |
+| P3 | 127 | best/pool-and-spa-service-software | pool and spa maintenance software 18, spa and pool business software 6, spa and pool service software 3 (27 impr, pos 79) | Service companies maintaining both pools and spas/hot tubs | Build ONLY if vendor pages document spa/hot-tub bodies of water; otherwise skip. Don't duplicate /best/pool-service-software/ or /best/pool-maintenance-software/ | todo |
+| P4 | 128 | best/pool-service-estimating-software | pool service estimating software 17, pool estimating software 5 (pos 37), pool cleaning estimate/estimating software 4 (26 impr) | Quoting new pool customers and repair/green-to-clean jobs | Don't duplicate /best/pool-service-invoicing-software/ (billing after service) | todo |
+| P5 | 128a | (existing #64) best/landscaping-estimating-software | lmn estimating software 13, lmn estimating 8 (21 impr) | see #64 | Don't duplicate /tools/lmn-pricing/ or /best/landscaping-business-software/ | todo (promoted existing row #64) |
+| P6 | 129 | best/lawn-mowing-business-software | lawn mowing business software 9, lawn mowing scheduling software 9, mowing business software 3, software for lawn mowing business 2 (24 impr, pos 81) | Mowing-route scheduling for small mowing outfits | Don't duplicate /best/lawn-care-software/, #67 (crews 10+ staff) or #16 (invoicing app); keep it to mowing routes/scheduling | todo |
+| P7 | 130 | best/pest-control-estimating-software | pest control estimating software 11, proposal software 3, quoting software 3 (pos 53), estimation software 2 (19 impr) | Inspection-to-proposal quoting for pest jobs | Don't duplicate #90/#111 (termite/WDO inspection reports) or /best/pest-control-software-cost/ | todo |
+| P8 | 131 | best/pest-control-apps | mobile pest control software 14, app pest control 2 (18 impr, pos 92) | Technician mobile apps: iOS/Android, offline, on-site payments (like /best/window-cleaning-business-apps/) | Don't duplicate #105 (cross-trade offline mode) or #112 (door-to-door sales app); keep pest-specific or merge into #105 | todo |
+| P9 | 132 | best/commercial-window-cleaning-software | commercial window cleaning software 8, commercial window cleaning scheduling software 8 (16 impr) | Storefront/commercial routes, contracts, multi-site billing | Don't duplicate /best/window-cleaning-software/ or #122 (janitorial) | todo |
+| P10 | 133 | best/free-pest-control-software | free pest control software programs 8, free pest control software 5, pest control software free 1 (14 impr, pos 88) | Free plans/tiers usable by pest operators | Build ONLY if >=3 verifiable free options fit pest work; otherwise add a pest section to /best/free-field-service-software/ | todo |
+| P11 | 133a | (existing #22) best/estimating-app-pressure-washing | pressure washing estimation software 11, estimating software 1, washing estimate software 1 (13 impr) | see #22 | Don't duplicate #125 | todo (promoted existing row #22) |
+| P12 | 134 | best/recurring-service-plans-software (guide) | best lawn care subscription 6, window cleaning subscription 4 (pos 11), lawn maintenance pricing models for recurring subscription programs 1 (12 impr) | How tools bill recurring/subscription service plans for lawn, window, pool | Don't duplicate /best/lawn-care-software-cost/ or the invoicing pages | todo |
+| P13 | 135 | tools/singleops | singleops pricing 7, single ops pricing 4 (11 impr, no page) | SingleOps review + pricing (tree/landscape) | Fits tree-care #87; needs verifiable public pricing, else skip | todo |
+| P14 | 135a | (existing #90) best/termite-inspection-software | termite and pest control software 8, termite control software 2 (10 impr) | see #90 | Merge with #111 (one angle only) | todo (promoted existing row #90) |
+| P15 | 135b | (existing #58) best/pool-service-software-for-solo | pool service software for small business 7 | see #58 | Don't duplicate /best/pool-service-software/ (already 'small routes') | todo (promoted existing row #58) |
+| P16 | 136 | tools/briostack | briostack pricing 5 (pos 66, no page) | Briostack review + pricing (pest) | Needs verifiable public pricing, else skip | todo |
+| P17 | 137 | guides/customer-financing-field-service-software | housecall pro financing 3, jobber financing options 1 (4 impr) | Which field service tools offer customer financing | Lowest priority; build only if vendors publish the terms. Don't duplicate /tools/housecall-pro-pricing/ or /tools/jobber-pricing/ | todo |
+| P18 | 137a | (existing #110) best/commercial-snow-removal-software | snow cluster 41 impr over 19 queries (snow removal management software 7, snow business software 5) | see #110 | Don't duplicate /best/snow-removal-software/ | todo (promoted existing row #110) |
+| P19 | 137b | (existing #86) best/gutter-cleaning-scheduling-software | gutter cleaning scheduling software 2 | see #86 |  | todo (promoted existing row #86) |
+
+Rejected (don't build): directory city pages (Keokuk/Bloomfield/Knoxville/Ames, doorway risk); synonym pages such as "pest management software", "pool company software", "swimming pool service software", "pool management software"; a separate "pest control scheduling software" page (retitle the routing page instead); "pestbuddy/pestxpert/window hero alternatives" (see #91); "lmn pay" (intent unclear).
+Title-only items #100 and #113 are handled by the quick-fix preview (2026-11-24), not as new pages.
+
+## Full backlog
 | # | Slug | Target keyword | Needs vendor data |
 |---|---|---|---|
 | 1 | best/window-cleaning-software | window cleaning business software | done (2026-10-22) |
@@ -22,7 +52,7 @@
 | 19 | compare/jobber-vs-workiz | jobber vs workiz | Workiz added 2026-10-23 (prices not published) |
 | 20 | compare/housecall-pro-vs-workiz | housecall pro vs workiz | Workiz added 2026-10-23 (prices not published) |
 | 21 | best/pool-route-optimization | pool route optimization software (also SC "best pool route software", 2 clicks/4 impr Oct 29–Nov 4 2026) | done (2026-11-09, covered by best/pool-route-software) |
-| 22 | best/estimating-app-pressure-washing | pressure washing estimating app | have data (ResponsiBid added 2026-10-22) |
+| 22 | best/estimating-app-pressure-washing | pressure washing estimating app | have data (ResponsiBid added 2026-10-22) **PRIORITY P11 (GSC 2026-11-24, see priority queue)** |
 | 23 | best/mosquito-control-software | mosquito control business software | GorillaDesk, FieldRoutes |
 | 24 | best/landscaping-business-software | landscaping business software (Search Console, 24 impr, Nov 13-19 2026) | done (2026-11-21; Aspire added to tools.json (quote only, unlimited users, revenue tiers); LMN, Service Autopilot, Jobber, Kickserv, Yardbook re-verified, prices unchanged) |
 | 25 | best/gutter-cleaning-software | gutter cleaning business software | Jobber, HCP |
@@ -58,13 +88,13 @@
 | 55 | best/pool-service-software-cost | pool service software cost (Search Console query "pool service software cost", 12 impressions, Oct 25-31 2026) | done (2026-11-03) |
 | 56 | tools/lmn-pricing | lmn pricing (Search Console query "lmn pricing", 10 impressions, Oct 25-31 2026) | done (2026-11-04) |
 | 57 | compare/skimmer-vs-pool-office-manager | skimmer vs pool office manager | have data (both verified 2026-11-03) |
-| 58 | best/pool-service-software-for-solo | pool service software for one person (solo tech angle) | have data |
+| 58 | best/pool-service-software-for-solo | pool service software for one person (solo tech angle) | have data **PRIORITY P15 (GSC 2026-11-24, see priority queue)** |
 | 59 | tools/pool-brain-pricing | pool brain pricing | have data ($50+$65 formula verified 2026-11-03) |
 | 60 | best/pool-service-invoicing-software | pool service invoicing software | done (2026-11-24; 6 tools: Skimmer, Pool Brain, POM, UpBuoy, Paythepoolman, GorillaDesk; rate types, auto billing, AutoPay, card-fee pass-through, QuickBooks from vendor pricing/feature/help pages; all 6 prices re-verified, unchanged) |
 | 61 | compare/pool-brain-vs-skimmer | pool brain vs skimmer | done (2026-11-10, covered by compare/skimmer-vs-pool-brain) |
 | 62 | tools/homeworks | homeworks review pricing (home service CRM by Mike Andes / ex-Copilot; Growth $299/mo, Enterprise $499/mo) | done (2026-11-07); affiliate active, promo JACOBCARMAN disclosed on /tools/homeworks/ |
 | 63 | compare/lmn-vs-jobber | lmn vs jobber (landscaping crew + budgeting angle) | have data (LMN verified 2026-11-04) |
-| 64 | best/landscaping-estimating-software | landscaping estimating software | LMN, Jobber, QuoteIQ, Aspire |
+| 64 | best/landscaping-estimating-software | landscaping estimating software | LMN, Jobber, QuoteIQ, Aspire **PRIORITY P5 (GSC 2026-11-24, see priority queue)** |
 | 65 | tools/service-autopilot-pricing | service autopilot pricing | have data (verified 2026-11-04) |
 | 66 | compare/yardbook-vs-lmn | yardbook vs lmn | have data (both verified 2026-11-04) |
 | 67 | best/lawn-care-software-for-crews | lawn care software for crews (multi-crew / 10+ staff angle vs solo pages) | LMN, Service Autopilot, Jobber, GorillaDesk |
@@ -86,11 +116,11 @@
 | 83 | expand best/pest-control-software | pest control software (Search Console, 1 click/35 impr; page has 3 clicks/214 impr Nov 2–8 2026, low CTR: refresh title/meta and content) | idea |
 | 84 | tools/squeegee-pricing | squeegee pricing (window cleaning rounds app; GBP per-user plans Core/Advanced/Ultimate/Infinite) | have data (verified 2026-11-11); USD pricing not published |
 | 85 | compare/squeegee-vs-jobber | squeegee vs jobber (rounds-based vs CRM-based window cleaning scheduling) | have data (both verified 2026-11-11) |
-| 86 | best/gutter-cleaning-scheduling-software | gutter cleaning scheduling software (seasonal spring/fall recurring visits) | Jobber, Housecall Pro, QuoteIQ |
+| 86 | best/gutter-cleaning-scheduling-software | gutter cleaning scheduling software (seasonal spring/fall recurring visits) | Jobber, Housecall Pro, QuoteIQ **PRIORITY P19 (GSC 2026-11-24, see priority queue)** |
 | 87 | tools/arbostar | arbostar (tree care business software: estimates, crew scheduling, CRM; from US$149/mo; referral program applied 2026-11-11) | idea |
 | 88 | tools/knowify | knowify (job management for trade contractors: bids, job costing, AIA billing, QuickBooks sync; Service Pro add-on $99-$199/mo; affiliate applied 2026-11-11) | idea |
 | 89 | compare/fieldroutes-vs-pestpac | fieldroutes vs pestpac (both quote-only pest platforms; routing, termite/IPM, packages) | have data (both added 2026-11-12) |
-| 90 | best/termite-inspection-software | termite inspection software (PestPac termite inspections/renewals, FieldRoutes Sentricon) | GorillaDesk device tracking; PestPac, FieldRoutes verified 2026-11-12 |
+| 90 | best/termite-inspection-software | termite inspection software (PestPac termite inspections/renewals, FieldRoutes Sentricon) | GorillaDesk device tracking; PestPac, FieldRoutes verified 2026-11-12 **PRIORITY P14 (GSC 2026-11-24, see priority queue)** |
 | 91 | alternatives/pestbuddy | pestbuddy alternatives (Search Console query, 0 clicks/18 impr, Nov 4–10 2026; still 15 impr in the 7 days to Nov 16) | skipped (2026-11-13): no verifiable PestBuddy software found; pestbuddy.com is a parked domain and PestBuddy (pestbuddy.co.uk) is a UK DIY pest-products store, so an alternatives page can't be sourced |
 | 92 | best/pool-maintenance-software | pool maintenance software / pool management software (Search Console queries, 17 + 15 impr, Nov 4–10 2026) | done (2026-11-13; maintenance-record angle: readings, dosing, checklists, photos, service reports) |
 | 93 | best/pool-service-report-app | pool service report app (customer service emails/photos after each stop; Skimmer, Pool Brain, POM, UpBuoy) | have data (verified 2026-11-13) |
@@ -110,7 +140,7 @@
 | 107 | compare/servicem8-vs-housecall-pro | servicem8 vs housecall pro (unlimited users priced by jobs vs 1/5/8 users per plan) | have data (ServiceM8 verified 2026-11-18, HCP 2026-11-17) |
 | 108 | tools/servicem8-pricing | servicem8 pricing (job credits 30/50/150/500/1,500+, 7-day overage grace, ServiceM8 Pay fees by country) | have data (verified 2026-11-18) |
 | 109 | compare/plowdesk-vs-yeti | plowdesk vs yeti (snow-only apps: free/$95 flat with route limits vs $95-$945/mo by site band, both unlimited users) | have data (both verified 2026-11-19) |
-| 110 | best/commercial-snow-removal-software | commercial snow removal software (subcontractor management, SLAs, slip-and-fall proof of service, per-event/per-inch billing; Yeti, Service Autopilot, Plowdesk commercial terms) | have data (verified 2026-11-19) |
+| 110 | best/commercial-snow-removal-software | commercial snow removal software (subcontractor management, SLAs, slip-and-fall proof of service, per-event/per-inch billing; Yeti, Service Autopilot, Plowdesk commercial terms) | have data (verified 2026-11-19) **PRIORITY P18 (GSC 2026-11-24, see priority queue)** |
 | 111 | best/wdo-termite-inspection-report-software | WDO / NPMA-33 termite inspection report software (FieldRoutes NPMA-33 + California Branch 3 WDO reporting, PestPac termite inspections, GorillaDesk diagramming/devices) | partly have data (FieldRoutes verified 2026-11-20; overlaps #90, merge or pick one angle) |
 | 112 | best/door-to-door-pest-control-sales-app | door to door pest control sales app (FieldRoutes mobile sales/D2D, GorillaDesk Growth sales pipeline, check PestPac and dedicated D2D apps like SalesRabbit) | partly have data (FieldRoutes and GorillaDesk verified 2026-11-20) |
 | 113 | expand best/pool-maintenance-software | swimming pool maintenance software (Search Console, 25 impr, Nov 13-19 2026; synonym of pool maintenance software 41 impr, so add the term to title/meta/H2 of /best/pool-maintenance-software/ rather than a new page) | idea |
