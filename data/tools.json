@@ -170,7 +170,7 @@
    "Basic routing capped at 25 stops",
    "SMS is an extra $5/mo plus credit packs"
   ],
-  "last_verified": "2026-11-22"
+  "last_verified": "2026-11-24"
  },
  {
   "slug": "skimmer",
@@ -202,7 +202,7 @@
    }
   ],
   "extra_user": "Users unlimited; billed per serviced location (unserviced months not billed)",
-  "card_fee": "unknown",
+  "card_fee": "unknown (rate not published); card surcharging, AutoPay, card, ACH, Apple Pay and Google Pay; next-business-day card payouts; Sunbit consumer financing on Scaling Up",
   "routing": "Route Builder (all); Route Optimization (Scaling Up)",
   "quickbooks": "QuickBooks Online sync (listed on pricing page; homepage says real-time sync)",
   "chemical_tracking": "LSI & dosing calculator (Orenda), LaMotte integration on Scaling Up",
@@ -211,7 +211,9 @@
   "sources": [
    "https://www.getskimmer.com/pricing",
    "https://www.getskimmer.com/",
-   "https://www.getskimmer.com/product/backoffice"
+   "https://www.getskimmer.com/product/backoffice",
+   "https://www.getskimmer.com/product/billing",
+   "https://help.getskimmer.com/article/168-skimmer-billing-faq-invoicing"
   ],
   "best_for": "Pool route businesses billing by serviced pool",
   "starting_price": "$49/mo minimum ($1 per serviced location)",
@@ -224,7 +226,7 @@
    "Pool-only",
    "Card processing rate and annual pricing not published"
   ],
-  "last_verified": "2026-11-15",
+  "last_verified": "2026-11-24",
   "add_ons": "Service Texts $0.029/message (Getting Started; included on Scaling Up and Enterprise), AI Phone $99/mo, Marketing Suite $150/mo, Bookkeeping from $198/mo (all three on every plan), CRM Integrations $49/mo and Google Calendar $25/mo (Getting Started and Scaling Up; included on Enterprise)"
  },
  {
@@ -845,7 +847,7 @@
    }
   ],
   "extra_user": "Office users unlimited (included in $50/mo base); $65/mo per active field technician",
-  "card_fee": "unknown",
+  "card_fee": "unknown (rate not published); automatic monthly billing charges the card or ACH account on file and retries a declined card once a day",
   "routing": "One-click route optimization, drag-and-drop scheduling, one-time moves, Unscheduled section, multi-day views and map filters",
   "quickbooks": "QuickBooks Online 2-way sync (billing also works without QBO)",
   "chemical_tracking": "Dosing auto-calculated from tech readings; chemical use and cost tracked by customer, body of water, tech and company",
@@ -866,7 +868,7 @@
    "$65/mo per active field tech adds up as you hire",
    "Trial length, contract terms and card fees not published"
   ],
-  "last_verified": "2026-11-13"
+  "last_verified": "2026-11-24"
  },
  {
   "slug": "pool-office-manager",
@@ -913,7 +915,7 @@
    "Highest one-user price of the pool tools we track ($125/mo)",
    "QuickBooks sync (+$25/mo) and texting (from $10/mo) are paid add-ons"
   ],
-  "last_verified": "2026-11-13",
+  "last_verified": "2026-11-24",
   "add_ons": "QuickBooks Online sync +$25/mo; customer texting from $10/mo plus usage; video storage +$25/mo (roughly 1,000-2,000 short videos)"
  },
  {
@@ -1099,13 +1101,14 @@
   "extra_user": "Priced per serviced location (a unique address worked that month; multiple visits count once); per-user fees not published",
   "card_fee": "unknown (payment portal with card, ACH and AutoPay; processing rates not published)",
   "routing": "Basic scheduling & routing on Essential (free); route optimization and visual schedule calendar on Professional",
-  "quickbooks": "Two-way QuickBooks sync (homepage); plan not stated",
+  "quickbooks": "Two-way QuickBooks Online sync (homepage and features page); plan not stated",
   "chemical_tracking": "Service reports with LSI calculator and smart dosing (homepage)",
   "online_booking": "unknown (customer portal lets customers request services, per homepage)",
   "rating": "unknown",
   "sources": [
    "https://www.upbuoy.com/pricing",
-   "https://www.upbuoy.com/"
+   "https://www.upbuoy.com/",
+   "https://www.upbuoy.com/features"
   ],
   "best_for": "Pool route businesses that want per-pool pricing with a free plan to test on up to 3 locations",
   "starting_price": "Free (Essential, up to 3 locations); Professional $3/location/mo, $99/mo minimum",
@@ -1118,7 +1121,7 @@
    "$3 per location is more per pool than Skimmer's $2 Scaling Up rate",
    "Route optimization not on the free plan"
   ],
-  "last_verified": "2026-11-16"
+  "last_verified": "2026-11-24"
  },
  {
   "slug": "paythepoolman",
@@ -1127,7 +1130,7 @@
   "trades": [
    "pool"
   ],
-  "free_trial": "30-day free trial; cancel anytime (homepage). Homepage banner on 2026-11-13 showed promo code BIG80NOW for 80% off for 3 months; new pool companies can call to ask about a base-plan discount",
+  "free_trial": "30-day free trial; cancel anytime (homepage). Homepage banner (seen 2026-11-13, still shown 2026-11-24) offers promo code BIG80NOW for 80% off for 3 months; new pool companies can call to ask about a base-plan discount",
   "contract": "No contract, no activation fee (pricing section)",
   "plans": [
    {
@@ -1160,7 +1163,7 @@
    "ACH and Apple/Google Pay need the $25/mo customer app add-on",
    "Payroll sign-up fee and text credit prices not published"
   ],
-  "last_verified": "2026-11-13"
+  "last_verified": "2026-11-24"
  },
  {
   "slug": "squeegee",

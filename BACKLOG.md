@@ -60,7 +60,7 @@
 | 57 | compare/skimmer-vs-pool-office-manager | skimmer vs pool office manager | have data (both verified 2026-11-03) |
 | 58 | best/pool-service-software-for-solo | pool service software for one person (solo tech angle) | have data |
 | 59 | tools/pool-brain-pricing | pool brain pricing | have data ($50+$65 formula verified 2026-11-03) |
-| 60 | best/pool-service-invoicing-software | pool service invoicing software | Skimmer, Pool Office Manager, GorillaDesk |
+| 60 | best/pool-service-invoicing-software | pool service invoicing software | done (2026-11-24; 6 tools: Skimmer, Pool Brain, POM, UpBuoy, Paythepoolman, GorillaDesk; rate types, auto billing, AutoPay, card-fee pass-through, QuickBooks from vendor pricing/feature/help pages; all 6 prices re-verified, unchanged) |
 | 61 | compare/pool-brain-vs-skimmer | pool brain vs skimmer | done (2026-11-10, covered by compare/skimmer-vs-pool-brain) |
 | 62 | tools/homeworks | homeworks review pricing (home service CRM by Mike Andes / ex-Copilot; Growth $299/mo, Enterprise $499/mo) | done (2026-11-07); affiliate active, promo JACOBCARMAN disclosed on /tools/homeworks/ |
 | 63 | compare/lmn-vs-jobber | lmn vs jobber (landscaping crew + budgeting angle) | have data (LMN verified 2026-11-04) |
@@ -124,3 +124,4 @@
 | 121 | compare/maidily-vs-zenmaid | maidily vs zenmaid (per-job pricing with unlimited users vs per-cleaner pricing) | have data (both verified 2026-11-23) |
 | 122 | best/commercial-cleaning-janitorial-software | janitorial / commercial cleaning software (Jobber and HCP cleaning pages cover commercial; check Swept, Janitorial Manager, CleanGuru) | idea (verify pricing) |
 | 123 | tools/gem-state-crm | Gem State CRM review (roofing CRM, $250/mo up to 10 users + $25/extra user; affiliate applied Nov 23) | idea (verify pricing) |
+| 124 | compare/paythepoolman-vs-pool-brain | paythepoolman vs pool brain (both $50/mo base; $15 vs $65 per tech; Paythepoolman ACH needs $25 Pool Junction add-on, Pool Brain card/ACH autopay with daily retry) | have data (both verified 2026-11-24) |
