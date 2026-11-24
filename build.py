@@ -149,7 +149,7 @@ def layout(path, title, desc, body, schema=None, noindex=False):
     cmp_ = next((p for p in pages if p.get("type") == "compare"), None)
     cmp_link = f'<a class="pill" href="/{cmp_["slug"]}/">Compare</a>' if cmp_ else ""
     ld = "".join(f'<script type="application/ld+json">{json.dumps(s)}</script>' for s in (schema or []))
-    return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google-adsense-account" content="ca-pub-3331388349977417"><meta name='impact-site-verification' value='70307236-cb21-47c8-9ebf-a76cad3c57e1'>
+    return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google-adsense-account" content="ca-pub-3331388349977417"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3331388349977417" crossorigin="anonymous"></script><meta name='impact-site-verification' value='70307236-cb21-47c8-9ebf-a76cad3c57e1'>
 <title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{BASE}{path}">
 <meta name="theme-color" content="#0f5e4f"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/style.css">{og_tags(path, title, desc)}{ROBOTS_NOINDEX if noindex else ""}{ld}</head><body><a class="skip" href="#main">Skip to content</a>
