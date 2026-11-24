@@ -264,7 +264,15 @@ def fit_title(*cands, limit=60):
     for c in cands:
         if len(c) <= limit: return c
     return cands[-1]
+def tool_lead(x):
+    """Optional first-paragraph link from a tool page to its dedicated pricing page (tools.json "pricing_page": page slug)."""
+    pp = x.get("pricing_page")
+    if not pp: return ""
+    tgt = next((p for p in pages if p["slug"].strip("/") == pp.strip("/")), None)
+    if not tgt: return ""
+    return f"<p class='lead'>{e(x.get('pricing_lead') or 'For plan-by-plan costs and fees, see')} <a href=\"/{tgt['slug'].strip('/')}/\">{e(tgt['h1'])}</a>.</p>"
 def tool_title(x):
+    if x.get("seo_title"): return x["seo_title"]
     yr = LC[:4]; short = x.get("short_name") or re.sub(r"\s*\([^)]*\)", "", x["name"])
     return fit_title(f"{x['name']} Pricing & Features ({yr}): Sourced Overview", f"{x['name']} Pricing & Features ({yr})",
                      f"{short} Pricing & Features ({yr}): Sourced Overview", f"{short} Pricing & Features ({yr})")
@@ -345,7 +353,7 @@ def build():
         lm(path, gitdate(D/"trades.json"), *[x.get("last_verified") for x in ts])
         write(path, layout(path, (t["seo_title"].replace("{n}", str(len(ts))) if t.get("seo_title") else fit_title(f"{t['name']} Business Software: Tools, Prices & Comparisons ({LC[:4]})", f"{t['name']} Business Software: {len(ts)} Tools Compared ({LC[:4]})")),
             (t["seo_description"].replace("{n}", str(len(ts))) if t.get("seo_description") else None) or fit_desc(f"{t['name']} software compared: ", [x['name'] for x in ts], f"Sourced prices and trials, checked {LC}."),
-            f"{pic(t['key'])}<div class='ph'>{icon(t['key'],'ic big')}<h1>{t['name']} software</h1></div><p class='lead'>{t['intro']}</p>{trustbar()}{current_offers_html([x['slug'] for x in ts])}<h2>Tools</h2><div class='grid tools-g'>{''.join(toolcard(x) for x in ts)}</div><h2>Side-by-side comparison</h2>{table([x['slug'] for x in ts])}<ul class='sr'>{li}</ul>" + (f"<h2>Guides</h2><ul>{rel}</ul>" if rel else "") + SIGNUP,
+            f"{pic(t['key'])}<div class='ph'>{icon(t['key'],'ic big')}<h1>{e(t.get('h1','').replace('{n}', str(len(ts))) or t['name']+' software')}</h1></div><p class='lead'>{t['intro']}{(' '+t['lead_html']) if t.get('lead_html') else ''}</p>{trustbar()}{current_offers_html([x['slug'] for x in ts])}<h2>Tools</h2><div class='grid tools-g'>{''.join(toolcard(x) for x in ts)}</div><h2>Side-by-side comparison</h2>{table([x['slug'] for x in ts])}<ul class='sr'>{li}</ul>" + (f"<h2>Guides</h2><ul>{rel}</ul>" if rel else "") + SIGNUP,
             [crumbs([("Home","/"),(t["name"],path)])]))
     PIMG = {slug: k for _, slug, k in page_targets()}
     # tools
@@ -354,8 +362,8 @@ def build():
         plans = "".join(f"<tr><td>{p['name']}</td><td>{p['users']}</td><td>{p['monthly_no_commit']}</td><td>{p['annual']}</td></tr>" for p in x["plans"])
         key = x["slug"].replace("-","")
         cta = afflink(key, f"Visit {x['name']}") if key in aff else ""
-        write(path, layout(path, tool_title(x), f"{x['name']} plans, prices, trial and key features from the vendor's public pricing page, last checked {LC}.",
-            f"{pic(PIMG['tools/'+x['slug']])}<h1>{x['name']}: pricing and features</h1>{trustbar(x.get('last_verified'))}{current_offers_html([x['slug']])}<div class='summary card'><p class='bf'><span class='lbl'>Best for</span> {e(x.get('best_for','unknown'))}</p><p class='price'><span class='lbl'>Starting price</span> {e(x.get('starting_price','unknown'))}</p>{proscons(x)}<div class='actions'>{cta}</div></div><h2>Plans</h2><div class='tw' tabindex='0' role='region' aria-label='Plans table'><table><tr><th>Plan</th><th>Users</th><th>Monthly</th><th>Annual</th></tr>{plans}</table></div>"+(f"<h2>Who it's for</h2>{x['who_html']}" if x.get('who_html') else "")+(f"<h2>How it compares</h2>{render(x['compare_html'])}" if x.get('compare_html') else "")+f"<h2>Key facts</h2><ul class='facts'><li>Trial: {x['free_trial']}</li><li>Contract: {x['contract']}</li><li>Extra users/units: {x['extra_user']}</li>"+(f"<li>Add-ons: {e(x['add_ons'])}</li>" if x.get('add_ons') else "")+f"<li>Routing: {x['routing']}</li><li>Payments: {x['card_fee']}</li><li>Rating: {x['rating']}</li></ul><p>Sources: "+" ".join(f'<a href="{s}" rel="nofollow">{s}</a>' for s in x['sources'])+"</p>"+(("<h2>Guides featuring "+x['name']+"</h2><ul>"+"".join(f'<li><a href="/{p["slug"]}/">{e(p["h1"])}</a></li>' for p in pages if x['slug'] in p.get('tools',[]))+"</ul>") if any(x['slug'] in p.get('tools',[]) for p in pages) else "")+similar(x)+f"<div class='actions'>{cta}</div>"+SIGNUP,
+        write(path, layout(path, tool_title(x), x.get("seo_description") or f"{x['name']} plans, prices, trial and key features from the vendor's public pricing page, last checked {LC}.",
+            f"{pic(PIMG['tools/'+x['slug']])}<h1>{e(x.get('seo_h1') or x['name']+': pricing and features')}</h1>{trustbar(x.get('last_verified'))}{tool_lead(x)}{current_offers_html([x['slug']])}<div class='summary card'><p class='bf'><span class='lbl'>Best for</span> {e(x.get('best_for','unknown'))}</p><p class='price'><span class='lbl'>Starting price</span> {e(x.get('starting_price','unknown'))}</p>{proscons(x)}<div class='actions'>{cta}</div></div><h2>Plans</h2><div class='tw' tabindex='0' role='region' aria-label='Plans table'><table><tr><th>Plan</th><th>Users</th><th>Monthly</th><th>Annual</th></tr>{plans}</table></div>"+(f"<h2>Who it's for</h2>{x['who_html']}" if x.get('who_html') else "")+(f"<h2>How it compares</h2>{render(x['compare_html'])}" if x.get('compare_html') else "")+f"<h2>Key facts</h2><ul class='facts'><li>Trial: {x['free_trial']}</li><li>Contract: {x['contract']}</li><li>Extra users/units: {x['extra_user']}</li>"+(f"<li>Add-ons: {e(x['add_ons'])}</li>" if x.get('add_ons') else "")+f"<li>Routing: {x['routing']}</li><li>Payments: {x['card_fee']}</li><li>Rating: {x['rating']}</li></ul><p>Sources: "+" ".join(f'<a href="{s}" rel="nofollow">{s}</a>' for s in x['sources'])+"</p>"+(("<h2>Guides featuring "+x['name']+"</h2><ul>"+"".join(f'<li><a href="/{p["slug"]}/">{e(p["h1"])}</a></li>' for p in pages if x['slug'] in p.get('tools',[]))+"</ul>") if any(x['slug'] in p.get('tools',[]) for p in pages) else "")+similar(x)+f"<div class='actions'>{cta}</div>"+SIGNUP,
             [crumbs([("Home","/"),(x["name"],path)]),{**{"@context":"https://schema.org","@type":"SoftwareApplication","name":x["name"],"applicationCategory":"BusinessApplication","url":x["website"]}, **({"offers": offer(x)} if offer(x) else {})}]))
     # articles
     for pf, p in zip(PAGE_FILES, pages):

@@ -1,6 +1,11 @@
 [
  {
   "slug": "jobber",
+  "pricing_lead": "Full Jobber pricing breakdown:",
+  "pricing_page": "tools/jobber-pricing",
+  "seo_description": "Jobber features, plans, trial, pros and cons from the vendor's public pages. The full cost breakdown is in our Jobber pricing guide.",
+  "seo_h1": "Jobber features, pros and cons",
+  "seo_title": "Jobber Features, Pros & Cons (2026)",
   "name": "Jobber",
   "website": "https://www.getjobber.com/",
   "trades": ["pool", "pest", "lawn", "window", "pressure", "cleaning"],
@@ -63,6 +68,11 @@
  },
  {
   "slug": "housecall-pro",
+  "pricing_lead": "Full Housecall Pro pricing breakdown:",
+  "pricing_page": "tools/housecall-pro-pricing",
+  "seo_description": "Housecall Pro features, plans, trial, pros and cons from the vendor's public pages. The full cost breakdown is in our Housecall Pro pricing guide.",
+  "seo_h1": "Housecall Pro features, pros and cons",
+  "seo_title": "Housecall Pro Features, Pros & Cons (2026)",
   "name": "Housecall Pro",
   "website": "https://www.housecallpro.com/",
   "trades": ["pool", "pest", "lawn", "window", "pressure", "cleaning"],
@@ -117,6 +127,11 @@
  },
  {
   "slug": "gorilladesk",
+  "pricing_lead": "Full GorillaDesk pricing breakdown:",
+  "pricing_page": "tools/gorilladesk-pricing",
+  "seo_description": "GorillaDesk features, plans, trial, pros and cons from the vendor's public pages. The full cost breakdown is in our GorillaDesk pricing guide.",
+  "seo_h1": "GorillaDesk features, pros and cons",
+  "seo_title": "GorillaDesk Features, Pros & Cons (2026)",
   "name": "GorillaDesk",
   "website": "https://gorilladesk.com/",
   "trades": [
@@ -174,6 +189,11 @@
  },
  {
   "slug": "skimmer",
+  "pricing_lead": "Full Skimmer pricing breakdown:",
+  "pricing_page": "tools/skimmer-pricing",
+  "seo_description": "Skimmer features, plans, trial, pros and cons from the vendor's public pages. The full cost breakdown is in our Skimmer pricing guide.",
+  "seo_h1": "Skimmer features, pros and cons",
+  "seo_title": "Skimmer Features, Pros & Cons (2026)",
   "name": "Skimmer",
   "website": "https://www.getskimmer.com/",
   "trades": [
@@ -529,6 +549,11 @@
  },
  {
   "slug": "lmn",
+  "pricing_lead": "Full LMN by Granum pricing breakdown:",
+  "pricing_page": "tools/lmn-pricing",
+  "seo_description": "LMN by Granum features, plans, trial, pros and cons from the vendor's public pages. The full cost breakdown is in our LMN by Granum pricing guide.",
+  "seo_h1": "LMN by Granum features, pros and cons",
+  "seo_title": "LMN by Granum Features, Pros & Cons (2026)",
   "name": "LMN by Granum",
   "website": "https://granum.com/lmn/",
   "trades": [
