@@ -50,7 +50,9 @@
    "https://www.getjobber.com/features/mobile-app/",
    "https://productupdates.getjobber.com/134787-keep-working-in-jobber-even-without-internet",
    "https://help.getjobber.com/en/articles/snow-removal-workflow-or-how-to-schedule-new-visits-for-multiple-jobs/",
-   "https://help.getjobber.com/en/articles/quickbooks-integration-faqs-new-quickbooks-integration/"
+   "https://help.getjobber.com/en/articles/quickbooks-integration-faqs-new-quickbooks-integration/",
+   "https://www.getjobber.com/industries/pressure-washing-software/",
+   "https://help.getjobber.com/en/articles/create-a-recurring-job/"
   ],
   "best_for": "Mixed recurring and one-off jobs across any trade",
   "starting_price": "$29/mo billed annually (Core, 1 user); $49/mo monthly",
@@ -63,7 +65,7 @@
    "Extra users $29/mo each",
    "Chemical/material tracking not listed on pricing page"
   ],
-  "last_verified": "2026-11-23",
+  "last_verified": "2026-11-25",
   "add_ons": "Marketing Suite $99/mo, Receptionist (AI) $29/mo, Pipeline $49/mo (add-ons on Core, Connect and Grow; listed as Plus features). Reviews add-on price not published (unknown)"
  },
  {
@@ -110,7 +112,8 @@
    "https://www.housecallpro.com/industries/window-cleaning-software/",
    "https://www.housecallpro.com/features/mobile-app/",
    "https://www.housecallpro.com/industries/snow-removal-software/",
-   "https://www.housecallpro.com/features/quickbooks/"
+   "https://www.housecallpro.com/features/quickbooks/",
+   "https://www.housecallpro.com/industries/pressure-washing-software/"
   ],
   "best_for": "Small teams wanting users included in the plan",
   "starting_price": "$59/mo billed annually (Basic, 1 user); $79/mo monthly",
@@ -123,7 +126,7 @@
    "Monthly billing costs $20-$40/mo more than annual",
    "Route optimization only on MAX"
   ],
-  "last_verified": "2026-11-23"
+  "last_verified": "2026-11-25"
  },
  {
   "slug": "gorilladesk",
@@ -357,7 +360,7 @@
    "Good/Better/Best sales proposals and service plans only on Ultimate",
    "Zapier and open API only on Ultimate"
   ],
-  "last_verified": "2026-11-22"
+  "last_verified": "2026-11-25"
  },
  {
   "slug": "quoteiq",
@@ -428,7 +431,8 @@
    "AI Website Builder is a $34.99/mo add-on except on Max"
   ],
   "add_ons": "AI Website Builder $34.99/mo on Essentials, Beginner, Pro and Elite (included on Max); extra storage +100 GB $9.99/mo, +500 GB $34.99/mo, +2 TB $99.99/mo",
-  "last_verified": "2026-11-22"
+  "last_verified": "2026-11-25",
+  "recurring_billing": "Recurring jobs, recurring billing (invoice subscriptions), deposits and partial payments, card on file and built-in weather forecasts on every plan; mass invoicing from Beginner; assigning jobs to team members from Pro"
  },
  {
   "slug": "yardbook",
@@ -1706,5 +1710,52 @@
   ],
   "last_verified": "2026-11-23",
   "image": "cleaning"
+ },
+ {
+  "slug": "markate",
+  "name": "Markate",
+  "website": "https://www.markate.com/",
+  "trades": ["pressure", "window"],
+  "free_trial": "14 days, full access, no credit card required",
+  "contract": "No contract; month-to-month or annual (save 8%). No refunds for early cancellation within a billing period",
+  "plans": [
+   {
+    "name": "Owner Operator",
+    "users": "1 (owner)",
+    "monthly_no_commit": "$49.95/mo",
+    "annual": "$45.95/mo billed yearly ($551.40/yr)"
+   },
+   {
+    "name": "Team",
+    "users": "Owner + employees at $5/mo each",
+    "monthly_no_commit": "$49.95/mo base + $5/mo per employee",
+    "annual": "$45.95/mo base + $5/mo per employee"
+   }
+  ],
+  "extra_user": "$5/mo per active employee",
+  "card_fee": "unknown (pricing page says 'competitive payment processing'; card on file and ACH through Square; rates not published)",
+  "routing": "Drag-and-drop calendar, dispatching, live employee location map and bulk rescheduling listed; route optimization not listed",
+  "quickbooks": "QuickBooks integration and QuickBooks Payroll sync listed as included (version and sync direction not stated)",
+  "chemical_tracking": "unknown",
+  "online_booking": "Online booking form add-on, $10/mo",
+  "rating": "unknown",
+  "sources": [
+   "https://www.markate.com/pricing",
+   "https://www.markate.com/industries/pressure_wash"
+  ],
+  "best_for": "Owner-operators who want a low base price and cheap per-employee seats",
+  "starting_price": "$49.95/mo (Owner Operator); $45.95/mo billed yearly",
+  "pros": [
+   "Employees $5/mo each",
+   "Bulk rescheduling and recurring invoices included",
+   "14-day trial, no credit card"
+  ],
+  "cons": [
+   "Online booking, automated review requests and Zapier are $10/mo add-ons each",
+   "Card processing rates not published",
+   "No refunds for early cancellation within a billing period"
+  ],
+  "add_ons": "Online booking $10/mo, proposal templates $10/mo, automated review requests $10/mo, website lead form $10/mo, CompanyCam $10/mo, branded customer portal $10/mo, Zapier $10/mo, own phone number $10/mo, API $50/mo, AI receptionist $1/call, SMS drip 10¢/SMS",
+  "last_verified": "2026-11-25"
  }
 ]

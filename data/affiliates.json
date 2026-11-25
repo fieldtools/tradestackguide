@@ -209,5 +209,10 @@
     "program": "Gem State CRM affiliate program - 30% recurring of each referred roofing company's subscription, 30-day hold, paid monthly via Stripe/PayPal at $50 minimum; approved Nov 23, 2026; referral link live",
     "status": "live",
     "note": "Source https://gemstatecrm.com/affiliates . Roofing CRM; no tool page yet (BACKLOG #123)."
+  },
+  "markate": {
+    "url": "https://www.markate.com/",
+    "program": "No affiliate program confirmed (Markate's Refer & Earn gives account credits to users only); plain link",
+    "status": "plain"
   }
 }
