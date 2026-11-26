@@ -52,7 +52,8 @@
    "https://help.getjobber.com/en/articles/snow-removal-workflow-or-how-to-schedule-new-visits-for-multiple-jobs/",
    "https://help.getjobber.com/en/articles/quickbooks-integration-faqs-new-quickbooks-integration/",
    "https://www.getjobber.com/industries/pressure-washing-software/",
-   "https://help.getjobber.com/en/articles/create-a-recurring-job/"
+   "https://help.getjobber.com/en/articles/create-a-recurring-job/",
+   "https://www.getjobber.com/features/invoicing/"
   ],
   "best_for": "Mixed recurring and one-off jobs across any trade",
   "starting_price": "$29/mo billed annually (Core, 1 user); $49/mo monthly",
@@ -65,7 +66,7 @@
    "Extra users $29/mo each",
    "Chemical/material tracking not listed on pricing page"
   ],
-  "last_verified": "2026-11-25",
+  "last_verified": "2026-11-26",
   "add_ons": "Marketing Suite $99/mo, Receptionist (AI) $29/mo, Pipeline $49/mo (add-ons on Core, Connect and Grow; listed as Plus features). Reviews add-on price not published (unknown)"
  },
  {
@@ -126,7 +127,7 @@
    "Monthly billing costs $20-$40/mo more than annual",
    "Route optimization only on MAX"
   ],
-  "last_verified": "2026-11-25"
+  "last_verified": "2026-11-26"
  },
  {
   "slug": "gorilladesk",
@@ -305,7 +306,7 @@
    "Setup fee amount not published",
    "Text follow-up, Zapier and CrewCal only on Pro ($229/mo)"
   ],
-  "last_verified": "2026-11-17"
+  "last_verified": "2026-11-26"
  },
  {
   "slug": "workiz",
@@ -431,7 +432,7 @@
    "AI Website Builder is a $34.99/mo add-on except on Max"
   ],
   "add_ons": "AI Website Builder $34.99/mo on Essentials, Beginner, Pro and Elite (included on Max); extra storage +100 GB $9.99/mo, +500 GB $34.99/mo, +2 TB $99.99/mo",
-  "last_verified": "2026-11-25",
+  "last_verified": "2026-11-26",
   "recurring_billing": "Recurring jobs, recurring billing (invoice subscriptions), deposits and partial payments, card on file and built-in weather forecasts on every plan; mass invoicing from Beginner; assigning jobs to team members from Pro"
  },
  {
@@ -1232,7 +1233,7 @@
   "extra_user": "Charged per user on every plan; 10-user limit on Core, Advanced and Ultimate (Infinite removes it)",
   "card_fee": "unknown (automated payments via GoCardless direct debit or Stripe card on file; Square tap to pay; processing rates not published by Squeegee)",
   "routing": "Rounds (group jobs by area/day/frequency), replan jobs and Day Pilot optimised route navigation on all plans; map/visual planner only on Ultimate and Infinite",
-  "quickbooks": "unknown (not listed; built-in bookkeeping and HMRC VAT returns on Ultimate)",
+  "quickbooks": "Not listed (integrations page lists API access only); built-in bookkeeping, balance sheet and HMRC VAT returns on Ultimate; bank reconciliation from Advanced",
   "chemical_tracking": "Not listed",
   "online_booking": "Customer portal from Advanced; Request Quote and View Upcoming Appointments in the portal on Ultimate and Infinite",
   "rating": "unknown",
@@ -1242,7 +1243,8 @@
    "https://squeeg.ee/features/scheduling",
    "https://squeeg.ee/features/payments",
    "https://squeeg.ee/",
-   "https://play.google.com/store/apps/details?id=com.squeegee"
+   "https://play.google.com/store/apps/details?id=com.squeegee",
+   "https://squeeg.ee/integrations"
   ],
   "best_for": "UK-style window cleaning rounds: recurring jobs grouped by area and frequency, invoiced on completion",
   "starting_price": "£19/mo per user + VAT (Core); £190/yr per user + VAT billed yearly. USD pricing not published",
@@ -1256,7 +1258,7 @@
    "Map/visual planner only on Ultimate (£33/mo per user + VAT)",
    "Core, Advanced and Ultimate capped at 10 users"
   ],
-  "last_verified": "2026-11-17"
+  "last_verified": "2026-11-26"
  },
  {
   "slug": "fieldroutes",
@@ -1756,6 +1758,6 @@
    "No refunds for early cancellation within a billing period"
   ],
   "add_ons": "Online booking $10/mo, proposal templates $10/mo, automated review requests $10/mo, website lead form $10/mo, CompanyCam $10/mo, branded customer portal $10/mo, Zapier $10/mo, own phone number $10/mo, API $50/mo, AI receptionist $1/call, SMS drip 10¢/SMS",
-  "last_verified": "2026-11-25"
+  "last_verified": "2026-11-26"
  }
 ]
