@@ -53,7 +53,8 @@
    "https://help.getjobber.com/en/articles/quickbooks-integration-faqs-new-quickbooks-integration/",
    "https://www.getjobber.com/industries/pressure-washing-software/",
    "https://help.getjobber.com/en/articles/create-a-recurring-job/",
-   "https://www.getjobber.com/features/invoicing/"
+   "https://www.getjobber.com/features/invoicing/",
+   "https://www.getjobber.com/industries/pool-service-software/"
   ],
   "best_for": "Mixed recurring and one-off jobs across any trade",
   "starting_price": "$29/mo billed annually (Core, 1 user); $49/mo monthly",
@@ -66,7 +67,7 @@
    "Extra users $29/mo each",
    "Chemical/material tracking not listed on pricing page"
   ],
-  "last_verified": "2026-11-26",
+  "last_verified": "2026-11-27",
   "add_ons": "Marketing Suite $99/mo, Receptionist (AI) $29/mo, Pipeline $49/mo (add-ons on Core, Connect and Grow; listed as Plus features). Reviews add-on price not published (unknown)"
  },
  {
@@ -237,7 +238,8 @@
    "https://www.getskimmer.com/",
    "https://www.getskimmer.com/product/backoffice",
    "https://www.getskimmer.com/product/billing",
-   "https://help.getskimmer.com/article/168-skimmer-billing-faq-invoicing"
+   "https://help.getskimmer.com/article/168-skimmer-billing-faq-invoicing",
+   "https://www.getskimmer.com/product/technicians"
   ],
   "best_for": "Pool route businesses billing by serviced pool",
   "starting_price": "$49/mo minimum ($1 per serviced location)",
@@ -250,7 +252,7 @@
    "Pool-only",
    "Card processing rate and annual pricing not published"
   ],
-  "last_verified": "2026-11-24",
+  "last_verified": "2026-11-27",
   "add_ons": "Service Texts $0.029/message (Getting Started; included on Scaling Up and Enterprise), AI Phone $99/mo, Marketing Suite $150/mo, Bookkeeping from $198/mo (all three on every plan), CRM Integrations $49/mo and Google Calendar $25/mo (Getting Started and Scaling Up; included on Enterprise)"
  },
  {
@@ -898,7 +900,7 @@
    "$65/mo per active field tech adds up as you hire",
    "Trial length, contract terms and card fees not published"
   ],
-  "last_verified": "2026-11-24"
+  "last_verified": "2026-11-27"
  },
  {
   "slug": "pool-office-manager",
@@ -932,7 +934,9 @@
   "rating": "unknown",
   "sms": "Customer texting from $10/mo plus usage (optional)",
   "sources": [
-   "https://www.poolofficemanager.com/pricing"
+   "https://www.poolofficemanager.com/pricing",
+   "https://poolofficemanager.com/features/water-chemistry",
+   "https://poolofficemanager.com/pool-service-crm-software"
   ],
   "best_for": "Pool companies that want flat per-user pricing and can switch users off in the off-season",
   "starting_price": "$125/mo (1 user); +$25/mo per additional user",
@@ -945,7 +949,7 @@
    "Highest one-user price of the pool tools we track ($125/mo)",
    "QuickBooks sync (+$25/mo) and texting (from $10/mo) are paid add-ons"
   ],
-  "last_verified": "2026-11-24",
+  "last_verified": "2026-11-27",
   "add_ons": "QuickBooks Online sync +$25/mo; customer texting from $10/mo plus usage; video storage +$25/mo (roughly 1,000-2,000 short videos)"
  },
  {
@@ -1138,7 +1142,8 @@
   "sources": [
    "https://www.upbuoy.com/pricing",
    "https://www.upbuoy.com/",
-   "https://www.upbuoy.com/features"
+   "https://www.upbuoy.com/features",
+   "https://www.upbuoy.com/solutions/spa-cleaning-software"
   ],
   "best_for": "Pool route businesses that want per-pool pricing with a free plan to test on up to 3 locations",
   "starting_price": "Free (Essential, up to 3 locations); Professional $3/location/mo, $99/mo minimum",
@@ -1151,7 +1156,7 @@
    "$3 per location is more per pool than Skimmer's $2 Scaling Up rate",
    "Route optimization not on the free plan"
   ],
-  "last_verified": "2026-11-24"
+  "last_verified": "2026-11-27"
  },
  {
   "slug": "paythepoolman",
