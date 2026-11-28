@@ -54,7 +54,8 @@
    "https://www.getjobber.com/industries/pressure-washing-software/",
    "https://help.getjobber.com/en/articles/create-a-recurring-job/",
    "https://www.getjobber.com/features/invoicing/",
-   "https://www.getjobber.com/industries/pool-service-software/"
+   "https://www.getjobber.com/industries/pool-service-software/",
+   "https://www.getjobber.com/features/quotes/"
   ],
   "best_for": "Mixed recurring and one-off jobs across any trade",
   "starting_price": "$29/mo billed annually (Core, 1 user); $49/mo monthly",
@@ -67,7 +68,7 @@
    "Extra users $29/mo each",
    "Chemical/material tracking not listed on pricing page"
   ],
-  "last_verified": "2026-11-27",
+  "last_verified": "2026-11-28",
   "add_ons": "Marketing Suite $99/mo, Receptionist (AI) $29/mo, Pipeline $49/mo (add-ons on Core, Connect and Grow; listed as Plus features). Reviews add-on price not published (unknown)"
  },
  {
@@ -252,7 +253,7 @@
    "Pool-only",
    "Card processing rate and annual pricing not published"
   ],
-  "last_verified": "2026-11-27",
+  "last_verified": "2026-11-28",
   "add_ons": "Service Texts $0.029/message (Getting Started; included on Scaling Up and Enterprise), AI Phone $99/mo, Marketing Suite $150/mo, Bookkeeping from $198/mo (all three on every plan), CRM Integrations $49/mo and Google Calendar $25/mo (Getting Started and Scaling Up; included on Enterprise)"
  },
  {
@@ -900,7 +901,7 @@
    "$65/mo per active field tech adds up as you hire",
    "Trial length, contract terms and card fees not published"
   ],
-  "last_verified": "2026-11-27"
+  "last_verified": "2026-11-28"
  },
  {
   "slug": "pool-office-manager",
@@ -936,7 +937,8 @@
   "sources": [
    "https://www.poolofficemanager.com/pricing",
    "https://poolofficemanager.com/features/water-chemistry",
-   "https://poolofficemanager.com/pool-service-crm-software"
+   "https://poolofficemanager.com/pool-service-crm-software",
+   "https://www.poolofficemanager.com/features"
   ],
   "best_for": "Pool companies that want flat per-user pricing and can switch users off in the off-season",
   "starting_price": "$125/mo (1 user); +$25/mo per additional user",
@@ -949,7 +951,7 @@
    "Highest one-user price of the pool tools we track ($125/mo)",
    "QuickBooks sync (+$25/mo) and texting (from $10/mo) are paid add-ons"
   ],
-  "last_verified": "2026-11-27",
+  "last_verified": "2026-11-28",
   "add_ons": "QuickBooks Online sync +$25/mo; customer texting from $10/mo plus usage; video storage +$25/mo (roughly 1,000-2,000 short videos)"
  },
  {
@@ -1184,7 +1186,8 @@
   "online_booking": "unknown (lead requests and pipeline listed; online booking not described)",
   "rating": "unknown",
   "sources": [
-   "https://www.paythepoolman.com/"
+   "https://www.paythepoolman.com/",
+   "https://www.paythepoolman.com/features/contactless-bidding/"
   ],
   "best_for": "Pool companies adding techs that want a low per-tech price",
   "starting_price": "$50/mo base + $15/mo per tech (1 tech = $65/mo by the published formula)",
@@ -1198,7 +1201,7 @@
    "ACH and Apple/Google Pay need the $25/mo customer app add-on",
    "Payroll sign-up fee and text credit prices not published"
   ],
-  "last_verified": "2026-11-24"
+  "last_verified": "2026-11-28"
  },
  {
   "slug": "squeegee",
